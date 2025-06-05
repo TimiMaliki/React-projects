@@ -1,8 +1,29 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { FaSun, FaMoon } from 'react-icons/fa';
+
+
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [darkMode, setDarkMode] = useState(() => {
+    // Load from localStorage or default to false
+    return localStorage.getItem('theme') === 'dark';
+    })
+
+  useEffect(() => {
+    const root = window.document.documentElement;
+    if (darkMode) {
+      root.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      root.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [darkMode]);
+
+
 
   return (
     <nav className="bg-white shadow-md px-4 py-3 flex items-center justify-between relative z-50">
@@ -35,6 +56,13 @@ const Navbar = () => {
         >
           Sign In
         </a>
+        <button
+      onClick={() => setDarkMode(!darkMode)}
+      className="p-2 text-xl transition"
+    >
+      {darkMode ? <FaSun /> : <FaMoon />}
+    </button>
+      
       </div>
 
       {/* Hamburger */}
@@ -75,6 +103,9 @@ const Navbar = () => {
           >
             Sign In
           </a>
+       
+         
+            
         </div>
       )}
     </nav>
