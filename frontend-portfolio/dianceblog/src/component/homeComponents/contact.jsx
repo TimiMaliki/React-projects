@@ -98,7 +98,7 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="Enter Your Name"
-                    class="py-4 min-h-48 leading-40 border-b-2 border-blue-400 border-opacity-25 bg-transparent rounded-none focus:border-blue-500 focus:shadow-none w-full opacity-70 outline-none transition duration-200 ease-in-out"
+                    class="py-4 min-h-48 text-black border-b-2 border-blue-400 border-opacity-25 bg-transparent rounded-none focus:border-blue-500 focus:shadow-none w-full opacity-100 outline-none transition duration-200 ease-in-out"
                   />
                 </div>
               </div>
@@ -140,7 +140,7 @@ const Contact = () => {
               <div class="col-span-12">
                 <div class="mt-4 text-end md:text-start">
                   <button
-                    class="border rounded-md border-gray-300 border-opacity-25 py-3 px-4 bg-white dark:bg-transparent hover:bg-[#28303B] dark:hover:bg-white hover:text-white dark:hover:text-[#4E5762] transition duration-200 ease-in-out"
+                    class="border rounded-md border-gray-300 border-opacity-25 py-3 px-4 bg-black text-white dark:bg-transparent hover:bg-[#28303B] dark:hover:bg-white hover:text-white dark:hover:text-[#4E5762] transition duration-200 ease-in-out"
                   >
                     GET IN TOUCH <i class="fas fa-angle-right ml-2"></i>
                   </button>
