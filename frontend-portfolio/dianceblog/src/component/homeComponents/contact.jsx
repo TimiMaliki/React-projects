@@ -20,75 +20,140 @@ const Contact = () => {
         };
         
   return (
-    <div
-      className="relative flex min-h-screen flex-col  overflow-x-hidden"
-      style={{ fontFamily: 'Newsreader, "Noto Sans", sans-serif' }}
-    >
-      <div className="flex h-full grow flex-col items-center justify-center px-4 py-10">
-        <div className="max-w-[960px] w-full">
-          <div className="flex flex-wrap justify-center gap-3 p-4">
-            <p className="text-2xl lg:text-4xl font-bold  text-center min-w-72">
-              Contact Diance-Blogs
-            </p>
-          </div>
-          <p className=" text-base font-normal leading-normal pb-3 pt-1 px-4 text-center max-w-3xl mx-auto">
-            We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, please use the form below to get in touch. We aim to
-            respond to all inquiries within 48 hours.
-          </p>
-          <h2 className=" text-2xl font-bold  tracking-tight px-4 pb-3 pt-5 text-center">
-            Send Us a Message
-          </h2>
-
-          <form
-            onSubmit={handleSubmit}
-            className="flex max-w-[480px] flex-col gap-6 mx-auto px-4"
+    <section
+    class="ezy__contact14 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 relative dark:text-white overflow-hidden"
+  >
+    <div class="container px-4 mx-auto">
+      <div class="grid grid-cols-12 gap-4">
+        <div class="col-span-12 w-full text-center sm:text-start mb-12">
+          <h2
+            class="font-bold text-4xl md:text-[55px] leading-[45px] md:leading-[70px] mb-0"
           >
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              value={formData.name}
-              onChange={handleChange}
-              className="form-input w-full rounded-xl bg-[#f2f2f2] p-4 text-base  placeholder:text-[#757575] focus:outline-none focus:ring-0 h-14"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              value={formData.email}
-              onChange={handleChange}
-              className="form-input w-full rounded-xl bg-[#f2f2f2] p-4 text-base text-[#141414] placeholder:text-[#757575] focus:outline-none focus:ring-0 h-14"
-              required
-            />
-            <input
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              value={formData.subject}
-              onChange={handleChange}
-              className="form-input w-full rounded-xl bg-[#f2f2f2] p-4 text-base text-[#141414] placeholder:text-[#757575] focus:outline-none focus:ring-0 h-14"
-              required
-            />
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              value={formData.message}
-              onChange={handleChange}
-              className="form-input w-full rounded-xl bg-[#f2f2f2] p-4 text-base text-[#141414] placeholder:text-[#757575] focus:outline-none focus:ring-0 min-h-[9rem] resize-none"
-              required
-            />
-
-            <button
-              type="submit"
-              className="mx-auto flex w-full max-w-[480px] cursor-pointer items-center justify-center rounded-full bg-black p-4 text-sm font-bold leading-normal tracking-wide text-white transition hover:bg-gray-800"
-            >
-              Send Message
-            </button>
+            Stay In Touch
+          </h2>
+          <p
+            class="text-sm leading-7 font-normal uppercase tracking-widest opacity-90 md:ml-[5%]"
+          >
+            Have any question? Drop us a message.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-12">
+        <div class="col-span-12 md:col-span-5">
+          <address class="mt-5">
+            <div>
+              <div class="flex items-center mb-8">
+                <div>
+                  <span class="text-7xl opacity-20 w-[80px]">
+                    <i class="fas fa-home"></i>
+                  </span>
+                </div>
+                <div class="ml-[-26px]">
+                  <p class="tracking-widest not-italic mb-0">
+                    28/1 Hamid Bila
+                  </p>
+                  <p class="tracking-widest not-italic mb-0">
+                    Bhataliya, SYLHET
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center mb-8">
+                <div>
+                  <span class="text-7xl opacity-20 w-[80px]">
+                    <i class="fas fa-phone"></i>
+                  </span>
+                </div>
+                <div class="ml-[-26px]">
+                  <p class="tracking-widest not-italic mb-0">
+                    +880 1742 031080
+                  </p>
+                  <p class="tracking-widest not-italic mb-0">
+                    +880 1777 272322
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center mb-8">
+                <div>
+                  <span class="text-7xl opacity-20 w-[80px]">
+                    <i class="fas fa-envelope-open-text"></i>
+                  </span>
+                </div>
+                <div class="ml-[-26px]">
+                  <p class="tracking-widest not-italic mb-0">
+                    santush@gmail.com
+                  </p>
+                  <p class="tracking-widest not-italic mb-0">
+                    deb@santush.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </address>
+        </div>
+        <div class="col-span-12 md:col-span-7 mt-5">
+          <form action="">
+            <div class="grid grid-cols-12 gap-4">
+              <div class="col-span-12 md:col-span-6">
+                <div class="mb-3 mt-2">
+                  <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    class="py-4 min-h-48 leading-40 border-b-2 border-blue-400 border-opacity-25 bg-transparent rounded-none focus:border-blue-500 focus:shadow-none w-full opacity-70 outline-none transition duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div class="col-span-12 md:col-span-6">
+                <div class="mb-3 mt-2">
+                  <input
+                    type="email"
+                    placeholder="Enter Your Email"
+                    class="py-4 min-h-48 leading-40 border-b-2 border-blue-400 border-opacity-25 bg-transparent rounded-none focus:border-blue-500 focus:shadow-none w-full opacity-70 outline-none transition duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div class="col-span-12 md:col-span-6">
+                <div class="mb-3 mt-2">
+                  <input
+                    type="text"
+                    placeholder="Company Name"
+                    class="py-4 min-h-48 leading-40 border-b-2 border-blue-400 border-opacity-25 bg-transparent rounded-none focus:border-blue-500 focus:shadow-none w-full opacity-70 outline-none transition duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div class="col-span-12 md:col-span-6">
+                <div class="mb-3 mt-2">
+                  <input
+                    type="email"
+                    placeholder="Subject"
+                    class="py-4 min-h-48 leading-40 border-b-2 border-blue-400 border-opacity-25 bg-transparent rounded-none focus:border-blue-500 focus:shadow-none w-full opacity-70 outline-none transition duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div class="col-span-12">
+                <textarea
+                  rows="3"
+                  placeholder="Enter Your Message"
+                  class="pb-8 min-h-48 leading-40 border-b-2 border-blue-400 border-opacity-25 bg-transparent rounded-none focus:border-blue-500 focus:shadow-none w-full opacity-70 outline-none transition duration-200 ease-in-out"
+                >
+                </textarea>
+              </div>
+              <div class="col-span-12">
+                <div class="mt-4 text-end md:text-start">
+                  <button
+                    class="border rounded-md border-gray-300 border-opacity-25 py-3 px-4 bg-white dark:bg-transparent hover:bg-[#28303B] dark:hover:bg-white hover:text-white dark:hover:text-[#4E5762] transition duration-200 ease-in-out"
+                  >
+                    GET IN TOUCH <i class="fas fa-angle-right ml-2"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>
     </div>
+  </section>
+  
+  
   );
 }
 
