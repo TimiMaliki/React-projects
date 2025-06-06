@@ -1,9 +1,10 @@
+import heroImage from  "../../images/hero0.jpg"
 const Hero = () => {
   return (
     <div>
       <div className="w-full h-screen hero relative flex flex-col justify-center items-center">
         <img
-          src="./images/hero0.jpg"
+          src={heroImage}
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
         />
