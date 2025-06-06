@@ -1,5 +1,6 @@
 import Hero from "./heroSection";
 import Navbar from "./navbar";
+import Studio from "./studio";
 
 
 
@@ -9,6 +10,7 @@ const Home = () => {
         <div >
       <Navbar/>
        <Hero/>
+       <Studio/>
         </div>
      );
 }

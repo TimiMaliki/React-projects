@@ -2,11 +2,20 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  --background: #fff;
+  --color: #000;
 }
 
+
+.dark{
+  background: var(--background);
+  color: var(--color);
+}
+.light{
+    background: #000;
+    color: #fff;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
