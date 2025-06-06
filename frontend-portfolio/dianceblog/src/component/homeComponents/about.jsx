@@ -34,7 +34,7 @@ const About = () => {
               <h2 className="text-xl md:text-2xl lg:text-3xl mb-4 font-extrabold text-center text-gray-900">
                 Our Mission
               </h2>
-              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed text-center">
+              <p className="text-base md:text-lg lg:text-xl text-gray-800 leading-relaxed text-center">
                 At Diance-Blog, our vision is to inspire and elevate the next
                 generation of bloggers. We believe that anyone with a story or
                 expertise deserves a platform—and we’re here to help make that

@@ -35,9 +35,8 @@ const Navbar = () => {
           </button>
           {dropdownOpen && (
             <div className={`absolute top-full left-0 mt-2 w-40 border rounded shadow-lg ${darkMode ? 'bg-black text-white border-gray-700' : 'bg-white text-gray-800'}`}>
-              <a href="#sleep" className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800">What we offer</a>
-              <a href="#activity" className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800">How It Works</a>
-              <a href="#readiness" className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800">Products</a>
+              <a href="#sleep" className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800">How It works</a>
+              <a href="#activity" className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800">Recents works</a>
             </div>
           )}
         </div>
@@ -80,15 +79,12 @@ const Navbar = () => {
             </button>
             {dropdownOpen && (
               <div className="ml-4 mt-1 flex flex-col gap-1">
-                <a href="#sleep" className="text-sm hover:underline">What we offer</a>
-                <a href="#activity" className="text-sm hover:underline">How It Works</a>
-                <a href="#readiness" className="text-sm hover:underline">Products</a>
+                <a href="#sleep" className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800">How It works</a>
+              <a href="#activity" className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800">Recents works</a>
               </div>
             )}
           </div>
-          <a href="#how-it-works" className="hover:underline">How It Works</a>
           <a href="#shop" className="hover:underline">Latest Trends</a>
-          <a href="#business" className="hover:underline">For Business</a>
           <a
             href="#sign-in"
             className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition"

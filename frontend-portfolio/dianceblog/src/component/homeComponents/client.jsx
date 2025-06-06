@@ -5,6 +5,11 @@ const Clients = () => {
  
   return (
     <div className="w-full h-full mt-12">
+      <div className="flex justify-center text-center">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            Our Vision
+          </h2>
+         </div>
       {/* Client Testimonial Section large screen */}
       <div className="w-full hidden lg:grid  lg:grid-cols-2 gap-8 items-center p-6 lg:p-12">
         {/* Client Image */}
@@ -49,7 +54,7 @@ const Clients = () => {
        <div className="w-full lg:hidden grid lg:grid-cols-2 gap-8 items-center p-6 lg:p-12">
         {/* Client Description */}
         <div className="card-one w-full h-full rounded-xl flex items-center justify-center text-center p-6">
-          <p className="text-base lg:text-2xl font-semibold">
+          <p className="text-base lg:text-lg">
             At DIance-Blog, our client portfolio is more than just a collection
             of past projects — it's a reflection of our dedication to quality,
             creativity, and long-term results. We've had the privilege of

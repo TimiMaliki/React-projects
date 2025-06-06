@@ -16,6 +16,11 @@ const Logos = () => {
     const secondLogos = [logo7, logo8, logo9, logo10, logo11, logo12];
     return (  
          <div className="logo w-full h-full bg-white mt-4">
+         <div className="flex justify-center text-center">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            Our Sponsors & Partner
+          </h2>
+         </div>
                 {/* Logos Section */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 px-6 lg:px-12 pb-12">
         {firstLogos.map((logo) => (
