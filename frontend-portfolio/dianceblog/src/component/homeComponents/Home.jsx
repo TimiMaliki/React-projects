@@ -1,3 +1,4 @@
+import About from "./about";
 import Clients from "./client";
 import Hero from "./heroSection";
 import Navbar from "./navbar";
@@ -12,6 +13,7 @@ const Home = () => {
       <Studio />
       <Services />
       <Clients/>
+      <About/>
     </div>
   );
 };

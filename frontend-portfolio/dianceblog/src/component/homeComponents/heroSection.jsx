@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="mt-6 z-10">
           <button
             type="button"
-            className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm md:text-base lg:text-lg px-4 md:px-6 lg:px-8 py-2 text-center"
+            className="text-black bg-white focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm md:text-base lg:text-lg px-4 md:px-6 lg:px-8 py-2 text-center"
           >
             Get Started
           </button>
