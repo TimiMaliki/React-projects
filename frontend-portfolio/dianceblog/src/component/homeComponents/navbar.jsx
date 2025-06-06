@@ -42,14 +42,14 @@ const Navbar = () => {
           {dropdownOpen && (
             <div className="absolute top-full left-0 mt-2 w-40 bg-white border rounded shadow-lg">
               <a href="#sleep" className="block px-4 py-2 text-sm hover:bg-gray-100">What we offer</a>
-              <a href="#activity" className="block px-4 py-2 text-sm hover:bg-gray-100">Activity</a>
+              <a href="#activity" className="block px-4 py-2 text-sm hover:bg-gray-100">How It Works</a>
               <a href="#readiness" className="block px-4 py-2 text-sm hover:bg-gray-100">Products</a>
             </div>
           )}
         </div>
-        <a href="#how-it-works" className="text-gray-700 hover:text-black">How It Works</a>
-        <a href="#shop" className="text-gray-700 hover:text-black">About Us</a>
-        <a href="#business" className="text-gray-700 hover:text-black">Contact Us</a>
+        <a href="#trends" className="text-gray-700 hover:text-black">Latest Trends</a>
+        <a href="#about" className="text-gray-700 hover:text-black">About Us</a>
+        <a href="#contact" className="text-gray-700 hover:text-black">Contact Us</a>
         <a
           href="#sign-in"
           className="bg-black text-white px-4 py-2 rounded hover:bg-gray-900 transition"

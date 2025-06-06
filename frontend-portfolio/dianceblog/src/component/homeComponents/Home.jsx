@@ -1,5 +1,6 @@
 import Hero from "./heroSection";
 import Navbar from "./navbar";
+import Services from "./services";
 import Studio from "./studio";
 
 
@@ -11,6 +12,7 @@ const Home = () => {
       <Navbar/>
        <Hero/>
        <Studio/>
+       <Services/>
         </div>
      );
 }

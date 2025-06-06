@@ -3,7 +3,7 @@ const Hero = () => {
     <div>
       <div className="w-full h-screen hero relative flex flex-col justify-center items-center">
         <img
-          src="./images/blog-hero.jpg"
+          src="./images/hero0.jpg"
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
         />
