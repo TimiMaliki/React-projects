@@ -1,5 +1,6 @@
 import About from "./about";
 import Clients from "./client";
+import Contact from "./contact";
 import Hero from "./heroSection";
 import Navbar from "./navbar";
 import Services from "./services";
@@ -14,6 +15,7 @@ const Home = () => {
       <Services />
       <Clients/>
       <About/>
+      <Contact/>
     </div>
   );
 };
