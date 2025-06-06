@@ -42,12 +42,6 @@ const Navbar = () => {
           )}
         </div>
         <a href="#trends" className="hover:underline">Latest Trends</a>
-        <a
-          href="#sign-in"
-          className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition"
-        >
-          Sign In
-        </a>
         <button
           onClick={() => setDarkMode(!darkMode)}
           className="p-2 text-xl transition"
@@ -55,6 +49,12 @@ const Navbar = () => {
         >
           {darkMode ? <FaSun /> : <FaMoon />}
         </button>
+        <a
+          href="#sign-in"
+          className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition"
+        >
+          Sign In
+        </a>
       </div>
 
       {/* Mobile Menu Button */}

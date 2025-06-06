@@ -1,5 +1,5 @@
 import clientImage from "../../images/client-logo-img/client-laura.jpg";
-import Logos from "../logos";
+import Logos from "./logos";
 
 const Clients = () => {
  
@@ -80,11 +80,11 @@ const Clients = () => {
           <img
             src={clientImage}
             alt="Client"
-            className="w-full h-auto mx-auto object-contain rounded-xl"
+            className="w-full h-auto mx-auto object-contain rounded-3xl shadow-xl"
           />
         </div>
       </div> 
-      <Logos/>
+     <Logos/>
     </div>
   );
 };

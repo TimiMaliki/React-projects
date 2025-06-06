@@ -27,7 +27,7 @@ const Services = () => {
       <img
         src={cardOne}
         alt="Grow Audience"
-        className="w-full  mx-auto mb-6 object-contain"
+        className="w-full  mx-auto mb-6 object-contain rounded-lg"
       />
       <h2 className="text-2xl font-semibold mb-3">Grow Media Audience</h2>
       <p className="text-base lg:text-lg">
@@ -40,7 +40,7 @@ const Services = () => {
       <img
         src={cardTwo}
         alt="Social Media Analytics"
-        className="w-full  mx-auto mb-6 object-contain"
+        className="w-full  mx-auto mb-6 object-contain  rounded-lg"
       />
       <h2 className="text-2xl font-semibold mb-3">Social Media Analytics</h2>
       <p className="text-base lg:text-lg">
@@ -53,7 +53,7 @@ const Services = () => {
       <img
         src={cardThree}
         alt="Blog Growth"
-        className="w-full  mx-auto mb-6 object-contain"
+        className="w-full  mx-auto mb-6 object-contain  rounded-lg"
       />
       <h2 className="text-2xl font-semibold mb-3">Grow Blogs From Scratch</h2>
       <p className="text-base lg:text-lg">
@@ -66,7 +66,7 @@ const Services = () => {
       <img
         src={cardFour}
         alt="Content Strategy"
-        className="w-full  mx-auto mb-6 object-contain"
+        className="w-full  mx-auto mb-6 object-contain  rounded-lg"
       />
       <h2 className="text-2xl font-semibold mb-3">Brand & Content Strategy</h2>
       <p className="text-base lg:text-lg">

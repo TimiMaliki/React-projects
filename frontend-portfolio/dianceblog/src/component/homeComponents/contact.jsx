@@ -27,7 +27,7 @@ const Contact = () => {
       <div className="flex h-full grow flex-col items-center justify-center px-4 py-10">
         <div className="max-w-[960px] w-full">
           <div className="flex flex-wrap justify-center gap-3 p-4">
-            <p className=" text-4xl font-bold  text-center min-w-72">
+            <p className="text-2xl lg:text-4xl font-bold  text-center min-w-72">
               Contact Diance-Blogs
             </p>
           </div>

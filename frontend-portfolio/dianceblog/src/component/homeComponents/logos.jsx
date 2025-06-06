@@ -1,15 +1,15 @@
-import logo1 from "../images/client-logo-img/logo1.svg";
-import logo2 from "../images/client-logo-img/logo2.svg";
-import logo3 from "../images/client-logo-img/logo3.svg";
-import logo4 from "../images/client-logo-img/logo4.svg";
-import logo5 from "../images/client-logo-img/logo5.svg";
-import logo6 from "../images/client-logo-img/logo6.svg";
-import logo7 from "../images/client-logo-img/logo7.svg";
-import logo8 from "../images/client-logo-img/logo8.svg";
-import logo9 from "../images/client-logo-img/logo9.svg";
-import logo10 from "../images/client-logo-img/logo10.svg";
-import logo11 from "../images/client-logo-img/logo11.svg";
-import logo12 from "../images/client-logo-img/logo12.svg";
+import logo1 from "../../images/client-logo-img/logo1.svg";
+import logo2 from "../../images/client-logo-img/logo2.svg";
+import logo3 from "../../images/client-logo-img/logo3.svg";
+import logo4 from "../../images/client-logo-img/logo4.svg";
+import logo5 from "../../images/client-logo-img/logo5.svg";
+import logo6 from "../../images/client-logo-img/logo6.svg";
+import logo7 from "../../images/client-logo-img/logo7.svg";
+import logo8 from "../../images/client-logo-img/logo8.svg";
+import logo9 from "../../images/client-logo-img/logo9.svg";
+import logo10 from "../../images/client-logo-img/logo10.svg";
+import logo11 from "../../images/client-logo-img/logo11.svg";
+import logo12 from "../../images/client-logo-img/logo12.svg";
 
 const Logos = () => {
     const firstLogos = [logo1, logo2, logo3, logo4, logo5, logo6];
