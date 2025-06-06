@@ -33,10 +33,10 @@ const Contact = () => {
                 </div>
                 <div class="ml-[-6px]">
                   <p class="tracking-widest not-italic mb-0">
-                    28/1 Hamid Bila
+                  No 4 odi nwankwo street
                   </p>
                   <p class="tracking-widest not-italic mb-0">
-                    Bhataliya, SYLHET
+                    mile 50 abakaliki
                   </p>
                 </div>
               </div>
@@ -48,10 +48,10 @@ const Contact = () => {
                 </div>
                 <div class="ml-[-6px]">
                   <p class="tracking-widest not-italic mb-0">
-                    +880 1742 031080
+                  +234 906 737 6592
                   </p>
                   <p class="tracking-widest not-italic mb-0">
-                    +880 1777 272322
+                  +234 916 321 8075
                   </p>
                 </div>
               </div>

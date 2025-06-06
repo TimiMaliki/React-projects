@@ -5,11 +5,17 @@ const Team = () => {
         <div class="flex justify-center mb-6 md:mb-12">
           <div class="sm:max-w-md text-center">
             <h2 class="text-3xl leading-none font-bold md:text-[45px] mb-4">
-              Our Experts Team
+              Meet Our Expert Team
             </h2>
-            <p>
-              Assumenda non repellendus distinctio nihil dicta sapiente,
-              quibusdam maiores, illum at qui.
+            <p className="text-lg p-5">
+              Behind every impactful blog is a dedicated team of writers,
+              editors, designers, and strategists. At our agency, we bring
+              together a group of creative minds who are passionate about
+              storytelling, content strategy, and digital growth. With years of
+              experience in various niches—from tech and travel to lifestyle and
+              business—our team collaborates to craft content that not only
+              engages but also delivers results. We don't just write blogs; we
+              build voices, grow audiences, and turn ideas into influence.
             </p>
           </div>
         </div>
@@ -24,11 +30,12 @@ const Team = () => {
               />
             </div>
             <div class="ezy__team3-content">
-              <h4 class="text-2xl font-medium mb-2">Akshay Kumar</h4>
+              <h4 class="text-2xl font-medium mb-2">Timi Maliki</h4>
               <h6 class="font-medium">Founder / CEO</h6>
               <p class="opacity-50 mb-0">
-                Subscribe Easy Tutorials Youtube Channel watch more videos
+                Our Founder and CEO is a visionary content strategist.
               </p>
+
               <div class="mt-6">
                 <a
                   href="#"
@@ -70,8 +77,9 @@ const Team = () => {
               <h4 class="text-2xl font-medium mb-2">Raima Ray</h4>
               <h6 class="font-medium">Business Head</h6>
               <p class="opacity-50 mb-0">
-                Subscribe Easy Tutorials Youtube Channel watch more videos
+                Raima leads our business strategy with deep industry insight.
               </p>
+
               <div class="mt-6">
                 <a
                   href="#"
@@ -113,8 +121,9 @@ const Team = () => {
               <h4 class="text-2xl font-medium mb-2">Arjun Kapur</h4>
               <h6 class="font-medium">UI Design</h6>
               <p class="opacity-50 mb-0">
-                Subscribe Easy Tutorials Youtube Channel watch more videos
+                Arjun crafts intuitive and visually engaging interfaces.
               </p>
+
               <div class="mt-6">
                 <a
                   href="#"
@@ -156,8 +165,9 @@ const Team = () => {
               <h4 class="text-2xl font-medium mb-2">Alia Bhatt</h4>
               <h6 class="font-medium">Marketing Head</h6>
               <p class="opacity-50 mb-0">
-                Subscribe Easy Tutorials Youtube Channel watch more videos
+                Alia drives our content marketing strategies.
               </p>
+
               <div class="mt-6">
                 <a
                   href="#"
@@ -199,8 +209,9 @@ const Team = () => {
               <h4 class="text-2xl font-medium mb-2">Carl Paxton</h4>
               <h6 class="font-medium">Marketing</h6>
               <p class="opacity-50 mb-0">
-                Subscribe Easy Tutorials Youtube Channel watch more videos
+                Carl focuses on campaign execution and audience engagement.
               </p>
+
               <div class="mt-6">
                 <a
                   href="#"
@@ -242,8 +253,9 @@ const Team = () => {
               <h4 class="text-2xl font-medium mb-2">Lisa Bain</h4>
               <h6 class="font-medium">Marketing</h6>
               <p class="opacity-50 mb-0">
-                Subscribe Easy Tutorials Youtube Channel watch more videos
+                Lisa specializes in content promotion and analytics.
               </p>
+
               <div class="mt-6">
                 <a
                   href="#"
