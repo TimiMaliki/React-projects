@@ -21,21 +21,21 @@ const Contact = () => {
         
   return (
     <div
-      className="relative flex min-h-screen flex-col bg-white overflow-x-hidden"
+      className="relative flex min-h-screen flex-col  overflow-x-hidden"
       style={{ fontFamily: 'Newsreader, "Noto Sans", sans-serif' }}
     >
       <div className="flex h-full grow flex-col items-center justify-center px-4 py-10">
         <div className="max-w-[960px] w-full">
           <div className="flex flex-wrap justify-center gap-3 p-4">
-            <p className="text-[#141414] tracking-light text-4xl font-bold leading-tight text-center min-w-72">
-              Contact Diance-Blog
+            <p className=" text-4xl font-bold  text-center min-w-72">
+              Contact Diance-Blogs
             </p>
           </div>
-          <p className="text-[#141414] text-base font-normal leading-normal pb-3 pt-1 px-4 text-center max-w-3xl mx-auto">
+          <p className=" text-base font-normal leading-normal pb-3 pt-1 px-4 text-center max-w-3xl mx-auto">
             We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, please use the form below to get in touch. We aim to
             respond to all inquiries within 48 hours.
           </p>
-          <h2 className="text-[#141414] text-2xl font-bold leading-tight tracking-tight px-4 pb-3 pt-5 text-center">
+          <h2 className=" text-2xl font-bold  tracking-tight px-4 pb-3 pt-5 text-center">
             Send Us a Message
           </h2>
 
@@ -49,7 +49,7 @@ const Contact = () => {
               placeholder="Your Name"
               value={formData.name}
               onChange={handleChange}
-              className="form-input w-full rounded-xl bg-[#f2f2f2] p-4 text-base text-[#141414] placeholder:text-[#757575] focus:outline-none focus:ring-0 h-14"
+              className="form-input w-full rounded-xl bg-[#f2f2f2] p-4 text-base  placeholder:text-[#757575] focus:outline-none focus:ring-0 h-14"
               required
             />
             <input

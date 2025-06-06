@@ -1,6 +1,10 @@
+import authorOne  from "../../images/authors-img/a-1.jpg";
+import authorTwo  from "../../images/authors-img/a-2.jpg";
+import authorThree  from "../../images/authors-img/a-3.jpg";
+import authorFour  from "../../images/authors-img/a-4.jpg";
 const About = () => {
     return (  
-        <div className="relative flex min-h-screen flex-col bg-white overflow-x-hidden font-[Newsreader,'Noto Sans',sans-serif]">
+        <div className="relative flex min-h-screen flex-col  overflow-x-hidden font-[Newsreader,'Noto Sans',sans-serif]">
       <div className="flex h-full grow flex-col items-center justify-center px-4 md:px-20 py-10">
         <div className="w-full max-w-4xl flex flex-col gap-6">
           {/* Title */}
@@ -36,61 +40,41 @@ const About = () => {
             <div className="flex flex-col sm:flex-row gap-8 overflow-x-auto sm:overflow-visible py-4 px-2 sm:px-0">
               {/* Author 1 */}
               <div className="flex flex-col items-center gap-4 min-w-[180px]">
-                <div
-                  className="bg-center bg-cover rounded-full w-32 h-32"
-                  style={{
-                    backgroundImage:
-                      "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCUID_Ann1EaEmfbRxUZMXwk8plHFZJCs0pvDa25tGufLKfevE_Ddgef0kLd4LXwghsvLkIldhgz_T7wj2rwEFIhyFDkkp02tVWpdaBaJs3wgmLTXVb4nfafXb1IJbTMx8bS5lMxn1VayB_kxBEoDL4iwuSFgQSke4SbVHbguEJ0hfFQzAcp1pKgp6cS19NU4uClgebMUJTKZLjGQVHhn4y87obYJYkFGY-nQNodJbn1ozl-Ef61VM0caev0CT_L0y-2G04DJv9GMdR')",
-                  }}
-                />
+                <div/>
+                <img src={authorTwo} alt=""  className="bg-center object-cover rounded-full w-full h-full"/>
                 <div>
-                  <p className=" text-base font-medium">Ethan Bennett</p>
-                  <p className="text-[#757575] text-sm">Specialization: Software Development</p>
+                  <p className="text-lg font-medium">Ethan Bennett</p>
+                  <p className="text-md">Specialization: Software Development</p>
                 </div>
               </div>
 
               {/* Author 2 */}
               <div className="flex flex-col items-center gap-4 min-w-[180px]">
-                <div
-                  className="bg-center bg-cover rounded-full w-32 h-32"
-                  style={{
-                    backgroundImage:
-                      "url('https://lh3.googleusercontent.com/aida-public/AB6AXuARrruX7_I8hoW9xOuLFfv2YeJveWSl63M_6vJgVkwtyU4E-hiGiK4xmjXWXeJGVJiNuXc7_ru2t0TuxG9XI1IJF0wDYs9c2jhcuMWM4JOrUMDSh82dfC5PxVUHuW1PRq-ALPIyvP-iY--72iPQBav5pjxuLa0m3e1Rtt8YZThgpLhSvXTZ5tttRrpslT9pZo5TyWzn6O3eVPOy40ZnnRojtcv3EroNlcjwfW8eXcMV5yyvQbYAv4UwycjUaYC2sYFpLf4ZxfLgBqkz')",
-                  }}
-                />
+                <div/>
+                <img src={authorThree} alt=""  className="bg-center object-cover rounded-full w-full h-full"/>
                 <div>
-                  <p className=" text-base font-medium">Sophia Hayes</p>
-                  <p className="text-[#757575] text-sm">Specialization: Cybersecurity</p>
+                  <p className=" text-lg font-medium">Sophia Hayes</p>
+                  <p className="text-md">Specialization: Cybersecurity</p>
                 </div>
               </div>
 
               {/* Author 3 */}
               <div className="flex flex-col items-center gap-4 min-w-[180px]">
-                <div
-                  className="bg-center bg-cover rounded-full w-32 h-32"
-                  style={{
-                    backgroundImage:
-                      "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCL0lltDGma4rkxlXGMtR3Ab7vjO4lpxAspWc1ogLOwAord2n5MzArIo-b9VplaImXWLTPtCDWE_5eIChOdGrsKa6jcMbBV2iEGIaAy91-T_cpArg2sbOgHaEpBq1GFLyqAmJnh9uMIkcB07KhKFm5cB5sC-dfvhxvPhXglWUMKP6llOqe_3kmOf8SheUyQyjRrTHgNpLJCfY6l0K4MDqjdmgE8h9getyNG72L7dMKXuq50DJizSfxdm-UVnuFloQNv4BcF1MhNYPi')",
-                  }}
-                />
+                <div/>
+                <img src={authorOne} alt=""  className="bg-center object-cover rounded-full w-full h-full"/>
                 <div>
-                  <p className="text-[#141414] text-base font-medium">Lucas Reed</p>
-                  <p className="text-[#757575] text-sm">Specialization: Emerging Technologies</p>
+                  <p className="text-lg font-medium">Aisha</p>
+                  <p className="text-md">Specialization: Human Resource</p>
                 </div>
               </div>
 
                 {/* Author 4 */}
                 <div className="flex flex-col items-center gap-4 min-w-[180px]">
-                <div
-                  className="bg-center bg-cover rounded-full w-32 h-32"
-                  style={{
-                    backgroundImage:
-                      "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCL0lltDGma4rkxlXGMtR3Ab7vjO4lpxAspWc1ogLOwAord2n5MzArIo-b9VplaImXWLTPtCDWE_5eIChOdGrsKa6jcMbBV2iEGIaAy91-T_cpArg2sbOgHaEpBq1GFLyqAmJnh9uMIkcB07KhKFm5cB5sC-dfvhxvPhXglWUMKP6llOqe_3kmOf8SheUyQyjRrTHgNpLJCfY6l0K4MDqjdmgE8h9getyNG72L7dMKXuq50DJizSfxdm-UVnuFloQNv4BcF1MhNYPi')",
-                  }}
-                />
+                <div/>
+                <img src={authorFour} alt=""  className="bg-center object-cover rounded-full w-full h-full"/>
                 <div>
-                  <p className="text-[#141414] text-base font-medium">Lucas Reed</p>
-                  <p className="text-[#757575] text-sm">Specialization: Emerging Technologies</p>
+                  <p className="text-lg font-medium">Lucas Reed</p>
+                  <p className="text-md">Specialization: Emerging Technologies</p>
                 </div>
               </div>
             </div>

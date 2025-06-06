@@ -15,7 +15,7 @@ const Services = () => {
     </div>
     <div className="text">
       <p className="lg:text-xl text-base text-center">
-        At H&F-Studio, we focus on building strong digital foundations for creators, brands, and entrepreneurs. From audience growth to analytics and blog development, we help you grow sustainably and strategically.
+        At Diance-Blog, we focus on building strong digital foundations for creators, brands, and entrepreneurs. From audience growth to analytics and blog development, we help you grow sustainably and strategically.
       </p>
     </div>
   </div>
