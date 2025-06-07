@@ -2,6 +2,7 @@ import cardOne from "../../images/social-audience.jpg"
 import cardTwo from "../../images/analytic.jpg"
 import cardThree from "../../images/scratch.jpg"
 import cardFour from "../../images/strategy.jpg"
+import Headers from "./header"
 
 const Services = () => {
     return ( 
@@ -10,7 +11,7 @@ const Services = () => {
   <div className="w-full h-full grid lg:grid-cols-2 gap-3 p-14">
     <div className="our-services">
       <h1 className="text-4xl text-center lg:text-7xl font-extrabold">
-        Our Services
+        <Headers title={"Our Services"}/>
       </h1>
     </div>
     <div className="text">

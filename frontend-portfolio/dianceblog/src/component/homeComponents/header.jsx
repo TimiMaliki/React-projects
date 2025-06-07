@@ -1,8 +1,8 @@
-const Headers = () => {
+const Headers = ({title}) => {
     return ( 
         <div className="header">
             <h1 className="text-4xl text-center lg:text-7xl font-extrabold">
-        Our Services
+     {title}
       </h1>
         </div>
      );

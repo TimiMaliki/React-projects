@@ -1,13 +1,14 @@
 import React from 'react';
+import Headers from './header';
 
 const PricingSection = () => {
   return (
     <section className="bg-white dark:bg-[#0b1727] py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 max-w-xl mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-3">
-            Flexible Plan for you
-          </h2>
+          <h1 className="text-4xl text-center lg:text-7xl font-extrabold  p-2 mb-2">
+          <Headers title={"Flexible Plan for you"} />
+        </h1>
           <p className="text-gray-600 dark:text-gray-300">
             Choice suitable plan for you.
           </p>

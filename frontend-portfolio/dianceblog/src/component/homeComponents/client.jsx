@@ -1,15 +1,15 @@
 import clientImage from "../../images/client-logo-img/client-laura.jpg";
+import Headers from "./header";
 import Logos from "./logos";
 
 const Clients = () => {
- 
   return (
     <div className="w-full h-full mt-12">
       <div className="flex justify-center text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Our Vision
-          </h2>
-         </div>
+        <h1 className="text-4xl text-center lg:text-7xl font-extrabold">
+          <Headers title={"Our Vision"} />
+        </h1>
+      </div>
       {/* Client Testimonial Section large screen */}
       <div className="w-full hidden lg:grid  lg:grid-cols-2 gap-8 items-center p-6 lg:p-12">
         {/* Client Image */}
@@ -50,8 +50,8 @@ const Clients = () => {
         </div>
       </div>
 
-       {/* Client Testimonial Section small screen */}
-       <div className="w-full lg:hidden grid lg:grid-cols-2 gap-8 items-center p-6 lg:p-12">
+      {/* Client Testimonial Section small screen */}
+      <div className="w-full lg:hidden grid lg:grid-cols-2 gap-8 items-center p-6 lg:p-12">
         {/* Client Description */}
         <div className="card-one w-full h-full rounded-xl flex items-center justify-center text-center p-6">
           <p className="text-base lg:text-lg">
@@ -80,16 +80,16 @@ const Clients = () => {
           </p>
         </div>
 
-         {/* Client Image */}
-         <div className="client-image w-full">
+        {/* Client Image */}
+        <div className="client-image w-full">
           <img
             src={clientImage}
             alt="Client"
             className="w-full h-auto mx-auto object-contain rounded-3xl shadow-xl"
           />
         </div>
-      </div> 
-     <Logos/>
+      </div>
+      <Logos />
     </div>
   );
 };
