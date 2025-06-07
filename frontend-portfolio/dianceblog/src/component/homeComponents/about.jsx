@@ -15,7 +15,7 @@ const About = () => {
           </div>
 
           {/* Intro paragraph */}
-          <div className="max-w-4xl mx-auto px-4 text-white dark:bg-black dark:text-white">
+          <div className="max-w-4xl mx-auto px-4">
             <p className="text-lg md:text-xl lg:text-2xl text-center leading-relaxed">
               Diance-Blog is more than just a blog — it's a platform built to
               turn aspiring bloggers’ dreams into reality. We are passionate
