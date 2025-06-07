@@ -24,7 +24,7 @@ const Services = () => {
   {/* Services Cards */}
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4 lg:p-12">
     {/* Card 1 */}
-    <div className="card-one w-full text-center p-8 border border-black rounded-2xl shadow-xl">
+    <div className="card-one w-full text-center p-8 border rounded-2xl shadow-xl">
       <img
         src={cardOne}
         alt="Grow Audience"
@@ -37,7 +37,7 @@ const Services = () => {
     </div>
 
     {/* Card 2 */}
-    <div className="card-one w-full text-center p-8 border border-black rounded-2xl shadow-xl">
+    <div className="card-one w-full text-center p-8 border rounded-2xl shadow-xl">
       <img
         src={cardTwo}
         alt="Social Media Analytics"
@@ -50,7 +50,7 @@ const Services = () => {
     </div>
 
     {/* Card 3 */}
-    <div className="card-one w-full text-center p-8 border border-black rounded-2xl shadow-xl">
+    <div className="card-one w-full text-center p-8 border rounded-2xl shadow-xl">
       <img
         src={cardThree}
         alt="Blog Growth"
@@ -63,7 +63,7 @@ const Services = () => {
     </div>
 
     {/* Card 4 */}
-    <div className="card-one w-full text-center p-8 border border-black rounded-2xl shadow-xl">
+    <div className="card-one w-full text-center p-8 border rounded-2xl shadow-xl">
       <img
         src={cardFour}
         alt="Content Strategy"

@@ -3,7 +3,7 @@ import Headers from './header';
 
 const PricingSection = () => {
   return (
-    <section className="bg-white dark:bg-[#0b1727] py-16 md:py-24">
+    <section className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 max-w-xl mx-auto">
           <h1 className="text-4xl text-center lg:text-7xl font-extrabold  p-2 mb-2">

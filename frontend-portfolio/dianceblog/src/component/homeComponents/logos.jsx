@@ -16,9 +16,9 @@ const Logos = () => {
   const firstLogos = [logo1, logo2, logo3, logo4, logo5, logo6];
   const secondLogos = [logo7, logo8, logo9, logo10, logo11, logo12];
   return (
-    <div className="logo w-full h-full bg-white mt-4">
+    <div className="logo w-full h-full mt-4 bg-white text-black">
       <div className="flex justify-center text-center">
-        <h1 className="text-4xl text-center lg:text-7xl font-extrabold mb-5">
+        <h1 className="text-4xl text-black text-center lg:text-7xl font-extrabold mb-5">
           <Headers title={"Our Sponsors & Partner"} />
         </h1>
       </div>

@@ -2,6 +2,7 @@ import authorOne from "../../images/authors-img/a-1.jpg";
 import authorTwo from "../../images/authors-img/a-2.jpg";
 import authorThree from "../../images/authors-img/a-3.jpg";
 import authorFour from "../../images/authors-img/a-4.jpg";
+import Headers from "./header";
 import Team from "./team";
 const About = () => {
   return (
@@ -10,12 +11,12 @@ const About = () => {
         <div className="w-full max-w-4xl flex flex-col gap-6">
           {/* Title */}
           <div className="text-center">
-            <h1 className="text-xl md:text-2xl lg:text-4xl font-extrabold ">About Diance-Blog</h1>
+            <h1 className="text-xl md:text-2xl lg:text-4xl font-extrabold  mb-2"><Headers title={"About Diance-Blog "}/></h1>
           </div>
 
           {/* Intro paragraph */}
-          <div className="max-w-4xl mx-auto px-4">
-            <p className="text-lg md:text-xl lg:text-2xl text-center text-gray-800 leading-relaxed">
+          <div className="max-w-4xl mx-auto px-4 text-white dark:bg-black dark:text-white">
+            <p className="text-lg md:text-xl lg:text-2xl text-center leading-relaxed">
               Diance-Blog is more than just a blog — it's a platform built to
               turn aspiring bloggers’ dreams into reality. We are passionate
               about empowering individuals with the tools, inspiration, and
@@ -31,10 +32,10 @@ const About = () => {
           {/* Mission Section */}
           <div className="text-center mt-6">
             <div className="max-w-4xl mx-auto px-4">
-              <h2 className="text-xl md:text-2xl lg:text-3xl mb-4 font-extrabold text-center text-gray-900">
-                Our Mission
+              <h2 className="text-xl md:text-2xl lg:text-3xl mb-4 font-extrabold text-center ">
+                <Headers title={" Our Mission"}/>
               </h2>
-              <p className="text-base md:text-lg lg:text-xl text-gray-800 leading-relaxed text-center">
+              <p className="text-base md:text-lg lg:text-xl leading-relaxed text-center">
                 At Diance-Blog, our vision is to inspire and elevate the next
                 generation of bloggers. We believe that anyone with a story or
                 expertise deserves a platform—and we’re here to help make that

@@ -1,11 +1,13 @@
+import Headers from "./header";
+
 const Team = () => {
   return (
-    <section class="ezy__team3 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+    <section class="ezy__team3 py-14 md:py-24">
       <div class="container px-4 mx-auto">
         <div class="flex justify-center mb-6 md:mb-12">
           <div class="sm:max-w-md text-center">
-            <h2 class="text-3xl leading-none font-bold md:text-[45px] mb-4">
-              Meet Our Expert Team
+            <h2 class="text-3xl  font-bold md:text-[45px] mb-4">
+              <Headers title={"Meet Our Expert Team"}/>
             </h2>
             <p className="text-lg p-5">
               Behind every impactful blog is a dedicated team of writers,
