@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaSun, FaMoon } from 'react-icons/fa';
+import { Link } from 'react-router';
+import TrendingNews from '../NewsPages/Trends';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 px-4 py-3 shadow-md flex items-center justify-between transition duration-300 ${darkMode ? 'bg-black text-white' : 'bg-white text-gray-800'}`}>
       {/* Brand */}
-      <div className="text-2xl font-bold">Diance-Blog</div>
+     <Link to={'/'}><div className="text-2xl font-bold">Diance-Blog</div></Link> 
 
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center space-x-6">
@@ -40,7 +42,7 @@ const Navbar = () => {
             </div>
           )}
         </div>
-        <a href="#trends" className="hover:underline">Latest Trends</a>
+       <Link to="/trends" ><div className="hover:underline"> Latest Trends</div></Link>
         <button
           onClick={() => setDarkMode(!darkMode)}
           className="p-2 text-xl transition"

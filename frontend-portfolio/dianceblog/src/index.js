@@ -6,14 +6,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import MainLayout from './Layout/mainLayout';
-import Home from './component/homeComponents/Home';
+import Home from './HomePages/Home';
+import TrendingNews from './NewsPages/Trends';
 
 
 const router = createBrowserRouter([
   {
     element: <MainLayout/>, // shared layout or App shell
     children: [
-      { path: "", element: <Home /> },
+      { path: "/", element: <Home /> },
+      { path: "/trends", element: <TrendingNews/> },
       // other routes...
     ],
   },

@@ -1,4 +1,4 @@
-import clientImage from "../../images/client-logo-img/client-laura.jpg";
+import clientImage from "../images/client-logo-img/client-laura.jpg";
 import Headers from "./header";
 import Logos from "./logos";
 

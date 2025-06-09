@@ -1,7 +1,7 @@
-import cardOne from "../../images/social-audience.jpg"
-import cardTwo from "../../images/analytic.jpg"
-import cardThree from "../../images/scratch.jpg"
-import cardFour from "../../images/strategy.jpg"
+import cardOne from "../images/social-audience.jpg"
+import cardTwo from "../images/analytic.jpg"
+import cardThree from "../images/scratch.jpg"
+import cardFour from "../images/strategy.jpg"
 import Headers from "./header"
 
 const Services = () => {
