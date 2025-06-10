@@ -3,7 +3,7 @@ import TrendsHero from "./TrendsHero";
 
 const TrendingNews = () => {
     return ( 
-        <div className="mt-4 w-full h-screen ">
+        <div className="w-full h-full">
         <TrendsHero/>
         </div>
      );
