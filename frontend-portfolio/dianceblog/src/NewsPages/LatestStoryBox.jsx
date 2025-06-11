@@ -2,7 +2,7 @@ const Latest = ({head,body,viewMore,bgColor}) => {
  
     return ( 
         <div className="w-full">
-               <div className={`box bg-${bgColor}-900 w-full h-80 shadow-lg rounded-lg mt-12`}>
+               <div className={`box ${bgColor} w-full h-80 shadow-lg rounded-lg mt-12`}>
                   <div className="head text-xl font-bold text-left p-5">
                     {/* <p>latest</p> */}
                     {head}

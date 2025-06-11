@@ -9,7 +9,7 @@ const BlogCols = () => {
       <Border />
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mt-4">
         <div className="first-grid">
-          <Latest head={"latest"} body={"Inspiration from leaders and Communities around the world "} viewMore={"View All Stories"} bgColor={'red'}/>
+          <Latest head={"latest"} body={"Inspiration from leaders and Communities around the world "} viewMore={"View All Stories"} bgColor='bg-blue-900' />
         </div>
 
         <div className="second-grid flex justify-center gap-3">
@@ -191,14 +191,14 @@ const BlogCols = () => {
       <Border />
       <div className="grid grid-cols-2 gap-3 mt-4">
         <div className="first-grid">
-        <Latest head={"latest"} body={"Inspiration from leaders and Communities around the world "} viewMore={"View All Stories"}/>
+        <Latest head={"latest"} body={"Inspiration from leaders and Communities around the world "} viewMore={"View All Stories"} bgColor='bg-red-900' />
         </div>
 
         <div className="second-grid flex justify-center gap-3">
           <div className="divider w-1 h-full bg-slate-800"></div>
           <div className="grid place-content-center">
             <div className="latest-col">
-            <Latest head={"latest"} body={"Inspiration from leaders and Communities around the world "} viewMore={"View All Stories"}/>
+            <Latest head={"latest"} body={"Inspiration from leaders and Communities around the world "} viewMore={"View All Stories"} bgColor='bg-green-900' />
               <p className="mt-2">
                 We’re building a world-class museum and public gathering space
                 on the South Side of Chicago, where people from across the
@@ -294,14 +294,14 @@ const BlogCols = () => {
       <Border />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-4">
         <div className="first-grid hidden lg:block">
-        <Latest head={"latest"} body={"Inspiration from leaders and Communities around the world "} viewMore={"View All Stories"}/>
+        <Latest head={"latest"} body={"Inspiration from leaders and Communities around the world "} viewMore={"View All Stories"} bgColor='bg-yellow-900'/>
         </div>
 
         <div className="second-grid flex justify-center gap-3">
           <div className="divider w-1 h-full bg-slate-800"></div>
           <div className="grid place-content-center">
             <div className="latest-col">
-            <Latest head={"latest"} body={"Inspiration from leaders and Communities around the world "} viewMore={"View All Stories"}/>
+            <Latest head={"latest"} body={"Inspiration from leaders and Communities around the world "} viewMore={"View All Stories"}  bgColor='bg-pink-900'/>
               <p className="mt-2">
                 We’re building a world-class museum and public gathering space
                 on the South Side of Chicago, where people from across the
