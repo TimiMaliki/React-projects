@@ -1,7 +1,7 @@
 import Headers from "../HomePages/header";
 import HeroImg from "../images/Trends/t1.jpg";
 import BlogCols from "./BlogCols";
-import Border from "./Border";
+
 
 const TrendsHero = () => {
   return (
@@ -24,9 +24,9 @@ const TrendsHero = () => {
           className="w-full h-full sm:h-80 md:h-96 lg:h-[700px] object-cover rounded-xl"
         />
       </div>
-      <Border />
+  
       <BlogCols />
-      <Border />
+ 
     </div>
   );
 };
