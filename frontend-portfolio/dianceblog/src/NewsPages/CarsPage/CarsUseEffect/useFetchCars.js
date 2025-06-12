@@ -1,21 +1,20 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
- 
- const useFetchCars = () => {
-    const [data,setData] = useState(null)
+const useFetchCars = (url) => {
+  const [data, setData] = useState(null);
 
-    useEffect((url)=> {
-        fetch(url)
-        .then((res)=>{
-             return res.json()
-           
-        })
-        .then((data)=>{
-              setData(data)
-        })
-    },[])
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data);
+      })
+      .catch((error) => {
+        console.error("Fetch error:", error);
+      });
+  }, [url]);
 
-    return {data}
- }
+  return { data };
+};
 
- export default useFetchCars;
+export default useFetchCars;
