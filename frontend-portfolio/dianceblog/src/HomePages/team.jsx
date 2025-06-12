@@ -2,11 +2,11 @@ import Headers from "./header";
 
 const Team = () => {
   return (
-    <section class="ezy__team3 py-14 md:py-24">
-      <div class="container px-4 mx-auto">
-        <div class="flex justify-center mb-6 md:mb-12">
-          <div class="sm:max-w-md text-center">
-            <h2 class="text-3xl  font-bold md:text-[45px] mb-4">
+    <section className="ezy__team3 py-14 md:py-24">
+      <div className="container px-4 mx-auto">
+        <div className="flex justify-center mb-6 md:mb-12">
+          <div className="sm:max-w-md text-center">
+            <h2 className="text-3xl  font-bold md:text-[45px] mb-4">
               <Headers title={"Meet Our Expert Team"}/>
             </h2>
             <p className="text-lg p-5">
@@ -21,267 +21,267 @@ const Team = () => {
             </p>
           </div>
         </div>
-        <div class="grid grid-cols-6 gap-6">
-          <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-            <div class="mr-4">
+        <div className="grid grid-cols-6 gap-6">
+          <div className="col-span-6 md:col-span-3 lg:col-span-2 flex">
+            <div className="mr-4">
               <img
                 src="https://cdn.easyfrontend.com/pictures/users/user28.jpg"
                 alt=""
-                class="max-w-full h-auto rounded"
+                className="max-w-full h-auto rounded"
                 width="120"
               />
             </div>
-            <div class="ezy__team3-content">
-              <h4 class="text-2xl font-medium mb-2">Timi Maliki</h4>
-              <h6 class="font-medium">Founder / CEO</h6>
-              <p class="opacity-50 mb-0">
+            <div className="ezy__team3-content">
+              <h4 className="text-2xl font-medium mb-2">Timi Maliki</h4>
+              <h6 className="font-medium">Founder / CEO</h6>
+              <p className="opacity-50 mb-0">
                 Our Founder and CEO is a visionary content strategist.
               </p>
 
-              <div class="mt-6">
+              <div className="mt-6">
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-facebook-f"></span>
+                  <span className="fab fa-facebook-f"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-linkedin-in"></span>
+                  <span className="fab fa-linkedin-in"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-twitter"></span>
+                  <span className="fab fa-twitter"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
                 >
-                  <span class="fab fa-behance"></span>
+                  <span className="fab fa-behance"></span>
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-            <div class="mr-4">
+          <div className="col-span-6 md:col-span-3 lg:col-span-2 flex">
+            <div className="mr-4">
               <img
                 src="https://cdn.easyfrontend.com/pictures/users/user8.jpg"
                 alt=""
-                class="max-w-full h-auto rounded"
+                className="max-w-full h-auto rounded"
                 width="120"
               />
             </div>
-            <div class="ezy__team3-content">
-              <h4 class="text-2xl font-medium mb-2">Raima Ray</h4>
-              <h6 class="font-medium">Business Head</h6>
-              <p class="opacity-50 mb-0">
+            <div className="ezy__team3-content">
+              <h4 className="text-2xl font-medium mb-2">Raima Ray</h4>
+              <h6 className="font-medium">Business Head</h6>
+              <p className="opacity-50 mb-0">
                 Raima leads our business strategy with deep industry insight.
               </p>
 
-              <div class="mt-6">
+              <div className="mt-6">
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-facebook-f"></span>
+                  <span className="fab fa-facebook-f"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-linkedin-in"></span>
+                  <span className="fab fa-linkedin-in"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-twitter"></span>
+                  <span className="fab fa-twitter"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
                 >
-                  <span class="fab fa-behance"></span>
+                  <span className="fab fa-behance"></span>
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-            <div class="mr-4">
+          <div className="col-span-6 md:col-span-3 lg:col-span-2 flex">
+            <div className="mr-4">
               <img
                 src="https://cdn.easyfrontend.com/pictures/users/user27.jpg"
                 alt=""
-                class="max-w-full h-auto rounded"
+                className="max-w-full h-auto rounded"
                 width="120"
               />
             </div>
-            <div class="ezy__team3-content">
-              <h4 class="text-2xl font-medium mb-2">Arjun Kapur</h4>
-              <h6 class="font-medium">UI Design</h6>
-              <p class="opacity-50 mb-0">
+            <div className="ezy__team3-content">
+              <h4 className="text-2xl font-medium mb-2">Arjun Kapur</h4>
+              <h6 className="font-medium">UI Design</h6>
+              <p className="opacity-50 mb-0">
                 Arjun crafts intuitive and visually engaging interfaces.
               </p>
 
-              <div class="mt-6">
+              <div className="mt-6">
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-facebook-f"></span>
+                  <span className="fab fa-facebook-f"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-linkedin-in"></span>
+                  <span className="fab fa-linkedin-in"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-twitter"></span>
+                  <span className="fab fa-twitter"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
                 >
-                  <span class="fab fa-behance"></span>
+                  <span className="fab fa-behance"></span>
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-            <div class="mr-4">
+          <div className="col-span-6 md:col-span-3 lg:col-span-2 flex">
+            <div className="mr-4">
               <img
                 src="https://cdn.easyfrontend.com/pictures/users/user15.jpg"
                 alt=""
-                class="max-w-full h-auto rounded"
+                className="max-w-full h-auto rounded"
                 width="120"
               />
             </div>
-            <div class="ezy__team3-content">
-              <h4 class="text-2xl font-medium mb-2">Alia Bhatt</h4>
-              <h6 class="font-medium">Marketing Head</h6>
-              <p class="opacity-50 mb-0">
+            <div className="ezy__team3-content">
+              <h4 className="text-2xl font-medium mb-2">Alia Bhatt</h4>
+              <h6 className="font-medium">Marketing Head</h6>
+              <p className="opacity-50 mb-0">
                 Alia drives our content marketing strategies.
               </p>
 
-              <div class="mt-6">
+              <div className="mt-6">
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-facebook-f"></span>
+                  <span className="fab fa-facebook-f"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-linkedin-in"></span>
+                  <span className="fab fa-linkedin-in"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-twitter"></span>
+                  <span className="fab fa-twitter"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
                 >
-                  <span class="fab fa-behance"></span>
+                  <span className="fab fa-behance"></span>
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-            <div class="mr-4">
+          <div className="col-span-6 md:col-span-3 lg:col-span-2 flex">
+            <div className="mr-4">
               <img
                 src="https://cdn.easyfrontend.com/pictures/users/user26.jpg"
                 alt=""
-                class="max-w-full h-auto rounded"
+                className="max-w-full h-auto rounded"
                 width="120"
               />
             </div>
-            <div class="ezy__team3-content">
-              <h4 class="text-2xl font-medium mb-2">Carl Paxton</h4>
-              <h6 class="font-medium">Marketing</h6>
-              <p class="opacity-50 mb-0">
+            <div className="ezy__team3-content">
+              <h4 className="text-2xl font-medium mb-2">Carl Paxton</h4>
+              <h6 className="font-medium">Marketing</h6>
+              <p className="opacity-50 mb-0">
                 Carl focuses on campaign execution and audience engagement.
               </p>
 
-              <div class="mt-6">
+              <div className="mt-6">
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-facebook-f"></span>
+                  <span className="fab fa-facebook-f"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-linkedin-in"></span>
+                  <span className="fab fa-linkedin-in"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-twitter"></span>
+                  <span className="fab fa-twitter"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
                 >
-                  <span class="fab fa-behance"></span>
+                  <span className="fab fa-behance"></span>
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-span-6 md:col-span-3 lg:col-span-2 flex">
-            <div class="mr-4">
+          <div className="col-span-6 md:col-span-3 lg:col-span-2 flex">
+            <div className="mr-4">
               <img
                 src="https://cdn.easyfrontend.com/pictures/users/user10.jpg"
                 alt=""
-                class="max-w-full h-auto rounded"
+                className="max-w-full h-auto rounded"
                 width="120"
               />
             </div>
-            <div class="ezy__team3-content">
-              <h4 class="text-2xl font-medium mb-2">Lisa Bain</h4>
-              <h6 class="font-medium">Marketing</h6>
-              <p class="opacity-50 mb-0">
+            <div className="ezy__team3-content">
+              <h4 className="text-2xl font-medium mb-2">Lisa Bain</h4>
+              <h6 className="font-medium">Marketing</h6>
+              <p className="opacity-50 mb-0">
                 Lisa specializes in content promotion and analytics.
               </p>
 
-              <div class="mt-6">
+              <div className="mt-6">
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-facebook-f"></span>
+                  <span className="fab fa-facebook-f"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-linkedin-in"></span>
+                  <span className="fab fa-linkedin-in"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
-                  <span class="fab fa-twitter"></span>
+                  <span className="fab fa-twitter"></span>
                 </a>
                 <a
                   href="#"
-                  class="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
+                  className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
                 >
-                  <span class="fab fa-behance"></span>
+                  <span className="fab fa-behance"></span>
                 </a>
               </div>
             </div>
