@@ -15,7 +15,7 @@ const BlogCols = () => {
         <div className="first-grid">
           <Latest
             head={"latest"}
-            body={"Exploring the Edge of Business and Technology"}
+            body={`"Diving Into the Future: Where Business Innovation Meets Cutting-Edge Technology"`}
             viewMore={"View All Stories"}
             bgColor="bg-blue-500"
           />
@@ -37,7 +37,7 @@ const BlogCols = () => {
         <div className="first-grid">
           <Latest
             head={"latest"}
-            body={"Inspiration from leaders and Communities around the world "}
+            body={`"Catch up on what’s making waves across the U.S. — from breaking news to trending stories, all in one place."`}
             viewMore={"View All Stories"}
             bgColor="bg-yellow-500"
           />
