@@ -1,23 +1,10 @@
-import { useEffect, useState } from "react";
-import hero from "../images/strategy.jpg"
+import hero from "../../../images/scratch.jpg"
+import useBussinessFetch from "../BussinessUsefetch/useBusfetch";
 
 const DataTwo = () => {
-  const [data, setData] = useState(null);
-  useEffect(() => {
-    fetch(
-      "https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=d2257e24d6d14ed49332a15d9b59e7be"
-    )
-      .then((res) => {
-        return res.json()
-      })
-      .then((data) => {
-        setData(data);
-      });
-  }, []);
+ const {data} = useBussinessFetch("https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=d2257e24d6d14ed49332a15d9b59e7be")
   return (
-    <div className="third-grid flex justify-center gap-3">
-      <div className="divider w-1 h-full bg-slate-800"></div>
-
+    <div className="">
       <div className="grid place-content-center">
         {data &&
           data.articles &&data.articles.map((blog, index) => (
@@ -31,7 +18,7 @@ const DataTwo = () => {
                       alt="Blog"
                       className="h-auto w-full rounded-lg shadow-lg dark:shadow-none"
                     />
-                    <div className="absolute bottom-2 left-2 text-lg leading-6  px-3 py-2 lg:px-6 lg:py-3 font-black bg-white opacity-80 rounded-lg">
+                    <div className="absolute bottom-2 left-2 text-lg leading-6  px-3 py-2 lg:px-6 lg:py-3 font-black bg-slate-500 opacity-80 rounded-lg">
                       {blog.publishedAt}
                     </div>
                   </div>

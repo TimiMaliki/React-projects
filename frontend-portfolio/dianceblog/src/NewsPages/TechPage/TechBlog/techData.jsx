@@ -1,8 +1,13 @@
-const Data = ({data}) => {
+import useTechFetch from "../TechUseEffect/useTechFetch";
 
+const Data = () => {
+  const { data } = useTechFetch(
+    "https://newsapi.org/v2/top-headlines?sources=techcrunch&pageSize=4&apiKey=d2257e24d6d14ed49332a15d9b59e7be"
+  );
+  
     return (
         <div className="grid place-content-center">
-         {data.articles.map((blog, index) => (
+         {data && data.articles.map((blog, index) => (
           <div className="" key={index}>
           <div className="card-one">
             <div className="col-span-6 md:col-span-3 lg:col-span-2 mb-3 mt-12">
@@ -13,7 +18,7 @@ const Data = ({data}) => {
                     alt="Blog"
                     className="h-auto w-full rounded-lg shadow-lg dark:shadow-none"
                   />
-                  <div className="absolute bottom-2 left-2 text-lg leading-6  px-3 py-2 lg:px-6 lg:py-3 font-black bg-white opacity-80 rounded-lg">
+                  <div className="absolute bottom-2 left-2 text-lg leading-6  px-3 py-2 lg:px-6 lg:py-3 font-black bg-slate-500 opacity-80 rounded-lg">
                   {blog.publishedAt}
                   </div>
                 </div>
