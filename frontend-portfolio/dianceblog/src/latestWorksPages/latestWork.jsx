@@ -25,14 +25,14 @@ const LatestWorks = () => {
       ];
       
     return (      
-              <section className="ezy__portfolio16 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+              <section className="ezy__portfolio16  py-14 md:py-24 ">
                 <div className="container px-4 mx-auto">
                   <div className="flex justify-between items-center max-w-7xl mx-auto">
                     <div className="w-2/3">
                       <h2 className="text-3xl md:text-[52px] font-bold">Our Recent Work</h2>
                     </div>
                     <div className="w-1/3 text-end">
-                      <button className="font-bold bg-blue-600 text-white px-8 py-3 hover:bg-opacity-90 duration-300 rounded">
+                      <button className="font-bold bg-blue-600 e px-8 py-3 hover:bg-opacity-90 duration-300 rounded">
                         See All
                       </button>
                     </div>
@@ -68,7 +68,7 @@ const LatestWorks = () => {
                               {project.description}
                             </p>
                             <div>
-                              <button className="font-bold bg-blue-600 text-white px-8 py-3 hover:bg-opacity-90 duration-300 rounded inline-flex">
+                              <button className="font-bold bg-blue-600 px-8 py-3 hover:bg-opacity-90 duration-300 rounded inline-flex">
                                 View Project
                               </button>
                             </div>
