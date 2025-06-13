@@ -25,9 +25,9 @@ const DataTwo = () => {
                   <div className="p-3">
                     <p className="font-light text-sm leading-6 mb-2">
                       By {blog.author}
-                      <a href="#" className="text-blue-600">
-                        {blog.title}
-                      </a>
+                      <div className="text-blue-600">
+                   {blog.title}
+                   </div>
                     </p>
                     <h4 className="font-medium text-2xl mb-6">
                       {blog.description}
