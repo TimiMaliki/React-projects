@@ -57,12 +57,9 @@ const Navbar = () => {
                 How It works
               </a>
               <Link to="/recents">
-                <a
-                  href=""
-                  className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800"
-                >
-                  Recents works
-                </a>
+                <div className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800">
+                Recents works
+                </div>
               </Link>
             </div>
           )}
