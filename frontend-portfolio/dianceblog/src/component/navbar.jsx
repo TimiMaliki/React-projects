@@ -117,7 +117,7 @@ const Navbar = () => {
               <div className="ml-4 mt-1 flex flex-col gap-1">
                 <div  className="block px-4 py-2 text-sm ">How It works</div>
                 <Link to="/recents">
-                 
+                Recents works
                 </Link>
               </div>
             )}
