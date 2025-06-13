@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <MainLayout/>, // shared layout or App shell
     children: [
       { path: "/", element: <Home /> },
-      { path: "/trends", element: <TrendingNews/> },
+      { path: "/blogs", element: <TrendingNews/> },
       // other routes...
     ],
   },

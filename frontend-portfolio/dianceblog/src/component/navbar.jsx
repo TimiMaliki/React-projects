@@ -42,7 +42,7 @@ const Navbar = () => {
             </div>
           )}
         </div>
-       <Link to="/trends" ><div className="hover:underline">Blog</div></Link>
+       <Link to="/blogs" ><div className="hover:underline">Blog</div></Link>
         <button
           onClick={() => setDarkMode(!darkMode)}
           className="p-2 text-xl transition"
@@ -86,9 +86,9 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <a href="#shop" className="hover:underline">Blog</a>
+          <Link to="/blogs" ><div className="hover:underline">Blog</div></Link>
           <a
-            href="#sign-in"
+            href="#"
             className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition"
           >
             Sign In
