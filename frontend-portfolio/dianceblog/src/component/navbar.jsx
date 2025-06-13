@@ -115,14 +115,9 @@ const Navbar = () => {
             </button>
             {dropdownOpen && (
               <div className="ml-4 mt-1 flex flex-col gap-1">
-                <a
-                  href=""
-                  className="block px-4 py-2 text-sm "
-                >
-                  How It works
-                </a>
+                <div  className="block px-4 py-2 text-sm ">How It works</div>
                 <Link to="/recents">
-                  <div  className="block px-4 py-2 text-sm ">  Recents works</div>
+                 
                 </Link>
               </div>
             )}
