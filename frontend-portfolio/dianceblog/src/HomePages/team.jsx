@@ -39,30 +39,26 @@ const Team = () => {
               </p>
 
               <div className="mt-6">
-                <a
-                  href="#"
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-facebook-f"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-linkedin-in"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-twitter"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
                 >
                   <span className="fab fa-behance"></span>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -83,30 +79,26 @@ const Team = () => {
               </p>
 
               <div className="mt-6">
-                <a
-                  href="#"
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-facebook-f"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-linkedin-in"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-twitter"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
                 >
                   <span className="fab fa-behance"></span>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -127,30 +119,26 @@ const Team = () => {
               </p>
 
               <div className="mt-6">
-                <a
-                  href="#"
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-facebook-f"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-linkedin-in"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-twitter"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
                 >
                   <span className="fab fa-behance"></span>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -171,30 +159,26 @@ const Team = () => {
               </p>
 
               <div className="mt-6">
-                <a
-                  href="#"
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-facebook-f"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-linkedin-in"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-twitter"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
                 >
                   <span className="fab fa-behance"></span>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -215,30 +199,26 @@ const Team = () => {
               </p>
 
               <div className="mt-6">
-                <a
-                  href="#"
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-facebook-f"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-linkedin-in"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-twitter"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
                 >
                   <span className="fab fa-behance"></span>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -259,30 +239,26 @@ const Team = () => {
               </p>
 
               <div className="mt-6">
-                <a
-                  href="#"
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-facebook-f"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-linkedin-in"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                 >
                   <span className="fab fa-twitter"></span>
-                </a>
-                <a
-                  href="#"
+                </div>
+                <div
                   className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100"
                 >
                   <span className="fab fa-behance"></span>
-                </a>
+                </div>
               </div>
             </div>
           </div>
