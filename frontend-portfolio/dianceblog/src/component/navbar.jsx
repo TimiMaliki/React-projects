@@ -122,12 +122,7 @@ const Navbar = () => {
                   How It works
                 </a>
                 <Link to="/recents">
-                  <a
-                    href=""
-                    className="block px-4 py-2 text-sm "
-                  >
-                    Recents works
-                  </a>
+                  <div  className="block px-4 py-2 text-sm ">  Recents works</div>
                 </Link>
               </div>
             )}
