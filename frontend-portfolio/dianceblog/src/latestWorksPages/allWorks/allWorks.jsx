@@ -104,7 +104,7 @@ const AllWorks = () => {
               <div className="nav-link">Recents works</div>
             </li>
             <li className="px-4 py-2 hover:border-b-2 hover:border-blue-600 transition duration-300 opacity-80">
-              <div className="nav-link">Old wokrs</div>
+              <div className="nav-link">Old works</div>
             </li>
           </ul>
         </div>
