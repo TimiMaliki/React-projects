@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import { Link } from 'react-router';
-import TrendingNews from '../NewsPages/Trends';
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,7 +42,7 @@ const Navbar = () => {
             </div>
           )}
         </div>
-       <Link to="/trends" ><div className="hover:underline"> Latest Trends</div></Link>
+       <Link to="/trends" ><div className="hover:underline">Blog</div></Link>
         <button
           onClick={() => setDarkMode(!darkMode)}
           className="p-2 text-xl transition"
@@ -86,7 +86,7 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <a href="#shop" className="hover:underline">Latest Trends</a>
+          <a href="#shop" className="hover:underline">Blog</a>
           <a
             href="#sign-in"
             className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition"

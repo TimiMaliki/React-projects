@@ -12,7 +12,7 @@ const BlogCols = () => {
   return (
     <div className="w-full mt-4">
       <Border />
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mt-4">
+      <div className="tech-blog first-grid grid grid-cols-1 lg:grid-cols-3 gap-3 mt-4">
         <div className="first-grid">
           <Latest
             head={"latest"}
@@ -22,20 +22,20 @@ const BlogCols = () => {
           />
         </div>
 
-        <div className="tech-blog second-grid flex justify-center gap-3 business">
+        <div className="flex justify-center gap-3 business">
           <div className="divider w-1 h-full bg-slate-800"></div>
           <div><Data/></div>
         </div>
 
-        <div className="bussiness third-grid flex justify-center gap-3">
+        <div className="bussiness first-grid flex justify-center gap-3">
         <div className="divider w-1 h-full bg-slate-800"></div>
         <div><DataTwo/></div>         
         </div>
       </div>
 
       <Border />
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-4">
-        <div className="first-grid">
+      <div className="second-grid grid grid-cols-1 lg:grid-cols-2 gap-3 mt-4">
+        <div className="">
           <Latest
             head={"latest"}
             body={`"Catch up on what’s making waves across the U.S. — from breaking news to trending stories, all in one place."`}
@@ -50,8 +50,8 @@ const BlogCols = () => {
         </div>
       </div>
       <Border />
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-4">
-        <div className="first-grid hidden lg:block">
+      <div className="third-grid grid grid-cols-1 lg:grid-cols-2 gap-3 mt-4">
+        <div className="hidden lg:block">
           <Latest
             head={"latest"}
             body={"Covering Finance and Markets Worldwide — Stay Informed, Wherever You Are"}
@@ -60,7 +60,7 @@ const BlogCols = () => {
           />
         </div>
 
-        <div className="second-grid flex justify-center gap-3">
+        <div className="fourth-grid flex justify-center gap-3">
           <div className="divider w-1 h-full bg-slate-800"></div>
         <AppleBlog/>
         </div>

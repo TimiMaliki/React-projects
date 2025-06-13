@@ -1,4 +1,5 @@
 import useFetchCars from "../CarsUseEffect/useFetchCars";
+import NoImg from "../../../images/no_Img/noImg.jpg"
 
 const CarsData = () => {
   const { data } = useFetchCars(
@@ -15,7 +16,7 @@ const CarsData = () => {
                 <article className="rounded-lg">
                   <div className="relative">
                     <img
-                      src={blog.image_url}
+                      src={blog.image_url || NoImg}
                       alt="Blog"
                       className="h-auto w-full rounded-lg shadow-lg dark:shadow-none"
                     />

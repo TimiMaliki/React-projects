@@ -1,3 +1,5 @@
+import { FaArrowRight } from "react-icons/fa";
+
 const Latest = ({head,body,viewMore,bgColor}) => {
  
     return ( 
@@ -14,9 +16,10 @@ const Latest = ({head,body,viewMore,bgColor}) => {
                         {body}
                      </h2>
                   </div>
-                  <div className="viewMore  font-semibold text-left p-5">
+                  <div className="viewMore  font-semibold text-left p-5 flex gap-5 cursor-pointer">
                     {/* <p>View All Stories</p> */}
-                    {viewMore}
+                    {viewMore} 
+                    <div className="mt-1 cursor-pointer"> <FaArrowRight/></div>
                   </div>
                </div>
         </div>

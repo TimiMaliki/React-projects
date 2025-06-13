@@ -1,5 +1,5 @@
-import hero from "../../../images/scratch.jpg"
 import useBussinessFetch from "../BussinessUsefetch/useBusfetch";
+import NoImg from "../../../images/no_Img/noImg.jpg"
 
 const DataTwo = () => {
  const {data} = useBussinessFetch("https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=d2257e24d6d14ed49332a15d9b59e7be")
@@ -14,7 +14,7 @@ const DataTwo = () => {
                 <article className="rounded-lg">
                   <div className="relative">
                     <img
-                      src={blog.urlToImage || hero}
+                      src={blog.urlToImage || NoImg}
                       alt="Blog"
                       className="h-auto w-full rounded-lg shadow-lg dark:shadow-none"
                     />

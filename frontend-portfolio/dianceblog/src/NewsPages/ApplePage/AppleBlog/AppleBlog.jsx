@@ -1,4 +1,5 @@
 import useFetchAPI from "../AppleUsefetch/useFetchAPI";
+import NoImg from "../../../images/no_Img/noImg.jpg"
 
 const AppleBlog = () => {
     const {data} = useFetchAPI("https://api.marketaux.com/v1/news/all?limit=4&api_token=ezKXBl1EusNWsCr41LKde59CMVjkXHcs6TJX9mNo")
@@ -12,7 +13,7 @@ const AppleBlog = () => {
                 <article className="rounded-lg">
                   <div className="relative">
                     <img
-                      src={blog.image_url}
+                      src={blog.image_url || NoImg}
                       alt="Blog"
                       className="h-auto w-full rounded-lg shadow-lg dark:shadow-none"
                     />

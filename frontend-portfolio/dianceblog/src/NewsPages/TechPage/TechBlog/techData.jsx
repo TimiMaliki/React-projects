@@ -1,4 +1,5 @@
 import useTechFetch from "../TechUseEffect/useTechFetch";
+import NoImg from "../../../images/no_Img/noImg.jpg"
 
 const Data = () => {
   const { data } = useTechFetch(
@@ -14,7 +15,7 @@ const Data = () => {
               <article className="rounded-lg">
                 <div className="relative">
                   <img
-                    src={blog.urlToImage}
+                    src={blog.urlToImage || NoImg}
                     alt="Blog"
                     className="h-auto w-full rounded-lg shadow-lg dark:shadow-none"
                   />
