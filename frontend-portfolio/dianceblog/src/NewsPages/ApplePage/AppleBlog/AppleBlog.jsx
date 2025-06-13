@@ -6,7 +6,10 @@ const AppleBlog = () => {
   return (
     <div>
        <div className="grid place-content-center">
-      {data&&data.data.map((blog, index) => (
+      {
+      data
+      &&
+      data.data.map((blog, index) => (
           <div className="" key={index}>
             <div className="card-one">
               <div className="col-span-6 md:col-span-3 lg:col-span-2 mb-3 mt-12">

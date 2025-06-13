@@ -7,7 +7,8 @@ const DataTwo = () => {
     <div className="">
       <div className="grid place-content-center">
         {data &&
-          data.articles &&data.articles.map((blog, index) => (
+          data.articles &&
+          data.articles.map((blog, index) => (
           <div className="" key={index}>
             <div className="card-one">
               <div className="col-span-6 md:col-span-3 lg:col-span-2 mb-3 mt-12">
