@@ -9,6 +9,7 @@ import MainLayout from './Layout/mainLayout';
 import Home from './HomePages/Home';
 import TrendingNews from './NewsPages/Trends';
 import LatestWorks from './latestWorksPages/latestWork';
+import AllWorks from './latestWorksPages/allWorks/allWorks';
 
 
 
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/blogs", element: <TrendingNews/> },
       { path: "/recents", element: <LatestWorks/> },
+      { path: "/allworks", element: <AllWorks/> },
       // other routes...
     ],
   },

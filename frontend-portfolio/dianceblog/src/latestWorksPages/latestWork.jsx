@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const LatestWorks = () => {
     const projects = [
         {
@@ -32,9 +34,12 @@ const LatestWorks = () => {
                       <h2 className="text-3xl md:text-[52px] font-bold">Our Recent Work</h2>
                     </div>
                     <div className="w-1/3 text-end">
-                      <button className="font-bold bg-blue-600 e px-8 py-3 hover:bg-opacity-90 duration-300 rounded">
+                        <Link to="/allworks">
+                        <button className="font-bold bg-blue-600 e px-8 py-3 hover:bg-opacity-90 duration-300 rounded">
                         See All
                       </button>
+                        </Link>
+                      
                     </div>
                   </div>
           
