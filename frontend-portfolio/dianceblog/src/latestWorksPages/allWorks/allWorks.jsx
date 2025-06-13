@@ -75,7 +75,7 @@ const AllWorks = () => {
       ];
     
     return ( 
-        <section className="ezy__portfolio12 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+        <section className="ezy__portfolio12  py-14 md:py-24 ">
         <div className="container px-4 mx-auto">
           <div className="flex flex-col items-center text-center">
             <h1 className="text-3xl md:text-[45px] font-bold mb-2">All Works</h1>
@@ -99,10 +99,10 @@ const AllWorks = () => {
             <div className="grid grid-cols-12 gap-6 mt-6">
               {courses.map((course) => (
                 <div key={course.id} className="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3">
-                  <div className="bg-slate-50 dark:bg-slate-800 h-full rounded overflow-hidden">
+                  <div className=" h-full rounded overflow-hidden">
                     <div className="relative">
-                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white flex items-center justify-center w-12 h-12 bg-white bg-opacity-50 rounded-full cursor-pointer">
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-white bg-opacity-20"></div>
+                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2flex items-center justify-center w-12 h-12 bg-opacity-50 rounded-full cursor-pointer">
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-opacity-20"></div>
                         <i className="fas fa-play ml-1"></i>
                       </div>
                       <img src={course.image} className="w-full" alt={course.title} />
@@ -151,14 +151,14 @@ const AllWorks = () => {
                 <ul className="flex flex-wrap gap-3 justify-center mt-12">
                   <li>
                     <a
-                      className="bg-blue-600 text-white hover:bg-opacity-90 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer"
+                      className="bg-blue-600  hover:bg-opacity-90 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer"
                       href="#"
                     >
                       <i className="fas fa-angle-left"></i>
                     </a>
                   </li>
   
-                  <li className="bg-blue-600 text-white hover:bg-opacity-90 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer">
+                  <li className="bg-blue-600  hover:bg-opacity-90 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer">
                     <a className="m-0" href="#">1</a>
                   </li>
                   <li className="border border-gray-300 dark:border-gray-600 hover:border-blue-600 hover:text-white hover:bg-blue-600 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer">
@@ -182,7 +182,7 @@ const AllWorks = () => {
   
                   <li>
                     <a
-                      className="bg-blue-600 text-white hover:bg-opacity-90 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer"
+                      className="bg-blue-600  hover:bg-opacity-90 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer"
                       href="#"
                     >
                       <i className="fas fa-angle-right"></i>
