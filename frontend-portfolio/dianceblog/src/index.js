@@ -8,6 +8,9 @@ import {
 import MainLayout from './Layout/mainLayout';
 import Home from './HomePages/Home';
 import TrendingNews from './NewsPages/Trends';
+import LatestWorks from './latestWorksPages/latestWork';
+
+
 
 
 const router = createBrowserRouter([
@@ -16,6 +19,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/blogs", element: <TrendingNews/> },
+      { path: "/recents", element: <LatestWorks/> },
       // other routes...
     ],
   },
