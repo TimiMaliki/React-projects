@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { data } from "./sideBarData";
 
-const CelebritySideBarOne = () => {
+const FashionSideBarOne = () => {
   const [blog, setBlog] = useState({});
 
   useEffect(() => {
@@ -52,4 +52,4 @@ const CelebritySideBarOne = () => {
   );
 };
 
-export default CelebritySideBarOne;
+export default FashionSideBarOne;
