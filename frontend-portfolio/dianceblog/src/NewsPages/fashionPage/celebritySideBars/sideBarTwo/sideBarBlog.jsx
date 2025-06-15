@@ -23,7 +23,7 @@ const SideBarTwo = () => {
                         alt="Blog"
                         className="h-auto w-full rounded-lg shadow-lg dark:shadow-none"
                       />
-                      <div className="absolute bottom-2 left-2 text-lg leading-6  px-3 py-2 lg:px-6 lg:py-3 font-black  opacity-80 rounded-lg">
+                      <div className="absolute bottom-2 left-2 text-lg leading-6  px-3 py-2 lg:px-6 lg:py-3 font-black bg-white opacity-80 rounded-lg">
                         {blog.publishedAt}
                       </div>
                     </div>
