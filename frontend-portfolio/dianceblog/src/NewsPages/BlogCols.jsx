@@ -1,9 +1,6 @@
 import Border from "./Border";
-import DataTwo from "./BusinessPage/BussinessBlog/bussinessData";
-import CarsData from "./CarsPage/CarsBlog/CarsData";
 import Latest from "./LatestStoryBox";
-import Data from "./TechPage/TechBlog/techData";
-import AppleBlog from "./ApplePage/AppleBlog/AppleBlog";
+
 
 
 
@@ -24,12 +21,12 @@ const BlogCols = () => {
 
         <div className="flex justify-center gap-3 business">
           <div className="divider w-1 h-full bg-slate-800"></div>
-          <div><Data/></div>
+          {/* <div><Data/></div> */}
         </div>
 
         <div className="bussiness first-grid flex justify-center gap-3">
         <div className="divider w-1 h-full bg-slate-800"></div>
-        <div><DataTwo/></div>         
+        {/* <div><DataTwo/></div>          */}
         </div>
       </div>
 
@@ -46,7 +43,7 @@ const BlogCols = () => {
 
         <div className="cars second-grid flex justify-center gap-3">
           <div className="divider w-1 h-full bg-slate-800"></div>
-          <div><CarsData/></div>
+          {/* <div><CarsData/></div> */}
         </div>
       </div>
       <Border />
@@ -62,7 +59,7 @@ const BlogCols = () => {
 
         <div className="fourth-grid flex justify-center gap-3">
           <div className="divider w-1 h-full bg-slate-800"></div>
-        <AppleBlog/>
+        {/* <AppleBlog/> */}
         </div>
         
       </div>
