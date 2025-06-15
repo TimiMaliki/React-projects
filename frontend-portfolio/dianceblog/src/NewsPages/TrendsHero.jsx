@@ -1,5 +1,6 @@
 import Headers from "../HomePages/header";
 import HeroImg from "../images/Trends/t1.jpg";
+import news from "../images/Trends/roman-kraft-_Zua2hyvTBk-unsplash.jpg"
 import BlogCols from "./BlogCols";
 
 
@@ -19,7 +20,7 @@ const TrendsHero = () => {
       {/* Image Section */}
       <div className="w-full lg:w-full">
         <img
-          src={HeroImg}
+          src={news}
           alt="Hope Story"
           className="w-full h-full sm:h-80 md:h-96 lg:h-[700px] object-cover rounded-xl"
         />
