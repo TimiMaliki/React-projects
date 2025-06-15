@@ -1,7 +1,11 @@
-import zendaya from "../../../../images/celeb/zendaya.webp"
-import president from "../../../../images/politics/trump.jpeg"
-import supremeCourt from "../../../../images/politics/supremeCourt.avif"
-import polls from "../../../../images/politics/polls.png"
+import zendaya from "../../../../images/celeb/zendaya-net-worth.jpg"
+import lisa from "../../../../images/celeb/l1.webp"
+import marvel from "../../../../images/celeb/5-marvel-studios-movies-confirmed-to-release-in-2025-by-disney.webp"
+import shakira from "../../../../images/celeb/shakira.avif"
+import riri from "../../../../images/celeb/riri.jpg"
+import deeprika from "../../../../images/celeb/deeprika.webp"
+import bts from "../../../../images/celeb/bts.jpg"
+import pedro from "../../../../images/celeb/pedro.jpg"
 
 export const data = [
   {
@@ -27,7 +31,7 @@ export const data = [
         "description": "BLACKPINK's Lisa stuns fans with the announcement of her first global solo concert series, set to begin in Tokyo.",
         "content": "Lisa is set to embark on her first solo world tour starting July 2025. With concerts scheduled across Asia, Europe, and the Americas, the tour is expected to break streaming and ticket sales records.",
         "url": "https://celebritynews.example.com/lisa-world-tour",
-        "urlToImage": "https://images.unsplash.com/photo-1549921296-3b4a3de19d61",
+        "urlToImage": `${lisa}`,
         "publishedAt": "2025-06-11T17:20:00Z",
         "source": {
           "name": "Global Pop Insider",
@@ -40,7 +44,7 @@ export const data = [
         "description": "Global icon Priyanka Chopra signs on as lead in Marvel Studios’ upcoming blockbuster series.",
         "content": "Marvel Studios confirmed that Priyanka Chopra will play a central role in its new cosmic saga, described as a spiritual successor to Guardians of the Galaxy. Production begins in late 2025.",
         "url": "https://celebritynews.example.com/priyanka-marvel",
-        "urlToImage": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+        "urlToImage": `${marvel}`,
         "publishedAt": "2025-06-10T13:00:00Z",
         "source": {
           "name": "Hollywood Chronicle",
@@ -53,7 +57,7 @@ export const data = [
         "description": "Shakira’s new initiative aims to support underprivileged youth in pursuing careers in music and performance.",
         "content": "Colombian superstar Shakira announced the launch of her international non-profit, Art for All, which will fund scholarships, creative programs, and arts infrastructure in low-income communities worldwide.",
         "url": "https://celebritynews.example.com/shakira-foundation",
-        "urlToImage": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f",
+        "urlToImage": `${shakira}`,
         "publishedAt": "2025-06-09T09:45:00Z",
         "source": {
           "name": "StarWorld Today",
@@ -66,7 +70,7 @@ export const data = [
         "description": "Rihanna is back in the spotlight with a new luxury fashion brand, set to debut in Paris, Tokyo, and Lagos.",
         "content": "After a three-year hiatus from music, Rihanna has announced her return to the global scene—not with a new album, but with a groundbreaking fashion tour featuring her new brand 'Fenty Luxe'.",
         "url": "https://news.example.com/rihanna-fashion-tour",
-        "urlToImage": "https://images.unsplash.com/photo-1610964439510-4a19d51681d5",
+        "urlToImage": `${riri}`,
         "publishedAt": "2025-06-12T10:15:00Z",
         "source": {
           "name": "Celebrity Wire",
@@ -79,7 +83,7 @@ export const data = [
         "description": "Deepika Padukone lands a lead role in a new intergalactic drama by acclaimed director Denis Villeneuve.",
         "content": "The Indian actress is set to star alongside Chris Pine and Zendaya in 'The Void Beyond', a $200M sci-fi film expected to redefine the genre.",
         "url": "https://news.example.com/deepika-hollywood-debut",
-        "urlToImage": "https://images.unsplash.com/photo-1628459901463-3f5b8cd6d9c6",
+        "urlToImage":  `${deeprika}`,
         "publishedAt": "2025-06-11T13:45:00Z",
         "source": {
           "name": "Global Film Insider",
@@ -92,7 +96,7 @@ export const data = [
         "description": "BTS confirms one last world tour before taking a multi-year break for military service and solo projects.",
         "content": "Fans worldwide are scrambling for tickets as BTS prepares for their farewell tour, promising never-before-seen performances and special guests in every city.",
         "url": "https://news.example.com/bts-farewell-tour",
-        "urlToImage": "https://images.unsplash.com/photo-1605408499391-e4fd7aadb27c",
+        "urlToImage":`${bts}`,
         "publishedAt": "2025-06-10T09:20:00Z",
         "source": {
           "name": "K-Pop Herald",
@@ -105,7 +109,7 @@ export const data = [
         "description": "Chilean-American actor Pedro Pascal has been cast as the legendary artist in a Netflix-produced series.",
         "content": "The series, titled 'Blue & Rose', will explore Picasso’s early years in Spain and France. Critics are already praising Pascal’s resemblance and emotional range.",
         "url": "https://news.example.com/pedro-picasso-role",
-        "urlToImage": "https://images.unsplash.com/photo-1604709177452-f76b46f83c03",
+        "urlToImage": `${pedro}`,
         "publishedAt": "2025-06-09T17:05:00Z",
         "source": {
           "name": "StreamCulture News",
