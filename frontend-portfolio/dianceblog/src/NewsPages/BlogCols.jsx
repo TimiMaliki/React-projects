@@ -1,5 +1,7 @@
 import Border from "./Border";
 import Latest from "./LatestStoryBox";
+import SideBarOne from "./politicsPage/politicsSideBars/sideBarOne/sideBarBlog";
+
 
 
 
@@ -22,6 +24,7 @@ const BlogCols = () => {
         <div className="flex justify-center gap-3 business">
           <div className="divider w-1 h-full bg-slate-800"></div>
           {/* <div><Data/></div> */}
+          <SideBarOne/>
         </div>
 
         <div className="bussiness first-grid flex justify-center gap-3">
