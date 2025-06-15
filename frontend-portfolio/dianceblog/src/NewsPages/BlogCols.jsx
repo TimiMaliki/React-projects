@@ -1,5 +1,6 @@
 import Border from "./Border";
 import Latest from "./LatestStoryBox";
+import CelebritySideBarOne from "./celebrityPage/celebritySideBars/sideBarOne/sideBarBlog";
 import SideBarOne from "./politicsPage/politicsSideBars/sideBarOne/sideBarBlog";
 import SideBarTwo from "./politicsPage/politicsSideBars/sideBarTwo/sideBarBlog";
 
@@ -46,7 +47,7 @@ const BlogCols = () => {
 
         <div className="cars second-grid flex justify-center gap-3">
           <div className="divider w-1 h-full bg-slate-800"></div>
-          {/* <div><CarsData/></div> */}
+     <CelebritySideBarOne/>
         </div>
       </div>
       <Border />
