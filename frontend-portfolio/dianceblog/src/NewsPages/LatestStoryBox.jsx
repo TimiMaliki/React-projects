@@ -16,11 +16,13 @@ const Latest = ({head,body,viewMore,bgColor}) => {
                         {body}
                      </h2>
                   </div>
+                  
                   <div className="viewMore  font-semibold text-left p-5 flex gap-5 cursor-pointer">
                     {/* <p>View All Stories</p> */}
                     {viewMore} 
                     <div className="mt-1 cursor-pointer"> <FaArrowRight/></div>
                   </div>
+                 
                </div>
         </div>
      );

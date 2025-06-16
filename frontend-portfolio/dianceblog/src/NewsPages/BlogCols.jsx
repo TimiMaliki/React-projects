@@ -4,6 +4,7 @@ import CelebritySideBarOne from "./celebrityPage/celebritySideBars/sideBarOne/si
 import FashionSideBarOne from "./fashionPage/fashionSideBars/sideBarOne/sideBarBlog";
 import SideBarOne from "./politicsPage/politicsSideBars/sideBarOne/sideBarBlog";
 import SideBarTwo from "./politicsPage/politicsSideBars/sideBarTwo/sideBarBlog";
+import { Link } from "react-router";
 
 
 
@@ -16,12 +17,15 @@ const BlogCols = () => {
       <Border />
       <div className="tech-blog first-grid grid grid-cols-1 lg:grid-cols-3 gap-3 mt-4">
         <div className="first-grid">
+          <Link to="/politics">
           <Latest
             head={"latest"}
             body={`"Diving Into the Future: Where Business Innovation Meets Cutting-Edge Technology"`}
             viewMore={"View All Stories"}
             bgColor="bg-blue-500"
           />
+          </Link>
+         
         </div>
 
         <div className="flex justify-center gap-3 business">

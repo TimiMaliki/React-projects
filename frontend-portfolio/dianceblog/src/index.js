@@ -10,6 +10,7 @@ import Home from './HomePages/Home';
 import TrendingNews from './NewsPages/Trends';
 import LatestWorks from './latestWorksPages/latestWork';
 import AllWorks from './latestWorksPages/allWorks/allWorks';
+import Politic_Articles from './NewsPages/politicsPage/politicsViewMore/politicsmore';
 
 
 
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       { path: "/blogs", element: <TrendingNews/> },
       { path: "/recents", element: <LatestWorks/> },
       { path: "/allworks", element: <AllWorks/> },
+      { path: "/politics", element: <Politic_Articles/> },
       // other routes...
     ],
   },
