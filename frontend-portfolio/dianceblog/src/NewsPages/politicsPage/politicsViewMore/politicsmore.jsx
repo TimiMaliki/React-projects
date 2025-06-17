@@ -20,7 +20,7 @@ const Politic_Articles = () => {
               <article className="rounded-lg">
                 <div className="relative">
                   <img
-                    src={""}
+                    src={data.image_url}
                     alt="Blog"
                     className="h-auto w-full rounded-lg shadow-lg dark:shadow-none"
                   />
