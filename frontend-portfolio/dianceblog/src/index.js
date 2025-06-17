@@ -10,7 +10,8 @@ import Home from './HomePages/Home';
 import TrendingNews from './NewsPages/Trends';
 import LatestWorks from './latestWorksPages/latestWork';
 import AllWorks from './latestWorksPages/allWorks/allWorks';
-import Politic_Articles from './NewsPages/politicsPage/politicsViewMore/politicsmore';
+import PoliticArticles from './NewsPages/politicsPage/politicsViewMore/politicsmore';
+import BlogPoliticsDetails from './NewsPages/politicsPage/politicsViewMoreArticles/politicsArticles';
 
 
 
@@ -23,7 +24,8 @@ const router = createBrowserRouter([
       { path: "/blogs", element: <TrendingNews/> },
       { path: "/recents", element: <LatestWorks/> },
       { path: "/allworks", element: <AllWorks/> },
-      { path: "/politics", element: <Politic_Articles/> },
+      { path: "/politics", element: <PoliticArticles/> },
+      { path: "/politicsDetails/:id", element: <BlogPoliticsDetails/> },
       // other routes...
     ],
   },

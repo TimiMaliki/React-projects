@@ -1,15 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, {useState} from "react";
+import { Link } from "react-router";
 import { Data } from "../politicsViewMoreArticles/viewMoreData";
 
 const Politic_Articles = () => {
-  const [blog, setBlog] = useState(Data);
+  const [blog] = useState(Data);
 
  
   return (
     <div className="w-full h-full mt-2">
       <div className="article-component w-full h-full p-12 lg:p-20">
-        <h2 className="text-center lg:text-start text-2xl lg:text-5xl font-bol">
-          Article
+        <h2 className="text-center lg:text-start text-2xl lg:text-5xl font-bold">
+          Articles
         </h2>
       </div>
 
@@ -24,13 +25,17 @@ const Politic_Articles = () => {
                     alt="Blog"
                     className="h-auto w-full rounded-lg shadow-lg dark:shadow-none"
                   />
-                  <div className="absolute bottom-2 left-2 text-lg leading-6 px-3 py-2 lg:px-6 lg:py-3 font-black bg-white opacity-80 rounded-lg">
+
+               <div className="absolute bottom-2 left-2 text-lg leading-6 px-3 py-2 lg:px-6 lg:py-3 font-black opacity-80 rounded-lg">
                     {new Date().toDateString()}
                   </div>
                 </div>
                 <div className="p-3">
                   <p className="font-light text-sm leading-6 mb-2">
                     By {data.author || "Unknown Author"}
+                  </p>
+                  <p className="">
+                  {data.category}
                   </p>
                   <div className="text-blue-600 font-semibold mb-2">
                     {data.headline}
@@ -39,14 +44,11 @@ const Politic_Articles = () => {
                     {data.description}
                   </h4>
                   <p className="opacity-60 mb-6">{data.summary}</p>
-                  <a
-                    href={data.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-transparent hover:bg-blue-600 border border-blue-600 hover:text-white py-2 px-5 rounded transition cursor-pointer"
-                  >
-                    Read More
-                  </a>
+                  <Link to={`/politicsDetails/${data.id}`}>
+                  <div   className="bg-transparent hover:bg-blue-600 border border-blue-600 hover:text-white py-2 px-5 rounded transition cursor-pointer">
+                  Read More
+                  </div>
+                  </Link>
                 </div>
               </article>
             </div>
