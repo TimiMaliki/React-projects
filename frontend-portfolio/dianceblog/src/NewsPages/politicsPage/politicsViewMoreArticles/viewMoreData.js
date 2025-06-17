@@ -1,6 +1,14 @@
 import global from "../../../images/politics/politicalnew.webp"
 import africanUnion from "../../../images/politics/AfCTA-768x776.png"
-import africanUnion from "../../../images/politics/AfCTA-768x776.png"
+import neo from "../../../images/politics/neo-nato.jpeg"
+import youth from "../../../images/politics/youth.jpeg"
+import ocean from "../../../images/politics/ocean.jpg"
+import hype from "../../../images/politics/chinas-hyperloop-successful-passenger-test-1.webp"
+import congo from "../../../images/politics/congo-basin-peatlands-carbon.jpg"
+import bali from "../../../images/politics/bali.webp"
+import food from "../../../images/politics/Upside-Foods.jpg"
+import Symmetric from "../../../images/politics/Symmetric-Encryption.png"
+import arctics from "../../../images/politics/arctics.jpg"
 
 export const Data = [
         
@@ -40,7 +48,7 @@ export const Data = [
             "content": "In a move signaling the new multipolar world order, the reformed NATO alliance today welcomed Brazil and India as full members... [500 words analyzing the military implications, China's reaction, and how Article 5 was modified for cyber warfare]. The treaty signing in Reykjavik was conspicuously attended by Singaporean observers, fueling speculation about Southeast Asian alignment.",
             "word_count": 500,
             "tags": ["military", "geopolitics"],
-            "image_url": `${""}` ,       
+            "image_url": `${neo}` ,       
              "sources": ["GSP Treaty Text", "Stratfor Analysis 2024Q2"]
           },
           {
@@ -53,7 +61,7 @@ export const Data = [
             "content": "Thousands of young protesters surrounded the EarthGov headquarters today, demanding representation in climate decisions... [500 words covering their policy platform, the viral #NoFutureNoSilence movement, and how Gen-Z leadership differs from traditional activism]. Notable was the absence of police drones, suggesting tacit official support for the movement.",
             "word_count": 500,
             "tags": ["activism", "youth", "governance"],
-            "image_url": `${""}`,
+            "image_url": `${youth}`,
             "sources": ["EarthGov Live Stream", "GYP Manifesto"]
           },
           {
@@ -66,7 +74,7 @@ export const Data = [
             "content": "The Pacific Alliance launched its 200-vessel 'Neptune Fleet' today, equipped with AI sorting systems and nano-filtration technology. This $12 billion initiative aims to remove 90% of oceanic plastic waste by 2027... [500 words detailing the hydrogen-powered ships, controversies over byproduct disposal, and how the system uses blockchain to track waste processing]. Environmentalists applauded while fishing unions warned of 'robot ships stealing traditional waters.'",
             "word_count": 500,
             "tags": ["sustainability", "technology", "oceans"],
-            "image_url": `${""}`,
+            "image_url": `${ocean}`,
             "sources": ["PA Environmental Report 2024", "Greenpeace Analysis"]
           },
           {
@@ -79,7 +87,7 @@ export const Data = [
             "content": "The inaugural capsule of the Transcontinental Hyperloop arrived in Urumqi today, completing phase one of the 6,800 km megaproject. Funded jointly by the EU and China... [500 words covering the magnetic levitation breakthroughs, passenger capsule designs, and how border control will handle 300kph immigration checks]. Critics question the $300 billion price tag while Kazakh officials celebrate new economic corridors.",
             "word_count": 500,
             "tags": ["infrastructure", "transport", "innovation"],
-            "image_url": `${""}`,
+            "image_url": `${hype}`,
             "sources": ["TransGlobal Hyperloop Press Kit", "IEEE Transport Review"]
           },
           {
@@ -92,7 +100,7 @@ export const Data = [
             "content": "Satellite data confirmed today that the Congo Basin now absorbs 120% of its anthropogenic emissions, achieving carbon negativity through the Great Green Wall expansion... [500 words explaining the drone-assisted planting system, how indigenous groups manage carbon credits, and why Brazilian rainforest efforts lag behind]. The project created 2 million jobs but faces criticism over 'carbon colonialism' from northern investors.",
             "word_count": 500,
             "tags": ["climate", "africa", "conservation"],
-            "image_url": `${""}`,
+            "image_url": `${congo}`,
             "sources": ["WCA Certification Docs", "African Climate Initiative"]
           },
           {
@@ -105,7 +113,7 @@ export const Data = [
             "content": "Indonesia today announced strict quotas on its popular digital nomad visa after local rents in Canggu increased 300% in 18 months... [500 words analyzing the global 'visa arbitrage' trend, from Portugal's golden visa collapse to Argentina's new crypto-worker program]. A Bali resident protested: 'They Zoom from our temples but won't pay local taxes.'",
             "word_count": 500,
             "tags": ["migration", "real-estate", "remote-work"],
-            "image_url": `${""}`,
+            "image_url": `${bali}`,
             "sources": ["Bali Immigration Stats", "NomadList Global Survey"]
           },
           {
@@ -118,7 +126,7 @@ export const Data = [
             "content": "EU Food Agency data reveals cellular agriculture has surpassed traditional meat for the first time, accelerated by last year's methane emission laws... [500 words covering taste-test results, the rise of 'craft meat' boutiques, and how French farmers adapted by growing premium bovine cell lines]. Vatican nutritionists surprisingly endorsed synthetic fish during Lent.",
             "word_count": 500,
             "tags": ["food-tech", "policy", "trends"],
-            "image_url": `${""}`,
+            "image_url": `${food}`,
             "sources": ["EFSA Quarterly Report", "Good Food Institute Data"]
           },
           {
@@ -131,7 +139,7 @@ export const Data = [
             "content": "The Geneva Quantum Accord signed today establishes the QS-256 standard for government communications, rendering all existing encryption obsolete... [500 words explaining photon-entanglement networks, why China resisted the standard, and concerns about 'quantum proof' surveillance]. A leaked NSA memo warned: 'This resets the intelligence chessboard.'",
             "word_count": 500,
             "tags": ["cybersecurity", "privacy", "quantum"],
-            "image_url": `${""}`,
+            "image_url": `${Symmetric}`,
             "sources": ["CERN Technical Papers", "WikiLeaks Quantum Files"]
           },
           {
@@ -144,7 +152,7 @@ export const Data = [
             "content": "In an emergency session, the Arctic Council voted 7-1 to suspend Russia over its unauthorized harvesting of ancient glacier ice for luxury water brands... [500 words detailing the 'Ice Wars' incidents, how melting permafrost exposed new resources, and Norway's deployment of coast guard drones]. A Russian oligarch famously served '20,000-year-old ice cocktails' at Davos.",
             "word_count": 500,
             "tags": ["arctic", "resources", "diplomacy"],
-            "image_url": `${""}`,
+            "image_url": `${arctics}`,
             "sources": ["Arctic Council Minutes", "Polar Research Institute"]
           }
         ]
