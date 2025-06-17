@@ -16,7 +16,7 @@ const Politic_Articles = () => {
       <div className="w-full h-full grid grid-cols-1 lg:grid-cols-3 place-content-center mb-2 gap-4">
         {blog && blog.map((data, index) => (
           <div className="card-one" key={index}>
-            <div className="col-span-6 md:col-span-3 lg:col-span-2 mb-3 mt-12">
+            <div className="col-span-6 md:col-span-3 lg:col-span-2 mb-3 mt-12 p-2 lg:p-0">
               <article className="rounded-lg">
                 <div className="relative">
                   <img
