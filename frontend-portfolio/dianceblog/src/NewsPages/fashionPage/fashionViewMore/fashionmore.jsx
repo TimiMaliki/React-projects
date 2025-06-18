@@ -42,7 +42,7 @@ const Fashion_Article = () => {
                       {data.description}
                     </h4>
                     <p className="opacity-60 mb-6">{data.summary}</p>
-                    <Link to={`/celebrityDetails/${data.id}`}>
+                    <Link to={``}>
                     <div   className="bg-transparent hover:bg-blue-600 border border-blue-600 hover:text-white py-2 px-5 rounded transition cursor-pointer">
                     Read More
                     </div>
