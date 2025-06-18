@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from "react-router";
 import { Data } from "../celebrityViewMoreArticles/viewMoreData";
 
 const Celebrity_Article = () => {
@@ -41,11 +42,11 @@ const Celebrity_Article = () => {
                       {data.description}
                     </h4>
                     <p className="opacity-60 mb-6">{data.summary}</p>
-                   
+                    <Link to={`/celebrityDetails/${data.id}`}>
                     <div   className="bg-transparent hover:bg-blue-600 border border-blue-600 hover:text-white py-2 px-5 rounded transition cursor-pointer">
                     Read More
                     </div>
-                   
+                   </Link>
                   </div>
                 </article>
               </div>
