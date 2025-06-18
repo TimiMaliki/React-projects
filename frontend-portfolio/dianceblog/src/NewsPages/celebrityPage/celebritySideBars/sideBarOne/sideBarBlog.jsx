@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router";
 import { data } from "./sideBarData";
 
 const CelebritySideBarOne = () => {
@@ -36,12 +37,9 @@ const CelebritySideBarOne = () => {
                       {blog.description}
                     </h4>
                     <p className="opacity-60 mt-3 mb-6">{blog.content}</p>
-                    <a
-                      href={blog.url}
-                      className="bg-transparent hover:bg-blue-600 border border-blue-600 hover:text-white py-2 px-5 rounded transition"
-                    >
-                      Read More
-                    </a>
+                    <Link to={`/celebrity`}>
+                      <div  className="bg-transparent hover:bg-blue-600 border border-blue-600 hover:text-white py-2 px-5 rounded transition">Read More</div>
+                    </Link>
                   </div>
                 </article>
               </div>
