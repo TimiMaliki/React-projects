@@ -9,9 +9,16 @@ import bali from "../../../images/politics/bali.webp"
 import food from "../../../images/politics/Upside-Foods.jpg"
 import Symmetric from "../../../images/politics/Symmetric-Encryption.png"
 import arctics from "../../../images/politics/arctics.jpg"
+import quantum from "../../../images/tech/quantum.jpeg"
+import indian from "../../../images/tech/indianCities.jpeg"
+import mars from "../../../images/tech/mars.jpeg"
+import kenya from "../../../images/tech/kenya.jpeg"
+import senate from "../../../images/politics/marco.jpg"
+import president from "../../../images/politics/trump.jpeg"
+import supremeCourt from "../../../images/politics/supremeCourt.avif"
+import poll from "../../../images/politics/polls.png"
 
-export const Data = [
-        
+export const Data = [      
           {
             "id": 1,
             "headline": "Global Climate Accord Imposes Radical Energy Quotas",
@@ -154,7 +161,118 @@ export const Data = [
             "tags": ["arctic", "resources", "diplomacy"],
             "image_url": `${arctics}`,
             "sources": ["Arctic Council Minutes", "Polar Research Institute"]
-          }
+          },
+          {
+            "id": 12,
+            "author": "Ava Lin",
+            "headline": "Quantum Internet Breakthrough: Europe Establishes First Secure Node",
+            "summary": "Scientists in Switzerland activate the world’s first fully operational node of a quantum internet.",
+            "content": "The European Union, in collaboration with top research institutions, launched the first secure quantum internet node. Using entangled photons, the node promises ultra-secure communications resistant to cyber threats.",
+            "url": "https://news.example.com/quantum-internet-eu",
+            "image_url": `${quantum}`,
+            "date": "2025-06-12T10:00:00Z",
+            "source": {
+              "name": "Tech Horizon",
+            }
+          },
+          {
+            "id": 13,
+            "headline": "India Launches First AI-Powered Smart City in Gujarat",
+            "author": "Raj Mehta",
+            "summary": "The futuristic city integrates AI in transport, governance, and environmental monitoring.",
+            "content": "The Indian government unveiled Aadhvan City, a smart city built entirely with AI-assisted infrastructure. Features include autonomous public transport, predictive crime analytics, and AI-managed water recycling systems.",
+            "url": "https://news.example.com/india-smart-city",
+            "image_url": `${indian}`,
+            "date": "2025-06-11T16:45:00Z",
+            "source": {
+              "name": "Global Innovation Times",
+              "id": "git"
+            }
+          },
+          {
+            "id": 14,
+            "headline": "SpaceX Unveils Interplanetary Travel Capsule for Mars Colonies",
+            "author": "Isabella Romero",
+            "summary": "Elon Musk reveals an updated Starship capsule designed for long-term human travel to Mars.",
+            "content": "At a global space summit, SpaceX presented a prototype capsule equipped with artificial gravity, radiation shielding, and autonomous life support systems—designed to transport up to 30 colonists to Mars.",
+            "url": "https://news.example.com/spacex-mars-capsule",
+            "image_url": `${mars}`,
+            "date": "2025-06-10T14:00:00Z",
+            "source": {
+              "name": "FutureSpace Journal",
+              "id": "fsj"
+            }
+          },
+          {
+            "id": 15,
+            "headline": "Africa's First Humanoid Robotics Lab Launches in Nairobi",
+            "author": "Liam Okoye",
+            "summary": "Kenya leads the continent with its cutting-edge AI robotics research and humanoid development.",
+            "content": "The Nairobi Robotics Institute unveiled their first AI-powered humanoid robot capable of multilingual communication, cultural interaction, and real-time translation—aimed at education and health support roles.",
+            "url": "https://news.example.com/kenya-robotics-lab",
+            "image_url": `${kenya}`,
+            "date": "2025-06-09T08:30:00Z",
+            "source": {
+              "name": "AI World News",
+              "id": "aiwn"
+            }
+          },
+          {
+            "id": 16,
+            "headline": "Senate Approves New Budget Deal Amid Tensions",
+                "author": "Jane Doe",
+                "summary": "The Senate has passed a controversial budget bill after days of heated debate between lawmakers.",
+                "content": "In a dramatic late-night vote, the U.S. Senate approved a new $1.2 trillion budget plan aimed at preventing a government shutdown. The bill includes significant funding for infrastructure and defense, but was met with criticism from fiscal conservatives.",
+                "url": "https://news.example.com/senate-budget-deal",
+                "image_url": `${senate}`,
+                "date": "2025-06-12T09:00:00Z",
+                "source": {
+                  "name": "Example News Network",
+                  "id": "enn"
+                }
+              },
+              {
+                "id": 17,
+                "headline": "President Addresses Nation on Foreign Policy Shifts",
+                "author": "John Smith",
+                "summary": "The President delivered a national address outlining a new direction for U.S. foreign policy.",
+                "content": "In a speech from the Oval Office, the President emphasized diplomacy and multilateral cooperation, signaling a departure from prior unilateral strategies. The announcement received mixed reactions from global allies.",
+                "url": "https://news.example.com/president-foreign-policy",
+                "image_url": `${president}`,
+                "date": "2025-06-11T19:30:00Z",
+                "source": {
+                  "name": "Daily Political",
+                  "id": "dp"
+                }
+              },
+              {
+                "id": 18,
+                "headline": "Supreme Court Hears Landmark Voting Rights Case",
+                "author": "Emily Zhang",
+                "summary": "The U.S. Supreme Court began hearing oral arguments in a case that could reshape voting laws nationwide.",
+                "content": "The case, which challenges a new state law requiring additional voter ID verification, has drawn nationwide attention. Civil rights groups argue it disenfranchises minority voters, while supporters claim it ensures election integrity.",
+                "url": "https://news.example.com/voting-rights-case",
+                "image_url": `${supremeCourt}`,
+                "date": "2025-06-10T14:15:00Z",
+                "source": {
+                  "name": "Justice Daily",
+                  "id": "jd"
+                }
+              },
+              {
+                "id": 19,
+                "headline": "New Poll Shows Decline in Congressional Approval Ratings",
+                "author": "Carlos Mendoza",
+                "summary": "A recent survey indicates that public approval of Congress has dropped to its lowest point in five years.",
+                "content": "The nationwide poll conducted by the Political Insight Group shows only 18% of respondents approve of Congress’s performance, citing gridlock, partisan bickering, and lack of progress on key issues.",
+                "url": "https://news.example.com/congress-approval-poll",
+                "image_url": `${poll}`,
+                "date": "2025-06-09T11:45:00Z",
+                "source": {
+                  "name": "Civic Report",
+                  "id": "cr"
+                }
+              },
         ]
       
       
