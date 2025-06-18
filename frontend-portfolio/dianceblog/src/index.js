@@ -15,6 +15,7 @@ import BlogPoliticsDetails from './NewsPages/politicsPage/politicsViewMoreArticl
 import CelebrityArticle from './NewsPages/celebrityPage/celebrityViewMore/Celebritymore';
 import CelebrityDetails from './NewsPages/celebrityPage/celebrityViewMoreArticles/CelebrityArticles';
 import FashionArticle from './NewsPages/fashionPage/fashionViewMore/fashionmore';
+import FashionDetail from './NewsPages/fashionPage/fashionViewMoreArticles/fashionArticles';
 
 
 
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
       { path: "/celebrity", element: <CelebrityArticle/> },
       { path: "/celebrityDetails/:id", element: <CelebrityDetails/> },
       { path: "/fashion", element: <FashionArticle/> },
+      { path: "/fashionDetail/:id", element: <FashionDetail/> },
       // other routes...
     ],
   },
