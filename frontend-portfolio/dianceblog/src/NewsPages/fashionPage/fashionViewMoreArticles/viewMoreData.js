@@ -2,6 +2,8 @@ import ibiza from "../../../images/fashion/ibiza-newspress-collage-zrzd44spe-173
 import max from "../../../images/fashion/Max-Mara-Fall-2024-News-The-Impression-002-scaled.jpeg"
 import sasha from "../../../images/fashion/-sasha-obama.avif"
 import linen from "../../../images/fashion/linen.webp"
+import paris from "../../../images/fashion/paris.jpg"
+import japan from "../../../images/fashion/tokyo.webp"
 
 export const Data = [
         {
@@ -56,5 +58,33 @@ export const Data = [
             "image_url": `${sasha}`,
             "sources": ["https://www.teenvogue.com/story/boho-skirts-summer-2025-fashion-trend?utm_source=chatgpt.com"]
           },
+          {
+            "id": 5,
+            "author": "Sophia Lane",
+            "headline": "Paris Fashion Week 2025: Sustainability Takes Center Stage",
+            "summary": "This year's Paris Fashion Week dazzled with eco-conscious designs from top global fashion houses.",
+            "content": "Designers from around the world showcased collections focused on recycled materials, plant-based dyes, and slow fashion principles. Stella McCartney and Balenciaga led the way with innovative styles that blended luxury and sustainability.",
+            "url": "https://fashionnews.example.com/paris-fashion-week-2025",
+            "image_url":`${paris}`,
+            "date": "2025-06-12T08:00:00Z",
+            "source": {
+              "name": "Fashion Daily",
+              "id": "fd"
+            }
+          },
+          {
+            "id": 6,
+            "author": "Leo Yamamoto",
+            "headline": "Tokyo Street Style Influences Global Runway Trends",
+            "summary": "Bold patterns and oversized silhouettes from Tokyo streets are inspiring designers worldwide.",
+            "content": "Tokyo’s vibrant fashion scene continues to leave its mark on international catwalks. Influencers and emerging labels are bringing streetwear aesthetics to luxury fashion, blurring the lines between casual and couture.",
+            "url": "https://fashionnews.example.com/tokyo-street-style-global",
+            "image_url":`${japan}`,
+            "date": "2025-06-11T14:30:00Z",
+            "source": {
+              "name": "Global Style Watch",
+              "id": "gsw"
+            }
+          }
       
 ] 
