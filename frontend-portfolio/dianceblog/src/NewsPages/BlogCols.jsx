@@ -66,12 +66,14 @@ const BlogCols = () => {
       <Border />
       <div className="third-grid grid grid-cols-1 lg:grid-cols-2 gap-3 mt-4">
         <div className="hidden lg:block">
+        <Link to="/fashion">
           <Latest
             head={"latest"}
             body={"Covering Finance and Markets Worldwide — Stay Informed, Wherever You Are"}
             viewMore={"View All Stories"}
             bgColor="bg-red-500"
           />
+            </Link>
         </div>
 
         <div className="fourth-grid flex justify-center gap-3">

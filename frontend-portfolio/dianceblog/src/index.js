@@ -14,6 +14,7 @@ import PoliticArticles from './NewsPages/politicsPage/politicsViewMore/politicsm
 import BlogPoliticsDetails from './NewsPages/politicsPage/politicsViewMoreArticles/politicsArticles';
 import CelebrityArticle from './NewsPages/celebrityPage/celebrityViewMore/Celebritymore';
 import CelebrityDetails from './NewsPages/celebrityPage/celebrityViewMoreArticles/CelebrityArticles';
+import FashionArticle from './NewsPages/fashionPage/fashionViewMore/fashionmore';
 
 
 
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
       { path: "/politicsDetails/:id", element: <BlogPoliticsDetails/> },
       { path: "/celebrity", element: <CelebrityArticle/> },
       { path: "/celebrityDetails/:id", element: <CelebrityDetails/> },
+      { path: "/fashion", element: <FashionArticle/> },
       // other routes...
     ],
   },
