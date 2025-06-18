@@ -12,6 +12,7 @@ import LatestWorks from './latestWorksPages/latestWork';
 import AllWorks from './latestWorksPages/allWorks/allWorks';
 import PoliticArticles from './NewsPages/politicsPage/politicsViewMore/politicsmore';
 import BlogPoliticsDetails from './NewsPages/politicsPage/politicsViewMoreArticles/politicsArticles';
+import CelebrityArticle from './NewsPages/celebrityPage/celebrityViewMore/Celebritymore';
 
 
 
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
       { path: "/allworks", element: <AllWorks/> },
       { path: "/politics", element: <PoliticArticles/> },
       { path: "/politicsDetails/:id", element: <BlogPoliticsDetails/> },
+      { path: "/celebrity", element: <CelebrityArticle/> },
       // other routes...
     ],
   },

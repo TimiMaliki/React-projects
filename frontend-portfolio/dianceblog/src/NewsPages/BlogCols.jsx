@@ -46,17 +46,21 @@ const BlogCols = () => {
       <Border />
       <div className="second-grid grid grid-cols-1 lg:grid-cols-2 gap-3 mt-4">
         <div className="">
+        <Link to="/celebrity">
           <Latest
             head={"latest"}
             body={`"Catch up on what’s making waves across the U.S. — from breaking news to trending stories, all in one place."`}
             viewMore={"View All Stories"}
             bgColor="bg-yellow-500"
           />
+            </Link>
         </div>
 
         <div className="cars second-grid flex justify-center gap-3">
           <div className="divider w-1 h-full bg-slate-800"></div>
+         
      <CelebritySideBarOne/>
+   
         </div>
       </div>
       <Border />
