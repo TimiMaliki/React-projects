@@ -30,12 +30,16 @@ const BlogCols = () => {
 
         <div className="flex justify-center gap-3 business">
           <div className="divider w-1 h-full bg-slate-800"></div>
+          <Link to="/politics">
           <SideBarOne/>
+          </Link>
         </div>
 
         <div className="bussiness first-grid flex justify-center gap-3">
         <div className="divider w-1 h-full bg-slate-800"></div>
+        <Link to="/politics">
        <SideBarTwo/>
+       </Link>
         </div>
       </div>
 
