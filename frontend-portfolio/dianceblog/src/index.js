@@ -23,7 +23,7 @@ import HowItWorks from './HowitworksPages/How';
 
 const router = createBrowserRouter([
   {
-    element: <MainLayout/>, // shared layout or App shell
+    element: <MainLayout/>, 
     children: [
       { path: "/", element: <Home /> },
       { path: "/how", element: <HowItWorks/> },

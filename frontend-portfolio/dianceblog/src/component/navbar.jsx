@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 import logo from "../../src/images/brandlogo/freepik__sign_an_awesome_logo_with_the_caption_lightru (2).png";
-import { Link } from "react-router-dom"; // use 'react-router-dom' instead of 'react-router'
-
+import { Link } from "react-router-dom"; 
 const Navbar = () => {
+ 
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(
     () => localStorage.getItem("theme") === "dark"
@@ -79,7 +79,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 w-full h-screen bg-white dark:bg-black text-gray-800 dark:text-white flex flex-col items-center justify-center gap-6 transform transition-transform duration-300 md:hidden ${
+        className={`fixed top-0 left-0 w-full h-screen  dark:bg-black text-gray-800 dark:text-white flex flex-col items-center justify-center gap-6 transform transition-transform duration-300 md:hidden ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
