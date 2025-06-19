@@ -1,5 +1,4 @@
 import Headers from "../HomePages/header";
-import HeroImg from "../images/Trends/t1.jpg";
 import news from "../images/Trends/roman-kraft-_Zua2hyvTBk-unsplash.jpg"
 import BlogCols from "./BlogCols";
 
