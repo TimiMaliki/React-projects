@@ -1,126 +1,111 @@
 import React, { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
-import { Link } from "react-router";
+import { Link } from "react-router-dom"; // use 'react-router-dom' instead of 'react-router'
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(null);
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
-  });
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    () => localStorage.getItem("theme") === "dark"
+  );
 
   useEffect(() => {
     const root = window.document.documentElement;
-    if (darkMode) {
-      root.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      root.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
+    root.classList.toggle("dark", darkMode);
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
   }, [darkMode]);
+
+  const navLinks = [
+    { path: "/", label: "Why Diance-Blog" },
+    { path: "/how", label: "How It Works" },
+    { path: "/recents", label: "Recent Works" },
+    { path: "/blogs", label: "Blog" },
+  ];
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 px-4 py-3 shadow-md flex items-center justify-between transition duration-300 ${
-        darkMode ? "bg-black text-white" : "bg-white text-gray-800"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 py-4 px-6 flex items-center justify-between backdrop-blur-md bg-white/70 dark:bg-black/50 shadow-sm transition-colors duration-300`}
     >
-      {/* Brand */}
-      <Link to={"/"}>
-        <div className="text-2xl font-bold">Diance-Blog</div>
+      {/* Logo */}
+      <Link to="/" className="text-2xl font-extrabold tracking-tight">
+        Diance-Blog
       </Link>
 
-      {/* Desktop Menu */}
+      {/* Desktop Nav */}
       <div className="hidden md:flex items-center space-x-6">
-        <div className="relative">
-          <Link to="/">
-            <div className="block px-4 py-2 text-sm hover:underline">
-              Why Diance-Blog
-            </div>
+        {navLinks.map((link) => (
+          <Link
+            key={link.path}
+            to={link.path}
+            className="text-sm font-medium hover:underline transition"
+          >
+            {link.label}
           </Link>
-        </div>
-        <Link to="/how">
-          <div className="block px-4 py-2 text-sm hover:underline">
-            How It works
-          </div>
-        </Link>
-        <Link to="/recents">
-          <div className="block px-4 py-2 text-sm hover:underline">
-            Recents works
-          </div>
-        </Link>
-        <Link to="/blogs">
-          <div className="block px-4 py-2 text-sm hover:underline">Blog</div>
-        </Link>
+        ))}
+
         <button
           onClick={() => setDarkMode(!darkMode)}
-          className="p-2 text-xl transition"
+          className="text-xl p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition"
           aria-label="Toggle Dark Mode"
         >
           {darkMode ? <FaSun /> : <FaMoon />}
         </button>
+
         <a
           href="#sign-in"
-          className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition"
+          className="bg-black text-white dark:bg-white dark:text-black text-sm font-semibold px-4 py-2 rounded-lg hover:opacity-90 transition"
         >
           Sign In
         </a>
       </div>
 
-      {/* Mobile Menu Button */}
+      {/* Mobile Hamburger */}
       <button
-        className="md:hidden flex flex-col space-y-1"
         onClick={() => setMenuOpen(!menuOpen)}
+        className="md:hidden flex flex-col space-y-1 z-50"
         aria-label="Toggle Menu"
       >
-        <span
-          className={`w-6 h-0.5 ${darkMode ? "bg-white" : "bg-black"}`}
-        ></span>
-        <span
-          className={`w-6 h-0.5 ${darkMode ? "bg-white" : "bg-black"}`}
-        ></span>
-        <span
-          className={`w-6 h-0.5 ${darkMode ? "bg-white" : "bg-black"}`}
-        ></span>
+        <span className={`w-6 h-0.5 rounded bg-current`}></span>
+        <span className={`w-6 h-0.5 rounded bg-current`}></span>
+        <span className={`w-6 h-0.5 rounded bg-current`}></span>
       </button>
 
       {/* Mobile Menu */}
-      {menuOpen && (
-        <div
-          className={`absolute top-full left-0 w-full flex flex-col items-start gap-4 px-4 py-6 shadow-md md:hidden transition duration-300 ${
-            darkMode ? "bg-black text-white" : "bg-white text-gray-800"
-          }`}
-        >
-          <Link to="/">
-            <div className="block px-4 py-2 text-sm hover:underline">
-              Why Diance-Blog
-            </div>
-          </Link>
-          <Link to="/how">
-            <div className="block px-4 py-2 text-sm hover:underline">
-              How It works
-            </div>
-          </Link>
-          <Link to="/recents">
-            <div className="block px-4 py-2 text-sm ">
-              Recents works
-            </div>
-          </Link>
-          <Link to="/blogs">
-            <div className="block px-4 py-2 text-sm  hover:underline">Blog</div>
-          </Link>
-          <div className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
-            Sign In
-          </div>
-          <button
-            onClick={() => setDarkMode(!darkMode)}
-            className="p-2 text-xl"
-            aria-label="Toggle Dark Mode"
+      <div
+        className={`fixed top-0 left-0 w-full h-screen bg-white dark:bg-black text-gray-800 dark:text-white flex flex-col items-center justify-center gap-6 transform transition-transform duration-300 md:hidden ${
+          menuOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        {navLinks.map((link) => (
+          <Link
+            key={link.path}
+            to={link.path}
+            onClick={() => setMenuOpen(false)}
+            className="text-xl font-medium hover:underline"
           >
-            {darkMode ? <FaSun /> : <FaMoon />}
-          </button>
-        </div>
-      )}
+            {link.label}
+          </Link>
+        ))}
+        <a
+          href="#sign-in"
+          className="bg-black text-white dark:bg-white dark:text-black text-sm font-semibold px-6 py-2 rounded-lg hover:opacity-90 transition"
+        >
+          Sign In
+        </a>
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          className="text-2xl p-2 hover:opacity-80 transition"
+          aria-label="Toggle Dark Mode"
+        >
+          {darkMode ? <FaSun /> : <FaMoon />}
+        </button>
+        <button
+          onClick={() => setMenuOpen(false)}
+          className="absolute top-4 right-6 text-2xl"
+          aria-label="Close Menu"
+        >
+          ×
+        </button>
+      </div>
     </nav>
   );
 };
