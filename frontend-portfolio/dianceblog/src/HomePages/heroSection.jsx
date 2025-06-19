@@ -22,13 +22,13 @@ const Hero = () => {
     <div className="mt-8 z-10 flex gap-4">
       <button
         type="button"
-        className="text-white bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 font-bold rounded-full text-sm md:text-base px-8 py-3 text-center transition-all hover:scale-105 shadow-lg"
+        className="text-white bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 font-bold rounded-full text-sm md:text-base px-4 py-2 lg:px-8 lg:py-3 text-center transition-all hover:scale-105 shadow-lg"
       >
         Launch Your Blog →
       </button>
       <button
         type="button"
-        className="text-white border-2 border-white hover:bg-white/10 font-medium rounded-full text-sm md:text-base px-8 py-3 text-center transition-all"
+        className="text-white border-2 border-white hover:bg-white/10 font-medium rounded-full text-sm md:text-base px-4 py-2 lg:px-8 lg:py-3 text-center transition-all"
       >
         Grow Your Audience
       </button>
