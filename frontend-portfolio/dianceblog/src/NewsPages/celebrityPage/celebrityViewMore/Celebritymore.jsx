@@ -1,60 +1,73 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router";
 import { Data } from "../celebrityViewMoreArticles/viewMoreData";
 
 const Celebrity_Article = () => {
-    const [blog] = useState(Data);
-    return ( 
-        <div className="w-full h-full mt-2">
-        <div className="article-component w-full h-full p-12 lg:p-20">
-          <h2 className="text-center lg:text-start text-2xl lg:text-5xl font-bold">
-            Articles
-          </h2>
-        </div>
-  
-        <div className="w-full h-full grid grid-cols-1 lg:grid-cols-3 place-content-center mb-2 gap-4">
-          {blog && blog.map((data, index) => (
-            <div className="card-one" key={index}>
-              <div className="col-span-6 md:col-span-3 lg:col-span-2 mb-3 mt-12 p-2 lg:p-5">
-                <article className="rounded-lg">
-                  <div className="relative">
-                    <img
-                      src={data.image_url}
-                      alt="Blog"
-                      className="h-auto w-full rounded-lg shadow-lg dark:shadow-none"
-                    />
-  
-                 <div className="absolute bottom-2 left-2 text-lg leading-6 px-3 py-2 lg:px-6 lg:py-3 font-black opacity-80 rounded-lg">
-                      {new Date().toDateString()}
-                    </div>
+  const [blog] = useState(Data);
+  return (
+    <div className="w-full h-full mt-10 lg:mt-20">
+      {/* Section Heading */}
+      <div className="w-full px-4 py-10 text-center lg:text-left">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">
+          Celebrity Buzz
+        </h2>
+        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+          Breaking headlines, star power, and behind-the-scenes moments you
+          can't miss.
+        </p>
+      </div>
+
+      {/* Article Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 pb-20">
+        {blog &&
+          blog.map((data, index) => (
+            <div
+              key={index}
+              className="bg-white dark:bg-[#1c1c24] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group"
+            >
+              {/* Image */}
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src={data.image_url}
+                  alt="Celebrity"
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute bottom-3 left-3 bg-white/90 dark:bg-black/70 text-xs px-3 py-1 rounded shadow text-gray-900 dark:text-white font-semibold">
+                  {new Date(data.date).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                  })}
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="p-5 flex flex-col justify-between flex-1">
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">
+                  By {data.author || "Unknown Author"}
+                </p>
+                <p className="text-xs uppercase text-pink-500 dark:text-blue-400 font-semibold mb-2">
+                  {data.category || "Celebrity"}
+                </p>
+                <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-3 line-clamp-2">
+                  {data.headline}
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                  {data.description || data.summary}
+                </p>
+
+                {/* CTA */}
+                <Link to={`/celebrityDetails/${data.id}`}>
+                  <div className="inline-block mt-auto text-center bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-300 px-4 py-2 rounded-md text-sm font-medium">
+                    Read Full Story
                   </div>
-                  <div className="p-3">
-                    <p className="font-light text-sm leading-6 mb-2">
-                      By {data.author || "Unknown Author"}
-                    </p>
-                    <p className="">
-                    {data.category}
-                    </p>
-                    <div className="text-blue-600 font-semibold mb-2">
-                      {data.headline}
-                    </div>
-                    <h4 className="font-medium text-lg mb-4">
-                      {data.description}
-                    </h4>
-                    <p className="opacity-60 mb-6">{data.summary}</p>
-                    <Link to={`/celebrityDetails/${data.id}`}>
-                    <div   className="bg-transparent hover:bg-blue-600 border border-blue-600 hover:text-white py-2 px-5 rounded transition cursor-pointer">
-                    Read More
-                    </div>
-                   </Link>
-                  </div>
-                </article>
+                </Link>
               </div>
             </div>
           ))}
-        </div>
       </div>
-     );
-}
- 
+    </div>
+  );
+};
+
 export default Celebrity_Article;
