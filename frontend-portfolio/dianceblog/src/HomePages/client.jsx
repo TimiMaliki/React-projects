@@ -4,93 +4,94 @@ import Logos from "./logos";
 
 const Clients = () => {
   return (
-    <div className="w-full h-full mt-12">
-      <div className="flex justify-center text-center">
-        <h1 className="text-4xl text-center lg:text-7xl font-extrabold">
-          <Headers title={"Our Vision"} />
-        </h1>
-      </div>
-      {/* Client Testimonial Section large screen */}
-      <div className="w-full hidden lg:grid  lg:grid-cols-2 gap-8 items-center p-6 lg:p-12">
-        {/* Client Image */}
-        <div className="client-image w-full">
-          <img
-            src={clientImage}
-            alt="Client"
-            className="w-full h-auto mx-auto object-contain rounded-xl"
-          />
+    <div className="w-full bg-gradient-to-b from-white to-purple-50 py-16 px-4 lg:px-12">
+    
+    <div className="max-w-6xl mx-auto text-center mb-16">
+      <h1 className="text-4xl lg:text-6xl font-extrabold mb-6">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">
+          Our Vision: <span className="italic">Blogging Without Limits</span>
+        </span>
+      </h1>
+      <p className="text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto">
+        We see a world where every blogger's voice finds its audience - 
+        where great content meets strategic growth.
+      </p>
+    </div>
+  
+   
+    <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      {/* Image Section */}
+      <div className="relative group">
+        <img
+          src={clientImage}
+          alt="Successful blogger collaboration"
+          className="w-full h-auto rounded-2xl shadow-2xl transform group-hover:scale-[1.02] transition-transform"
+        />
+        <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg border border-gray-100 hidden lg:block">
+          <p className="font-bold text-purple-600">"Our bloggers saw 300% growth in 6 months"</p>
         </div>
-
-        {/* Client Description */}
-        <div className="card-one w-full h-full rounded-xl flex items-center justify-center text-center p-6">
-          <p className="text-base lg:text-2xl font-semibold">
-            At DIance-Blog, our client portfolio is more than just a collection
-            of past projects — it's a reflection of our dedication to quality,
-            creativity, and long-term results. We've had the privilege of
-            working with a wide spectrum of clients, from agile startups seeking
-            to make their mark, to well-established enterprises aiming to refine
-            and elevate their digital presence. <br />
-            <br />
-            Each partnership begins with a deep understanding of our client’s
-            vision, audience, and goals. From there, we craft tailored digital
-            strategies that combine striking visuals with intentional user
-            experience — strategies that don’t just look good, but actually
-            perform. Whether it's designing a seamless UX/UI for a new platform,
-            scaling a blog from scratch, or building brand visibility through
-            data-driven content, our work is designed to inspire trust and drive
-            measurable growth. <br />
-            <br />
-            Our blogs, in particular, are built not just to inform, but to
-            convert. With careful attention to SEO, content architecture, and
-            brand tone, we create blog experiences that engage readers and
-            position our clients as leaders in their space. The end result? A
-            digital presence that speaks volumes about the brand — with results
-            to back it up.
+      </div>
+  
+    
+      <div className="space-y-8">
+        <div className="p-6 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">
+            <span className="text-purple-600">Empowering</span> Every Voice
+          </h3>
+          <p className="text-gray-700">
+            At Diance-Blog, we don't just build blogs - we <strong>launch movements</strong>. 
+            Whether you're a passionate beginner or established creator, we give you the tools to:
           </p>
+          <ul className="mt-4 space-y-3">
+            <li className="flex items-start">
+              <span className="text-pink-500 mr-2">✓</span>
+              <span>Turn ideas into influential platforms</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-pink-500 mr-2">✓</span>
+              <span>Develop content that actually converts</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-pink-500 mr-2">✓</span>
+              <span>Build audiences that engage and grow</span>
+            </li>
+          </ul>
         </div>
-      </div>
-
-      {/* Client Testimonial Section small screen */}
-      <div className="w-full lg:hidden grid lg:grid-cols-2 gap-8 items-center p-6 lg:p-12">
-        {/* Client Description */}
-        <div className="card-one w-full h-full rounded-xl flex items-center justify-center text-center p-6">
-          <p className="text-base lg:text-lg">
-            At DIance-Blog, our client portfolio is more than just a collection
-            of past projects — it's a reflection of our dedication to quality,
-            creativity, and long-term results. We've had the privilege of
-            working with a wide spectrum of clients, from agile startups seeking
-            to make their mark, to well-established enterprises aiming to refine
-            and elevate their digital presence. <br />
-            <br />
-            Each partnership begins with a deep understanding of our client’s
-            vision, audience, and goals. From there, we craft tailored digital
-            strategies that combine striking visuals with intentional user
-            experience — strategies that don’t just look good, but actually
-            perform. Whether it's designing a seamless UX/UI for a new platform,
-            scaling a blog from scratch, or building brand visibility through
-            data-driven content, our work is designed to inspire trust and drive
-            measurable growth. <br />
-            <br />
-            Our blogs, in particular, are built not just to inform, but to
-            convert. With careful attention to SEO, content architecture, and
-            brand tone, we create blog experiences that engage readers and
-            position our clients as leaders in their space. The end result? A
-            digital presence that speaks volumes about the brand — with results
-            to back it up.
+  
+        <div className="p-6 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+          <h3 className="text-2xl font-bold mb-4 text-gray-900">
+            <span className="text-blue-600">Proven</span> Blogging Science
+          </h3>
+          <p className="text-gray-700">
+            Our methodology combines <strong>data-driven strategy</strong> with authentic storytelling:
           </p>
+          <div className="mt-4 grid grid-cols-2 gap-4">
+            <div className="bg-purple-50 p-3 rounded-lg">
+              <p className="font-semibold text-purple-700">SEO That Works</p>
+            </div>
+            <div className="bg-pink-50 p-3 rounded-lg">
+              <p className="font-semibold text-pink-700">Audience Building</p>
+            </div>
+            <div className="bg-blue-50 p-3 rounded-lg">
+              <p className="font-semibold text-blue-700">Content Systems</p>
+            </div>
+            <div className="bg-green-50 p-3 rounded-lg">
+              <p className="font-semibold text-green-700">Monetization</p>
+            </div>
+          </div>
         </div>
-
-        {/* Client Image */}
-        <div className="client-image w-full">
-          <img
-            src={clientImage}
-            alt="Client"
-            className="w-full h-auto mx-auto object-contain rounded-3xl shadow-xl"
-          />
-        </div>
+  
+        <button className="w-full lg:w-auto bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-opacity text-lg">
+          See Our Blog Success Stories
+        </button>
       </div>
+    </div>
+  
+   
+    <div className="mt-20">
       <Logos />
     </div>
+  </div>
   );
 };
 
