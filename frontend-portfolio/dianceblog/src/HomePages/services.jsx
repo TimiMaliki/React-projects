@@ -15,7 +15,7 @@ const Services = () => {
       </span>
     </h1>
     <p className="text-lg lg:text-xl  max-w-3xl mx-auto">
-      Diance-Blog isn’t just services—it’s your <strong>shortcut to influence</strong>.  
+      Light Run isn’t just services—it’s your <strong>shortcut to influence</strong>.  
       We turn creators into authorities and blogs into empires.
     </p>
   </div>

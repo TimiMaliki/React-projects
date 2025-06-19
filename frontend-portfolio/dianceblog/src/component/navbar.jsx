@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
+import logo from "../../src/images/brandlogo/freepik__sign_an_awesome_logo_with_the_caption_lightru (2).png";
 import { Link } from "react-router-dom"; // use 'react-router-dom' instead of 'react-router'
 
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
   }, [darkMode]);
 
   const navLinks = [
-    { path: "/", label: "Why Diance-Blog" },
+    { path: "/", label: "Why Light Run" },
     { path: "/how", label: "How It Works" },
     { path: "/recents", label: "Recent Works" },
     { path: "/blogs", label: "Blog" },
@@ -25,9 +26,16 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 w-full z-50 py-4 px-6 flex items-center justify-between backdrop-blur-md bg-white/70 dark:bg-black/50 shadow-sm transition-colors duration-300`}
     >
-      {/* Logo */}
-      <Link to="/" className="text-2xl font-extrabold tracking-tight">
-        Diance-Blog
+      <Link
+        to="/"
+        className="flex items-center space-x-3 text-2xl font-extrabold tracking-tight"
+      >
+        <img
+          src={logo}
+          alt="Light Run Logo"
+          className="w-8 h-8 object-contain md:w-10 md:h-10"
+        />
+        <span className="text-lg md:text-xl">Light Run</span>
       </Link>
 
       {/* Desktop Nav */}

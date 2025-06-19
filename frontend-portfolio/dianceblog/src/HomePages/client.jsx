@@ -38,7 +38,7 @@ const Clients = () => {
             <span className="text-purple-600">Empowering</span> Every Voice
           </h3>
           <p className="">
-            At Diance-Blog, we don't just build blogs - we <strong>launch movements</strong>. 
+            At Light Run, we don't just build blogs - we <strong>launch movements</strong>. 
             Whether you're a passionate beginner or established creator, we give you the tools to:
           </p>
           <ul className="mt-4 space-y-3">

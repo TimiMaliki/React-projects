@@ -16,7 +16,7 @@ const About = () => {
           </span>
         </h1>
         <p className="text-xl lg:text-2xl  max-w-4xl mx-auto leading-relaxed">
-          At Diance-Blog, we don't just build blogs - we <strong>ignite digital movements</strong>.
+          At Light Run, we don't just build blogs - we <strong>ignite digital movements</strong>.
           Our platform transforms passionate writers into influential voices through
           cutting-edge strategy, technology, and community.
         </p>

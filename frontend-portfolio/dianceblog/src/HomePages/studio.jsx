@@ -10,14 +10,14 @@ const Studio = () => {
         Don’t Just Blog—<span className="italic">Dominate.</span>
       </h1>
       <p className="mt-6 text-lg lg:text-xl ">
-        Diance-Blog isn’t just a service—it’s your <strong>secret weapon</strong>.  
+       Light Run isn’t just a service—it’s your <strong>secret weapon</strong>.  
         We turn ideas into empires, one post at a time.
       </p>
     </div>
 
     <div className="flex flex-col justify-center items-center p-6 bg-black rounded-xl text-white hover:scale-[1.02] transition-transform">
       <h2 className="text-2xl lg:text-3xl font-bold text-center">
-        Why <span className="text-pink-400">Diance-Blog?</span>
+        Why <span className="text-pink-400">Light Run?</span>
       </h2>
       <p className="mt-4 text-sm lg:text-base text-gray-300 text-center">
         Because generic platforms won’t make you unforgettable.
@@ -31,7 +31,7 @@ const Studio = () => {
             We’re <span className="text-purple-600">obsessed</span> with your growth.
           </h3>
           <p className="text-gray-700">
-            Diance-Blog isn’t just about building blogs—it’s about crafting <strong>audience magnets</strong>. 
+           Light Run isn’t just about building blogs—it’s about crafting <strong>audience magnets</strong>. 
             Whether you’re a solo creator or a scaling brand, we design platforms that:
           </p>
           <ul className="mt-4 space-y-2 text-gray-700">

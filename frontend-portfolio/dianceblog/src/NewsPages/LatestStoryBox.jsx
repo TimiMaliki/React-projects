@@ -1,4 +1,3 @@
-import { FaArrowRight } from "react-icons/fa";
 
 const Latest = ({head,body,bgColorSecondary,bgColorPrimary}) => {
  

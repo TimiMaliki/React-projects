@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo and Description */}
         <div>
-          <h2 className="text-2xl font-bold mb-4">Diance-Blog</h2>
+          <h2 className="text-2xl font-bold mb-4">Light Run</h2>
           <p className="">
             Empowering you to live a healthier life through personalized insights.
           </p>
@@ -22,7 +22,7 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Navigation</h3>
           <ul className="space-y-2">
-            <li><a href="#why" className="hover:underline ">Why Diance-Blog</a></li>
+            <li><a href="#why" className="hover:underline ">Why Light Run</a></li>
             <li><a href="#works" className="hover:underline ">How It Works</a></li>
             <li><a href="#about" className="hover:underline ">About Us</a></li>
             <li><a href="#contact" className="hover:underline ">Contact Us</a></li>
@@ -60,7 +60,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="mt-8 border-t  pt-4 text-center text-sm">
-        &copy; {new Date().getFullYear()}  Diance-Blog Ltd. All rights reserved.
+        &copy; {new Date().getFullYear()}  Light Run Ltd. All rights reserved.
       </div>
     </footer>
   );
