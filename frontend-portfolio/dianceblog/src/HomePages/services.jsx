@@ -6,74 +6,98 @@ import Headers from "./header"
 
 const Services = () => {
     return ( 
-<div className="w-full h-full mt-12">
-  {/* Header Section */}
-  <div className="w-full h-full grid lg:grid-cols-2 gap-3 p-14">
-    <div className="our-services">
-      <h1 className="text-4xl text-center lg:text-7xl font-extrabold">
-        <Headers title={"Our Services"}/>
-      </h1>
-    </div>
-    <div className="text">
-      <p className="lg:text-xl text-base text-center">
-        At Diance-Blog, we focus on building strong digital foundations for creators, brands, and entrepreneurs. From audience growth to analytics and blog development, we help you grow sustainably and strategically.
+<div className="w-full bg-gradient-to-b from-white to-purple-50 py-16 px-4 lg:px-12">
+  {/* Header Section - More Impactful */}
+  <div className="max-w-6xl mx-auto text-center mb-16">
+    <h1 className="text-4xl lg:text-6xl font-extrabold mb-6">
+      <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">
+        Your Growth, <span className="italic">Supercharged</span>
+      </span>
+    </h1>
+    <p className="text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto">
+      Diance-Blog isn’t just services—it’s your <strong>shortcut to influence</strong>.  
+      We turn creators into authorities and blogs into empires.
+    </p>
+  </div>
+
+  {/* Services Grid - Visual & Persuasive */}
+  <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    {/* Card 1 - Audience Growth */}
+    <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all">
+      <div className="flex items-center justify-center mb-6">
+        <img src={cardOne} alt="Rocket" className="w-full h-44 object-contain rounded-2xl" />
+      </div>
+      <h3 className="text-2xl font-bold mb-3 text-gray-900">
+        Audience <span className="text-purple-600">Explosion</span>
+      </h3>
+      <p className="text-gray-600 mb-4">
+        Go from ignored to <strong>irresistible</strong>. We amplify your reach across YouTube, TikTok, and Instagram with strategies that actually convert.
       </p>
+      <button className="text-purple-600 font-semibold text-sm hover:underline">
+        Get noticed →
+      </button>
+    </div>
+
+    {/* Card 2 - Analytics */}
+    <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all">
+      <div className="flex items-center justify-center mb-6">
+        <img src={cardTwo} alt="Analytics" className="w-full h-44 object-contain rounded-2xl"/>
+      </div>
+      <h3 className="text-2xl font-bold mb-3 text-gray-900">
+        Data That <span className="text-pink-600">Decodes</span>
+      </h3>
+      <p className="text-gray-600 mb-4">
+        No more guessing. We track, analyze, and <strong>translate</strong> your metrics into clear, profit-driving actions.
+      </p>
+      <button className="text-pink-600 font-semibold text-sm hover:underline">
+        See the numbers →
+      </button>
+    </div>
+
+    {/* Card 3 - Blog Growth */}
+    <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all">
+      <div className="flex items-center justify-center mb-6">
+        <img src={cardThree} alt="Blog" className="w-full h-44 object-contain rounded-2xl" />
+      </div>
+      <h3 className="text-2xl font-bold mb-3 text-gray-900">
+        Blogs That <span className="text-blue-600">Dominate</span>
+      </h3>
+      <p className="text-gray-600 mb-4">
+        From zero to <strong>industry leader</strong>. We handle niche research, SEO, and monetization so you can focus on creating.
+      </p>
+      <button className="text-blue-600 font-semibold text-sm hover:underline">
+        Launch yours →
+      </button>
+    </div>
+
+    {/* Card 4 - Brand Strategy */}
+    <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:-translate-y-2 transition-all">
+      <div className="flex items-center justify-center mb-6">
+        <img src={cardFour} alt="Strategy" className="w-full h-44 object-contain rounded-2xl" />
+      </div>
+      <h3 className="text-2xl font-bold mb-3 text-gray-900">
+        Strategy With <span className="text-green-600">Teeth</span>
+      </h3>
+      <p className="text-gray-600 mb-4">
+        Your brand isn’t “just another” creator. We craft <strong>unforgettable</strong> identities and content systems that demand attention.
+      </p>
+      <button className="text-green-600 font-semibold text-sm hover:underline">
+        Stand out →
+      </button>
     </div>
   </div>
 
-  {/* Services Cards */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4 lg:p-12">
-    {/* Card 1 */}
-    <div className="card-one w-full text-center p-8 border rounded-2xl shadow-xl">
-      <img
-        src={cardOne}
-        alt="Grow Audience"
-        className="w-full  mx-auto mb-6 object-contain rounded-lg"
-      />
-      <h2 className="text-2xl font-semibold mb-3">Grow Media Audience</h2>
-      <p className="text-base lg:text-lg">
-        We help creators and brands increase reach on platforms like YouTube, TikTok, and Instagram using proven organic and paid growth strategies.
-      </p>
-    </div>
-
-    {/* Card 2 */}
-    <div className="card-one w-full text-center p-8 border rounded-2xl shadow-xl">
-      <img
-        src={cardTwo}
-        alt="Social Media Analytics"
-        className="w-full  mx-auto mb-6 object-contain  rounded-lg"
-      />
-      <h2 className="text-2xl font-semibold mb-3">Social Media Analytics</h2>
-      <p className="text-base lg:text-lg">
-        Understand your audience better with real-time reporting, performance insights, and actionable recommendations to improve content strategy.
-      </p>
-    </div>
-
-    {/* Card 3 */}
-    <div className="card-one w-full text-center p-8 border rounded-2xl shadow-xl">
-      <img
-        src={cardThree}
-        alt="Blog Growth"
-        className="w-full  mx-auto mb-6 object-contain  rounded-lg"
-      />
-      <h2 className="text-2xl font-semibold mb-3">Grow Blogs From Scratch</h2>
-      <p className="text-base lg:text-lg">
-        We help launch and scale blogs by handling everything from niche research to design, content creation, SEO, and monetization.
-      </p>
-    </div>
-
-    {/* Card 4 */}
-    <div className="card-one w-full text-center p-8 border rounded-2xl shadow-xl">
-      <img
-        src={cardFour}
-        alt="Content Strategy"
-        className="w-full  mx-auto mb-6 object-contain  rounded-lg"
-      />
-      <h2 className="text-2xl font-semibold mb-3">Brand & Content Strategy</h2>
-      <p className="text-base lg:text-lg">
-        From visual identity to storytelling, we develop content strategies that align with your goals and speak to your target audience.
-      </p>
-    </div>
+  {/* CTA Banner */}
+  <div className="max-w-4xl mx-auto mt-20 bg-gradient-to-r from-purple-600 to-pink-500 rounded-xl p-8 lg:p-12 text-center">
+    <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">
+      Ready to <span className="italic">own</span> your niche?
+    </h3>
+    <p className="text-white/90 mb-6 max-w-2xl mx-auto">
+      Stop wishing for growth—start engineering it. Book your free audit today.
+    </p>
+    <button className="bg-white text-purple-600 font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition-colors">
+      Claim Your Free Strategy Call
+    </button>
   </div>
 </div>
 
