@@ -3,7 +3,7 @@ import { FaSun, FaMoon } from "react-icons/fa";
 import { Link } from "react-router";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(null);
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("theme") === "dark";
   });

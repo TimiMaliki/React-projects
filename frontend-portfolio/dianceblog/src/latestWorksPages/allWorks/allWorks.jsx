@@ -1,218 +1,238 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 const AllWorks = () => {
-  const courses = [
+  const [activeFilter, setActiveFilter] = useState('all');
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const projects = [
     {
       id: 1,
-      image: "https://cdn.easyfrontend.com/pictures/courses/courses1.jpg",
-      category: "Marketing",
-      title: "The Complete Digital Marketing Guide Course",
-      description:
-        "Some quick example text to build on the card the bulk content...",
-      instructor: "John Smith",
-      instructorImage:
-        "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
+      title: "Jobbazar AI Recruitment Platform",
+      category: "Web Application",
+      description: "AI-powered job matching platform with real-time analytics dashboard",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      tags: ["React", "Node.js", "Machine Learning"],
+      year: 2023,
+      type: "web"
     },
     {
       id: 2,
-      image: "https://cdn.easyfrontend.com/pictures/courses/courses2.jpg",
-      category: "Development",
-      title: "Izomart is providing free course on Web Development",
-      description: "Learn web development with Izomart and then you will be...",
-      instructor: "John Smith",
-      instructorImage:
-        "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
+      title: "Slepp Professional Network",
+      category: "Mobile App",
+      description: "Social platform for professionals with video meeting integration",
+      image: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio16_2.png",
+      tags: ["React Native", "Firebase", "WebRTC"],
+      year: 2022,
+      type: "mobile"
     },
     {
       id: 3,
-      image: "https://cdn.easyfrontend.com/pictures/courses/courses3.jpg",
-      category: "Branding",
-      title: "A to Z of Branding with Filinzo Academy",
-      description:
-        "Why should you have the branding knowledge? This is the very first...",
-      instructor: "John Smith",
-      instructorImage:
-        "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
+      title: "Costa Restaurant Management",
+      category: "Web Application",
+      description: "Complete POS and inventory management system for restaurants",
+      image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      tags: ["Vue.js", "Django", "PostgreSQL"],
+      year: 2023,
+      type: "web"
     },
     {
       id: 4,
-      image: "https://cdn.easyfrontend.com/pictures/courses/courses4.jpg",
-      category: "Technology",
-      title: "Master React JS and hire your self for sure!",
-      description:
-        "React JS: The most popular framework in today's programming...",
-      instructor: "John Smith",
-      instructorImage:
-        "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
+      title: "HealthTrack Wearable App",
+      category: "Mobile App",
+      description: "Fitness tracking application with AI health recommendations",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      tags: ["Flutter", "Firebase", "TensorFlow Lite"],
+      year: 2022,
+      type: "mobile"
     },
     {
       id: 5,
-      image: "https://cdn.easyfrontend.com/pictures/courses/courses5.jpg",
-      category: "Content Writing",
-      title: "Do you know the rules of Writing?",
-      description:
-        "Yes! Though we are writing since our childhood, there are some...",
-      instructor: "John Smith",
-      instructorImage:
-        "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
+      title: "EduLearn Online Academy",
+      category: "Web Application",
+      description: "Interactive e-learning platform with live classes and progress tracking",
+      image: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80",
+      tags: ["Next.js", "NestJS", "MongoDB"],
+      year: 2023,
+      type: "web"
     },
     {
       id: 6,
-      image: "https://cdn.easyfrontend.com/pictures/courses/courses6.jpg",
-      category: "Freelancing",
-      title: "Digital Marketing and Web Development first time!",
-      description:
-        "In this growing world marketing and web development is enrolling the...",
-      instructor: "John Smith",
-      instructorImage:
-        "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
+      title: "ShopEasy E-Commerce",
+      category: "Web Application",
+      description: "Custom e-commerce solution with AR product preview",
+      image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      tags: ["React", "Node.js", "Three.js"],
+      year: 2021,
+      type: "web"
     },
     {
       id: 7,
-      image: "https://cdn.easyfrontend.com/pictures/courses/courses15.jpg",
-      category: "Designing",
-      title: "Learn arcitecture without having a degree!",
-      description:
-        "Architecture is a widely dominated sector in enginnering. So why not...",
-      instructor: "John Smith",
-      instructorImage:
-        "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
+      title: "TravelBuddy Trip Planner",
+      category: "Mobile App",
+      description: "AI-powered travel itinerary generator with local recommendations",
+      image: "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      tags: ["Swift", "CoreML", "MapKit"],
+      year: 2023,
+      type: "mobile"
     },
     {
       id: 8,
-      image: "https://cdn.easyfrontend.com/pictures/courses/courses8.jpg",
-      category: "Film & TV",
-      title: "Become a master of model in a week with Coursera",
-      description:
-        "Vitae bibendum egestas magna sit elit non. Netus pharetra felis....",
-      instructor: "John Smith",
-      instructorImage:
-        "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg",
-    },
+      title: "FinTrack Personal Finance",
+      category: "Web Application",
+      description: "Comprehensive personal finance dashboard with predictive analytics",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1511&q=80",
+      tags: ["Angular", "Python", "Chart.js"],
+      year: 2020,
+      type: "web"
+    }
   ];
 
-  return (
-    <section className="ezy__portfolio12  py-14 md:py-24 ">
-      <div className="container px-4 mx-auto">
-        <div className="flex flex-col items-center text-center">
-          <h1 className="text-3xl md:text-[45px] font-bold mb-2">All Works</h1>
+  const filters = [
+    { id: 'all', label: 'All Projects' },
+    { id: 'web', label: 'Web Applications' },
+    { id: 'mobile', label: 'Mobile Apps' },
+    { id: 'recent', label: 'Recent Works' },
+    { id: 'popular', label: 'Most Popular' }
+  ];
 
-          {/* tab bar */}
-          <ul className="flex flex-wrap justify-center my-6">
-            <li className="px-4 py-2 border-b-2 border-blue-600">
-              <div className="nav-link">Most Popular</div>
-            </li>
-            <li className="px-4 py-2 hover:border-b-2 hover:border-blue-600 transition duration-300 opacity-80">
-              <div className="nav-link">Recents works</div>
-            </li>
-            <li className="px-4 py-2 hover:border-b-2 hover:border-blue-600 transition duration-300 opacity-80">
-              <div className="nav-link">Old works</div>
-            </li>
-          </ul>
+  const filteredProjects = projects.filter(project => {
+    if (activeFilter === 'all') return true;
+    if (activeFilter === 'recent') return project.year >= 2022;
+    if (activeFilter === 'popular') return [1, 2, 5].includes(project.id);
+    return project.type === activeFilter;
+  });
+
+  const projectsPerPage = 6;
+  const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
+  const paginatedProjects = filteredProjects.slice(
+    (currentPage - 1) * projectsPerPage,
+    currentPage * projectsPerPage
+  );
+
+  return (
+    <section className="py-16 md:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <span className="text-sm font-semibold text-purple-600 mb-2 block">OUR PORTFOLIO</span>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Explore Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">Work</span>
+          </h1>
+          <p className="text-lg  max-w-2xl mx-auto">
+            Discover how we've helped clients transform their ideas into successful digital products
+          </p>
         </div>
 
-        <div>
-          {/* Course cards */}
-          <div className="grid grid-cols-12 gap-6 mt-6">
-            {courses.map((course) => (
-              <div
-                key={course.id}
-                className="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3"
-              >
-                <div className=" h-full rounded overflow-hidden">
-                  <div className="relative">
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2flex items-center justify-center w-12 h-12 bg-opacity-50 rounded-full cursor-pointer">
-                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-opacity-20"></div>
-                      <i className="fas fa-play ml-1"></i>
-                    </div>
-                    <img
-                      src={course.image}
-                      className="w-full"
-                      alt={course.title}
-                    />
+        {/* Filter Tabs */}
+        <div className="flex flex-wrap justify-center gap-2 mb-12">
+          {filters.map(filter => (
+            <button
+              key={filter.id}
+              onClick={() => {
+                setActiveFilter(filter.id);
+                setCurrentPage(1);
+              }}
+              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                activeFilter === filter.id
+                  ? 'bg-gradient-to-r from-purple-600 to-pink-500 text-white shadow-md'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              }`}
+            >
+              {filter.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {paginatedProjects.map(project => (
+            <div key={project.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="aspect-w-16 aspect-h-9 overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                  <span className="text-sm font-medium text-white/80 mb-1 block">{project.category}</span>
+                  <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {project.tags.map(tag => (
+                      <span key={tag} className="text-xs px-2 py-1 bg-white/10 text-white/90 rounded-full backdrop-blur-sm">
+                        {tag}
+                      </span>
+                    ))}
                   </div>
-                  <div className="p-4">
-                    <div>
-                      <p className="text-[15px] opacity-80 mb-2">
-                        {course.category}
-                      </p>
-                    </div>
-                    <div>
-                      <h5 className="text-[19px] font-medium leading-snug mb-2">
-                        {course.title}
-                      </h5>
-                    </div>
-                    <p className="text-[15px] opacity-80">
-                      {course.description}
-                    </p>
-                    <div className="flex justify-between mt-4 mb-2">
-                      <div className="flex items-center">
-                        <div className="mr-2">
-                          <img
-                            src={course.instructorImage}
-                            alt={course.instructor}
-                            className="max-w-full h-auto rounded-full border"
-                            width="40"
-                          />
-                        </div>
-                        <div>
-                          <h4 className="text-base font-medium mb-0">
-                            {course.instructor}
-                          </h4>
-                        </div>
-                      </div>
-                      <div
-                        className="border border-blue-600 px-3 py-2 hover:bg-blue-600 hover:text-white duration-300 rounded uppercase text-sm"
-                        type="button"
-                      >
-                        Gift
-                      </div>
-                    </div>
-                  </div>
+                  <Link
+                    to={`/works/${project.id}`}
+                    className="inline-flex items-center text-sm font-medium text-white hover:text-purple-300 transition-colors"
+                  >
+                    View Case Study
+                    <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </Link>
                 </div>
               </div>
-            ))}
-          </div>
+              <div className="p-6 bg-white">
+                <span className="text-sm font-medium text-gray-500 mb-1 block">{project.category}</span>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
+                <p className="text-gray-600 mb-4">{project.description}</p>
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.slice(0, 3).map(tag => (
+                    <span key={tag} className="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
 
-          {/* Pagination */}
-          <div className="col-span-12">
-            <nav>
-              <ul className="flex flex-wrap gap-3 justify-center mt-12">
-                <li>
-                  <div className="bg-blue-600  hover:bg-opacity-90 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer">
-                    <i className="fas fa-angle-left"></i>
-                  </div>
-                </li>
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex justify-center mt-16">
+            <nav className="flex items-center space-x-2">
+              <button
+                onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                disabled={currentPage === 1}
+                className="p-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
 
-                <li className="bg-blue-600  hover:bg-opacity-90 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer">
-                  <div className="m-0">1</div>
-                </li>
-                <li className="border border-gray-300 dark:border-gray-600 hover:border-blue-600 hover:text-white hover:bg-blue-600 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer">
-                  <div className="">2</div>
-                </li>
-                <li className="border border-gray-300 dark:border-gray-600 hover:border-blue-600 hover:text-white hover:bg-blue-600 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer">
-                  <div className="">3</div>
-                </li>
-                <li className="border border-gray-300 dark:border-gray-600 hover:border-blue-600 hover:text-white hover:bg-blue-600 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer">
-                  <div className="">4</div>
-                </li>
-                <li className="border border-gray-300 dark:border-gray-600 hover:border-blue-600 hover:text-white hover:bg-blue-600 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer">
-                  <div className="">5</div>
-                </li>
-                <li className="border border-gray-300 dark:border-gray-600 hover:border-blue-600 hover:text-white hover:bg-blue-600 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer">
-                  <div className="">...</div>
-                </li>
-                <li className="border border-gray-300 dark:border-gray-600 hover:border-blue-600 hover:text-white hover:bg-blue-600 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer">
-                  <div className="">11</div>
-                </li>
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+                <button
+                  key={page}
+                  onClick={() => setCurrentPage(page)}
+                  className={`w-10 h-10 rounded-full flex items-center justify-center ${
+                    currentPage === page
+                      ? 'bg-gradient-to-r from-purple-600 to-pink-500 text-white'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  } transition-colors`}
+                >
+                  {page}
+                </button>
+              ))}
 
-                <li>
-                  <div className="bg-blue-600  hover:bg-opacity-90 w-12 h-12 flex justify-center items-center rounded text-lg cursor-pointer">
-                    <i className="fas fa-angle-right"></i>
-                  </div>
-                </li>
-              </ul>
+              <button
+                onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                disabled={currentPage === totalPages}
+                className="p-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
             </nav>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );
