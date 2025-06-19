@@ -16,15 +16,15 @@ const Logos = () => {
   const firstLogos = [logo1, logo2, logo3, logo4, logo5, logo6];
   const secondLogos = [logo7, logo8, logo9, logo10, logo11, logo12];
   return (
-    <div className="w-full bg-gradient-to-b from-white to-gray-50 py-16 px-4 lg:px-12">
+    <div className="w-full bg-gradient-to-b  to-gray-50 py-16 px-4 lg:px-12">
     {/* Header with Impact */}
     <div className="max-w-7xl mx-auto text-center mb-16">
       <h1 className="text-4xl lg:text-6xl font-extrabold mb-6">
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-black to-gray-700">
+        <span className="bg-clip-text bg-gradient-to-r ">
           Trusted By Industry Leaders
         </span>
       </h1>
-      <p className="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
+      <p className="text-lg lg:text-xl  max-w-3xl mx-auto">
         We collaborate with visionary brands to empower bloggers worldwide
       </p>
     </div>
@@ -33,7 +33,7 @@ const Logos = () => {
     <div className="max-w-7xl mx-auto space-y-12">
       {/* Premium Partners Section */}
       <div className="space-y-6">
-        <h3 className="text-xl font-semibold text-center text-gray-500 uppercase tracking-wider">
+        <h3 className="text-xl font-semibold text-center  uppercase tracking-wider">
           Strategic Partners
         </h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 px-4">
@@ -54,7 +54,7 @@ const Logos = () => {
   
       {/* Technology Partners Section */}
       <div className="space-y-6">
-        <h3 className="text-xl font-semibold text-center text-gray-500 uppercase tracking-wider">
+        <h3 className="text-xl font-semibold text-center  uppercase tracking-wider">
           Technology Partners
         </h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 px-4">
@@ -76,13 +76,13 @@ const Logos = () => {
   
     {/* CTA Section */}
     <div className="max-w-4xl mx-auto mt-20 text-center">
-      <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+      <h3 className="text-2xl lg:text-3xl font-bold  mb-4">
         Want to join our partner network?
       </h3>
-      <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+      <p className="mb-6 max-w-2xl mx-auto">
         Collaborate with us to reach thousands of ambitious bloggers and content creators.
       </p>
-      <button className="bg-black text-white font-bold px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+      <button className=" text-white font-bold px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
         Become a Partner
       </button>
     </div>

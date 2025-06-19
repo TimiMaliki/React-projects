@@ -4,7 +4,7 @@ import Logos from "./logos";
 
 const Clients = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-white to-purple-50 py-16 px-4 lg:px-12">
+    <div className="w-full bg-gradient-to-b  to-purple-50 py-16 px-4 lg:px-12">
     
     <div className="max-w-6xl mx-auto text-center mb-16">
       <h1 className="text-4xl lg:text-6xl font-extrabold mb-6">
@@ -34,11 +34,11 @@ const Clients = () => {
   
     
       <div className="space-y-8">
-        <div className="p-6 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+        <div className="p-6  rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
           <h3 className="text-2xl font-bold mb-4 text-gray-900">
             <span className="text-purple-600">Empowering</span> Every Voice
           </h3>
-          <p className="text-gray-700">
+          <p className="">
             At Diance-Blog, we don't just build blogs - we <strong>launch movements</strong>. 
             Whether you're a passionate beginner or established creator, we give you the tools to:
           </p>
@@ -58,7 +58,7 @@ const Clients = () => {
           </ul>
         </div>
   
-        <div className="p-6 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+        <div className="p-6  rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
           <h3 className="text-2xl font-bold mb-4 text-gray-900">
             <span className="text-blue-600">Proven</span> Blogging Science
           </h3>

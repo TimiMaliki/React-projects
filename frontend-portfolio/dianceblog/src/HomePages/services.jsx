@@ -6,7 +6,7 @@ import Headers from "./header"
 
 const Services = () => {
     return ( 
-<div className="w-full bg-gradient-to-b from-white to-purple-50 py-16 px-4 lg:px-12">
+<div className="w-full bg-gradient-to-b  to-purple-50 py-16 px-4 lg:px-12">
   {/* Header Section - More Impactful */}
   <div className="max-w-6xl mx-auto text-center mb-16">
     <h1 className="text-4xl lg:text-6xl font-extrabold mb-6">
