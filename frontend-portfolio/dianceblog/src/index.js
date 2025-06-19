@@ -16,6 +16,7 @@ import CelebrityArticle from './NewsPages/celebrityPage/celebrityViewMore/Celebr
 import CelebrityDetails from './NewsPages/celebrityPage/celebrityViewMoreArticles/CelebrityArticles';
 import FashionArticle from './NewsPages/fashionPage/fashionViewMore/fashionmore';
 import FashionDetail from './NewsPages/fashionPage/fashionViewMoreArticles/fashionArticles';
+import HowItWorks from './HowitworksPages/How';
 
 
 
@@ -25,8 +26,9 @@ const router = createBrowserRouter([
     element: <MainLayout/>, // shared layout or App shell
     children: [
       { path: "/", element: <Home /> },
-      { path: "/blogs", element: <TrendingNews/> },
+      { path: "/how", element: <HowItWorks/> },
       { path: "/recents", element: <LatestWorks/> },
+      { path: "/blogs", element: <TrendingNews/> },
       { path: "/allworks", element: <AllWorks/> },
       { path: "/politics", element: <PoliticArticles/> },
       { path: "/politicsDetails/:id", element: <BlogPoliticsDetails/> },

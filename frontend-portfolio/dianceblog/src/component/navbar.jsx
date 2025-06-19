@@ -34,36 +34,22 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center space-x-6">
         <div className="relative">
-          <button
-            onClick={() => setDropdownOpen(!dropdownOpen)}
-            className={`hover:underline focus:outline-none ${
-              darkMode ? "text-white" : "text-gray-700"
-            }`}
-          >
-            Why Diance-Blog
-          </button>
-          {dropdownOpen && (
-            <div
-              className={`absolute top-full left-0 mt-2 w-40 border rounded shadow-lg ${
-                darkMode
-                  ? "bg-black text-white border-gray-700"
-                  : "bg-white text-gray-800"
-              }`}
-            >
-              <a
-                href="#sleep"
-                className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800"
-              >
-                How It works
-              </a>
-              <Link to="/recents">
-                <div className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800">
-                Recents works
-                </div>
-              </Link>
+          <Link to="/">
+            <div className="block px-4 py-2 text-sm hover:underline">
+              Why Diance-Blog
             </div>
-          )}
+          </Link>
         </div>
+        <Link to="/how">
+          <div className="block px-4 py-2 text-sm hover:underline">
+            How It works
+          </div>
+        </Link>
+        <Link to="/recents">
+          <div className="block px-4 py-2 text-sm hover:underline">
+            Recents works
+          </div>
+        </Link>
         <Link to="/blogs">
           <div className="hover:underline">Blog</div>
         </Link>
@@ -106,22 +92,21 @@ const Navbar = () => {
             darkMode ? "bg-black text-white" : "bg-white text-gray-800"
           }`}
         >
-          <div className="w-full">
-            <button
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="w-full text-left hover:underline"
-            >
+          <Link to="/">
+            <div className="block px-4 py-2 text-sm hover:underline">
               Why Diance-Blog
-            </button>
-            {dropdownOpen && (
-              <div className="ml-4 mt-1 flex flex-col gap-1">
-                <div  className="block px-4 py-2 text-sm ">How It works</div>
-                <Link to="/recents">
-                Recents works
-                </Link>
-              </div>
-            )}
-          </div>
+            </div>
+          </Link>
+          <Link to="/how">
+            <div className="block px-4 py-2 text-sm hover:underline">
+              How It works
+            </div>
+          </Link>
+          <Link to="/recents">
+            <div className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-800">
+              Recents works
+            </div>
+          </Link>
           <Link to="/blogs">
             <div className="hover:underline">Blog</div>
           </Link>

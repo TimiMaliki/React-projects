@@ -82,7 +82,7 @@ const Logos = () => {
       <p className="mb-6 max-w-2xl mx-auto">
         Collaborate with us to reach thousands of ambitious bloggers and content creators.
       </p>
-      <button className=" text-white font-bold px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+      <button className="font-bold px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
         Become a Partner
       </button>
     </div>
