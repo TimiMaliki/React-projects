@@ -1,5 +1,5 @@
 import React from 'react';
-import Headers from './header';
+
 
 const PricingSection = () => {
   return (
@@ -12,7 +12,7 @@ const PricingSection = () => {
             Growth Plans That Scale With You
           </span>
         </h1>
-        <p className="text-xl text-gray-600">
+        <p className="text-xl ">
           Whether you're starting out or ready to dominate, we've got your back
         </p>
       </div>
@@ -32,18 +32,18 @@ const PricingSection = () => {
       {/* Pricing Cards - Blog-Focused */}
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {/* STARTER PLAN - For New Bloggers */}
-        <div className="bg-white rounded-2xl p-8 border border-gray-200 hover:border-purple-300 shadow-sm hover:shadow-lg transition-all">
+        <div className=" rounded-2xl p-8 border border-gray-200 hover:border-purple-300 shadow-sm hover:shadow-lg transition-all">
           <div className="mb-6">
             <span className="inline-block px-4 py-1 bg-purple-100 text-purple-600 rounded-full text-sm font-semibold">
               Blog Launchpad
             </span>
           </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
-          <p className="text-gray-600 mb-6">
+          <h3 className="text-2xl font-bold  mb-2">Starter</h3>
+          <p className=" mb-6">
             Perfect for new bloggers ready to build their foundation
           </p>
           <div className="mb-6">
-            <span className="text-4xl font-bold text-gray-900">$97</span>
+            <span className="text-4xl font-bold ">$97</span>
             <span className="text-gray-500 ml-2">/month</span>
           </div>
           <ul className="space-y-3 mb-8">
@@ -66,24 +66,24 @@ const PricingSection = () => {
               <span>Basic SEO optimization</span>
             </li>
           </ul>
-          <button className="w-full bg-white border-2 border-purple-600 text-purple-600 py-3 rounded-xl font-bold hover:bg-purple-600 hover:text-white transition-colors">
+          <button className="w-full  border-2 border-purple-600 text-purple-600 py-3 rounded-xl font-bold hover:bg-purple-600 hover:text-white transition-colors">
             Start Your Blog
           </button>
         </div>
   
         {/* GROWTH PLAN - For Scaling Blogs */}
-        <div className="bg-white rounded-2xl p-8 border-2 border-purple-300 shadow-lg hover:shadow-xl transition-all">
+        <div className=" rounded-2xl p-8 border-2 border-purple-300 shadow-lg hover:shadow-xl transition-all">
           <div className="mb-6">
             <span className="inline-block px-4 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold">
               Most Popular
             </span>
           </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Growth</h3>
-          <p className="text-gray-600 mb-6">
+          <h3 className="text-2xl font-bold  mb-2">Growth</h3>
+          <p className=" mb-6">
             For bloggers ready to accelerate their audience
           </p>
           <div className="mb-6">
-            <span className="text-4xl font-bold text-gray-900">$297</span>
+            <span className="text-4xl font-bold ">$297</span>
             <span className="text-gray-500 ml-2">/month</span>
           </div>
           <ul className="space-y-3 mb-8">
@@ -118,18 +118,18 @@ const PricingSection = () => {
         </div>
   
         {/* AUTHORITY PLAN - For Established Bloggers */}
-        <div className="bg-white rounded-2xl p-8 border border-gray-200 hover:border-pink-300 shadow-sm hover:shadow-lg transition-all">
+        <div className=" rounded-2xl p-8 border border-gray-200 hover:border-pink-300 shadow-sm hover:shadow-lg transition-all">
           <div className="mb-6">
             <span className="inline-block px-4 py-1 bg-pink-100 text-pink-600 rounded-full text-sm font-semibold">
               Authority Builder
             </span>
           </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-2">Authority</h3>
-          <p className="text-gray-600 mb-6">
+          <h3 className="text-2xl font-bold  mb-2">Authority</h3>
+          <p className=" mb-6">
             For bloggers establishing industry leadership
           </p>
           <div className="mb-6">
-            <span className="text-4xl font-bold text-gray-900">$597</span>
+            <span className="text-4xl font-bold ">$597</span>
             <span className="text-gray-500 ml-2">/month</span>
           </div>
           <ul className="space-y-3 mb-8">
@@ -158,7 +158,7 @@ const PricingSection = () => {
               <span>Monetization strategy</span>
             </li>
           </ul>
-          <button className="w-full bg-white border-2 border-pink-600 text-pink-600 py-3 rounded-xl font-bold hover:bg-pink-600 hover:text-white transition-colors">
+          <button className="w-full  border-2 border-pink-600 text-pink-600 py-3 rounded-xl font-bold hover:bg-pink-600 hover:text-white transition-colors">
             Build Authority
           </button>
         </div>
@@ -166,7 +166,7 @@ const PricingSection = () => {
         {/* ENTERPRISE PLAN - For Professional Blog Networks */}
         <div className="bg-gray-900 text-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all">
           <div className="mb-6">
-            <span className="inline-block px-4 py-1 bg-yellow-400 text-gray-900 rounded-full text-sm font-semibold">
+            <span className="inline-block px-4 py-1 bg-yellow-400  rounded-full text-sm font-semibold">
               VIP Treatment
             </span>
           </div>
@@ -204,7 +204,7 @@ const PricingSection = () => {
               <span>VIP strategy sessions</span>
             </li>
           </ul>
-          <button className="w-full bg-yellow-400 text-gray-900 py-3 rounded-xl font-bold hover:bg-yellow-300 transition-colors">
+          <button className="w-full bg-yellow-400  py-3 rounded-xl font-bold hover:bg-yellow-300 transition-colors">
             Get VIP Access
           </button>
         </div>

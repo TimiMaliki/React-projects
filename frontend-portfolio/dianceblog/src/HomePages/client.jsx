@@ -1,5 +1,4 @@
 import clientImage from "../images/client-logo-img/client-laura.jpg";
-import Headers from "./header";
 import Logos from "./logos";
 
 const Clients = () => {
@@ -12,7 +11,7 @@ const Clients = () => {
           Our Vision: <span className="italic">Blogging Without Limits</span>
         </span>
       </h1>
-      <p className="text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto">
+      <p className="text-lg lg:text-xl max-w-3xl mx-auto">
         We see a world where every blogger's voice finds its audience - 
         where great content meets strategic growth.
       </p>
@@ -35,7 +34,7 @@ const Clients = () => {
     
       <div className="space-y-8">
         <div className="p-6  rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-          <h3 className="text-2xl font-bold mb-4 text-gray-900">
+          <h3 className="text-2xl font-bold mb-4 ">
             <span className="text-purple-600">Empowering</span> Every Voice
           </h3>
           <p className="">
@@ -59,10 +58,10 @@ const Clients = () => {
         </div>
   
         <div className="p-6  rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-          <h3 className="text-2xl font-bold mb-4 text-gray-900">
+          <h3 className="text-2xl font-bold mb-4">
             <span className="text-blue-600">Proven</span> Blogging Science
           </h3>
-          <p className="text-gray-700">
+          <p className="">
             Our methodology combines <strong>data-driven strategy</strong> with authentic storytelling:
           </p>
           <div className="mt-4 grid grid-cols-2 gap-4">

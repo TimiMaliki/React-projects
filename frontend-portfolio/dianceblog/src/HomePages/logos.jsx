@@ -10,7 +10,7 @@ import logo9 from "../images/client-logo-img/logo9.svg";
 import logo10 from "../images/client-logo-img/logo10.svg";
 import logo11 from "../images/client-logo-img/logo11.svg";
 import logo12 from "../images/client-logo-img/logo12.svg";
-import Headers from "./header";
+
 
 const Logos = () => {
   const firstLogos = [logo1, logo2, logo3, logo4, logo5, logo6];

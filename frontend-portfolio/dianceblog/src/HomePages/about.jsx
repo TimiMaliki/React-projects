@@ -2,8 +2,7 @@ import authorOne from "../images/authors-img/a-1.jpg";
 import authorTwo from "../images/authors-img/a-2.jpg";
 import authorThree from "../images/authors-img/a-3.jpg";
 import authorFour from "../images/authors-img/a-4.jpg";
-import Headers from "./header";
-import Team from "./team";
+
 const About = () => {
   return (
     <div className="w-full">
