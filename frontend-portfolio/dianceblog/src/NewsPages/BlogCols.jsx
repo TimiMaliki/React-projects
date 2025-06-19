@@ -19,10 +19,10 @@ const BlogCols = () => {
         <div className="first-grid">
           <Link to="/politics">
           <Latest
-            head={"latest"}
-            body={`"Diving Into the Future: Where Business Innovation Meets Cutting-Edge Technology"`}
-            viewMore={"View All Stories"}
-            bgColor="bg-blue-500"
+            head={"Latest in Politics"}
+            body={"Diving Into the Future: Where Business Innovation Meets Cutting-Edge Technology"}
+            bgColorPrimary="from-blue-600 "
+            bgColorSecondary="to-blue-800"
           />
           </Link>
          
@@ -48,10 +48,10 @@ const BlogCols = () => {
         <div className="">
         <Link to="/celebrity">
           <Latest
-            head={"latest"}
-            body={`"Catch up on what’s making waves across the U.S. — from breaking news to trending stories, all in one place."`}
-            viewMore={"View All Stories"}
-            bgColor="bg-yellow-500"
+            head={"Celebrity Buzz"}
+            body={"Catch up on what's making waves across the U.S. — from breaking news to trending stories, all in one place."}
+            bgColorPrimary="from-yellow-600"
+            bgColorSecondary="to-yellow-800"
           />
             </Link>
         </div>
@@ -68,10 +68,10 @@ const BlogCols = () => {
         <div className="hidden lg:block">
         <Link to="/fashion">
           <Latest
-            head={"latest"}
-            body={"Covering Finance and Markets Worldwide — Stay Informed, Wherever You Are"}
-            viewMore={"View All Stories"}
-            bgColor="bg-red-500"
+            head={"Fashion Week"}
+            body={"Global Runway Trends — Discover This Season's Must-Have Styles From Paris to Tokyo"}
+            bgColorPrimary="from-red-600"
+            bgColorSecondary="to-red-800"
           />
             </Link>
         </div>
