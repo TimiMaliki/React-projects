@@ -16,37 +16,77 @@ const Logos = () => {
   const firstLogos = [logo1, logo2, logo3, logo4, logo5, logo6];
   const secondLogos = [logo7, logo8, logo9, logo10, logo11, logo12];
   return (
-    <div className="logo w-full h-full mt-4 bg-white text-black">
-      <div className="flex justify-center text-center">
-        <h1 className="text-4xl text-black text-center lg:text-7xl font-extrabold mb-5">
-          <Headers title={"Our Sponsors & Partner"} />
-        </h1>
+    <div className="w-full bg-gradient-to-b from-white to-gray-50 py-16 px-4 lg:px-12">
+    {/* Header with Impact */}
+    <div className="max-w-7xl mx-auto text-center mb-16">
+      <h1 className="text-4xl lg:text-6xl font-extrabold mb-6">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-black to-gray-700">
+          Trusted By Industry Leaders
+        </span>
+      </h1>
+      <p className="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
+        We collaborate with visionary brands to empower bloggers worldwide
+      </p>
+    </div>
+  
+    {/* Logos Grid - Enhanced Design */}
+    <div className="max-w-7xl mx-auto space-y-12">
+      {/* Premium Partners Section */}
+      <div className="space-y-6">
+        <h3 className="text-xl font-semibold text-center text-gray-500 uppercase tracking-wider">
+          Strategic Partners
+        </h3>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 px-4">
+          {firstLogos.map((logo) => (
+            <div 
+              key={logo} 
+              className="flex items-center justify-center p-6 bg-white rounded-xl border border-gray-200 hover:border-purple-300 shadow-sm hover:shadow-md transition-all"
+            >
+              <img
+                src={logo}
+                alt="Premium partner logo"
+                className="h-20 w-auto object-contain opacity-80 hover:opacity-100 transition duration-300 ease-in-out"
+              />
+            </div>
+          ))}
+        </div>
       </div>
-      {/* Logos Section */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 px-6 lg:px-12 pb-12">
-        {firstLogos.map((logo) => (
-          <div key={logo} className="flex items-center justify-center p-4">
-            <img
-              src={logo}
-              alt="Client logo"
-              className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out"
-            />
-          </div>
-        ))}
-      </div>
-
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 px-6 lg:px-12 pb-12">
-        {secondLogos.map((logo) => (
-          <div key={logo} className="flex items-center justify-center p-4">
-            <img
-              src={logo}
-              alt="Client logo"
-              className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition duration-300 ease-in-out"
-            />
-          </div>
-        ))}
+  
+      {/* Technology Partners Section */}
+      <div className="space-y-6">
+        <h3 className="text-xl font-semibold text-center text-gray-500 uppercase tracking-wider">
+          Technology Partners
+        </h3>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 px-4">
+          {secondLogos.map((logo) => (
+            <div 
+              key={logo} 
+              className="flex items-center justify-center p-6 bg-white rounded-xl border border-gray-200 hover:border-blue-300 shadow-sm hover:shadow-md transition-all"
+            >
+              <img
+                src={logo}
+                alt="Technology partner logo"
+                className="h-16 w-auto object-contain opacity-80 hover:opacity-100 transition duration-300 ease-in-out"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
+  
+    {/* CTA Section */}
+    <div className="max-w-4xl mx-auto mt-20 text-center">
+      <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+        Want to join our partner network?
+      </h3>
+      <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+        Collaborate with us to reach thousands of ambitious bloggers and content creators.
+      </p>
+      <button className="bg-black text-white font-bold px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+        Become a Partner
+      </button>
+    </div>
+  </div>
   );
 };
 
