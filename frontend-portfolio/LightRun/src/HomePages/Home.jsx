@@ -9,7 +9,7 @@ import Studio from "./studio";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <Hero />
       <Studio />
@@ -18,7 +18,7 @@ const Home = () => {
       <PricingSection/>
       <About/>
       <Contact/>
-    </div>
+    </>
   );
 };
 

@@ -16,7 +16,7 @@ const SignInPage = () => {
   };
 
   return (
-    <div className="min-h-screen  flex items-center justify-center p-4 mt-10">
+    <div className="min-h-screen  flex items-center justify-center p-4 mt-14 lg:mt-10">
       <motion.div 
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -26,7 +26,7 @@ const SignInPage = () => {
         {/* Glowing Card Container */}
         <div className="relative">
           {/* Glow Effect */}
-          <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-xl blur opacity-20 dark:opacity-30"></div>
+          <div className="absolute -inset-4 "></div>
           
           {/* Main Card */}
           <div className="relative rounded-xl shadow-2xl overflow-hidden">
