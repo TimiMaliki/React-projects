@@ -19,7 +19,7 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 mt-10">
+    <div className="min-h-screen flex items-center justify-center p-4 mt-14 lg:mt-10">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ const SignUpPage = () => {
         {/* Glowing Card Container */}
         <div className="relative">
           {/* Glow Effect */}
-          <div className="absolute -inset-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-xl blur opacity-20 dark:opacity-30"></div>
+          <div className="absolute -inset-4 "></div>
           
           {/* Main Card */}
           <div className="relative  rounded-xl shadow-2xl overflow-hidden">
