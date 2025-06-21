@@ -115,9 +115,13 @@ const Navbar = () => {
           <Link to="/blogs">
             <div className="block px-4 py-2 text-sm  hover:underline">Blog</div>
           </Link>
-          <div className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
-            Sign In
-          </div>
+          <Link to="/signIn">
+        <div
+          className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition"
+        >
+          Sign In
+        </div>
+        </Link>
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="p-2 text-xl"
