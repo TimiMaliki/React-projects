@@ -66,12 +66,13 @@ const Navbar = () => {
         >
           {darkMode ? <FaSun /> : <FaMoon />}
         </button>
-        <a
-          href="#sign-in"
+      <Link to="/signIn">
+        <div
           className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition"
         >
           Sign In
-        </a>
+        </div>
+        </Link>
       </div>
 
       {/* Mobile Menu Button */}

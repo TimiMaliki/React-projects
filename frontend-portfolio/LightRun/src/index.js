@@ -17,6 +17,9 @@ import CelebrityDetails from './NewsPages/celebrityPage/celebrityViewMoreArticle
 import FashionArticle from './NewsPages/fashionPage/fashionViewMore/fashionmore';
 import FashionDetail from './NewsPages/fashionPage/fashionViewMoreArticles/fashionArticles';
 import HowItWorks from './HowitworksPages/How';
+import AuthLayout from './AuthLayout/AuthLayout';
+import SignUpPage from './sign/SignUp';
+import SignInPage from './sign/SignIn';
 
 
 
@@ -39,6 +42,13 @@ const router = createBrowserRouter([
       // other routes...
     ],
   },
+  {
+    element:<AuthLayout/>,
+    children : [
+      { path: "/signUp", element: <SignUpPage/> },
+      { path: "/signIn", element: <SignInPage/> },
+    ]
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

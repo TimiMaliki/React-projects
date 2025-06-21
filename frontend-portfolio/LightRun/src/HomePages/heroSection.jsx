@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import heroImage from  "../images/hero0.jpg"
 const Hero = () => {
   return (
@@ -18,7 +19,7 @@ const Hero = () => {
       We don’t just build blogs—we <span className="font-bold">ignite audiences</span>.  
       From setup to stardom, your voice deserves to be heard.
     </h2>
- 
+ <Link to ="/signUp">
     <div className="mt-8 z-10 flex gap-4">
       <button
         type="button"
@@ -33,6 +34,7 @@ const Hero = () => {
         Grow Your Audience
       </button>
     </div>
+    </Link>
   
     <p className="text-white/80 text-lg mt-10 z-10 font-bold">
       Trusted by 500+ bloggers worldwide
