@@ -78,7 +78,7 @@ const LatestWorks = () => {
                         <span className="text-sm font-medium ">{project.year}</span>
                         <span className="w-4 h-px "></span>
                         {project.tags.map((tag, i) => (
-                          <span key={i} className="text-xs font-medium px-2.5 py-0.5 rounded-full">
+                          <span key={i} className="text-xs font-medium px-2.5 py-0.5 rounded-full p-10 lg:p-0">
                             {tag}
                           </span>
                         ))}
