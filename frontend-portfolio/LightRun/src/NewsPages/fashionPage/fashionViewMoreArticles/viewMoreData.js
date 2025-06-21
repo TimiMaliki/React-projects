@@ -145,7 +145,6 @@ export const Data = [
             `,
             "url": "",
             "image_url":`${paris}`,
-            "date": "2025-06-12T08:00:00Z",
             "source": {
               "name": "Fashion Daily",
               "id": "fd"
@@ -176,7 +175,6 @@ export const Data = [
             `,
             "url": "",
             "image_url":`${japan}`,
-            "date": "2025-06-11T14:30:00Z",
             "source": {
               "name": "Global Style Watch",
               "id": "gsw"

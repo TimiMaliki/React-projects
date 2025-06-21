@@ -16,7 +16,7 @@ const CelebrityDetails = () => {
   }, [params.id]);
 
   return (
-    <section className="w-full px-4 md:px-8 py-12 md:py-20 bg-white dark:bg-[#0e0f11] text-gray-900 dark:text-white transition-all duration-300">
+    <section className="w-full px-4 md:px-8 py-12 md:py-20 bg-white dark:bg-[#0e0f11] text-gray-900 dark:text-white transition-all duration-300 mt-6 lg:mt-2">
       <div className="max-w-5xl mx-auto">
 
         {/* Celebrity Introduction Phrase */}
