@@ -16,7 +16,7 @@ const LatestWorks = () => {
         title: "Slepp - Social Media for Professionals",
         description: "Created a LinkedIn alternative focused on authentic professional connections. Implemented WebSockets for real-time messaging, custom analytics dashboards, and secure authentication flow.",
         image: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio16_2.png",
-        tags: ["Next.js", "Firebase", "Tailwind CSS", "WebSockets"],
+        tags: ["Next.js", "Firebase", "Tailwind CSS", "Web Sockets"],
         year: "2022",
         reverse: true,
         link: "/projects/slepp"
@@ -32,8 +32,8 @@ const LatestWorks = () => {
     ];
   
         return (
-          <section className="py-16 md:py-24">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <section className="py-16 md:py-24 overflow-hidden">
+            <div className="w-full mx-auto px-4 sm:px-3 lg:px-8">
               {/* Header with CTA */}
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16">
                 <div className="mb-6 md:mb-0">
@@ -69,16 +69,17 @@ const LatestWorks = () => {
                           className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                       </div>
-                      <div className="absolute -z-10 top-6 left-6 w-full h-full rounded-2xl bg-gradient-to-r from-purple-100 to-pink-100 group-hover:from-purple-200 group-hover:to-pink-200 transition-all duration-300 "></div>
+                      <div className="absolute -z-10 top-6 left-6 w-full h-full rounded-2xl bg-gradient-to-r from-purple-100 to-pink-100 group-hover:from-purple-200 group-hover:to-pink-200 transition-all duration-300 hidden lg:block "></div>
+
                     </div>
       
                     {/* Project Content */}
                     <div className="w-full lg:w-1/2">
                       <div className="flex items-center space-x-4 mb-4">
                         <span className="text-sm font-medium ">{project.year}</span>
-                        <span className="w-4 h-px "></span>
+                        <span className="w-4 h-px"></span>
                         {project.tags.map((tag, i) => (
-                          <span key={i} className="text-xs font-medium px-1.5 lg:px-2.5 py-0.5 rounded-full p-10 lg:p-0">
+                          <span key={i} className="text-xs font-medium px-0.5 lg:px-2.5 py-0.5 rounded-full  lg:p-0 ">
                             {tag}
                           </span>
                         ))}
