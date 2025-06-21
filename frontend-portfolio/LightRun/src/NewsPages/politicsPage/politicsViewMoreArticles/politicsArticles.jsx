@@ -21,7 +21,7 @@ const BlogPoliticsDetails = () => {
      }, [params.id])
   
     return (  
-      <section className="w-full px-4 md:px-6 lg:px-8 py-12 md:py-20 bg-white dark:bg-[#0d1117] text-gray-900 dark:text-white transition-all duration-300">
+      <section className="w-full px-4 md:px-6 lg:px-8 py-12 md:py-20 bg-white dark:bg-[#0d1117] text-gray-900 dark:text-white transition-all duration-300 mt-6 lg:mt-2">
       <div className="max-w-5xl mx-auto">
     
         {/* Section Header */}
