@@ -8,11 +8,11 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="px-6 py-10">
+    <footer className="px-6 py-10 text-center">
         {/* Social Media Icons */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 justify-center">
             <a href="https://facebook.com" className=" hover:text-white">
               <FaFacebookF size={20} />
             </a>
