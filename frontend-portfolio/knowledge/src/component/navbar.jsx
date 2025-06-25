@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -8,17 +9,19 @@ const Navbar = () => {
 
   return (
     <nav
-      className="fixed top-0 left-0 w-full z-50 px-4 py-3 shadow-md flex items-center justify-between transition duration-300"
+      className="bg-white fixed top-0 left-0 w-full z-50 px-4 py-3 shadow-md flex items-center justify-between transition duration-300"
     >
+      <Link to={"/"}>
       <div
         className="flex items-center space-x-3 text-2xl font-extrabold tracking-tight"
       >
-        <span className="text-white text-lg md:text-xl">Knowledge</span>
+        <span className="text-lg md:text-xl">Knowledge</span>
       </div>
+      </Link>
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center space-x-6">
         <div>
-          <div className="text-white block px-4 py-2 text-sm hover:underline">
+          <div className="block px-4 py-2 text-sm hover:underline">
             Premium
           </div>
         </div>
