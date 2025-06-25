@@ -1,11 +1,14 @@
-import './App.css';
+import "./App.css";
+import Footer from "./component/Footer";
+import HeroHeader from "./component/HeroSection";
+import Navbar from "./component/navbar";
 
 function App() {
   return (
-    <div className="App">
-  <h1 className="text-3xl font-bold  bg-red-900 underline">
-      Hello world!
-    </h1>
+    <div>
+      <Navbar />
+      <HeroHeader />
+      <Footer/>
     </div>
   );
 }
