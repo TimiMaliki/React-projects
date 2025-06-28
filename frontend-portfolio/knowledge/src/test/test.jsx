@@ -30,6 +30,7 @@ const Test = () => {
     let className = 'w-full text-left px-4 py-3 rounded-xl border transition';
     if (selectedAnswers[currentIndex] !== option) {
     className += '!important hover:bg-blue-600  bg-gray-100'
+    console.log(selectedAnswers[currentIndex] === option)
     } else if(selectedAnswers[currentIndex] === questions[currentIndex].answer) {
     className += '!important bg-green-600'
     } else {
@@ -82,29 +83,6 @@ export default Test;
 
 
 
-
-//     {questions[currentIndex].options.map((option, i) => {
-//         let className = "w-full text-left px-4 py-3 rounded-xl border transition hover:bg-blue-800"
-//         if(selectedAnswers[currentIndex] !== option){
-//             className += "hover:bg-blue-900 bg-gray !important"
-//            console.log(selectedAnswers[currentIndex])
-//         }
-//         else if (selectedAnswers[currentIndex] === questions[currentIndex].answer){
-//             className += "bg-green-600 !important"
-//         }
-//         else{
-//             className += "bg-red-700 !important"
-//         }
-// return (
-// <button
-// key={i}
-// className={className}
-// onClick={() => handleOptionSelect(currentIndex, option)}
-// >
-// {option}
-// </button>
-// )
-// })}
 
 
 
