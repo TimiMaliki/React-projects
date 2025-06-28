@@ -15,24 +15,12 @@ const Navbar = () => {
       <div
         className="flex items-center space-x-3 text-2xl font-extrabold tracking-tight"
       >
-        <span className="text-lg md:text-xl">Knowledge</span>
+        <span className="text-lg md:text-xl">Knowledge.IDK</span>
       </div>
       </Link>
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center space-x-6">
-        <div>
-          <div className="block px-4 py-2 text-sm hover:underline">
-            Premium
-          </div>
-        </div>
-    
-      <div to="/signIn">
-        <div
-          className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition"
-        >
-          Sign In
-        </div>
-        </div>
+      
       </div>
 
       {/* Mobile Menu Button */}
@@ -56,14 +44,7 @@ const Navbar = () => {
       {menuOpen && (
         <div
           className="absolute top-full left-0 w-full flex flex-col items-start gap-4 px-4 py-6 shadow-md md:hidden transition duration-300">
-            <div className="text-white block px-4 py-2 text-sm">Premium</div>
-          <div>
-        <div
-          className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition"
-        >
-          Sign In
-        </div>
-        </div>
+          
         </div>
       )}
     </nav>
