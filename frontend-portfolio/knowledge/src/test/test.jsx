@@ -4,14 +4,11 @@ import { questions } from "../test/questions";
 const Test = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
-  const [answer, setAnswer] = useState({});
+
 
   const handleOptionSelect = (index, option) => {
     setSelectedAnswers((prev) => ({ ...prev, [index]: option }));
   };
-
-
-
 
   const handleNext = () => {
     if (currentIndex < questions.length - 1) setCurrentIndex(currentIndex + 1);
@@ -27,27 +24,27 @@ const Test = () => {
         <h2 className="text-xl font-semibold mb-6">
           Question {currentIndex + 1} of {questions.length}
         </h2>
-        <h1 className="text-2xl font-bold mb-4">
-          {questions[currentIndex].question}
-        </h1>
+        <h1 className="text-2xl font-bold mb-4">{questions[currentIndex].question}</h1>
         <div className="space-y-4">
-          {questions[currentIndex].options.map((option, i) => (
-            <button
-              key={i}
-              className={`w-full text-left px-4 py-3 rounded-xl border transition hover:bg-blue-100 ${
-                selectedAnswers[currentIndex] === option
-                  ? "bg-blue-600 text-white"
-                  : "bg-gray-100"
-              }`}
-              onClick={() => handleOptionSelect(currentIndex, option)}
-            >
-              {option}
-            </button>
-          ))}
-          
-          { selectedAnswers[currentIndex] === questions[currentIndex].answer
-         ? <div className="bg-green-500 flex justify-center text-xl rounded-lg">Correct</div> : <div className="bg-red-500 flex justify-center text-xl rounded-lg">Try again</div>
-        }
+        {questions[currentIndex].options.map((option, i) => {
+    let className = 'w-full text-left px-4 py-3 rounded-xl border transition';
+    if (selectedAnswers[currentIndex] !== option) {
+    className += '!important hover:bg-blue-600  bg-gray-100'
+    } else if(selectedAnswers[currentIndex] === questions[currentIndex].answer) {
+    className += '!important bg-green-600'
+    } else {
+    className += '!important bg-red-600'
+    }
+    return (
+    <button
+    key={i}
+    className={className}
+    onClick={() => handleOptionSelect(currentIndex, option)}
+    >
+    {option}
+    </button>
+    )
+    })}
         </div>
 
         <div className="flex justify-between mt-8">
@@ -77,6 +74,42 @@ const Test = () => {
       </div>
     </div>
   );
-};
+}
+
 
 export default Test;
+
+
+
+
+
+//     {questions[currentIndex].options.map((option, i) => {
+//         let className = "w-full text-left px-4 py-3 rounded-xl border transition hover:bg-blue-800"
+//         if(selectedAnswers[currentIndex] !== option){
+//             className += "hover:bg-blue-900 bg-gray !important"
+//            console.log(selectedAnswers[currentIndex])
+//         }
+//         else if (selectedAnswers[currentIndex] === questions[currentIndex].answer){
+//             className += "bg-green-600 !important"
+//         }
+//         else{
+//             className += "bg-red-700 !important"
+//         }
+// return (
+// <button
+// key={i}
+// className={className}
+// onClick={() => handleOptionSelect(currentIndex, option)}
+// >
+// {option}
+// </button>
+// )
+// })}
+
+
+
+// ${
+//     selectedAnswers[currentIndex] !== option
+//       ? "bg-blue-600 text-white"
+//       : selectedAnswers[currentIndex] === questions[currentIndex].answer ? "bg-green-600 !important" : "bg-red-700 !importnant"
+//   }
