@@ -5,7 +5,6 @@ const Test = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
 
-
   const handleOptionSelect = (index, option) => {
     setSelectedAnswers((prev) => ({ ...prev, [index]: option }));
   };
@@ -24,28 +23,33 @@ const Test = () => {
         <h2 className="text-xl font-semibold mb-6">
           Question {currentIndex + 1} of {questions.length}
         </h2>
-        <h1 className="text-2xl font-bold mb-4">{questions[currentIndex].question}</h1>
+        <h1 className="text-2xl font-bold mb-4">
+          {questions[currentIndex].question}
+        </h1>
         <div className="space-y-4">
-        {questions[currentIndex].options.map((option, i) => {
-    let className = 'w-full text-left px-4 py-3 rounded-xl border transition';
-    if (selectedAnswers[currentIndex] !== option) {
-    className += '!important hover:bg-blue-600  bg-gray-100'
-    console.log(selectedAnswers[currentIndex] === option)
-    } else if(selectedAnswers[currentIndex] === questions[currentIndex].answer) {
-    className += '!important bg-green-600'
-    } else {
-    className += '!important bg-red-600'
-    }
-    return (
-    <button
-    key={i}
-    className={className}
-    onClick={() => handleOptionSelect(currentIndex, option)}
-    >
-    {option}
-    </button>
-    )
-    })}
+          {questions[currentIndex].options.map((option, i) => {
+            let className =
+              "w-full text-left px-4 py-3 rounded-xl border transition";
+            if (selectedAnswers[currentIndex] !== option) {
+              className += "!important hover:bg-blue-600  bg-gray-100";
+              console.log(selectedAnswers[currentIndex]);
+            } else if (
+              selectedAnswers[currentIndex] === questions[currentIndex].answer
+            ) {
+              className += "!important bg-green-600";
+            } else {
+              className += "!important bg-red-600";
+            }
+            return (
+              <button
+                key={i}
+                className={className}
+                onClick={() => handleOptionSelect(currentIndex, option)}
+              >
+                {option}
+              </button>
+            );
+          })}
         </div>
 
         <div className="flex justify-between mt-8">
@@ -75,16 +79,9 @@ const Test = () => {
       </div>
     </div>
   );
-}
-
+};
 
 export default Test;
-
-
-
-
-
-
 
 // ${
 //     selectedAnswers[currentIndex] !== option
