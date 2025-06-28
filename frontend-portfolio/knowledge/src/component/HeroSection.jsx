@@ -16,9 +16,8 @@ const HeroHeader = () => {
 							<div className="flex flex-col gap-y-6 mx-auto lg:mx-0">
 								<div className="max-w-lg">
 									<p className="text-[17px] leading-[1.8] opacity-80 mb-6">
-										An activity that requires a person's mental or physical
-										effort is work.If a person is trained for a certain type of
-										job, they may have a job or profession which suits.
+									"Test your brainpower with quick and fun quizzes! Whether you're brushing up on general knowledge or 
+									just curious about what you know, this is the place to challenge yourself and learn something new every time."
 									</p>
 								</div>
 								<div className="max-w-xl">
