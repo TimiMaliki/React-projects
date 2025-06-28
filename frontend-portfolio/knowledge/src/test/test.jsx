@@ -21,6 +21,17 @@ const Test = () => {
       setCurrentIndex(currentIndex - 1);
     }
   };
+   const handleSubmit = () => {
+    let total = 0
+
+    questions.forEach((question,index)=>{
+        if(selectedAnswers[index] === question.answer){
+             total += question.initialScore
+        }
+
+        setScore(total)
+      })
+   }
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white px-4">
@@ -39,15 +50,7 @@ const Test = () => {
                   "w-full text-left px-4 py-3 rounded-xl border transition flex justify-between gap-4";
                 const selected = selectedAnswers[currentIndex];
                 const correct = questions[currentIndex].answer;
-                const total = 0
-
-                questions.forEach((question,index)=>{
-                    if(selectedAnswers[index] === question.answer){
-                         total += question.initialScore
-                    }
-
-                    setScore(total)
-                  })
+              
                 if (selected !== option) {
                   className += " bg-gray-100 hover:bg-blue-600";
                 } 
@@ -87,7 +90,7 @@ const Test = () => {
                 </button>
               ) : (
                 <button
-                  onClick={alert("submitted")}
+                  onClick={handleSubmit}
                   className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
                 >
                   Submit
