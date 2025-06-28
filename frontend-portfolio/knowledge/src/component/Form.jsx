@@ -10,7 +10,7 @@ const HeaderForm = () => (
           </p>
         </div>
         <Link to={"/test"}>
-          <button className="absolute left-16 md:right-6 top-12 md:top-7 -translate-y-1/2 py-2 px-5 md:py-2  md:px-8 text-sm md:text-base text-white font-bold bg-blue-600 hover:bg-opacity-90 transition duration-300 z-50 rounded-full">
+          <button className="absolute right-[144px] md:right-6 top-12 md:top-7 -translate-y-1/2 py-2 px-5 md:py-2  md:px-8 text-sm md:text-base text-white font-bold bg-blue-600 hover:bg-opacity-90 transition duration-300 z-50 rounded-full">
             Click Here
           </button>
         </Link>
