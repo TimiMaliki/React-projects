@@ -12,7 +12,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 left-0 w-full z-50 px-4 py-3 shadow-lg bg-light text-black transition-all duration-300 hover:brightness-110">
+    <nav className="sticky top-0 left-0 w-full z-50 px-4 py-3 shadow-lg bg-gradient-to-r from-black/80 via-black/60 to-transparent text-black transition-all duration-300 hover:brightness-110">
       <div className="flex items-center justify-between">
         {/* Brand */}
         <div className="pl-3 lg:pl-10">
@@ -49,12 +49,12 @@ const Navbar = () => {
 {/* Mobile Menu */}
 
 {isOpen && (
-  <div className="flex flex-col text-center md:hidden absolute top-full right-0 w-full items-start gap-4 px-4 py-6">
+  <div className="flex flex-col text-center md:hidden absolute top-full right-0 w-full items-start gap-4 px-4 py-6  bg-black">
   {navLinks.map((nav, index) => (
     <a
       key={index}
       href={nav.href}
-      className="text-lg  text-black font-sans font-bold w-full px-1 py-2 rounded-xl bg-gradient-to-r from-[#ff1b6b]   to-[#45caff] shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02"
+      className="text-lg  text-white font-sans font-bold w-full px-1 py-2 rounded-xl bg-gradient-to-r from-[#ff1b6b]   to-[#45caff] shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02"
     >
       {nav.name}
     </a>
