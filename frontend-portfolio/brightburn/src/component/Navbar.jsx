@@ -17,7 +17,7 @@ const Navbar = () => {
         {/* Brand */}
         <div className="pl-3 lg:pl-10">
           <h2 className="text-3xl font-extrabold font-sans text-black">
-            BrightBurn
+            Bright <span className="text-red-700">Burn</span>
           </h2>
         </div>
 
@@ -40,9 +40,9 @@ const Navbar = () => {
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
-            <XMarkIcon className="h-8 w-8  rounded-s-xl rounded-e-xl bg-orange-600 text-black" />
+            <XMarkIcon className="h-8 w-8  rounded-s-xl rounded-e-xl bg-red-600 text-black" />
           ) : (
-            <Bars3Icon className="h-8 w-8 rounded-s-xl rounded-e-xl bg-orange-600 text-black" />
+            <Bars3Icon className="h-8 w-8 rounded-s-xl rounded-e-xl bg-red-600 text-black" />
           )}
         </button>
       </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
     <a
       key={index}
       href={nav.href}
-      className="text-lg  text-black font-sans font-bold w-full px-1 py-2 rounded-xl bg-red-400 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02"
+      className="text-lg  text-black font-sans font-bold w-full px-1 py-2 rounded-xl bg-red-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02"
     >
       {nav.name}
     </a>
