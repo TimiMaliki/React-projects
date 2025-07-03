@@ -12,7 +12,8 @@ const Hero = () => {
       {/* <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div> */}
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-24 text-white max-w-4xl">
+      <div></div>
+      <div className="absolute  bottom-28 left-10 p-5 flex flex-col justify-center px-8 md:px-24 text-white max-w-4xl border border-red-600">
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
           Websites That <span className="text-red-500">Wow</span> Your Audience
         </h1>
@@ -27,6 +28,8 @@ const Hero = () => {
           Get Your Website Now
         </a>
       </div>
+
+
     </section>
   );
 };
