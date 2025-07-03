@@ -12,11 +12,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 left-0 w-full z-50 px-4 py-3 shadow-lg bg-gradient-to-r from-black/80 via-black/60 to-transparent text-black transition-all duration-300 hover:brightness-110">
+    <nav className="sticky top-0 left-0 w-full z-50 px-4 py-3 shadow-lg bg-white text-white transition-all duration-300 hover:brightness-110">
       <div className="flex items-center justify-between">
         {/* Brand */}
         <div className="pl-3 lg:pl-10">
-          <h2 className="text-3xl font-extrabold font-sans">
+          <h2 className="text-3xl font-extrabold font-sans text-black">
             BrightBurn
           </h2>
         </div>
@@ -40,21 +40,21 @@ const Navbar = () => {
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
-            <XMarkIcon className="h-6 w-6" />
+            <XMarkIcon className="h-8 w-8  rounded-s-xl rounded-e-xl bg-orange-600 text-black" />
           ) : (
-            <Bars3Icon className="h-6 w-6" />
+            <Bars3Icon className="h-8 w-8 rounded-s-xl rounded-e-xl bg-orange-600 text-black" />
           )}
         </button>
       </div>
 {/* Mobile Menu */}
 
 {isOpen && (
-  <div className="flex flex-col text-center md:hidden absolute top-full right-0 w-full items-start gap-4 px-4 py-6  bg-black">
+  <div className="flex flex-col text-center md:hidden absolute top-full right-0 w-full items-start gap-4 px-4 py-6  bg-white">
   {navLinks.map((nav, index) => (
     <a
       key={index}
       href={nav.href}
-      className="text-lg  text-white font-sans font-bold w-full px-1 py-2 rounded-xl bg-gradient-to-r from-[#ff1b6b]   to-[#45caff] shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02"
+      className="text-lg  text-black font-sans font-bold w-full px-1 py-2 rounded-xl bg-red-400 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02"
     >
       {nav.name}
     </a>
