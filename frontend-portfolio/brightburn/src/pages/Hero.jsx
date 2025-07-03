@@ -7,7 +7,7 @@ const Hero = () => {
       <img
         src={computer}
         alt="Web Design"
-        className="w-full h-full object-cover rounded-none lg:rounded-3xl"
+        className="w-full h-full object-cover rounded-3xl rounded-t-none"
       />
 
       {/* Content */}
