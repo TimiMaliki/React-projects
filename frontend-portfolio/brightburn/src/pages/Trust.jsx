@@ -1,6 +1,6 @@
 const TrustSection = () => {
     return (
-      <section className="w-full py-20 bg-gradient-to-r from-[#ff1b6b]  to-[#45caff] rounded-3xl">
+      <section className="w-full py-20 bg-gradient-to-r from-[#ff1b6b]  to-[#45caff] rounded-3xl rounded-b-none lg:rounded-3xl">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">
