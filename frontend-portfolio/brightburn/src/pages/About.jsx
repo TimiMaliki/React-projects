@@ -1,4 +1,6 @@
 import AboutHeroImg from "../images/About/teamOne.jpg";
+import SelfImg from "../images/About/started.jpg";
+
 const AboutPage = () => {
   return (
     <>
@@ -27,19 +29,19 @@ const AboutPage = () => {
 
       {/* Our Story Section */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
+        <div className="px-6 md:px-12 lg:px-20">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-7xl font-bold text-gray-900 mb-6">
                 Our <span className="text-red-500">Story</span>
               </h2>
-              <p className="text-gray-700 text-lg mb-6">
+              <p className="text-black text-2xl mb-6">
                 Founded in 2025, we started as a small team of two developers
                 working from a coffee shop. Today, we've grown into an
                 international web design agency serving clients across 5+
                 countries.
               </p>
-              <p className="text-gray-700 text-lg mb-6">
+              <p className="text-black text-2xl mb-6">
                 What hasn't changed is our commitment to quality, our passion
                 for technology, and our belief that every business deserves a
                 website that truly represents them.
@@ -47,24 +49,24 @@ const AboutPage = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-50 p-6 rounded-xl">
                   <h3 className="text-red-600 text-4xl font-bold mb-2">30+</h3>
-                  <p className="text-gray-700">Projects Completed</p>
+                  <p className="text-black">Projects Completed</p>
                 </div>
                 <div className="bg-gray-50 p-6 rounded-xl">
                   <h3 className="text-red-600 text-4xl font-bold mb-2">5+</h3>
-                  <p className="text-gray-700">Countries Served</p>
+                  <p className="text-black">Countries Served</p>
                 </div>
               </div>
             </div>
             <div className="lg:w-1/2">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-4xl">
                 <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  src={SelfImg}
                   alt="Our team working together"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-[400px] object-cover"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
                   <p className="text-white text-lg">
-                    Our team at the 2023 Web Design Awards
+                   Bringing Ideas to life 
                   </p>
                 </div>
               </div>
