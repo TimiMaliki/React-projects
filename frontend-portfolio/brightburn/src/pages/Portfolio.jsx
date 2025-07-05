@@ -18,6 +18,7 @@ import Project7 from "../images/portfolio/l7.png";
 import Project8 from "../images/portfolio/l8.png";
 import Project9 from "../images/portfolio/l9.png";
 import Project10 from "../images/portfolio/l10.png";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   return (
@@ -51,14 +52,14 @@ const Portfolio = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
                 <p className="text-gray-700 mb-4"></p>
-                <a
-                  href={""}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link to="/show">
+                <div
                   className="text-red-600 hover:underline font-semibold"
                 >
                   View Project →
-                </a>
+                </div>
+                </Link>
+               
               </div>
             </div>
           </SwiperSlide>
@@ -77,14 +78,13 @@ const Portfolio = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
                 <p className="text-gray-700 mb-4"></p>
-                <a
-                  href={""}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link to="/show">
+                <div
                   className="text-red-600 hover:underline font-semibold"
                 >
                   View Project →
-                </a>
+                </div>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
@@ -103,14 +103,13 @@ const Portfolio = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
                 <p className="text-gray-700 mb-4"></p>
-                <a
-                  href={""}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link to="/show">
+                <div
                   className="text-red-600 hover:underline font-semibold"
                 >
                   View Project →
-                </a>
+                </div>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
@@ -129,14 +128,13 @@ const Portfolio = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
                 <p className="text-gray-700 mb-4"></p>
-                <a
-                  href={""}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link to="/show">
+                <div
                   className="text-red-600 hover:underline font-semibold"
                 >
                   View Project →
-                </a>
+                </div>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
@@ -155,14 +153,13 @@ const Portfolio = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
                 <p className="text-gray-700 mb-4"></p>
-                <a
-                  href={""}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link to="/show">
+                <div
                   className="text-red-600 hover:underline font-semibold"
                 >
                   View Project →
-                </a>
+                </div>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
@@ -180,14 +177,13 @@ const Portfolio = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
                 <p className="text-gray-700 mb-4"></p>
-                <a
-                  href={""}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link to="/show">
+                <div
                   className="text-red-600 hover:underline font-semibold"
                 >
                   View Project →
-                </a>
+                </div>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
@@ -206,14 +202,13 @@ const Portfolio = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
                 <p className="text-gray-700 mb-4"></p>
-                <a
-                  href={""}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link to="/show">
+                <div
                   className="text-red-600 hover:underline font-semibold"
                 >
                   View Project →
-                </a>
+                </div>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
@@ -230,14 +225,13 @@ const Portfolio = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
                 <p className="text-gray-700 mb-4"></p>
-                <a
-                  href={""}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link to="/show">
+                <div
                   className="text-red-600 hover:underline font-semibold"
                 >
                   View Project →
-                </a>
+                </div>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
@@ -256,14 +250,13 @@ const Portfolio = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
                 <p className="text-gray-700 mb-4"></p>
-                <a
-                  href={""}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link to="/show">
+                <div
                   className="text-red-600 hover:underline font-semibold"
                 >
                   View Project →
-                </a>
+                </div>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
@@ -280,14 +273,13 @@ const Portfolio = () => {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
                 <p className="text-gray-700 mb-4"></p>
-                <a
-                  href={""}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link to="/show">
+                <div
                   className="text-red-600 hover:underline font-semibold"
                 >
                   View Project →
-                </a>
+                </div>
+                </Link>
               </div>
             </div>
           </SwiperSlide>
@@ -298,30 +290,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-{
-  /* <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-2">
-{projects.map((project, index) => (
-  <div key={index} className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-    <div className="h-64 w-full relative">
-      <img
-        src={project.image}
-        alt={project.title}
-        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-      />
-    </div>
-    <div className="p-6">
-      <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
-      <p className="text-gray-700 mb-4">{project.description}</p>
-      <a
-        href={project.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-red-600 hover:underline font-semibold"
-      >
-        View Project →
-      </a>
-    </div>
-  </div>
-))}
-</div> */
-}
