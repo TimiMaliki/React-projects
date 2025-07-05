@@ -3,10 +3,10 @@ const ServicesSection = () => {
     <section className="w-full py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-6xl font-extrabold text-gray-900 mb-4">
-            Our <span className="text-red-500">Website</span> Services
+          <h2 className="text-3xl md:text-6xl font-extrabold text-black mb-4">
+            Our <span className="text-red-700">Website</span> Services
           </h2>
-          <p className="text-gray-700 max-w-2xl mx-auto text-xl font-bold">
+          <p className="text-black max-w-2xl mx-auto text-xl font-bold">
             Whether you need a simple landing page or a complete website
             solution, we provide everything you need for success online.
           </p>
@@ -15,7 +15,7 @@ const ServicesSection = () => {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Service Card 1 */}
           <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition">
-            <h3 className="text-xl font-extrabold text-gray-900 mb-4">
+            <h3 className="text-xl font-extrabold text-black mb-4">
               Single Page Websites
             </h3>
             <p className="text-black text-lg mb-6 ">
@@ -32,7 +32,7 @@ const ServicesSection = () => {
 
           {/* Service Card 2 */}
           <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition">
-            <h3 className="text-xl font-extrabold text-gray-900 mb-4">
+            <h3 className="text-xl font-extrabold text-black mb-4">
               Multi-Page Websites
             </h3>
             <p className="text-black text-lg mb-6">
@@ -49,7 +49,7 @@ const ServicesSection = () => {
 
           {/* Service Card 3 */}
           <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition">
-            <h3 className="text-xl font-extrabold text-gray-900 mb-4">
+            <h3 className="text-xl font-extrabold text-black mb-4">
               eCommerce Websites
             </h3>
             <p className="text-black text-lg mb-6">
@@ -66,7 +66,7 @@ const ServicesSection = () => {
 
           {/* Service Card 4 */}
           <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition">
-            <h3 className="text-xl font-extrabold text-gray-900 mb-4">
+            <h3 className="text-xl font-extrabold text-black mb-4">
               Versatile Platform Expertise
             </h3>
             <p className="text-black text-lg mb-6">
@@ -83,7 +83,7 @@ const ServicesSection = () => {
 
           {/* Service Card 5 */}
           <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
+            <h3 className="text-xl font-bold text-black mb-4">
               Build, Host & Maintain
             </h3>
             <p className="text-black text-lg mb-6">
@@ -100,7 +100,7 @@ const ServicesSection = () => {
 
           {/* Service Card 6 */}
           <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">
+            <h3 className="text-xl font-bold text-black mb-4">
               Website Redesign Services
             </h3>
             <p className="text-gray-700 mb-6">

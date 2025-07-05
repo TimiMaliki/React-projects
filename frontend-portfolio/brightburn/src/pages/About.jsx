@@ -32,8 +32,8 @@ const AboutPage = () => {
         <div className="px-6 md:px-12 lg:px-20">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl md:text-7xl font-bold text-gray-900 mb-6">
-                Our <span className="text-red-500">Story</span>
+              <h2 className="text-3xl md:text-7xl font-bold text-black mb-6">
+                Our <span className="text-red-700">Story</span>
               </h2>
               <p className="text-black text-2xl mb-6">
                 Founded in 2025, we started as a small team of two developers
