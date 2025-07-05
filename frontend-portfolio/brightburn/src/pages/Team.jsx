@@ -11,7 +11,7 @@ const Team = () => {
         <div className="px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-6xl font-extrabold mb-4 text-black">
-              Meet the <span className="text-red-500">Team</span>
+              Meet the <span className="text-red-700">Team</span>
             </h2>
             <p className="text-black max-w-2xl mx-auto text-lg font-bold">
               The creative minds behind your digital success
@@ -82,13 +82,13 @@ const Team = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-gray-700">{member.bio}</p>
+                  <p className="text-black">{member.bio}</p>
                   <div className="mt-4 flex space-x-4">
                   {member.socials.map((social, idx) => (
                     <a
                       key={idx}
                       href={social.href}
-                      className="text-gray-500 hover:text-red-600"
+                      className="text-black text-2xl hover:text-red-600"
                       aria-label="Social Link"
                     >
                       <social.icon className="w-6 h-6" />

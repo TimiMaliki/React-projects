@@ -4,7 +4,7 @@ const PricingSection = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-6xl font-extrabold text-black mb-4">
-              Flexible <span className="text-red-500">Pricing Plans</span>
+              Flexible <span className="text-red-700">Pricing Plans</span>
             </h2>
             <p className="text-black max-w-2xl mx-auto text-xl font-bold">
               Affordable plans for every business — from one-page sites to

@@ -1,4 +1,4 @@
-import AboutHeroImg from "../images/About/professional-programmer-working-late-dark-office.jpg";
+import AboutHeroImg from "../images/About/started.jpg";
 import SelfImg from "../images/About/top-view-unrecognizable-hacker-performing-cyberattack-night.jpg";
 import Team from "./Team";
 const AboutPage = () => {
@@ -12,7 +12,7 @@ const AboutPage = () => {
         />
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 text-center relative z-10">
           <h1 className="text-4xl md:text-7xl font-extrabold  text-white mb-6">
-            Crafting Digital <span className="text-red-500">Excellence</span>
+            Crafting Digital <span className="text-red-700">Excellence</span>
           </h1>
           <p className="text-2xl font-semibold text-white max-w-3xl mx-auto mb-8">
             We're a passionate team of designers, developers, and strategists
@@ -80,7 +80,7 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-6xl font-extrabold mb-4">
-              Our <span className="text-red-500">Approach</span>
+              Our <span className="text-red-700">Approach</span>
             </h2>
             <p className="text-black max-w-2xl mx-auto text-lg font-bold">
               We don't just build websites - we create digital experiences that
@@ -105,10 +105,10 @@ const AboutPage = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-black mb-4">
                 Strategic Design
               </h3>
-              <p className="text-gray-700">
+              <p className="text-black text-lg">
                 Every pixel serves a purpose. We design with your business goals
                 in mind, creating interfaces that convert visitors into
                 customers.
@@ -131,10 +131,10 @@ const AboutPage = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-black mb-4">
                 Cutting-Edge Tech
               </h3>
-              <p className="text-gray-700">
+              <p className="text-black text-lg">
                 We stay ahead of the curve with the latest technologies to
                 ensure your website is fast, secure, and future-proof.
               </p>
@@ -156,10 +156,10 @@ const AboutPage = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-black mb-4">
                 Data-Driven
               </h3>
-              <p className="text-gray-700">
+              <p className="text-black text-lg">
                 We make decisions based on analytics and user behavior, not
                 guesswork. Your success is measured and optimized.
               </p>

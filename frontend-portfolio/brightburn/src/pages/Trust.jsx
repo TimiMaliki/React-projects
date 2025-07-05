@@ -4,7 +4,7 @@ const TrustSection = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-6xl font-extrabold text-black mb-4">
-              Trusted By <span className="text-red-500">Clients Worldwide</span>
+              Trusted By <span className="text-red-700">Clients Worldwide</span>
             </h2>
             <p className="text-black font-bold max-w-2xl mx-auto text-lg">
               We deliver top-notch website solutions to clients around the globe.

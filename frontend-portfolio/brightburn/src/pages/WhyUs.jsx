@@ -4,7 +4,7 @@ const  WhyUS = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-6xl font-extrabold text-black mb-6">
-              Why <span className="text-red-500">Trust Us</span>
+              Why <span className="text-red-700">Trust Us</span>
             </h2>
             <p className="text-black max-w-2xl mx-auto text-lg font-bold">
               We're not just another web agency — we’re your dedicated partner for success.  
