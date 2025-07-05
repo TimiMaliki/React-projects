@@ -20,45 +20,14 @@ import Project9 from "../images/portfolio/l9.png";
 import Project10 from "../images/portfolio/l10.png";
 
 const Portfolio = () => {
-  const projects = [
-    {
-      title: "Modern E-Commerce Store",
-      image: Project1,
-      link: "#",
-      description:
-        "A sleek, fully responsive online store with seamless checkout and modern design.",
-    },
-    {
-      title: "Business Agency Website",
-      image: Project2,
-      link: "#",
-      description:
-        "Professional website for a leading agency, built for speed and conversions.",
-    },
-    {
-      title: "NFT Marketplace",
-      image: Project3,
-      link: "#",
-      description:
-        "A secure, fast, and visually stunning NFT marketplace platform.",
-    },
-    {
-      title: "Creative Portfolio",
-      image: Project4,
-      link: "#",
-      description:
-        "A personal portfolio for a creative professional, focused on showcasing work beautifully.",
-    },
-  ];
-
   return (
     <section className="w-full p-6 lg:p-0 py-20 bg-gray-50" id="portfolio">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Our <span className="text-red-500">Portfolio</span>
+          <h2 className="text-3xl md:text-7xl font-bold text-black mb-6">
+            Our <span className="text-red-700">Portfolio</span>
           </h2>
-          <p className="text-gray-700 max-w-2xl mx-auto text-lg">
+          <p className="text-black text-2xl  max-w-2xl mx-auto">
             Explore some of the standout projects we've proudly delivered for
             clients worldwide.
           </p>
