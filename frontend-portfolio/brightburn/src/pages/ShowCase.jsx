@@ -30,13 +30,13 @@ const ShowCase  = () => {
     
           return (
             <section className="py-16 md:py-24 overflow-hidden">
-              <div className="w-full mx-auto px-4 sm:px-3 lg:px-8">
+              <div className="w-full px-4 sm:px-3 lg:px-8">
                 {/* Header with CTA */}
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-16">
+                <div className="flex flex-col md:flex-row justify-center items-center lg:items-center mb-16 ">
                   <div className="mb-6 md:mb-0">
-                    <span className="text-sm font-semibold text-purple-600 mb-2 block">PORTFOLIO SHOWCASE</span>
-                    <h2 className="text-3xl md:text-5xl font-bold">
-                      Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">Recent Work</span>
+                    <span className="text-2xl font-extrabold text-blackmb-2 text-center block mb-6">PORTFOLIO SHOWCASE</span>
+                    <h2 className="text-3xl md:text-7xl font-bold">
+                      Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-700 to-pink-900">Recent Work</span>
                     </h2>
                   </div>
                 </div>

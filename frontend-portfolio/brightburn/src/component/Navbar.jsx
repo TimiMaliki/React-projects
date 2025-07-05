@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,12 +16,13 @@ const Navbar = () => {
     <nav className="sticky top-0 left-0 w-full z-50 px-4 py-3 shadow-lg bg-white text-white transition-all duration-300 hover:brightness-110">
       <div className="flex items-center justify-between">
         {/* Brand */}
+        <Link to="/">
         <div className="pl-3 lg:pl-10">
           <h2 className="text-3xl font-extrabold font-sans text-black">
             Bright <span className="text-red-700">Burn</span>
           </h2>
         </div>
-
+        </Link>
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6 p-2 rounded-lg bg-gradient-to-r from-[#ff1b6b]  to-[#45caff] shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
           {navLinks.map((nav, index) => (
