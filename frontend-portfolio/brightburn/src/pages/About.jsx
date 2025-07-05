@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative w-full h-[80vh] rounded-2xl rounded-b-none lg:rounded-3xl bg-gradient-to-r from-gray-900 to-gray-800 flex items-center justify-center overflow-hidden">
+      <section  id="about"  className="relative w-full h-[80vh] rounded-2xl rounded-b-none lg:rounded-3xl bg-gradient-to-r from-gray-900 to-gray-800 flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0  bg-cover object-cover bg-center bg-no-repeat w-full h-full"
           style={{ backgroundImage: `url(${AboutHeroImg})` ,  height: '800px',}}

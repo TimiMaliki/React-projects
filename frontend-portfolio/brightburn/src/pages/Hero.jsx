@@ -27,7 +27,7 @@ const Hero = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <section className="relative w-full h-screen bg-light">
+        <section className="relative w-full h-screen bg-light" id="home">
           {/* Background Image */}
           <img
             src={website}
@@ -90,6 +90,7 @@ const Hero = () => {
           </div>
         </section>
       </SwiperSlide>
+
       <SwiperSlide>
         <section className="relative w-full h-screen bg-light">
           {/* Background Image */}

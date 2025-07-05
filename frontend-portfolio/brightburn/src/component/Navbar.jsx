@@ -5,11 +5,12 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Services", href: "#services" },
+    { name: "Home", href: "/",},
+    { name: "Services", href: "#services"  },
+    { name: "About US", href: "#about"  },
     { name: "Pricing", href: "#pricing" },
-    { name: "Portfolio", href: "#work" },
-    { name: "Contact", href: "#contact" },
+    { name: "Portfolio", href: "#work"},
+    { name: "Contact", href: "#contact"},
   ];
 
   return (

@@ -22,7 +22,7 @@ import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   return (
-    <section className="w-full p-6 lg:p-0 py-20 bg-gray-50" id="portfolio">
+    <section className="w-full p-6 lg:p-0 py-20 bg-gray-50" id="work">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-7xl font-bold text-black mb-6">

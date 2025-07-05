@@ -1,6 +1,6 @@
 const PricingSection = () => {
     return (
-      <section className="w-full py-20 bg-white">
+      <section className="w-full py-20 bg-white" id="pricing">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-6xl font-extrabold text-black mb-4">

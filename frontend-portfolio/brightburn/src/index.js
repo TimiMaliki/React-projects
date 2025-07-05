@@ -6,6 +6,7 @@ import MainLayout from './layout/mainLayout';
 import ShowCase from './pages/ShowCase';
 import HomePage from './HomePage/HomePage';
 
+
 const router = createBrowserRouter([
   {
  element : <MainLayout/>,

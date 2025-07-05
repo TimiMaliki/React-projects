@@ -1,6 +1,8 @@
 import fashion from "../images/works/ecom.png"
 import dental from "../images/works/dental.png"
 import confre from "../images/works/vidcal.png"
+import dog from "../images/works/woofipidia.png"
+import van from "../images/works/van.png"
 import blog from "../images/portfolio/l1.png"
 
 
@@ -8,16 +10,33 @@ const ShowCase  = () => {
    
     const projects = [
         {
-          title: "Jobbazar - AI-Powered Job Platform",
-          description: "Revolutionized job searching with machine learning algorithms that match candidates to ideal positions. Built with React, Node.js, and MongoDB, featuring real-time notifications and advanced filtering.",
+          title: "LightRun - The Motion you see on yur blog ",
+          description: "Revolutionized blogs by monetizing you audience.",
           image:   `${blog}`,
           tags: ["React", "Node.js", "MongoDB", "AI Matching"],
           year: "2025",
           link: "https://lightrun.vercel.app/"
         },
         {
-          title: "Slepp - Social Media for Professionals",
-          description: "Created a LinkedIn alternative focused on authentic professional connections. Implemented WebSockets for real-time messaging, custom analytics dashboards, and secure authentication flow.",
+            title: "Dog sells website - get the cutest dogs available in belgium.",
+            description: "Dogs lovers best go to place",
+            image:   `${van}`,
+            tags: ["WordPress"],
+            year: "2024",
+            link: "https://www.vanmarjoli.be/"
+          },
+          {
+            title: "Woofipedia - Dogs Breeds",
+            description: "Your trusted source for dog breed info, care tips, and everything canine — from tiny terriers to giant guardians.",
+            image:  `${dog}`,
+            tags: ["React", "Tailwindcss", "DogAPI"],
+            year: "2024",
+            reverse: true,
+            link: "https://woofipedia.vercel.app/"
+          },
+        {
+          title: "Slepp - Fashion Media for Professionals",
+          description:"Slepp is the go-to fashion media platform for industry professionals. Stay ahead of trends with exclusive insights, expert analyses, and curated content spanning style, design, and business. From emerging designers to global fashion houses, Slepp keeps you inspired, informed, and connected.",
           image:  `${fashion}`,
           tags: ["Html", "Css", "Tailwind CSS", "JS"],
           year: "2023",
@@ -25,15 +44,15 @@ const ShowCase  = () => {
           link: "https://maliki-fashion-ecommerce.vercel.app/"
         },
         {
-          title: "Costa - Restaurant Management System",
-          description: "End-to-end solution for restaurant operations including inventory, POS, and customer loyalty programs. Reduced order processing time by 40% with optimized workflows.",
+          title: `Costa - Every tooth in a man's head is more valuable than a diamond." and "A smile is a curve that sets everything straight.`,
+          description: "Transform your smile with advanced dental care focused on clean, healthy, and radiant teeth. We offer comprehensive solutions for whitening, alignment, and oral wellness — because every great smile begins with great care.",
           image:  `${dental}`,
           tags: ["Html", "Css", "Bootstrap", "Js"],
           year: "2023",
           link: "https://dental-clinic-landing-page-ten.vercel.app/"
         },
         {
-            title: "Costa - Restaurant Management System",
+            title: "VidCOf - Video Calling System",
             description: "End-to-end solution for restaurant operations including inventory, POS, and customer loyalty programs. Reduced order processing time by 40% with optimized workflows.",
             image:  `${confre}`,
             tags: ["Html", "Css", "Bootstrap", "SwiperJs" , "Js"],
