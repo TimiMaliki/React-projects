@@ -1,31 +1,45 @@
+import fashion from "../images/works/ecom.png"
+import dental from "../images/works/dental.png"
+import confre from "../images/works/vidcal.png"
+import blog from "../images/portfolio/l1.png"
+
+
 const ShowCase  = () => {
    
     const projects = [
         {
           title: "Jobbazar - AI-Powered Job Platform",
           description: "Revolutionized job searching with machine learning algorithms that match candidates to ideal positions. Built with React, Node.js, and MongoDB, featuring real-time notifications and advanced filtering.",
-          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+          image:   `${blog}`,
           tags: ["React", "Node.js", "MongoDB", "AI Matching"],
-          year: "2023",
-          link: "/projects/jobbazar"
+          year: "2025",
+          link: "https://lightrun.vercel.app/"
         },
         {
           title: "Slepp - Social Media for Professionals",
           description: "Created a LinkedIn alternative focused on authentic professional connections. Implemented WebSockets for real-time messaging, custom analytics dashboards, and secure authentication flow.",
-          image: "https://cdn.easyfrontend.com/pictures/portfolio/portfolio16_2.png",
-          tags: ["Next.js", "Firebase", "Tailwind CSS", "Web Sockets"],
-          year: "2022",
+          image:  `${fashion}`,
+          tags: ["Html", "Css", "Tailwind CSS", "JS"],
+          year: "2023",
           reverse: true,
-          link: "/projects/slepp"
+          link: "https://maliki-fashion-ecommerce.vercel.app/"
         },
         {
           title: "Costa - Restaurant Management System",
           description: "End-to-end solution for restaurant operations including inventory, POS, and customer loyalty programs. Reduced order processing time by 40% with optimized workflows.",
-          image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-          tags: ["React Native", "GraphQL", "Django", "Payment Processing"],
+          image:  `${dental}`,
+          tags: ["Html", "Css", "Bootstrap", "Js"],
           year: "2023",
-          link: "/projects/costa"
+          link: "https://dental-clinic-landing-page-ten.vercel.app/"
         },
+        {
+            title: "Costa - Restaurant Management System",
+            description: "End-to-end solution for restaurant operations including inventory, POS, and customer loyalty programs. Reduced order processing time by 40% with optimized workflows.",
+            image:  `${confre}`,
+            tags: ["Html", "Css", "Bootstrap", "SwiperJs" , "Js"],
+            year: "2022",
+            link: "https://video-chat-landing-page.vercel.app/"
+          },
       ];
     
           return (
@@ -78,15 +92,15 @@ const ShowCase  = () => {
                         <p className="text-lg  mb-6">
                           {project.description}
                         </p>
-                        <div
-                          to={project.link}
-                          className="inline-flex items-center px-6 py-3 border text-base font-medium rounded-full shadow-sm  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-all duration-300"
+                        <a
+                          href={project.link}
+                          className="inline-flex items-center px-6 py-3 border text-base  cursor-pointer font-medium rounded-full shadow-sm  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-all duration-300"
                         >
                           View Case Study
                           <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                           </svg>
-                        </div>
+                        </a>
                       </div>
                     </div>
                   ))}
