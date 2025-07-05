@@ -7,7 +7,7 @@ import { Twitter, Instagram, Linkedin, } from "lucide-react";
 
 const Team = () => {
     return ( 
-        <section className="w-full py-20 bg-white">
+        <section className="w-full py-20 bg-white" id="team">
         <div className="px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-6xl font-extrabold mb-4 text-black">

@@ -1,6 +1,5 @@
-import Footer from '../component/Footer';
-import Navbar from '../component/Navbar';
 import AboutPage from '../pages/About';
+import Contact from '../pages/Contact';
 import Hero from '../pages/Hero';
 import Portfolio from '../pages/Portfolio';
 import PricingSection from '../pages/Pricing';
@@ -18,6 +17,7 @@ const HomePage = () => {
       <WhyUS />
       <PricingSection />
       <Portfolio />
+      <Contact/>
     </>
   );
 };
