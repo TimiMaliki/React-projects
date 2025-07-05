@@ -13,10 +13,10 @@ const Hero = () => {
       {/* Content */}
       <div className="absolute bottom-10 left-4 right-4 md:left-8 md:right-8 lg:left-10 lg:right-auto">
         <div className="bg-white rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg max-w-full md:max-w-xl lg:max-w-3xl">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4 md:mb-6 text-black">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-extrabold leading-tight mb-4 md:mb-6 text-black">
             Websites That <span className="text-red-500">Wow</span> Your Audience
           </h1>
-          <p className="text-base sm:text-lg md:text-xl mb-6 text-gray-800">
+          <p className="text-base sm:text-lg md:text-xl font-bold mb-6 text-gray-800">
             From sleek single-page sites to full-featured eCommerce platforms — we
             build websites that look great, load fast, and grow your business.
           </p>

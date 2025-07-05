@@ -47,13 +47,13 @@ const AboutPage = () => {
                 website that truly represents them.
               </p>
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gray-50 p-6 rounded-xl">
+                <div className="bg-gray-200 p-6 rounded-xl">
                   <h3 className="text-red-600 text-4xl font-bold mb-2">30+</h3>
-                  <p className="text-black">Projects Completed</p>
+                  <p className="text-black text-xl">Projects Completed</p>
                 </div>
-                <div className="bg-gray-50 p-6 rounded-xl">
+                <div className="bg-gray-200 p-6 rounded-xl">
                   <h3 className="text-red-600 text-4xl font-bold mb-2">5+</h3>
-                  <p className="text-black">Countries Served</p>
+                  <p className="text-black text-xl">Countries Served</p>
                 </div>
               </div>
             </div>
@@ -79,10 +79,10 @@ const AboutPage = () => {
       <section className="w-full py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-6xl font-extrabold mb-4">
               Our <span className="text-red-500">Approach</span>
             </h2>
-            <p className="text-gray-700 max-w-2xl mx-auto text-lg">
+            <p className="text-black max-w-2xl mx-auto text-lg font-bold">
               We don't just build websites - we create digital experiences that
               drive growth.
             </p>

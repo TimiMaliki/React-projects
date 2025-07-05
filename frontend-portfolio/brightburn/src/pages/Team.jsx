@@ -2,7 +2,7 @@ import T1 from "../images/Team/t1.jpg";
 import T2 from "../images/Team/t2.jpg";
 import T3 from "../images/Team/t3.jpg";
 import T4 from "../images/Team/t4.jpg";
-import { Twitter, Instagram, Linkedin, LinkedinIcon } from "lucide-react";
+import { Twitter, Instagram, Linkedin, } from "lucide-react";
 
 
 const Team = () => {
@@ -10,10 +10,10 @@ const Team = () => {
         <section className="w-full py-20 bg-white">
         <div className="px-6 md:px-12 lg:px-20">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-6xl font-extrabold mb-4 text-black">
               Meet the <span className="text-red-500">Team</span>
             </h2>
-            <p className="text-gray-700 max-w-2xl mx-auto text-lg">
+            <p className="text-black max-w-2xl mx-auto text-lg font-bold">
               The creative minds behind your digital success
             </p>
           </div>
@@ -67,7 +67,7 @@ const Team = () => {
             ].map((member, index) => (
               <div
                 key={index}
-                className=" w-full lg:w-[400px] bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition"
+                className=" w-full lg:w-[400px] bg-white rounded-3xl shadow-2xl overflow-hidden hover:shadow-2xl transition"
               >
                 <div className="h-[400px] w-full relative">
                   <img
