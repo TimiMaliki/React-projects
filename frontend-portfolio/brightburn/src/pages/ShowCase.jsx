@@ -39,15 +39,6 @@ const ShowCase  = () => {
                       Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">Recent Work</span>
                     </h2>
                   </div>
-                  <Link 
-                    to="/allworks" 
-                    className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 transition-all duration-300"
-                  >
-                    View All Projects
-                    <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </Link>
                 </div>
         
                 {/* Projects Grid */}
@@ -87,7 +78,7 @@ const ShowCase  = () => {
                         <p className="text-lg  mb-6">
                           {project.description}
                         </p>
-                        <Link
+                        <div
                           to={project.link}
                           className="inline-flex items-center px-6 py-3 border text-base font-medium rounded-full shadow-sm  hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-all duration-300"
                         >
@@ -95,7 +86,7 @@ const ShowCase  = () => {
                           <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                           </svg>
-                        </Link>
+                        </div>
                       </div>
                     </div>
                   ))}

@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './component/Footer';
 import Navbar from './component/Navbar';
 import AboutPage from './pages/About';
 import Hero from './pages/Hero';
@@ -19,6 +20,7 @@ function App() {
    <WhyUS/>
    <PricingSection/>
    <Portfolio/>
+   <Footer/>
     </>
   );
 }
