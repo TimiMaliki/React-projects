@@ -2,16 +2,16 @@ import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white mt-44 pt-16 pb-8">
+    <footer className="bg-white text-black mt-44 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
         <div className="grid gap-10 md:grid-cols-4">
 
           {/* Logo & About */}
           <div>
-            <h2 className="text-2xl font-extrabold mb-4">
-              Bright Burn<span className="text-red-600">.</span>
+            <h2 className="text-3xl lg:text-4xl font-extrabold mb-4">
+              Bright<span className="text-red-700"> Burn</span>
             </h2>
-            <p className="text-gray-400">
+            <p className="text-black text-lg">
               Crafting websites that deliver stunning design, unmatched speed, and seamless user experiences.
             </p>
           </div>

@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import { createBrowserRouter,RouterProvider} from 'react-router-dom';
+import MainLayout from './layout/mainLayout';
+import ShowCase from './pages/ShowCase';
+import HomePage from './HomePage/HomePage';
+
+const router = createBrowserRouter([
+  {
+ element : <MainLayout/>,
+ children : [
+  { path : "/" , element : <HomePage/> },
+  { path : "/show" , element : <ShowCase/> },
+],
+}])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <RouterProvider router={router} />
   </React.StrictMode>
 );
 
