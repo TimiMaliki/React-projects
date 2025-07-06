@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useState ,useEffect } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = "smooth";
+  }, []);
+  
   const navLinks = [
     { name: "Home", href: "/",},
     { name: "Services", href: "#services"  },
@@ -12,7 +17,7 @@ const Navbar = () => {
     { name: "Portfolio", href: "#work"},
     { name: "Contact", href: "#contact"},
   ];
-
+  
   return (
     <nav className="sticky top-0 left-0 w-full z-50 px-4 py-3 shadow-lg bg-white text-white transition-all duration-300 hover:brightness-110">
       <div className="flex items-center justify-between">

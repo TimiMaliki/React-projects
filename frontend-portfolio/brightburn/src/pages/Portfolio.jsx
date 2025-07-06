@@ -51,8 +51,6 @@ const Portfolio = () => {
                   />
                 </div>
                 <div className="p-4 sm:p-6">
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 sm:mb-2"></h3>
-                  <p className="text-gray-700 mb-2 sm:mb-4 text-sm sm:text-base"></p>
                   <Link to="/show">
                     <div className="text-red-600 hover:underline font-semibold text-sm sm:text-base">
                       View Project →
