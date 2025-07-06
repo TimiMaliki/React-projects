@@ -1,74 +1,69 @@
-import { useState ,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
-
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     document.documentElement.style.scrollBehavior = "smooth";
   }, []);
-  
+
   const navLinks = [
-    { name: "Home", href: "/",},
-    { name: "Services", href: "#services"  },
-    { name: "About US", href: "#about"  },
+    { name: "Home", href: "/" },
+    { name: "Services", href: "#services" },
+    { name: "About US", href: "#about" },
     { name: "Pricing", href: "#pricing" },
-    { name: "Portfolio", href: "#work"},
-    { name: "Contact", href: "#contact"},
+    { name: "Portfolio", href: "#work" },
+    { name: "Contact", href: "#contact" },
   ];
-  
+
   return (
-    <nav className="sticky top-0 left-0 w-full z-50 px-4 py-3 shadow-lg bg-white text-white transition-all duration-300 hover:brightness-110">
-      <div className="flex items-center justify-between">
+    <nav className="sticky top-0 left-0 w-full z-50 backdrop-blur-lg bg-white/70 shadow-md transition-all duration-300">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
         {/* Brand */}
         <Link to="/">
-        <div className="pl-3 lg:pl-10">
           <h2 className="text-3xl font-extrabold font-sans text-black">
             Bright <span className="text-red-700">Burn</span>
           </h2>
-        </div>
         </Link>
+
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-6 p-2 rounded-lg bg-gradient-to-r from-[#ff1b6b]  to-[#45caff] shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]">
+        <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((nav, index) => (
             <a
               key={index}
               href={nav.href}
-              className="text-md font-medium text-white hover:text-yellow-100 hover:no-underline px-3 py-1 rounded-md hover:bg-white/10 transition-colors duration-200"
+              className="text-md font-medium text-gray-800 hover:text-red-600 transition-all duration-300"
             >
               {nav.name}
             </a>
           ))}
         </div>
 
-        {/* Button Menu */}
+        {/* Mobile Button */}
         <button
-          className="flex flex-col space-y-1 md:hidden"
+          className="md:hidden p-2 rounded-md bg-red-600 text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? (
-            <XMarkIcon className="h-8 w-8  rounded-s-xl rounded-e-xl bg-red-600 text-black" />
-          ) : (
-            <Bars3Icon className="h-8 w-8 rounded-s-xl rounded-e-xl bg-red-600 text-black" />
-          )}
+          {isOpen ? <XMarkIcon className="h-8 w-8" /> : <Bars3Icon className="h-8 w-8" />}
         </button>
       </div>
-{/* Mobile Menu */}
 
-{isOpen && (
-  <div className="flex flex-col text-center md:hidden absolute top-full right-0 w-full items-start gap-4 px-4 py-6  bg-white">
-  {navLinks.map((nav, index) => (
-    <a
-      key={index}
-      href={nav.href}
-      className="text-lg  text-black font-sans font-bold w-full px-1 py-2 rounded-xl bg-red-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02"
-    >
-      {nav.name}
-    </a>
-  ))}
-</div>
-)}
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden flex flex-col gap-4 px-6 py-4 bg-white shadow-lg rounded-b-xl">
+          {navLinks.map((nav, index) => (
+            <a
+              key={index}
+              href={nav.href}
+              onClick={() => setIsOpen(false)}
+              className="text-lg font-semibold text-gray-800 hover:text-red-600 transition-all duration-300"
+            >
+              {nav.name}
+            </a>
+          ))}
+        </div>
+      )}
     </nav>
   );
 };
