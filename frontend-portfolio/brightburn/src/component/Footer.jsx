@@ -42,16 +42,16 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-red-500 transition">
+              <a href="https://wa.me/qr/RJYG6ACYJUUGB1" className="hover:text-red-500 transition">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="hover:text-red-500 transition">
+              <a href="https://wa.me/qr/RJYG6ACYJUUGB1" className="hover:text-red-500 transition">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="#" className="hover:text-red-500 transition">
+              <a href="https://wa.me/qr/RJYG6ACYJUUGB1" className="hover:text-red-500 transition">
                 <Twitter className="w-6 h-6" />
               </a>
-              <a href="#" className="hover:text-red-500 transition">
+              <a href="https://wa.me/qr/RJYG6ACYJUUGB1" className="hover:text-red-500 transition">
                 <Linkedin className="w-6 h-6" />
               </a>
             </div>

@@ -30,7 +30,7 @@ const PricingSection = () => {
                 <li>✓ SEO Ready</li>
               </ul>
               <a
-                href="#contact"
+                href="https://wa.me/qr/RJYG6ACYJUUGB1"
                 className="bg-red-600 hover:bg-red-700 text-white font-semibold text-base px-5 py-3 rounded-full shadow-md inline-block transition"
               >
                 Get Started
@@ -53,7 +53,7 @@ const PricingSection = () => {
                 <li>✓ SEO Optimization</li>
               </ul>
               <a
-                href="#contact"
+                href="https://wa.me/qr/RJYG6ACYJUUGB1"
                 className="bg-red-600 hover:bg-red-700 text-white font-semibold text-base px-5 py-3 rounded-full shadow-md inline-block transition"
               >
                 Start Project
@@ -76,7 +76,7 @@ const PricingSection = () => {
                 <li>✓ Speed & Security Optimized</li>
               </ul>
               <a
-                href="#contact"
+                href="https://wa.me/qr/RJYG6ACYJUUGB1"
                 className="bg-red-600 hover:bg-red-700 text-white font-semibold text-base px-5 py-3 rounded-full shadow-md inline-block transition"
               >
                 Start Selling
@@ -101,7 +101,7 @@ const PricingSection = () => {
                 <li>✓ Global CDN</li>
               </ul>
               <a
-                href="#contact"
+                href="https://wa.me/qr/RJYG6ACYJUUGB1"
                 className="bg-red-600 hover:bg-red-700 text-white font-semibold text-base px-5 py-3 rounded-full shadow-md inline-block transition"
               >
                 Subscribe
@@ -123,7 +123,7 @@ const PricingSection = () => {
                 <li>✓ Security Monitoring</li>
               </ul>
               <a
-                href="#contact"
+                href="https://wa.me/qr/RJYG6ACYJUUGB1"
                 className="bg-red-600 hover:bg-red-700 text-white font-semibold text-base px-5 py-3 rounded-full shadow-md inline-block transition"
               >
                 Enroll Now
@@ -145,7 +145,7 @@ const PricingSection = () => {
                 <li>✓ Annual Performance Report</li>
               </ul>
               <a
-                href="#contact"
+                href="https://wa.me/qr/RJYG6ACYJUUGB1"
                 className="bg-red-600 hover:bg-red-700 text-white font-semibold text-base px-5 py-3 rounded-full shadow-md inline-block transition"
               >
                 Save With Yearly

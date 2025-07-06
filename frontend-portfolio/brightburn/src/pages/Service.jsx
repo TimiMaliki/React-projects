@@ -23,7 +23,7 @@ const ServicesSection = () => {
               your message instantly.
             </p>
             <a
-              href="#contact"
+              href="https://wa.me/qr/RJYG6ACYJUUGB1"
               className="text-red-600 hover:text-red-700 font-semibold text-base"
             >
               Get Started →
@@ -40,7 +40,7 @@ const ServicesSection = () => {
               navigation for businesses and brands.
             </p>
             <a
-              href="#contact"
+              href="https://wa.me/qr/RJYG6ACYJUUGB1"
               className="text-red-600 hover:text-red-700 font-semibold text-base"
             >
               Explore More →
@@ -57,7 +57,7 @@ const ServicesSection = () => {
               product management.
             </p>
             <a
-              href="#contact"
+              href="https://wa.me/qr/RJYG6ACYJUUGB1"
               className="text-red-600 hover:text-red-700 font-semibold text-base"
             >
               Start Selling →
@@ -74,7 +74,7 @@ const ServicesSection = () => {
               templates — giving you full flexibility.
             </p>
             <a
-              href="#contact"
+              href="https://wa.me/qr/RJYG6ACYJUUGB1"
               className="text-red-600 hover:text-red-700 font-semibold text-base"
             >
               See Options →
@@ -91,7 +91,7 @@ const ServicesSection = () => {
               it to keep it secure, fast, and up-to-date.
             </p>
             <a
-              href="#contact"
+              href="https://wa.me/qr/RJYG6ACYJUUGB1"
               className="text-red-600 hover:text-red-700 font-semibold text-base"
             >
               Learn More →
@@ -108,7 +108,7 @@ const ServicesSection = () => {
               modern, stunning website that wows visitors.
             </p>
             <a
-              href="#contact"
+              href="https://wa.me/qr/RJYG6ACYJUUGB1"
               className="text-red-600 hover:text-red-700 font-semibold text-base"
             >
               Refresh Your Site →

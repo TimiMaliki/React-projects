@@ -76,7 +76,7 @@ const TrustSection = () => {
               Join hundreds of happy clients worldwide!
             </h3>
             <a
-              href="#contact"
+              href="https://wa.me/qr/RJYG6ACYJUUGB1"
               className="bg-red-600 hover:bg-red-700 transition-all duration-300 text-white px-6 py-3 rounded-full font-semibold text-lg shadow-md inline-block"
             >
               Start Your Project Today

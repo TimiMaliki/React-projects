@@ -19,7 +19,7 @@ const AboutPage = () => {
             dedicated to building websites that drive real business results.
           </p>
           <a
-            href="#contact"
+            href="https://wa.me/qr/RJYG6ACYJUUGB1"
             className="bg-red-600 hover:bg-red-700 transition-all duration-300 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg inline-block"
           >
             Get in Touch

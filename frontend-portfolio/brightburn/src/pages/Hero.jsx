@@ -48,7 +48,7 @@ const Hero = () => {
                 grow your business.
               </p>
               <a
-                href="#contact"
+                href="https://wa.me/qr/RJYG6ACYJUUGB1"
                 className="bg-red-600 hover:bg-red-700 transition-all duration-300 text-white px-5 py-3 rounded-full font-semibold text-base md:text-lg shadow-md inline-block"
               >
                 Get Your Website Now
@@ -81,7 +81,7 @@ const Hero = () => {
               </p>
 
               <a
-                href="#contact"
+                href="https://wa.me/qr/RJYG6ACYJUUGB1"
                 className="bg-red-600 hover:bg-red-700 transition-all duration-300 text-white px-5 py-3 rounded-full font-semibold text-base md:text-lg shadow-md inline-block"
               >
                 Get Your Website Now
@@ -114,7 +114,7 @@ const Hero = () => {
               </p>
 
               <a
-                href="#contact"
+                href="https://wa.me/qr/RJYG6ACYJUUGB1"
                 className="bg-red-600 hover:bg-red-700 transition-all duration-300 text-white px-5 py-3 rounded-full font-semibold text-base md:text-lg shadow-md inline-block"
               >
                 Get Your Website Now
