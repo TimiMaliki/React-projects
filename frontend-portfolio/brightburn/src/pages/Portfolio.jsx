@@ -1,7 +1,6 @@
+// Import Swiper styles
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
 
@@ -22,15 +21,14 @@ import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   return (
-    <section className="w-full p-6 lg:p-0 py-20 bg-gray-50" id="work">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-7xl font-bold text-black mb-6">
+    <section className="w-full py-16 sm:py-20 px-4 sm:px-6 md:px-12 lg:px-20 bg-gray-50 overflow-hidden" id="work">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-5xl md:text-7xl font-bold text-black mb-4 sm:mb-6">
             Our <span className="text-red-700">Portfolio</span>
           </h2>
-          <p className="text-black text-2xl  max-w-2xl mx-auto">
-            Explore some of the standout projects we've proudly delivered for
-            clients worldwide.
+          <p className="text-black text-base sm:text-xl md:text-2xl max-w-2xl mx-auto">
+            Explore some of the standout projects we've proudly delivered for clients worldwide.
           </p>
         </div>
         <Swiper
@@ -39,250 +37,31 @@ const Portfolio = () => {
           modules={[EffectCards]}
           className="mySwiper"
         >
-          {/* swiper one */}
-          <SwiperSlide>
-            <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-              <div className="h-64 w-full relative">
-                <img
-                  src={Project1}
-                  alt={"a dev"}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
-                <p className="text-gray-700 mb-4"></p>
-                <Link to="/show">
-                <div
-                  className="text-red-600 hover:underline font-semibold"
-                >
-                  View Project →
+          {[
+            Project1, Project2, Project3, Project4, Project5,
+            Project6, Project7, Project8, Project9, Project10,
+          ].map((project, index) => (
+            <SwiperSlide key={index}>
+              <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                <div className="h-56 sm:h-64 md:h-72 w-full relative">
+                  <img
+                    src={project}
+                    alt={"Project " + (index + 1)}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 </div>
-                </Link>
-               
-              </div>
-            </div>
-          </SwiperSlide>
-
-          {/* swiper one */}
-
-          <SwiperSlide>
-            <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-              <div className="h-64 w-full relative">
-                <img
-                  src={Project2}
-                  alt={"a dev"}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
-                <p className="text-gray-700 mb-4"></p>
-                <Link to="/show">
-                <div
-                  className="text-red-600 hover:underline font-semibold"
-                >
-                  View Project →
+                <div className="p-4 sm:p-6">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 sm:mb-2"></h3>
+                  <p className="text-gray-700 mb-2 sm:mb-4 text-sm sm:text-base"></p>
+                  <Link to="/show">
+                    <div className="text-red-600 hover:underline font-semibold text-sm sm:text-base">
+                      View Project →
+                    </div>
+                  </Link>
                 </div>
-                </Link>
               </div>
-            </div>
-          </SwiperSlide>
-
-          {/* swiper two */}
-
-          <SwiperSlide>
-            <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-              <div className="h-64 w-full relative">
-                <img
-                  src={Project3}
-                  alt={"a dev"}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
-                <p className="text-gray-700 mb-4"></p>
-                <Link to="/show">
-                <div
-                  className="text-red-600 hover:underline font-semibold"
-                >
-                  View Project →
-                </div>
-                </Link>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          {/* swiper three */}
-
-          <SwiperSlide>
-            <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-              <div className="h-64 w-full relative">
-                <img
-                  src={Project4}
-                  alt={"a dev"}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
-                <p className="text-gray-700 mb-4"></p>
-                <Link to="/show">
-                <div
-                  className="text-red-600 hover:underline font-semibold"
-                >
-                  View Project →
-                </div>
-                </Link>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          {/* swiper four */}
-
-          <SwiperSlide>
-            <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-              <div className="h-64 w-full relative">
-                <img
-                  src={Project5}
-                  alt={"a dev"}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
-                <p className="text-gray-700 mb-4"></p>
-                <Link to="/show">
-                <div
-                  className="text-red-600 hover:underline font-semibold"
-                >
-                  View Project →
-                </div>
-                </Link>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          {/* swiper five */}
-          <SwiperSlide>
-            <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-              <div className="h-64 w-full relative">
-                <img
-                  src={Project6}
-                  alt={"a dev"}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
-                <p className="text-gray-700 mb-4"></p>
-                <Link to="/show">
-                <div
-                  className="text-red-600 hover:underline font-semibold"
-                >
-                  View Project →
-                </div>
-                </Link>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          {/* swiper six */}
-
-          <SwiperSlide>
-            <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-              <div className="h-64 w-full relative">
-                <img
-                  src={Project7}
-                  alt={"a dev"}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
-                <p className="text-gray-700 mb-4"></p>
-                <Link to="/show">
-                <div
-                  className="text-red-600 hover:underline font-semibold"
-                >
-                  View Project →
-                </div>
-                </Link>
-              </div>
-            </div>
-          </SwiperSlide>
-          {/* swiper seven */}
-          <SwiperSlide>
-            <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-              <div className="h-64 w-full relative">
-                <img
-                  src={Project8}
-                  alt={"a dev"}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
-                <p className="text-gray-700 mb-4"></p>
-                <Link to="/show">
-                <div
-                  className="text-red-600 hover:underline font-semibold"
-                >
-                  View Project →
-                </div>
-                </Link>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          {/* swiper eight*/}
-
-          <SwiperSlide>
-            <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-              <div className="h-64 w-full relative">
-                <img
-                  src={Project9}
-                  alt={"a dev"}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
-                <p className="text-gray-700 mb-4"></p>
-                <Link to="/show">
-                <div
-                  className="text-red-600 hover:underline font-semibold"
-                >
-                  View Project →
-                </div>
-                </Link>
-              </div>
-            </div>
-          </SwiperSlide>
-          {/* swiper nince*/}
-          <SwiperSlide>
-            <div className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition">
-              <div className="h-64 w-full relative">
-                <img
-                  src={Project10}
-                  alt={"a dev"}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-2"></h3>
-                <p className="text-gray-700 mb-4"></p>
-                <Link to="/show">
-                <div
-                  className="text-red-600 hover:underline font-semibold"
-                >
-                  View Project →
-                </div>
-                </Link>
-              </div>
-            </div>
-          </SwiperSlide>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>

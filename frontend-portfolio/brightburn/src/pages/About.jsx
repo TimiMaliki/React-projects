@@ -1,26 +1,32 @@
 import AboutHeroImg from "../images/About/started.jpg";
 import SelfImg from "../images/About/top-view-unrecognizable-hacker-performing-cyberattack-night.jpg";
 import Team from "./Team";
+
 const AboutPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section  id="about"  className="relative w-full h-[80vh] rounded-2xl rounded-b-none lg:rounded-3xl bg-gradient-to-r from-gray-900 to-gray-800 flex items-center justify-center overflow-hidden">
+      <section
+        id="about"
+        className="relative w-full h-[70vh] sm:h-[80vh] rounded-2xl rounded-b-none lg:rounded-3xl bg-gradient-to-r from-gray-900 to-gray-800 flex items-center justify-center overflow-hidden"
+      >
         <div
-          className="absolute inset-0  bg-cover object-cover bg-center bg-no-repeat w-full h-full"
-          style={{ backgroundImage: `url(${AboutHeroImg})` ,  height: '800px',}}
+          className="absolute inset-0 bg-cover object-cover bg-center bg-no-repeat w-full h-full"
+          style={{
+            backgroundImage: `url(${AboutHeroImg})`,
+          }}
         />
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 text-center relative z-10">
-          <h1 className="text-4xl md:text-7xl font-extrabold  text-white mb-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 text-center relative z-10">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white mb-4 sm:mb-6">
             Crafting Digital <span className="text-red-700">Excellence</span>
           </h1>
-          <p className="text-2xl font-semibold text-white max-w-3xl mx-auto mb-8">
+          <p className="text-lg sm:text-xl md:text-2xl font-semibold text-white max-w-3xl mx-auto mb-6 sm:mb-8">
             We're a passionate team of designers, developers, and strategists
             dedicated to building websites that drive real business results.
           </p>
           <a
             href="https://wa.me/qr/RJYG6ACYJUUGB1"
-            className="bg-red-600 hover:bg-red-700 transition-all duration-300 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg inline-block"
+            className="bg-red-600 hover:bg-red-700 transition-all duration-300 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg shadow-lg inline-block"
           >
             Get in Touch
           </a>
@@ -28,32 +34,40 @@ const AboutPage = () => {
       </section>
 
       {/* Our Story Section */}
-      <section className="w-full py-20 bg-white">
-        <div className="px-6 md:px-12 lg:px-20">
-          <div className="flex flex-col lg:flex-row gap-16 items-center">
+      <section className="w-full py-16 sm:py-20 bg-white">
+        <div className="px-4 sm:px-6 md:px-12 lg:px-20">
+          <div className="flex flex-col lg:flex-row gap-12 sm:gap-16 items-center">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl md:text-7xl font-bold text-black mb-6">
+              <h2 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-black mb-4 sm:mb-6">
                 Our <span className="text-red-700">Story</span>
               </h2>
-              <p className="text-black text-2xl mb-6">
+              <p className="text-base sm:text-xl md:text-2xl text-black mb-4 sm:mb-6">
                 Founded in 2025, we started as a small team of two developers
                 working from a coffee shop. Today, we've grown into an
                 international web design agency serving clients across 5+
                 countries.
               </p>
-              <p className="text-black text-2xl mb-6">
+              <p className="text-base sm:text-xl md:text-2xl text-black mb-4 sm:mb-6">
                 What hasn't changed is our commitment to quality, our passion
                 for technology, and our belief that every business deserves a
                 website that truly represents them.
               </p>
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gray-200 p-6 rounded-xl">
-                  <h3 className="text-red-600 text-4xl font-bold mb-2">30+</h3>
-                  <p className="text-black text-xl">Projects Completed</p>
+                <div className="bg-gray-200 p-4 sm:p-6 rounded-xl">
+                  <h3 className="text-red-600 text-3xl sm:text-4xl font-bold mb-2">
+                    30+
+                  </h3>
+                  <p className="text-black text-base sm:text-xl">
+                    Projects Completed
+                  </p>
                 </div>
-                <div className="bg-gray-200 p-6 rounded-xl">
-                  <h3 className="text-red-600 text-4xl font-bold mb-2">5+</h3>
-                  <p className="text-black text-xl">Countries Served</p>
+                <div className="bg-gray-200 p-4 sm:p-6 rounded-xl">
+                  <h3 className="text-red-600 text-3xl sm:text-4xl font-bold mb-2">
+                    5+
+                  </h3>
+                  <p className="text-black text-base sm:text-xl">
+                    Countries Served
+                  </p>
                 </div>
               </div>
             </div>
@@ -62,11 +76,11 @@ const AboutPage = () => {
                 <img
                   src={SelfImg}
                   alt="Our team working together"
-                  className="w-full h-[400px] object-cover"
+                  className="w-full h-[250px] sm:h-[350px] md:h-[400px] object-cover"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
-                  <p className="text-white text-lg">
-                   Bringing Ideas to life 
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4 sm:p-6">
+                  <p className="text-white text-base sm:text-lg">
+                    Bringing Ideas to life
                   </p>
                 </div>
               </div>
@@ -76,23 +90,23 @@ const AboutPage = () => {
       </section>
 
       {/* Our Approach Section */}
-      <section className="w-full py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-6xl font-extrabold mb-4">
+      <section className="w-full py-16 sm:py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-4">
               Our <span className="text-red-700">Approach</span>
             </h2>
-            <p className="text-black max-w-2xl mx-auto text-lg font-bold">
+            <p className="text-black max-w-2xl mx-auto text-base sm:text-lg font-bold">
               We don't just build websites - we create digital experiences that
               drive growth.
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-3">
-            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
-              <div className="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6">
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-red-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
                 <svg
-                  className="w-6 h-6 text-red-600"
+                  className="w-5 h-5 sm:w-6 sm:h-6 text-red-600"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -105,20 +119,20 @@ const AboutPage = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-black mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-black mb-4">
                 Strategic Design
               </h3>
-              <p className="text-black text-lg">
+              <p className="text-black text-base sm:text-lg">
                 Every pixel serves a purpose. We design with your business goals
                 in mind, creating interfaces that convert visitors into
                 customers.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
-              <div className="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6">
+            <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-red-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
                 <svg
-                  className="w-6 h-6 text-red-600"
+                  className="w-5 h-5 sm:w-6 sm:h-6 text-red-600"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -131,19 +145,19 @@ const AboutPage = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-black mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-black mb-4">
                 Cutting-Edge Tech
               </h3>
-              <p className="text-black text-lg">
+              <p className="text-black text-base sm:text-lg">
                 We stay ahead of the curve with the latest technologies to
                 ensure your website is fast, secure, and future-proof.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
-              <div className="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6">
+            <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-md hover:shadow-lg transition">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-red-100 rounded-full flex items-center justify-center mb-4 sm:mb-6">
                 <svg
-                  className="w-6 h-6 text-red-600"
+                  className="w-5 h-5 sm:w-6 sm:h-6 text-red-600"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -156,10 +170,10 @@ const AboutPage = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-black mb-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-black mb-4">
                 Data-Driven
               </h3>
-              <p className="text-black text-lg">
+              <p className="text-black text-base sm:text-lg">
                 We make decisions based on analytics and user behavior, not
                 guesswork. Your success is measured and optimized.
               </p>
@@ -168,7 +182,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-    <Team/>
+      <Team />
     </>
   );
 };
