@@ -24,10 +24,10 @@ const Hero = () => {
       }}
       navigation={false}
       modules={[Autoplay, Pagination, Navigation]}
-      className="mySwiper"
+      className="mySwiper overflow-x-hidden"
     >
       <SwiperSlide>
-        <section className="relative w-full h-screen bg-light" id="home">
+        <section className="relative w-full h-screen bg-light  overflow-x-hidden" id="home">
           {/* Background Image */}
           <img
             src={website}

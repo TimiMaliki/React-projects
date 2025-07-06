@@ -1,6 +1,6 @@
 const Contact = () => {
     return (
-      <section className="min-h-screen flex items-center justify-center bg-gray-50 py-20 px-6">
+      <section className="min-h-screen flex items-center justify-center bg-gray-50 py-20 px-6" id="contact">
         <div className="max-w-3xl w-full text-center">
           <h2 className="text-4xl md:text-7xl font-extrabold  text-black mb-8">
             Get In <span className="text-red-700">Touch</span>
@@ -12,25 +12,25 @@ const Contact = () => {
           <div className="space-y-8 text-gray-800 text-lg">
             <div className="flex flex-col items-center">
               <span className="font-semibold text-red-700 text-xl mb-1">Phone</span>
-              <a href="tel:+1234567890" className="hover:text-red-600 transition  text-black">
-                +1 (234) 567-890
+              <a href="tel:+2349067376592" className="hover:text-red-600 transition  text-black">
+                +234 906 737 6592
               </a>
             </div>
   
             <div className="flex flex-col items-center">
               <span className="font-semibold text-red-700 text-xl mb-1">Email</span>
               <a
-                href="mailto:info@youragency.com"
+                href="mailto:malikitimi@gmail.com"
                 className="hover:text-red-600 transition  text-black"
               >
-                info@youragency.com
+               malikitimi@gmail.com
               </a>
             </div>
   
             <div className="flex flex-col items-center">
               <span className="font-semibold text-red-700 text-xl  mb-1">Address</span>
               <p className="max-w-sm  text-black">
-                123 Creative Street,<br /> Downtown City, NY 10001, USA
+                11 Odi Nwankwo street,<br /> Abakaliki, Ebonyi State, Nigeria
               </p>
             </div>
           </div>
