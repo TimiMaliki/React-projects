@@ -1,5 +1,6 @@
 import HeaderForm from "./Form";
 import Shapes from "./Shapes";
+import teacher from "../image/woman-with-books-pointing.jpg"
 
 const HeroHeader = () => {
 	return (
@@ -29,7 +30,7 @@ const HeroHeader = () => {
 					<div className="col-span-12 lg:col-span-5 relative text-center">
 						<div>
 							<img
-								src="https://cdn.easyfrontend.com/pictures/quiz_1.png"
+								src={teacher}
 								alt=""
 								className="max-w-full h-auto mx-auto"
 							/>
