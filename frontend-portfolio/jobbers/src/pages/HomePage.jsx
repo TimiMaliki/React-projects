@@ -1,7 +1,7 @@
-import Card from "../pages/Card";
-import Hero from "../pages/Hero";
-import JobListings from "../pages/JobListings";
-import ViewAll from "../pages/ViewAll";
+import Card from "../Component/Card";
+import Hero from "../Component/Hero";
+import JobListings from "../Component/JobListings";
+import ViewAll from "../Component/ViewAll";
 
 const HomePage = () => {
   return (
