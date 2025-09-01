@@ -9,7 +9,7 @@ const Navbar = () => {
               className="flex flex-shrink-0 items-center mr-4"
               href="/index.html"
             >
-              <h1 className="text-6xl text-blue-700 font-bold">Collars</h1>
+              <h1 className="text-6xl text-blue-700 font-bold">Jobber</h1>
             </a>
             <div className="md:ml-auto">
               <div className="flex space-x-2">
