@@ -1,51 +1,58 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Briefcase, MapPin, DollarSign } from "lucide-react";
 
 const JobListing = ({ job }) => {
   const [showMore, setShowMore] = useState(false);
   let description = job.description;
 
   if (!showMore) {
-    description = job.description.substring(0, 90) + "....";
+    description = job.description.substring(0, 120) + " ...";
   }
 
   return (
-    <div className="bg-white rounded-xl shadow-md relative">
-  <div className="p-4">
-    <div className="mb-6">
-      <div className="text-gray-600 my-2">{job.company?.display_name}</div>
-      <h3 className="text-xl font-bold">{job.title}</h3>
-    </div>
-    <div className="mb-5 p-3">{description}</div>
-    {!showMore ? (
-      <button
-        onClick={() => setShowMore(!showMore)}
-        className="bg-yellow-500 hover:bg-yellow-600 text-green-900 p-2 rounded-lg mb-4"
-      >
-      more
-      </button>
-    ) : (
-      <button
-        onClick={() => setShowMore(!showMore)}
-        className="bg-yellow-500 hover:bg-yellow-600 text-green-900 p-3 rounded-lg mb-4"
-      >
-       hide
-      </button>
-    )}
-
-    <h3 className="text-green-600 mb-2">£{job.salary_min} - £{job.salary_max} Year</h3>
-    <div className="border border-yellow-200 mb-5"></div>
-    <div className="flex flex-col lg:flex-row justify-between mb-4">
-      <div className="text-green-700 mb-3">{job.location?.display_name}</div>
-
-      <Link to={`/job/${job.id}`}>
-        <div className="h-[36px] bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-center text-sm">
-          view
+    <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden border border-gray-100">
+      {/* Header */}
+      <div className="p-6">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
+              <Briefcase className="w-5 h-5 text-green-600" />
+              {job.title}
+            </h3>
+            <p className="text-sm text-gray-500 mt-1">{job.company?.display_name}</p>
+          </div>
+          <span className="text-green-700 font-medium text-sm mt-2 sm:mt-0 flex items-center gap-1">
+            <DollarSign className="w-4 h-4" />
+            {job.salary_min} - {job.salary_max}
+          </span>
         </div>
-      </Link>
+
+        {/* Description */}
+        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+          {description}
+        </p>
+        <button
+          onClick={() => setShowMore(!showMore)}
+          className="text-sm font-medium text-green-600 hover:text-green-800 transition-colors"
+        >
+          {showMore ? "Show less" : "Read more"}
+        </button>
+
+        {/* Footer */}
+        <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div className="flex items-center text-gray-500 text-sm gap-2">
+            <MapPin className="w-4 h-4 text-green-600" />
+            {job.location?.display_name}
+          </div>
+          <Link to={`/job/${job.id}`}>
+            <button className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-xl text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg">
+              View Details
+            </button>
+          </Link>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
   );
 };
 

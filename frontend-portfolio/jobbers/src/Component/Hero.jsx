@@ -1,20 +1,38 @@
 const Hero = () => {
-    return ( 
-      <section className="bg-gradient-to-r from-yellow-50 to-green-50 py-12">
-      <div className="container-xl lg:container m-auto px-4">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-green-800 mb-4">
-            Jobs at Your Fingertips
-          </h1>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Discover opportunities that match your skills and availability. 
-            Your next career move is just a click away!
-          </p>
+  return (
+    <section className="relative bg-gradient-to-r from-green-50 to-yellow-50 py-20">
+      <div className="container-xl lg:container m-auto px-6 text-center">
+        {/* Heading */}
+        <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">
+          Find Your <span className="bg-gradient-to-r from-green-600 to-yellow-500 bg-clip-text text-transparent">Perfect Job</span> Today
+        </h1>
+
+        {/* Subheading */}
+        <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+          Discover opportunities that match your skills and schedule.  
+          Your next career move is just a click away.
+        </p>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="/jobs"
+            className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all duration-300"
+          >
+            Explore Jobs
+          </a>
+          <a
+            href="/add-job"
+            className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all duration-300"
+          >
+            Post a Job
+          </a>
         </div>
       </div>
+
+      {/* Decorative background accent */}
+      <div className="absolute top-0 left-0 w-40 h-40 bg-green-200 rounded-full blur-3xl opacity-30"></div>
+      <div className="absolute bottom-0 right-0 w-60 h-60 bg-yellow-200 rounded-full blur-3xl opacity-30"></div>
     </section>
-  
-     );
-}
- 
+  );
+};
+
 export default Hero;

@@ -1,36 +1,52 @@
-import React from 'react'
+import React from "react";
+import { User, Briefcase, CheckCircle2 } from "lucide-react";
 
 const HowItWorks = () => {
-  return (
-    <section className="py-12 bg-white">
-        <div className="container-xl lg:container m-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-green-800 mb-6">How It Works</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6">
-              <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl text-green-700 font-bold">1</span>
-              </div>
-              <h3 className="text-xl font-semibold text-green-700 mb-2">Create Profile</h3>
-              <p className="text-gray-600">Tell us about your skills, experience, and availability</p>
-            </div>
-            <div className="p-6">
-              <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl text-green-700 font-bold">2</span>
-              </div>
-              <h3 className="text-xl font-semibold text-green-700 mb-2">Find Jobs</h3>
-              <p className="text-gray-600">Browse opportunities that match your criteria</p>
-            </div>
-            <div className="p-6">
-              <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl text-green-700 font-bold">3</span>
-              </div>
-              <h3 className="text-xl font-semibold text-green-700 mb-2">Get Hired</h3>
-              <p className="text-gray-600">Connect with employers and start working</p>
-            </div>
-          </div>
-        </div>
-      </section>
-  )
-}
+  const steps = [
+    {
+      id: 1,
+      icon: <User className="w-8 h-8 text-green-700" />,
+      title: "Create Profile",
+      description: "Share your skills, experience, and availability to get started.",
+    },
+    {
+      id: 2,
+      icon: <Briefcase className="w-8 h-8 text-green-700" />,
+      title: "Find Jobs",
+      description: "Browse tailored opportunities that match your expertise.",
+    },
+    {
+      id: 3,
+      icon: <CheckCircle2 className="w-8 h-8 text-green-700" />,
+      title: "Get Hired",
+      description: "Connect with employers and begin your next role effortlessly.",
+    },
+  ];
 
-export default HowItWorks
+  return (
+    <section className="py-20 bg-gradient-to-b from-white to-green-50">
+      <div className="container-xl lg:container m-auto px-6 text-center">
+        <h2 className="text-4xl font-bold text-gray-900 mb-12">
+          How It <span className="text-green-700">Works</span>
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {steps.map((step) => (
+            <div
+              key={step.id}
+              className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+            >
+              <div className="w-16 h-16 rounded-xl bg-green-100 flex items-center justify-center mx-auto mb-6">
+                {step.icon}
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
+              <p className="text-gray-600 leading-relaxed">{step.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HowItWorks;
