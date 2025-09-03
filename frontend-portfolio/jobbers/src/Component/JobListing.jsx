@@ -45,7 +45,7 @@ const JobListing = ({ job }) => {
             <MapPin className="w-4 h-4 text-green-600" />
             {job.location?.display_name}
           </div>
-          <Link to={`/job/${job.id}`}>
+          <Link to={`https://www.glassdoor.com/index.htm}`}>
             <button className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-xl text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg">
               Apply on GlassDoor
             </button>
