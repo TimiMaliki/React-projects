@@ -1,51 +1,48 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  return (
-    <nav className="bg-white border-b border-indigo-500">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-2">
-        <div className="flex h-20 items-center justify-between">
-          <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
-         
-         <Link to={"/"}>
-         <div
-              className="flex flex-shrink-0 items-center mr-4"
-              href="/index.html"
-            >
-              <h1 className="text-6xl text-blue-700 font-bold">Jobber</h1>
-            </div></Link>
-           
-            <div className="md:ml-auto">
-              <div className="flex space-x-2">
-              <Link to={"/"}>
-              <div
-                  className="text-white bg-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                >
+    const linkActive = ({ isActive }) =>
+      isActive
+        ? "text-white bg-blue-600 rounded-lg px-4 py-2 transition-all duration-200 font-medium"
+        : "text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-lg px-4 py-2 transition-all duration-200 font-medium";
+  
+    return (
+      <nav className="bg-white shadow-md">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex h-16 items-center justify-between">
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <NavLink to={"/"}>
+                <div className="flex items-center">
+                  <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-700 bg-clip-text text-transparent">
+                    Jobber
+                  </h1>
+                  <span className="ml-1 text-blue-600 text-xl">®</span>
+                </div>
+              </NavLink>
+            </div>
+  
+            {/* Navigation Links */}
+            <div className="hidden md:block">
+              <div className="ml-10 flex items-center space-x-1">
+                <NavLink to={"/"} className={linkActive}>
                   Home
-                </div>
-              </Link>
-                <Link to={"/jobs"}>
-                <div
-                  className="text-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                >
+                </NavLink>
+                <NavLink to={"/jobs"} className={linkActive}>
                   Jobs
-                </div></Link>
-               
-                <Link>
-                <div
-                  className="text-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                >
+                </NavLink>
+                <NavLink to={""} className={linkActive}>
                   Add Job
-                </div>
-                </Link>
-               
+                </NavLink>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
-  );
-};
+  
+     
+      </nav>
+    );
+  };
+
 
 export default Navbar;

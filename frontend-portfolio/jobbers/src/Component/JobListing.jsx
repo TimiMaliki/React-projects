@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const JobListing = ({ job, id }) => {
   const [showMore, setShowMore] = useState(false);
@@ -18,14 +19,14 @@ const JobListing = ({ job, id }) => {
         <div className="mb-5">{description}</div>
         {!showMore ? (
           <button
-            onClick={()=>setShowMore(!showMore)}
+            onClick={() => setShowMore(!showMore)}
             className="bg-black text-white p-2 rounded-lg mb-4"
           >
-             more
+            more
           </button>
         ) : (
           <button
-            onClick={()=>setShowMore(!showMore)}
+            onClick={() => setShowMore(!showMore)}
             className="bg-black text-white p-3 rounded-lg mb-4"
           >
             less
@@ -37,12 +38,11 @@ const JobListing = ({ job, id }) => {
         <div className="flex flex-col lg:flex-row justify-between mb-4">
           <div className="text-orange-700 mb-3">{job.location}</div>
 
-          <a
-            href={`/job/${job.id}`}
-            className="h-[36px] bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-center text-sm"
-          >
-            Read More
-          </a>
+          <Link to={`/job/${job.id}`}>
+            <div className="h-[36px] bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-center text-sm">
+              Read More
+            </div>
+          </Link>
         </div>
       </div>
     </div>

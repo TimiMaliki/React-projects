@@ -1,17 +1,18 @@
 const Hero = () => {
     return ( 
-        <section className="bg-indigo-700 py-20 mb-4">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-          <div className="text-center">
-            <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
-              Become a React Dev
-            </h1>
-            <p className="my-4 text-xl text-white">
-              Find the React job that fits your skills and needs
-            </p>
-          </div>
+      <section className="bg-gradient-to-r from-yellow-50 to-green-50 py-12">
+      <div className="container-xl lg:container m-auto px-4">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold text-green-800 mb-4">
+            Jobs at Your Fingertips
+          </h1>
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            Discover opportunities that match your skills and availability. 
+            Your next career move is just a click away!
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
   
      );
 }
