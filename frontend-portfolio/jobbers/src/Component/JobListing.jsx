@@ -34,9 +34,9 @@ const JobListing = ({ job }) => {
         </p>
         <button
           onClick={() => setShowMore(!showMore)}
-          className="text-sm font-medium text-green-600 hover:text-green-800 transition-colors"
+          className="text-sm font-medium text-green-600 hover:text-green-800 transition-colors underline"
         >
-          {showMore ? "Show less" : "Read more"}
+          {showMore ? "View Less" : "View Details"}
         </button>
 
         {/* Footer */}
@@ -47,7 +47,7 @@ const JobListing = ({ job }) => {
           </div>
           <Link to={`/job/${job.id}`}>
             <button className="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-xl text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg">
-              View Details
+              Apply on GlassDoor
             </button>
           </Link>
         </div>
