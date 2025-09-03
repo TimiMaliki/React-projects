@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage';
 import Layout from './layout/Layout';
 import JobsPage from './pages/JobsPage';
 import JobPage from './pages/JobPage';
+import SearchJobs from './pages/SearchJobs';
 
 const router = createBrowserRouter(
   [
@@ -11,7 +12,8 @@ const router = createBrowserRouter(
       children : [
         {path : "/" , element : <HomePage />},
         {path : "/jobs" , element : <JobsPage/>},
-        {path : "/job/:id" , element : <JobPage/>}
+        {path : "/job/:id" , element : <JobPage/>},
+        {path : "/search" , element :<SearchJobs/>}
       ]
   }
   ]

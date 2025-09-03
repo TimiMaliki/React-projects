@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const linkActive = ({ isActive }) =>
     isActive
-      ? "relative text-green-600 font-semibold after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-full after:bg-blue-600 after:rounded-full"
+      ? "relative text-green-600 font-semibold after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-full after:bg-green-600 after:rounded-full"
       : "relative text-green-600 hover:text-yellow-600 transition-colors duration-200";
 
   return (
@@ -33,6 +33,9 @@ const Navbar = () => {
             </NavLink>
             <NavLink to={"/jobs"} className={linkActive}>
               Jobs
+            </NavLink>
+            <NavLink to={"/search"} className={linkActive}>
+             Search Jobs
             </NavLink>
             <NavLink to={"/add-job"} className={linkActive}>
               Add Job
