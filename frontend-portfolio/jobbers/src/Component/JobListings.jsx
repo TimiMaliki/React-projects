@@ -7,7 +7,7 @@ const JobListings = ({ isHomePage = false }) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // http://api.adzuna.com/v1/api/jobs/gb/categories?app_id=a6ea1c5f&app_key=7dceb6f8e6af569397fd77c31848e4b7&&content-type=application/json
+
   useEffect(() => {
     fetch(
       "https://api.adzuna.com/v1/api/jobs/ca/search/1?app_id=a6ea1c5f&app_key=7dceb6f8e6af569397fd77c31848e4b7"
