@@ -1,14 +1,15 @@
 import React from "react";
-import { User, Briefcase, CheckCircle2 } from "lucide-react";
+import { FilePlus, Briefcase, CheckCircle2 } from "lucide-react";
 
 const HowItWorks = () => {
   const steps = [
     {
-      id: 1,
-      icon: <User className="w-8 h-8 text-green-700" />,
-      title: "Create Profile",
-      description: "Share your skills, experience, and availability to get started.",
-    },
+        id: 1,
+        icon: <FilePlus className="w-8 h-8 text-green-700" />,
+        title: "Add Jobs",
+        description: "Post your job openings and reach the right candidates quickly.",
+      },
+      
     {
       id: 2,
       icon: <Briefcase className="w-8 h-8 text-green-700" />,

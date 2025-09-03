@@ -39,7 +39,7 @@ const JobListings = ({ isHomePage = false }) => {
     <section className="bg-yellow-50 px-4 py-10">
       <div className="container-xl lg:container m-auto">
         <h2 className="text-3xl font-bold text-green-600 mb-6 text-center mt-5">
-          {isHomePage ? "Recent Jobs" : "Browse Jobs"}
+          {isHomePage ? "Recent Onsite Jobs" : "Browse Onsite Jobs"}
         </h2>
         <h2 className="text-center text-xl text-black">
           {loading ? "Loading..." : "" }
