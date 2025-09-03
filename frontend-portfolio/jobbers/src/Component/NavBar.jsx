@@ -35,7 +35,7 @@ const Navbar = () => {
              Search Jobs
             </NavLink>
             <NavLink to={"/jobs"} className={linkActive}>
-              Jobs
+             Onsite Jobs
             </NavLink>
             <NavLink to={"/add-job"} className={linkActive}>
               Add Job
@@ -70,7 +70,7 @@ const Navbar = () => {
               className={linkActive}
               onClick={() => setIsOpen(false)}
             >
-              Jobs
+              Onsite Jobs
             </NavLink>
             <NavLink
               to={"/add-job"}

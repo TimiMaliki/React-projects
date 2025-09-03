@@ -14,10 +14,10 @@ const Hero = () => {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="/jobs"
+            href="/search"
             className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all duration-300"
           >
-            Explore Jobs
+            Explore Remote Jobs
           </a>
           <a
             href="/add-job"

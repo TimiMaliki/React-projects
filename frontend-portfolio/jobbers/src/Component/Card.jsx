@@ -14,7 +14,7 @@ const Card = () => {
                 <div className="p-3 rounded-xl bg-gradient-to-br from-green-100 to-green-50">
                   <Briefcase className="w-7 h-7 text-green-700" />
                 </div>
-                <h2 className="text-2xl font-bold text-gray-900">Job Seekers</h2>
+                <h2 className="text-2xl font-bold text-gray-900">Job Seekers (Onsite Jobs)</h2>
               </div>
               <p className="mt-2 mb-6 text-gray-600 leading-relaxed">
                 Discover opportunities tailored to your skills and schedule. The right job is just a click away.
