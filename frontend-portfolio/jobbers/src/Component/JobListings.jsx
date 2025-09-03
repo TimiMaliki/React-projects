@@ -42,7 +42,7 @@ const JobListings = ({ isHomePage = false }) => {
           {isHomePage ? "Recent Jobs" : "Browse Jobs"}
         </h2>
         <h2 className="text-center text-xl text-black">
-          {loading ? "Loading..." : "Result"}
+          {loading ? "Loading..." : "" }
         </h2>
         {/* Jobs in canada */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-5">
