@@ -150,7 +150,7 @@ const SearchJobs = () => {
   </ul>
 
   {/* Pagination */}
-  <div className="mt-10 flex items-center justify-center gap-4">
+  <div className="mt-10 grid grid-cols-2 md:flex items-center justify-center gap-4">
     <button
       onClick={() => page > 1 && setPage((p) => p - 1)}
       className="px-4 py-2 rounded-full border border-gray-300 hover:bg-gray-100 disabled:opacity-50"
