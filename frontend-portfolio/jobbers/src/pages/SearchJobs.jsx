@@ -1,5 +1,5 @@
 import React from 'react'
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import { buildAdzunaUrl } from "../API/adzuna";
 import Spinners from '../Component/Spinners';
 
