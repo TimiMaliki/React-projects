@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const AddJob = () => {
+    const [title , setTitle] = useState("")
+    const [description , setDescription] = useState("")
+    const [type , setType] = useState("")
+    const [salary , setSalary] = useState("")
+    const [location , setLocation] = useState("")
+    const [company , setCompany] = useState("")
+    const [companyDescription , setCompanyDescription] = useState("")
+    const [contactEmail , setContactEmail] = useState("")
+    const [contactPhone , setContactPhone] = useState("")
   return (
     <section className="bg-gradient-to-br from-indigo-50 via-green-50 to-yellow-50">
     <div className="container mx-auto max-w-2xl py-20 px-6">
@@ -18,6 +27,8 @@ const AddJob = () => {
             <select
               id="type"
               name="type"
+              value={type}
+              onChange={(e) => setType(e.target.value)}
               className="border rounded-lg w-full py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               required
             >
@@ -39,6 +50,8 @@ const AddJob = () => {
               type="text"
               id="title"
               name="title"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
               className="border rounded-lg w-full py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               placeholder="e.g. Frontend Developer"
               required
@@ -53,6 +66,8 @@ const AddJob = () => {
             <textarea
               id="description"
               name="description"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
               className="border rounded-lg w-full py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               rows="4"
               placeholder="Add job duties, expectations, and requirements..."
@@ -67,6 +82,8 @@ const AddJob = () => {
             <select
               id="salary"
               name="salary"
+              value={salary}
+              onChange={(e) => setSalary(e.target.value)}
               className="border rounded-lg w-full py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               required
             >
@@ -94,6 +111,8 @@ const AddJob = () => {
               type="text"
               id="location"
               name="location"
+              value={location}
+              onChange={(e) => setLocation(e.target.value)}
               className="border rounded-lg w-full py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               placeholder="Company Location"
               required
@@ -113,6 +132,8 @@ const AddJob = () => {
               type="text"
               id="company"
               name="company"
+              value={company}
+              onChange={(e) => setCompany(e.target.value)}
               className="border rounded-lg w-full py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               placeholder="Company Name"
             />
@@ -126,6 +147,8 @@ const AddJob = () => {
             <textarea
               id="company_description"
               name="company_description"
+              value={companyDescription}
+              onChange={(e) => setCompanyDescription(e.target.value)}
               className="border rounded-lg w-full py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               rows="4"
               placeholder="What does your company do?"
@@ -141,6 +164,8 @@ const AddJob = () => {
               type="email"
               id="contact_email"
               name="contact_email"
+              value={contactEmail}
+              onChange={(e) => setContactEmail(e.target.value)}
               className="border rounded-lg w-full py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               placeholder="Email address for applicants"
               required
@@ -156,6 +181,8 @@ const AddJob = () => {
               type="tel"
               id="contact_phone"
               name="contact_phone"
+              value={contactPhone}
+              onChange={(e) => setContactPhone(e.target.value)}
               className="border rounded-lg w-full py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               placeholder="Optional phone for applicants"
             />
