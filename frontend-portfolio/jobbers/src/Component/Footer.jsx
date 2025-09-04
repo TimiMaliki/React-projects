@@ -53,7 +53,7 @@ const Footer = () => {
 
       {/* Bottom bar */}
       <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} JobConnect. All rights reserved.
+        © {new Date().getFullYear()} Jobber. All rights reserved.
       </div>
     </footer>
   );

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { buildAdzunaUrl } from "../API/adzuna";
+import Spinners from '../Component/Spinners';
 
 
 const SearchJobs = () => {
@@ -92,7 +93,6 @@ const SearchJobs = () => {
       value={where}
       onChange={(e) => setWhere(e.target.value)}
     />
-
     <button
       type="submit"
       className="bg-green-600 hover:bg-green-700 text-white rounded-lg p-3 font-semibold transition-colors disabled:opacity-50"
@@ -104,8 +104,8 @@ const SearchJobs = () => {
 
   {/* Results Info */}
   <div className="mt-6 text-center text-gray-600 text-sm">
-    {loading
-      ? "Loading results…"
+    {<Spinners loading = {loading} /> 
+    ? (<Spinners loading = {loading} />) 
       : error
       ? `Error: ${error}`
       : `Found ${count} results`}

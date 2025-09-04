@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 // import jobs from "../jobs.json";
 import JobListing from "./JobListing";
+import Spinners from "./Spinners";
+
 
 const JobListings = ({ isHomePage = false }) => {
   const [jobsCa, setJobsCa] = useState([]);
@@ -42,7 +44,7 @@ const JobListings = ({ isHomePage = false }) => {
           {isHomePage ? "Recent Onsite Jobs" : "Browse Onsite Jobs"}
         </h2>
         <h2 className="text-center text-xl text-black">
-          {loading ? "Loading..." : "" }
+          {<Spinners loading={loading}/> ? (<Spinners loading={loading}/>) : ("") }
         </h2>
         {/* Jobs in canada */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-5">
