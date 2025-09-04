@@ -68,6 +68,9 @@ const Navbar = () => {
             >
               Home
             </NavLink>
+            <NavLink to={"/search"} className={linkActive}>
+             Search Jobs
+            </NavLink>
             <NavLink
               to={"/jobs"}
               className={linkActive}
