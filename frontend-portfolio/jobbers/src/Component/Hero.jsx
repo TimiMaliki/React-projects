@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Hero = () => {
   return (
     <section className="relative bg-gradient-to-r from-green-50 to-yellow-50 py-20">
@@ -13,18 +15,21 @@ const Hero = () => {
           Your next career move is just a click away.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="/search"
+          <NavLink to={"/search"}>
+          <div
             className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all duration-300"
           >
             Explore Remote Jobs
-          </a>
-          <a
-            href="/add-job"
+          </div>
+          </NavLink>
+          
+          <NavLink to={"/add-job"} >
+          <div
             className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all duration-300"
           >
             Post a Job
-          </a>
+          </div>
+          </NavLink>
         </div>
       </div>
 
