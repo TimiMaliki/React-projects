@@ -18,17 +18,17 @@ const Hero = () => {
           Discover opportunities that match your skills and schedule. Your next
           career move is just a click away.
         </p>
-        <div className="flex flex-row sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-row sm:flex-row items-center justify-center gap-4 relative z-10">
           <Link to={"/search"}>
-            <div className="bg-green-600 hover:bg-green-700 text-white px-3 md:px-8 py-2 md:py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all duration-300">
+            <button className="bg-green-600 hover:bg-green-700 text-white px-3 md:px-8 py-2 md:py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all duration-300">
               Explore Remote Jobs
-            </div>
+            </button>
           </Link>
 
           <Link to={"/add-job"}>
-            <div className="bg-yellow-500 hover:bg-yellow-600 text-gray-900  px-3 md:px-8 py-2 md:py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all duration-300">
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 p-2 px-3 md:px-8 py-2 md:py-3 rounded-xl font-medium shadow-md hover:shadow-lg transition-all duration-300">
               Post a Job
-            </div>
+            </button>
           </Link>
         </div>
       </div>
