@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-const AddJob = () => {
+
+
+const AddJob = ({addJobSubmit}) => {
     const [title , setTitle] = useState("")
     const [description , setDescription] = useState("")
     const [type , setType] = useState("")
@@ -10,11 +13,40 @@ const AddJob = () => {
     const [companyDescription , setCompanyDescription] = useState("")
     const [contactEmail , setContactEmail] = useState("")
     const [contactPhone , setContactPhone] = useState("")
+    const [category ,setCategory] = useState("")
+    const [color ,setColor] = useState("")
+
+    const navigate = useNavigate()
+
+    const onSubmitForm = (e) => {
+        e.preventDefault()
+
+        const newJob = {
+            title,
+            type,
+            category,
+            color,
+            description,
+            salary,
+            location,
+            company : {
+                name : company,
+                description : companyDescription,
+                contactEmail,
+                contactPhone
+
+            },
+        }
+
+        addJobSubmit(newJob)
+
+     return navigate("/collars")
+    }
   return (
     <section className="bg-gradient-to-br from-indigo-50 via-green-50 to-yellow-50">
     <div className="container mx-auto max-w-2xl py-20 px-6">
       <div className="bg-white px-8 py-10 shadow-xl rounded-2xl border border-gray-100">
-        <form>
+        <form onSubmit={onSubmitForm}>
           <h2 className="text-4xl font-extrabold text-center text-green-700 mb-10">
             Post a Job
           </h2>
@@ -38,6 +70,51 @@ const AddJob = () => {
               <option value="OnSite">OnSite</option>
               <option value="Remote">Remote</option>
               <option value="Internship">Internship</option>
+            </select>
+          </div>
+
+            {/* Collar Type */}
+            <div className="mb-6">
+            <label htmlFor="type" className="block text-black font-semibold mb-2">
+              Callar Type
+            </label>
+            <select
+              id="type"
+              name="type"
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              className="border rounded-lg w-full py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
+              required
+            >
+              <option value="">Select collar type</option>
+              <option value="Blue-Collar">Blue-Collar</option>
+              <option value="White-Collar">White-Collar</option>
+              <option value="Brown-Collar">Brown-Collar</option>
+              <option value="Gold-Collar">Gold-Collar</option>
+              <option value="Pink-Collar">Pink-Collar</option>
+            </select>
+          </div>
+
+
+            {/* Color Type */}
+            <div className="mb-6">
+            <label htmlFor="type" className="block text-black font-semibold mb-2">
+              Color Type
+            </label>
+            <select
+              id="type"
+              name="type"
+              value={color}
+              onChange={(e) => setColor(e.target.value)}
+              className="border rounded-lg w-full py-3 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
+              required
+            >
+              <option value="">Select color type</option>
+              <option value="blue">blue</option>
+              <option value="white">white</option>
+              <option value="brown">brown</option>
+              <option value="gold">gold</option>
+              <option value="pink">pink</option>
             </select>
           </div>
   

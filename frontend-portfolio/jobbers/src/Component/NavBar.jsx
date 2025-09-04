@@ -37,6 +37,9 @@ const Navbar = () => {
             <NavLink to={"/jobs"} className={linkActive}>
              Onsite Jobs
             </NavLink>
+            <NavLink to={"/collars"} className={linkActive}>
+             Different Collar Jobs
+            </NavLink>
             <NavLink to={"/add-job"} className={linkActive}>
               Add Job
             </NavLink>
@@ -71,6 +74,9 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Onsite Jobs
+            </NavLink>
+            <NavLink to={"/collars"} className={linkActive}>
+             Different Collar Jobs
             </NavLink>
             <NavLink
               to={"/add-job"}
