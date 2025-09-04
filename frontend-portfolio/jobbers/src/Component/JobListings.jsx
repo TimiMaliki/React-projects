@@ -47,7 +47,7 @@ const JobListings = ({ isHomePage = false }) => {
         </h2>
         {/* Jobs in canada */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-5">
-          {!loading && listingJobsCa.length > 0
+          {<Spinners loading={!loading}/> && listingJobsCa.length > 0
             ? listingJobsCa.map((job) => <JobListing job={job} key={job.id} />)
             : !loading && (
                 <p className="col-span-3 text-center">No jobs found</p>

@@ -1,9 +1,9 @@
 const Hero = () => {
   return (
     <section className="relative bg-gradient-to-r from-green-50 to-yellow-50 py-20">
-      <div className="container-xl lg:container m-auto px-6 text-center mt-24">
+      <div className="container-xl lg:container m-auto px-6 text-center mt-10 md:mt-24">
         {/* Heading */}
-        <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-2 md:mb-6">
           Find Your <span className="bg-gradient-to-r from-green-600 to-yellow-500 bg-clip-text text-transparent">Perfect Job</span> Today
         </h1>
 

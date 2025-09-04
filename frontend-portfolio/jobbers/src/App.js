@@ -11,7 +11,7 @@ import CollarJobs  from './pages/CollarJobs';
 function App() {
 
   const addJob = async (newJob)=>{
-     const res = await fetch("http://localhost:5000/jobs", {
+      await fetch("http://localhost:5000/jobs", {
       method : "POST",
       headers:{
         "Content-Type" :"application/json"
