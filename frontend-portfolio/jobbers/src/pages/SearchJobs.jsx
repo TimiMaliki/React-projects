@@ -5,17 +5,17 @@ import Spinners from '../Component/Spinners';
 
 
 const SearchJobs = () => {
-  const [country, setCountry] = useState("gb"); // e.g. "gb", "us", "ca"
-  const [what, setWhat] = useState("");         // keyword(s)
-  const [where, setWhere] = useState("");       // city/region
+  const [country, setCountry] = useState("gb"); 
+  const [what, setWhat] = useState("");        
+  const [where, setWhere] = useState("");       
   const [page, setPage] = useState(1);
 
   const [results, setResults] = useState([]);
-  const [count, setCount] = useState(0);        // total results
+  const [count, setCount] = useState(0);        
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  // Keep the latest AbortController to cancel previous requests
+ 
   const controllerRef = useRef(null);
 
   const url = useMemo(
@@ -24,7 +24,7 @@ const SearchJobs = () => {
   );
 
   const fetchJobs = useCallback(async () => {
-    // Cancel previous request if still in-flight
+    
     controllerRef.current?.abort();
     controllerRef.current = new AbortController();
 
@@ -36,7 +36,7 @@ const SearchJobs = () => {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
 
-      // Adzuna returns { mean, count, results: [...] }
+      
       setResults(Array.isArray(data.results) ? data.results : []);
       setCount(typeof data.count === "number" ? data.count : 0);
     } catch (err) {
@@ -51,8 +51,7 @@ const SearchJobs = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     setPage(1);
-    // After state updates, `url` changes -> `fetchJobs` effect isn’t automatic.
-    // Call explicitly so the user sees results immediately:
+ 
     fetchJobs();
   };
   return (
