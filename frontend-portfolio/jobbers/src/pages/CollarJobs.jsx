@@ -83,7 +83,7 @@ const CollarJobs = () => {
           ) : (
             <div className="text-center items-center grid">
               <div className="text-center text-xl text-black">
-                <h2 className="text-lg  text-black font-bolder mb-4">Failed To fetch</h2>
+                <h2 className="text-lg  text-black font-bolder mb-4">sorry , Failed To fetch</h2>
                 <h2 className="text-md font-bold">
                   Error:
                   <br />
