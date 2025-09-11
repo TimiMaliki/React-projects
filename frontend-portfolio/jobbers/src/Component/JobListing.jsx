@@ -16,13 +16,13 @@ const JobListing = ({ job }) => {
       <div className="p-6">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
           <div>
-            <h3 className="text-lg font-semibold text-black flex items-center gap-2">
+            <h3 className="text-lg flex-wrap shrink font-semibold  text-black flex items-center gap-2 p-2">
               <Briefcase className="w-5 h-5 text-green-600" />
               {job.title}
             </h3>
             <p className="text-sm text-black mt-1">{job.company?.display_name}</p>
           </div>
-          <span className="text-green-700 font-medium text-sm mt-2 sm:mt-0 flex items-center gap-1">
+          <span className="text-green-700 font-medium text-sm mt-2 sm:mt-0 flex items-center">
             <DollarSign className="w-4 h-4" />
             {job.salary_min} - {job.salary_max}
           </span>

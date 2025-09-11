@@ -1,10 +1,12 @@
 import React from 'react'
 import { MapPin, DollarSign, Briefcase, Mail, Phone } from "lucide-react";
 import { useState } from "react";
+import Spinners from '../Component/Spinners';
 
 
 const CollarJobListing = ({job}) => {
     const [showMore, setShowMore] = useState(false);
+    const [loading , setLoading]  = useState(false)
     const collarColors = {
         "white": "text-gray-700 bg-gray-100",
         "blue": "text-blue-700 bg-blue-100",
@@ -16,6 +18,7 @@ const CollarJobListing = ({job}) => {
       return (
         <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden border border-green-400">
           {/* Header */}
+          { loading ? <Spinners loading = {loading} />  :(
           <div className="p-6">
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
               <div>
@@ -68,6 +71,9 @@ const CollarJobListing = ({job}) => {
               </div>
             </div>
           </div>
+          )
+          }
+
         </div>
       );
 }
