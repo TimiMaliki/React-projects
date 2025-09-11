@@ -5,7 +5,7 @@ import Spinners from "../Component/Spinners";
 
 const CollarJobListing = ({ job }) => {
   const [showMore, setShowMore] = useState(false);
-  const [loading , setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
   const collarColors = {
     white: "text-gray-700 bg-gray-100",
     blue: "text-blue-700 bg-blue-100",
@@ -24,12 +24,12 @@ const CollarJobListing = ({ job }) => {
                 <Briefcase className="w-5 h-5 text-green-600" />
                 {job.title}
               </h3>
-              <p className="text-sm text-black mt-1">{job.company?.name ? job.company?.name : <Spinners loading={loading} />}</p>
+              <p className="text-sm text-black mt-1">{job.company?.name}</p>
             </div>
             <span
               className={`px-3 py-1 rounded-full text-xs font-medium ${
                 collarColors[job.color] || "bg-gray-100 text-black"
-            ?  collarColors[job.color] || "bg-gray-100 text-black" : <Spinners loading={loading} /> }`}
+              }`}
             >
               {job.category}
             </span>
@@ -37,7 +37,7 @@ const CollarJobListing = ({ job }) => {
 
           {/* Description */}
           <p className="text-black text-sm leading-relaxed mb-4">
-            {showMore ? job.description : job.description.slice(0, 100) + "..." ? showMore ? job.description : job.description.slice(0, 100) + "..." : <Spinners loading={loading} /> }
+            {showMore ? job.description : job.description.slice(0, 100) + "..."}
           </p>
           <button
             onClick={() => setShowMore(!showMore)}
@@ -51,17 +51,17 @@ const CollarJobListing = ({ job }) => {
             <div className="flex flex-wrap items-center gap-4 text-sm text-black">
               <span className="flex items-center gap-1">
                 <DollarSign className="w-4 h-4 text-green-600" />
-                {job.salary ? job.salary : <Spinners loading={loading} /> }
+                {job.salary}
               </span>
               <span className="flex items-center gap-1">
                 <MapPin className="w-4 h-4 text-green-600" />
-                {job.location ? job.location : <Spinners loading={loading} /> }
+                {job.location}
               </span>
             </div>
 
             <div className="flex items-center gap-3 text-sm text-black">
               <a
-                href={`mailto:${job.company?.contactEmail ? job.company?.contactEmail : <Spinners loading={loading} />}`}
+                href={`mailto:${job.company?.contactEmail}`}
                 className="flex items-center gap-1 hover:text-green-700"
               >
                 <Mail className="w-4 h-4" />
@@ -77,7 +77,6 @@ const CollarJobListing = ({ job }) => {
             </div>
           </div>
         </div>
-      
     </div>
   );
 };
