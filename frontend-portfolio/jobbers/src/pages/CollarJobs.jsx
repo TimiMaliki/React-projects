@@ -37,7 +37,7 @@ const CollarJobs = () => {
   }, []);
 
   return (
-    <section className="bg-yellow-50 px-4 py-10">
+    <section className="bg-white px-4 py-10">
       <div className="container-xl lg:container m-auto">
         <h2 className="text-3xl font-bold text-green-600 mb-6 text-center mt-10">
           Explore Careers by Collar Type
