@@ -8,9 +8,9 @@ const CollarJobs = () => {
   const [loading, setLoading] = useState();
   const [mobileloading, setMobileLoading] = useState(false);
 
-  {
+  
     /* Desktop Jobs */
-  }
+  
   useEffect(() => {
     fetch("http://localhost:5000/jobs")
       .then((res) => res.json())
@@ -22,15 +22,15 @@ const CollarJobs = () => {
       .catch((err) => console.error(err), setLoading(false));
   }, []);
 
-  {
+  
     /* mobile Jobs */
-  }
+  
   useEffect(() => {
     fetch("http://localhost:5000/jobs")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        setData(data);
+        setMobileData(data);
         setMobileLoading(true);
       })
       .catch((err) => console.error(err), setLoading(false));
