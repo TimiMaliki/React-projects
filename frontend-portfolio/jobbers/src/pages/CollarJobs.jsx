@@ -8,9 +8,8 @@ const CollarJobs = () => {
   const [loading, setLoading] = useState();
   const [mobileloading, setMobileLoading] = useState(false);
 
-  
-    /* Desktop Jobs */
-  
+  /* Desktop Jobs */
+
   useEffect(() => {
     fetch("http://localhost:5000/jobs")
       .then((res) => res.json())
@@ -22,9 +21,8 @@ const CollarJobs = () => {
       .catch((err) => console.error(err), setLoading(false));
   }, []);
 
-  
-    /* mobile Jobs */
-  
+  /* mobile Jobs */
+
   useEffect(() => {
     fetch("http://localhost:5000/jobs")
       .then((res) => res.json())
@@ -42,10 +40,9 @@ const CollarJobs = () => {
         <h2 className="text-3xl font-bold text-green-600 mb-6 text-center mt-10">
           Explore Careers by Collar Type
         </h2>
-        {/* <h2 className="text-center text-xl text-black">
-          {<Spinners loading={loading}/> ? (<Spinners loading={loading}/>) : ("") }
-        </h2> */}
-        {/* Jobs */}
+
+        {/* Desktop Jobs */}
+
         <div className="md:block hidden">
           {data && data.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -59,6 +56,8 @@ const CollarJobs = () => {
             </div>
           )}
         </div>
+        
+        {/* Mobile Jobs */}
 
         <div className="md:hidden block">
           {mobileData && mobileData.length > 0 ? (
