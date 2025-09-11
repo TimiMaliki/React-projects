@@ -61,8 +61,8 @@ const CollarJobs = () => {
                   📄 JSON / Mock API – To simulate job data and backend
                   integration
                 </h2>
-                {<Spinners mobileloading={mobileloading} /> ? (
-                  <Spinners mobileloading={mobileloading} />
+                {<Spinners loading={loading} /> ? (
+                  <Spinners loading={loading} />
                 ) : (
                   ""
                 )}
