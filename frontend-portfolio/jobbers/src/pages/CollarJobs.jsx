@@ -30,7 +30,7 @@ const CollarJobs = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        setMobileData(data);
+        setMobileData();
         setMobileLoading(true);
       })
       .catch((err) => console.error(err), setLoading(false));
