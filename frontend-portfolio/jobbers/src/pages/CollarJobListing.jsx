@@ -5,6 +5,7 @@ import Spinners from "../Component/Spinners";
 
 const CollarJobListing = ({ job }) => {
   const [showMore, setShowMore] = useState(false);
+  const [loading , setLoading] = useState(true)
   const collarColors = {
     white: "text-gray-700 bg-gray-100",
     blue: "text-blue-700 bg-blue-100",
