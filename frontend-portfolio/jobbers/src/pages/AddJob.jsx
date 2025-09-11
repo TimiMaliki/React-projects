@@ -44,7 +44,7 @@ const AddJob = ({addJobSubmit}) => {
     }
   return (
     <section className="bg-white">
-    <div className="container mx-auto max-w-2xl py-20 px-6">
+    <div className="container mx-auto max-w-2xl py-32 px-6">
       <div className="bg-white px-8 py-10 shadow-xl rounded-2xl border border-green-400">
         <form onSubmit={onSubmitForm}>
           <h2 className="text-4xl font-extrabold text-center text-green-700 mb-10">
