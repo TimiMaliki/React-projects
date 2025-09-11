@@ -53,8 +53,8 @@ const CollarJobs = () => {
           ) : (
             <div className="flex justify-center text-center items-center">
               <Spinners loading={loading} />
-               <h2 className="text-center text-xl text-black">
-                <h2 className="text-lg  text-black font-bolder mb-4">Failed To fetch</h2>
+               <div className="text-center text-xl text-black">
+              <h2 className="text-lg  text-black font-bolder mb-4">Sorry , Failed To fetch</h2>
                 <h2 className="text-md font-bold">
                   Error:
                   <br />
@@ -66,7 +66,7 @@ const CollarJobs = () => {
                 ) : (
                   ""
                 )}
-              </h2>
+              </div>
             </div>
           )}
         </div>
@@ -82,7 +82,7 @@ const CollarJobs = () => {
             </div>
           ) : (
             <div className="text-center items-center grid">
-              <h2 className="text-center text-xl text-black">
+              <div className="text-center text-xl text-black">
                 <h2 className="text-lg  text-black font-bolder mb-4">Failed To fetch</h2>
                 <h2 className="text-md font-bold">
                   Error:
@@ -95,7 +95,7 @@ const CollarJobs = () => {
                 ) : (
                   ""
                 )}
-              </h2>
+              </div>
             </div>
           )}
         </div>
