@@ -27,7 +27,7 @@ const HowItWorks = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container-xl lg:container m-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-gray-900 mb-12">
+        <h2 className="text-4xl font-bold text-black mb-12">
           How It <span className="text-green-700">Works</span>
         </h2>
 
@@ -35,13 +35,13 @@ const HowItWorks = () => {
           {steps.map((step) => (
             <div
               key={step.id}
-              className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+              className="bg-white rounded-2xl shadow-md border border-green-400 p-8 hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
             >
               <div className="w-16 h-16 rounded-xl bg-green-100 flex items-center justify-center mx-auto mb-6">
                 {step.icon}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{step.description}</p>
+              <h3 className="text-xl font-semibold text-black mb-3">{step.title}</h3>
+              <p className="text-black leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>

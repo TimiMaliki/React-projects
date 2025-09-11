@@ -11,16 +11,16 @@ const JobListing = ({ job }) => {
   }
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden border border-gray-100">
+    <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden border border-green-400">
       {/* Header */}
       <div className="p-6">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
+            <h3 className="text-lg font-semibold text-black flex items-center gap-2">
               <Briefcase className="w-5 h-5 text-green-600" />
               {job.title}
             </h3>
-            <p className="text-sm text-gray-500 mt-1">{job.company?.display_name}</p>
+            <p className="text-sm text-black mt-1">{job.company?.display_name}</p>
           </div>
           <span className="text-green-700 font-medium text-sm mt-2 sm:mt-0 flex items-center gap-1">
             <DollarSign className="w-4 h-4" />
@@ -29,7 +29,7 @@ const JobListing = ({ job }) => {
         </div>
 
         {/* Description */}
-        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+        <p className="text-black text-sm leading-relaxed mb-4">
           {description}
         </p>
         <button
@@ -41,7 +41,7 @@ const JobListing = ({ job }) => {
 
         {/* Footer */}
         <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-          <div className="flex items-center text-gray-500 text-sm gap-2">
+          <div className="flex items-center text-black text-sm gap-2">
             <MapPin className="w-4 h-4 text-green-600" />
             {job.location?.display_name}
           </div>

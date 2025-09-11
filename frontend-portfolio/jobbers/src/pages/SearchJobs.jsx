@@ -117,13 +117,13 @@ const SearchJobs = () => {
       results.map((job) => (
         <li
           key={job.id}
-          className="bg-white rounded-xl shadow-md border border-gray-100 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+          className="bg-white rounded-xl shadow-md border border-green-400 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
         >
           <h3 className="text-lg font-semibold text-gray-900">{job.title}</h3>
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-black">
             {job.company?.display_name ?? "Unknown company"}
           </p>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-black">
             {job.location?.display_name ?? "Unknown location"}
           </p>
 
@@ -134,7 +134,7 @@ const SearchJobs = () => {
               {job.salary_max.toLocaleString()}
             </p>
           ) : (
-            <p className="text-sm mt-2 text-gray-500">Salary not specified</p>
+            <p className="text-sm mt-2 text-black">Salary not specified</p>
           )}
 
           <a
