@@ -56,7 +56,7 @@ const CollarJobs = () => {
             </div>
           )}
         </div>
-        
+
         {/* Mobile Jobs */}
 
         <div className="md:hidden block">
@@ -69,8 +69,8 @@ const CollarJobs = () => {
           ) : (
             <div className="text-center items-center grid">
               <h2 className="text-center text-xl text-black">
-                <h2 className="text-lg font-bolder mb-4">Failed To fetch</h2>
-                <h2>
+                <h2 className="text-lg  text-black font-bolder mb-4">Failed To fetch</h2>
+                <h2 className="text-md font-bold">
                   Error:
                   <br />
                   📄 JSON / Mock API – To simulate job data and backend
