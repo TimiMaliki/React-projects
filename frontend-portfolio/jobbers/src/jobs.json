@@ -125,51 +125,6 @@
         "contactEmail": "finance@summitcapital.com",
         "contactPhone": "555-6666"
       }
-    },
-    {
-      "id": "4b3e",
-      "title": "Doctor",
-      "type": "Full-Time",
-      "description": "sijiof",
-      "salary": "$90K - 100K",
-      "location": "Abakaliki, Ebonyi State, Nigeria",
-      "company": {
-        "name": "Maliki",
-        "description": "ertjyui",
-        "contactEmail": "malikitimi@gmail.com",
-        "contactPhone": "09067376592"
-      }
-    },
-    {
-      "id": "c8b2",
-      "title": "front end",
-      "type": "Full-Time",
-      "category": "Blue-Collar",
-      "description": "fix bugs",
-      "salary": "$50K - 60K",
-      "location": "Abakaliki, Ebonyi State, Nigeria",
-      "company": {
-        "name": "Maliki",
-        "description": "gjio",
-        "contactEmail": "malikitimi@gmail.com",
-        "contactPhone": "09067376592"
-      }
-    },
-    {
-      "id": "d945",
-      "title": "Doctor",
-      "type": "Full-Time",
-      "category": "Gold-Collar",
-      "color": "gold",
-      "description": "Save Lives , please dont kill people",
-      "salary": "$125K - 150K",
-      "location": "Abakaliki, Ebonyi State, Nigeria",
-      "company": {
-        "name": "Maliki",
-        "description": "We save lives with a little injection thats all",
-        "contactEmail": "malikitimi@gmail.com",
-        "contactPhone": "09067376592"
-      }
     }
   ]
 }
