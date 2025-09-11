@@ -53,6 +53,20 @@ const CollarJobs = () => {
           ) : (
             <div className="flex justify-center text-center items-center">
               <Spinners loading={loading} />
+               <h2 className="text-center text-xl text-black">
+                <h2 className="text-lg  text-black font-bolder mb-4">Failed To fetch</h2>
+                <h2 className="text-md font-bold">
+                  Error:
+                  <br />
+                  📄 JSON / Mock API – To simulate job data and backend
+                  integration
+                </h2>
+                {<Spinners mobileloading={mobileloading} /> ? (
+                  <Spinners mobileloading={mobileloading} />
+                ) : (
+                  ""
+                )}
+              </h2>
             </div>
           )}
         </div>
