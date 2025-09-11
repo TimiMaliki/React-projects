@@ -36,7 +36,7 @@ const CollarJobs = () => {
           </div>
         ) : (
           <div className="flex justify-center text-center items-center">
-           Failed To Laod
+           <Spinners loading={loading}/>
           </div>
         )}
       </div>
