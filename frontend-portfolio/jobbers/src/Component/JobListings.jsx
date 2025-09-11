@@ -37,7 +37,7 @@ const JobListings = ({ isHomePage = false }) => {
   const listingJobsCa = isHomePage ? jobsCa.slice(0, 3) : jobsCa;
   const listingJobsUk = isHomePage ? data.slice(0, 3) : data;
   return (
-    <section className="bg-yellow-50 px-4 py-10">
+    <section className="bg-white px-4 py-10">
       <div className="container-xl lg:container m-auto">
         <h2 className="text-3xl font-bold text-green-600 mb-6 text-center mt-5">
           {isHomePage ? "Recent Onsite Jobs" : "Browse Onsite Jobs"}

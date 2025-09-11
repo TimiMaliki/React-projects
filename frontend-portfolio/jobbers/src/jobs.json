@@ -154,6 +154,22 @@
         "contactEmail": "malikitimi@gmail.com",
         "contactPhone": "09067376592"
       }
+    },
+    {
+      "id": "d945",
+      "title": "Doctor",
+      "type": "Full-Time",
+      "category": "Gold-Collar",
+      "color": "gold",
+      "description": "Save Lives , please dont kill people",
+      "salary": "$125K - 150K",
+      "location": "Abakaliki, Ebonyi State, Nigeria",
+      "company": {
+        "name": "Maliki",
+        "description": "We save lives with a little injection thats all",
+        "contactEmail": "malikitimi@gmail.com",
+        "contactPhone": "09067376592"
+      }
     }
   ]
 }

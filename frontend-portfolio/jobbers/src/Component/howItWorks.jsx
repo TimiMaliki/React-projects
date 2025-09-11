@@ -25,7 +25,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-green-50">
+    <section className="py-20 bg-white">
       <div className="container-xl lg:container m-auto px-6 text-center">
         <h2 className="text-4xl font-bold text-gray-900 mb-12">
           How It <span className="text-green-700">Works</span>

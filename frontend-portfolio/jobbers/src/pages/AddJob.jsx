@@ -43,9 +43,9 @@ const AddJob = ({addJobSubmit}) => {
      return navigate("/collars")
     }
   return (
-    <section className="bg-gradient-to-br from-indigo-50 via-green-50 to-yellow-50">
+    <section className="bg-white">
     <div className="container mx-auto max-w-2xl py-20 px-6">
-      <div className="bg-white px-8 py-10 shadow-xl rounded-2xl border border-gray-100">
+      <div className="bg-white px-8 py-10 shadow-xl rounded-2xl border border-green-400">
         <form onSubmit={onSubmitForm}>
           <h2 className="text-4xl font-extrabold text-center text-green-700 mb-10">
             Post a Job
