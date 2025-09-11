@@ -28,7 +28,7 @@ const CollarJobs = () => {
         </h2> */}
         {/* Jobs */}
 
-        {data ? (
+        {data && data.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {data.map((job) => (
               <CollarJobListing job={job} key={job.id} />
