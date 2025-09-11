@@ -51,11 +51,9 @@ const JobListings = ({ isHomePage = false }) => {
             ? listingJobsCa.map((job) => <JobListing job={job} key={job.id} />)
             : !loading && (
                 <p className="col-span-3 text-center">No jobs found</p>
-              )}
-        </div>
+              )}     
 
         {/* Jobs in uk */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {listingJobsUk.length > 0
             ? listingJobsUk.map((job) => <JobListing job={job} key={job.id} />)
             : listingJobsUk.length === 0 && (
