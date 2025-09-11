@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Linkedin, Github } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         
         {/* Brand */}
         <div>
-          <h2 className="text-2xl font-bold text-yellow-400">Jobber</h2>
+          <Link to={"/"}><h2 className="text-2xl font-bold text-yellow-400">Jobber</h2></Link>
           <p className="mt-3 text-gray-300 text-sm">
             Connecting job seekers with employers seamlessly. 
             Your next opportunity is just a click away.
@@ -18,7 +19,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-yellow-400 mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="*" className="hover:text-yellow-300 transition">Home</a></li>
+          <Link to={"/"}><li><a href="/" className="hover:text-yellow-300 transition">Home</a></li></Link>
             <li><a href="*" className="hover:text-yellow-300 transition">Find Jobs</a></li>
             <li><a href="*" className="hover:text-yellow-300 transition">Employers</a></li>
             <li><a href="*" className="hover:text-yellow-300 transition">About Us</a></li>
