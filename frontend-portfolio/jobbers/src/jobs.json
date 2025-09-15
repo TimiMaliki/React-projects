@@ -125,6 +125,22 @@
         "contactEmail": "finance@summitcapital.com",
         "contactPhone": "555-6666"
       }
+    },
+    {
+      "id": "8740",
+      "title": "Doctor",
+      "type": "Full-Time",
+      "category": "Gold-Collar",
+      "color": "brown",
+      "description": "“Help save lives — Please, don’t take them.”",
+      "salary": "$150K - 175K",
+      "location": "Abakaliki, Ebonyi State, Nigeria",
+      "company": {
+        "name": "Maliki",
+        "description": "Our company exists to create solutions that protect people and communities. Guided by the principle “Save lives — don’t take them,” we prioritize safety, compassion, and responsibility in everything we do.",
+        "contactEmail": "malikitimi@gmail.com",
+        "contactPhone": "09067376592"
+      }
     }
   ]
 }
