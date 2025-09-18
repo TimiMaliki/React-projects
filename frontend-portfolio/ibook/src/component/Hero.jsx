@@ -1,83 +1,116 @@
-import React from 'react'
-import leftImage from "../images/cocktail-left-leaf.png"
-import rightImage from "../images/cocktail-right-leaf.png"
-import gsap from "gsap"
-import { useGSAP } from '@gsap/react'
-import { SplitText} from 'gsap/all'
+import React, { useRef } from "react";
+import leftImage from "../images/cocktail-left-leaf.png";
+import rightImage from "../images/cocktail-right-leaf.png";
+import car from "../videos/vid2.mp4";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/all";
+import { useMediaQuery } from "react-responsive";
+import { ScrollTrigger } from "gsap/all";
 
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
-    useGSAP(() => {
-  const heroSplit = new SplitText(".title",{
-    type:"chars, words"
-  })
+  const videoRef = useRef();
+  const isSmallDevice = useMediaQuery({ maxWidth: 767 });
 
-  const paragraphsSplit = new SplitText(".subtitle",{
-    type:"lines"
-  })
+  useGSAP(() => {
+    const heroSplit = new SplitText(".title", {
+      type: "chars, words",
+    });
 
-  heroSplit.chars.forEach((char) => {
-    char.classList.add("text-gradient")
-  })
+    const paragraphsSplit = new SplitText(".subtitle", {
+      type: "lines",
+    });
 
-  gsap.from(heroSplit.chars, {
-    yPercent : 100,
-    duration:1.8,
-    ease: "expo.out",
-    stagger:0.06
-  })
+    heroSplit.chars.forEach((char) => {
+      char.classList.add("text-gradient");
+    });
 
-  gsap.from(paragraphsSplit.lines, {
-    yPercent : 100,
-    opacity:0,
-    duration:1.8,
-    ease: "expo.out",
-    stagger:0.06,
-    delay: 1,
-  })
+    gsap.from(heroSplit.chars, {
+      yPercent: 100,
+      duration: 1.8,
+      ease: "expo.out",
+      stagger: 0.06,
+    });
 
-//   gsap.timeline({
-//     scrollTrigger :{
-//         trigger:".title",
-//         start:"top 5%",
-//         end:"bottom 85%",
-//         scrub: true,
-//         markers:true
-//     }
-//   })
-//   .to("#hero" , {
-//     backgroundColor :"white"
-//   })
+    gsap.from(paragraphsSplit.lines, {
+      yPercent: 100,
+      opacity: 0,
+      duration: 1.8,
+      ease: "expo.out",
+      stagger: 0.06,
+      delay: 1,
+    });
 
+    const startVal = isSmallDevice ? "top 50%" : "center 60%";
+    const endVal = isSmallDevice ? "120% top" : "bottom top";
 
-    },[])
+    ScrollTrigger.create({
+      trigger: videoRef.current,
+      start: startVal,
+      end: endVal,
+      scrub: true,
+      pin: true,
+      onEnter: () => {
+        videoRef.current.play(); 
+      },
+      onLeave: () => {
+        videoRef.current.play();  
+      },
+      onEnterBack: () => {
+        videoRef.current.play();   
+      },
+      onLeaveBack: () => {
+        videoRef.current.play(); 
+      },
+    });
+  }, []);
+
   return (
     <>
-    <section id="hero" className='noisy'>
-       <h1 className='title'>iBook</h1>
-       <img src={leftImage} alt="left-img" className='left-leaf' />
-       <img src={rightImage} alt="left-img" className='right-leaf' />
-       <div className="body">
-        <div className="content">
+      <section id="hero" className="noisy">
+        <h1 className="title">Drive</h1>
+        <div className="body">
+          <div className="content">
             <div className="space-y-5 hidden md:block">
-                    <p>Cool. Crisp. Classic.</p>
-                    <p className="subtitle">
-                        Sip the Spirit <br/> of summer
-                    </p>
+              <p>Cool. Crisp. Classic.</p>
+              <p className="subtitle">
+                Sip the Spirit <br /> of summer
+              </p>
             </div>
             <div className="view-cocktails">
-			 <p className="subtitle">
-				Every cocktail on our menu is a blend of premium ingredients,
-				creative flair, and timeless recipes — designed to delight your
-				senses.
-			 </p>
-			 <a href="#cocktails">View cocktails</a>
-			</div>
+              <p className="subtitle">
+                Every cocktail on our menu is a blend of premium ingredients,
+                creative flair, and timeless recipes — designed to delight your
+                senses.
+              </p>
+              <a href="#cocktails">View cocktails</a>
+            </div>
+            <div className="view-cocktails">
+              <p className="subtitle">
+                Every cocktail on our menu is a blend of premium ingredients,
+                creative flair, and timeless recipes — designed to delight your
+                senses.
+              </p>
+              <a href="#cocktails ">View cocktails</a>
+            </div>
+          </div>
         </div>
-       </div>
-    </section>
+      </section>
+      <div className="video absolute inset-0">
+        <video
+          src={car}
+          ref={videoRef}
+          muted
+          playsInline
+          preload="auto"
+          loop
+        />
+      </div>
+   
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
