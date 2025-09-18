@@ -1,7 +1,5 @@
 import React, { useRef } from "react";
-import leftImage from "../images/cocktail-left-leaf.png";
-import rightImage from "../images/cocktail-right-leaf.png";
-import car from "../videos/vid2.mp4";
+import car from "../videos/vid1.mp4";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
@@ -69,45 +67,42 @@ const Hero = () => {
 
   return (
     <>
-      <section id="hero" className="noisy">
-        <h1 className="title">Drive</h1>
-        <div className="body">
-          <div className="content">
-            <div className="space-y-5 hidden md:block">
-              <p>Cool. Crisp. Classic.</p>
-              <p className="subtitle">
-                Sip the Spirit <br /> of summer
-              </p>
-            </div>
-            <div className="view-cocktails">
-              <p className="subtitle">
-                Every cocktail on our menu is a blend of premium ingredients,
-                creative flair, and timeless recipes — designed to delight your
-                senses.
-              </p>
-              <a href="#cocktails">View cocktails</a>
-            </div>
-            <div className="view-cocktails">
-              <p className="subtitle">
-                Every cocktail on our menu is a blend of premium ingredients,
-                creative flair, and timeless recipes — designed to delight your
-                senses.
-              </p>
-              <a href="#cocktails ">View cocktails</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div className="video absolute inset-0">
-        <video
-          src={car}
-          ref={videoRef}
-          muted
-          playsInline
-          preload="auto"
-          loop
-        />
-      </div>
+    <section id="hero" className="noisy">
+		<h1 className="title">DRIVE</h1>
+			
+		<div className="body">
+		 {/* <img src="/images/arrow.png" alt="arrow" className="arrow" /> */}
+		 
+		 <div className="content">
+			<div className="space-y-5 hidden md:block">
+			 <p>Cool. Crisp. Classic.</p>
+			 <p className="subtitle">
+				Sip the Spirit <br /> of Summer
+			 </p>
+			</div>
+			
+			<div className="view-cocktails">
+			 <p className="subtitle">
+				Every cocktail on our menu is a blend of premium ingredients,
+				creative flair, and timeless recipes — designed to delight your
+				senses.
+			 </p>
+			 <a href="#cocktails">View cocktails</a>
+			</div>
+		 </div>
+		</div>
+	 </section>
+	 
+	 <div className="video absolute inset-0">
+		<video
+		 ref={videoRef}
+		 muted
+		 playsInline
+		 preload="auto"
+		 src={car}
+     loop
+		/>
+	 </div>
    
     </>
   );
