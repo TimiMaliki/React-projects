@@ -3,6 +3,9 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
 import drink from "../videos/output.mp4";
+import leftLeaf from "../images/hero-left-leaf.png";
+import rightLeaf from "../images/hero-right-leaf.png";
+import arrow from "../images/arrow.png"
 import { ScrollTrigger } from "gsap/all";
 import { useMediaQuery } from "react-responsive";
 
@@ -63,26 +66,39 @@ const Hero = () => {
       },
      });
 
+
+     gsap.timeline({
+	 scrollTrigger: {
+		trigger: "#hero",
+		start: "top top",
+		end: "bottom top",
+		scrub: true,
+	 },
+	})
+	.to(".right-leaf", { y: 200 }, 0)
+	.to(".left-leaf", { y: -200 }, 0)
+	.to(".arrow", { y: 100 }, 0);
+
   }, []);
   return (
     <>
       <section id="hero" className="noisy">
-        <h1 className="title">A Booking Away</h1>
+        <h1 className="title">One Book Away</h1>
 
         <img
-		 src="../src/images/hero-left-leaf.png"
+		 src={leftLeaf}
 		 alt="left-leaf"
 		 className="left-leaf"
 		/>
 		<img
-		 src="../src/images/hero-right-leaf.png"
+		 src={rightLeaf}
 		 alt="right-leaf"
 		 className="right-leaf"
 		/>
 		
 
         <div className="body">
-          {/* <img src="/images/arrow.png" alt="arrow" className="arrow" /> */}
+          <img src={arrow} alt="arrow" className="arrow" />
           <div className="content">
             <div className="space-y-5 hidden md:block">
               <p>Cool. Crisp. Classic.</p>
