@@ -8,7 +8,7 @@ const Home = () => {
         <a href="#home" className="flex items-center gap-2">
           {/* brand image */}
           {/* <img src="" alt="" /> */}
-          <p className='text-black font-stretch-50%'>HTC</p>
+          <p className='text-white font-stretch-50%'>HTC</p>
         </a>
         <ul>
           {[
