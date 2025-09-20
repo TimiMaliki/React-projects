@@ -5,7 +5,7 @@ import { SplitText } from "gsap/all";
 import drink from "../videos/output.mp4";
 import leftLeaf from "../images/hero-left-leaf.png";
 import rightLeaf from "../images/hero-right-leaf.png";
-import arrow from "../images/arrow.png"
+import arrow from "../images/arrow.png";
 import { ScrollTrigger } from "gsap/all";
 import { useMediaQuery } from "react-responsive";
 
@@ -14,9 +14,8 @@ gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
   const videoRef = useRef();
   const isSmallDevice = useMediaQuery({ maxWidth: 800 });
-  
+
   useGSAP(() => {
-   
     const heroSplit = new SplitText(".title", {
       type: "chars , words",
     });
@@ -48,54 +47,42 @@ const Hero = () => {
     const startVal = isSmallDevice ? "top 50%" : "center 60%";
     const endVal = isSmallDevice ? "120% top" : "bottom top";
 
-
-
     videoRef.current.onloadedmetadata = () => {
       tl.to(videoRef.current, {
-       currentTime: videoRef.current.duration,
+        currentTime: videoRef.current.duration,
       });
-     };
+    };
 
-     let tl = gsap.timeline({
+    let tl = gsap.timeline({
       scrollTrigger: {
-       trigger: "video",
-       start: startVal,
-       end: endVal,
-       scrub: true,
-       pin: true,
+        trigger: "video",
+        start: startVal,
+        end: endVal,
+        scrub: true,
+        pin: true,
       },
-     });
+    });
 
-
-     gsap.timeline({
-	 scrollTrigger: {
-		trigger: "#hero",
-		start: "top top",
-		end: "bottom top",
-		scrub: true,
-	 },
-	})
-	.to(".right-leaf", { y: 200 }, 0)
-	.to(".left-leaf", { y: -200 }, 0)
-	.to(".arrow", { y: 100 }, 0);
-
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "#hero",
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      })
+      .to(".right-leaf", { y: 200 }, 0)
+      .to(".left-leaf", { y: -200 }, 0)
+      .to(".arrow", { y: 100 }, 0);
   }, []);
   return (
     <>
       <section id="hero" className="noisy">
         <h1 className="title">One Book Away</h1>
 
-        <img
-		 src={leftLeaf}
-		 alt="left-leaf"
-		 className="left-leaf"
-		/>
-		<img
-		 src={rightLeaf}
-		 alt="right-leaf"
-		 className="right-leaf"
-		/>
-		
+        <img src={leftLeaf} alt="left-leaf" className="left-leaf" />
+        <img src={rightLeaf} alt="right-leaf" className="right-leaf" />
 
         <div className="body">
           <img src={arrow} alt="arrow" className="arrow" />
