@@ -1,6 +1,6 @@
 import React from 'react'
 import abt7 from "../images/holi7.jpg"
-import abt9 from "../images/holi9.jpg"
+import abt9 from "../images/myke-simon-atsUqIm3wxo-unsplash.jpg"
 import surf from "../images/surf.jpg"
 import car from "../videos/vid5.mp4";
 import airplane from "../videos/airplane-land.mp4";
