@@ -3,6 +3,8 @@ import gsap from 'gsap';
 import { useMediaQuery } from 'react-responsive'
 import { useGSAP } from '@gsap/react'
 import { featureLists, goodLists } from '../constants/index'
+import spiderManSmall from "../images/superhero-7524471_1280.png"
+import spiderManLarger  from "../images/superhero-7524471.png"
 const Movies = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
  
@@ -42,7 +44,7 @@ const Movies = () => {
         
         <div className="cocktail-img">
            <img
-               src="../src/images/superhero-7524471.png"
+               src={isMobile ? spiderManSmall : spiderManLarger}
                alt="cocktail"
                className="abs-center masked-img size-full object-contain overflow-hidden"
            />
