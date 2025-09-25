@@ -121,7 +121,7 @@ body {
                     @apply 2xl:text-start text-center;
                 }
 
-                .view-cocktails {
+                .view-lists{
                     @apply space-y-5 text-lg lg:max-w-2xs md:max-w-xs w-full;
 
                     p {
@@ -145,7 +145,7 @@ body {
         top: 0;
         left: 0;
       }
-    #cocktails {
+    #PopularServices{
         @apply relative min-h-dvh w-full overflow-hidden;
 
         #c-left-leaf {

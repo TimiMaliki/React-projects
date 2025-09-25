@@ -17,59 +17,62 @@ const navLinks = [
     },
    ];
    
-   const cocktailLists = [
-    {
-       name: "Chapel Hill Shiraz",
-       country: "AU",
-       detail: "Battle",
-       price: "$10",
-    },
-    {
-       name: "Caten Malbee",
-       country: "AU",
-       detail: "Battle",
-       price: "$49",
-    },
-    {
-       name: "Rhino Pale Ale",
-       country: "CA",
-       detail: "750 ml",
-       price: "$20",
-    },
-    {
-       name: "Irish Guinness",
-       country: "IE",
-       detail: "600 ml",
-       price: "$29",
-    },
-   ];
-   
-   const mockTailLists = [
-    {
-       name: "Tropical Bloom",
-       country: "US",
-       detail: "Battle",
-       price: "$10",
-    },
-    {
-       name: "Passionfruit Mint",
-       country: "US",
-       detail: "Battle",
-       price: "$49",
-    },
-    {
-       name: "Citrus Glow",
-       country: "CA",
-       detail: "750 ml",
-       price: "$20",
-    },
-    {
-       name: "Lavender Fizz",
-       country: "IE",
-       detail: "600 ml",
-       price: "$29",
-    },
-   ];
+  // Most Popular Services
+const serviceLists = [
+   {
+     name: "Car Rentals",
+     country: "US",
+     detail: "Wide range of cars for daily & weekly hire",
+     price: "From $25/day",
+   },
+   {
+     name: "Tourist Driver",
+     country: "US",
+     detail: "Professional drivers for city & intercity tours",
+     price: "From $50/day",
+   },
+   {
+     name: "Hotels Booking",
+     country: "Global",
+     detail: "Affordable stays across top cities",
+     price: "From $30/night",
+   },
+   {
+     name: "Vacation Homes",
+     country: "Global",
+     detail: "Luxury & budget vacation homes",
+     price: "From $70/night",
+   },
+ ];
+ 
+ 
+ const extraServiceLists = [
+   {
+     name: "Flight Tickets",
+     country: "Global",
+     detail: "Domestic & international flights",
+     price: "From $100",
+   },
+   {
+     name: "Cinemas Ticket Booking",
+     country: "US",
+     detail: "Book tickets for latest movies",
+     price: "From $5",
+   },
+   {
+     name: "Waterfall Houses",
+     country: "Tourist Spots",
+     detail: "Unique natural stay experiences",
+     price: "From $120/night",
+   },
+   {
+     name: "Guest Houses",
+     country: "Local & Abroad",
+     detail: "Budget-friendly private stays",
+     price: "From $20/night",
+   },
+ ];
+ 
    
    const profileLists = [
     {
@@ -87,18 +90,20 @@ const navLinks = [
    ];
    
    const featureLists = [
-    "Perfectly balanced blends",
-    "Garnished to perfection",
-    "Ice-cold every time",
-    "Expertly shaken & stirred",
-   ];
-   
-   const goodLists = [
-    "Handpicked ingredients",
-    "Signature techniques",
-    "Bartending artistry in action",
-    "Freshly muddled flavors",
-   ];
+      "Easy online cinema ticket booking",
+      "Discover the best theatres near you",
+      "Exclusive movie premieres & screenings",
+      "Affordable tickets with premium comfort",
+    ];
+    
+    const goodLists = [
+      "Handpicked cinemas with top ratings",
+      "Best-in-class sound & visuals",
+      "Luxurious seating & VIP options",
+      "Snacks and drinks delivered to your seat",
+    ];
+    
+    
    
    const storeInfo = {
     heading: "Where to Find Us",
@@ -171,8 +176,8 @@ const navLinks = [
    
    export {
     navLinks,
-    cocktailLists,
-    mockTailLists,
+    serviceLists,
+    extraServiceLists,
     profileLists,
     featureLists,
     goodLists,
