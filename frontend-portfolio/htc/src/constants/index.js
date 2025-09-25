@@ -119,17 +119,17 @@ const navLinks = [
    const socials = [
     {
        name: "Instagram",
-       icon: "/images/insta.png",
+       icon: "../src/images/insta.png",
        url: "#",
     },
     {
        name: "X (Twitter)",
-       icon: "/images/x.png",
+       icon: "../src/images/x.png",
        url: "#",
     },
     {
        name: "Facebook",
-       icon: "/images/fb.png",
+       icon: "../src/images/fb.png",
        url: "#",
     },
    ];
@@ -137,32 +137,32 @@ const navLinks = [
    const allCocktails = [
     {
        id: 1,
-       name: "Classic Mojito",
-       image: "/images/drink1.png",
+       name: "Available Flight Tickets",
+       image: "../src/images/aeroplane-147495_640.png",
        title: "Simple Ingredients, Bold Flavor",
        description:
         "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
     },
     {
        id: 2,
-       name: "Raspberry Mojito",
-       image: "/images/drink2.png",
+       name: "An Affordable Luxurious Hotel",
+       image: "../src/images/apartment-48821_640.png",
        title: "A Zesty Classic That Never Fails",
        description:
         "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
     },
     {
        id: 3,
-       name: "Violet Breeze",
-       image: "/images/drink3.png",
+       name: "Your Destination Driver",
+       image: "../src/images/taxi-47204_640.png",
        title: "Simple Ingredients, Bold Flavor",
        description:
         "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
     },
     {
        id: 4,
-       name: "Curacao Mojito",
-       image: "/images/drink4.png",
+       name: "Breath Taking Water Fall",
+       image: "../src/images/waterfall-310140_640.png",
        title: "Crafted With Care, Poured With Love",
        description:
         "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
