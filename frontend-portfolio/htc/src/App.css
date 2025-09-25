@@ -64,28 +64,29 @@ body {
 @layer components {
     main {
         @apply w-full overflow-x-hidden;
-    }
-
-    nav {
-        @apply fixed z-50 w-full;
-
-        div {
-            @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5 container mx-auto;
+      }
+    
+      nav {
+        @apply fixed z-50 w-full bg-black text-white;
+    
+      div {
+          @apply flex flex-row items-center gap-5 py-5 px-5 container mx-auto;
         }
-
+    
         p {
-            @apply font-modern-negra text-3xl -mb-2;
+          @apply font-modern-negra text-3xl;
         }
-
+    
         a {
-            @apply cursor-pointer text-nowrap md:text-base text-sm;
+          @apply cursor-pointer text-nowrap md:text-base text-sm hover:text-gray-300 transition;
         }
-
+    
         ul {
-            @apply flex-center lg:gap-12 gap-7;
+          @apply flex lg:gap-12 gap-7 ml-auto; 
         }
-    }
-
+      }
+      
+      
    
     .noisy {
         @apply absolute inset-0 size-full bg-[url("../src/images/noise.png")];
@@ -139,8 +140,8 @@ body {
         @apply w-full md:h-[80%] h-1/2 absolute bottom-0 left-0 md:object-contain object-bottom object-cover;
     }
     .car {
-        @apply w-full h-full object-cover; /* makes video fill container */
-        position: absolute; /* keeps it inside parent */
+        @apply w-full h-full object-cover; 
+        position: absolute;
         top: 0;
         left: 0;
       }
