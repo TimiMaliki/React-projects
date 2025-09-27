@@ -48,7 +48,7 @@ const Movies = () => {
             ))}
           </ul>
 
-          <div className="cocktail-img">
+          <div className="movie-img">
             <img
               src={isMobile ? spiderManSmall : spiderManLarger}
               alt="cocktail"

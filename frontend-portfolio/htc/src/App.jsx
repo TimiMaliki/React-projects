@@ -1,22 +1,22 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
-import About from "./component/About";
-import BookingServices from "./component/BookingServices";
-import Books from "./component/Books";
-import Contact from "./component/Contact";
-import Hero from "./component/Hero";
-import Movies from "./component/Movies";
-import Navbar from "./component/Navbar";
+import Layout from "./layout/Layout";
+import Hotel from "./pages/Hotel";
+import HomePage from "./component/HomePage";
 
 function App() {
+  const routes = createBrowserRouter([
+    {
+      element : <Layout/>,
+      children : [
+        {path : "/" , element : <HomePage/>},
+         {path : "/hotel", element :<Hotel/>}
+      ]
+    }
+  ])
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Books />
-      <About />
-      <Movies />
-      <BookingServices />
-      <Contact />
+      <RouterProvider router ={routes} />
     </>
   );
 }

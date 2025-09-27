@@ -260,7 +260,7 @@ body {
                  md:mb-16 md:mt-0 mt-20 w-full max-w-7xl mx-auto ;
         }
       
-        .cocktail-img {
+        .movie-img {
          
           @apply relative mx-auto w-[80vw] sm:w-[70vw] md:w-[60vw] 
                  h-[40vh] sm:h-[40vh] md:h-[70vh] 

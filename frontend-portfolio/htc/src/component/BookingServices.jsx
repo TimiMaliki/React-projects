@@ -1,5 +1,5 @@
 import React from 'react'
-import { allCocktails } from '../constants/index'
+import {  plans } from '../constants/index'
 import { useRef, useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
@@ -21,7 +21,7 @@ const BookingServices = () => {
        })
     }, [currentIndex]);
     
-    const totalCocktails = allCocktails.length;
+    const totalCocktails =  plans.length;
     
     const goToSlide = (index) => {
        const newIndex = (index + totalCocktails) % totalCocktails;
@@ -30,7 +30,7 @@ const BookingServices = () => {
     }
     
     const getCocktailAt = (indexOffset) => {
-       return allCocktails[(currentIndex + indexOffset + totalCocktails) % totalCocktails]
+       return  plans[(currentIndex + indexOffset + totalCocktails) % totalCocktails]
     }
     
     const currentCocktail = getCocktailAt(0);
@@ -46,7 +46,7 @@ const BookingServices = () => {
     </h2>
     
     <nav className="cocktail-tabs" aria-label="Cocktail Navigation">
-       {allCocktails.map((cocktail, index) => {
+       { plans.map((cocktail, index) => {
         const isActive = index === currentIndex;
         
         return (

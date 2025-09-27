@@ -114,13 +114,7 @@ const serviceLists = [
     },
    };
    
-   const openingHours = [
-    { day: "Mon–Thu", time: "11:00am – 12am" },
-    { day: "Fri", time: "11:00am – 2am" },
-    { day: "Sat", time: "9:00am – 2am" },
-    { day: "Sun", time: "9:00am – 1am" },
-   ];
-   
+ 
    const socials = [
     {
        name: "Instagram",
@@ -139,41 +133,41 @@ const serviceLists = [
     },
    ];
    
-   const allCocktails = [
-    {
-       id: 1,
-       name: "Available Flight Tickets",
-       image: "../src/images/aeroplane-147495_640.png",
-       title: "Simple Ingredients, Bold Flavor",
-       description:
-        "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
-    },
-    {
-       id: 2,
-       name: "An Affordable Luxurious Hotel",
-       image: "../src/images/apartment-48821_640.png",
-       title: "A Zesty Classic That Never Fails",
-       description:
-        "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
-    },
-    {
-       id: 3,
-       name: "Your Destination Driver",
-       image: "../src/images/taxi-47204_640.png",
-       title: "Simple Ingredients, Bold Flavor",
-       description:
-        "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
-    },
-    {
-       id: 4,
-       name: "Breath Taking Water Fall",
-       image: "../src/images/waterfall-310140_640.png",
-       title: "Crafted With Care, Poured With Love",
-       description:
-        "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
-    },
-   ];
-   
+   const plans = [
+      {
+        id: 1,
+        name: "Available Flight Tickets",
+        image: "../src/images/aeroplane-147495_640.png",
+        title: "Seamless Flights to Your Destination",
+        description:
+          "Book affordable and reliable flight tickets to your dream destinations. Travel stress-free with flexible options and smooth connections.",
+      },
+      {
+        id: 2,
+        name: "An Affordable Luxurious Hotel",
+        image: "../src/images/apartment-48821_640.png",
+        title: "Stay in Comfort & Luxury",
+        description:
+          "Discover hotels that combine affordability with elegance. Enjoy modern amenities, comfort, and world-class service wherever you go.",
+      },
+      {
+        id: 3,
+        name: "Your Destination Driver",
+        image: "../src/images/taxi-47204_640.png",
+        title: "Ride with Ease Anywhere",
+        description:
+          "Book trusted local drivers to take you around safely and on time. Whether it’s sightseeing, airport pickups, or daily commutes—we’ve got you covered.",
+      },
+      {
+        id: 4,
+        name: "Breath Taking Water Fall",
+        image: "../src/images/waterfall-310140_640.png",
+        title: "Unforgettable Natural Wonders",
+        description:
+          "Explore breathtaking waterfalls and stunning landscapes. Create memories surrounded by nature’s most beautiful and awe-inspiring views.",
+      },
+    ];
+    
    export {
     navLinks,
     serviceLists,
@@ -181,8 +175,7 @@ const serviceLists = [
     profileLists,
     featureLists,
     goodLists,
-    openingHours,
     storeInfo,
     socials,
-    allCocktails,
+    plans,
    };

@@ -1,5 +1,5 @@
 import React from 'react'
-import { openingHours, socials } from '../constants/index.js'
+import {  socials } from '../constants/index.js'
 import { useGSAP } from '@gsap/react'
 import { SplitText} from 'gsap/all';
 import gsap from 'gsap';
@@ -40,23 +40,14 @@ const Contact = () => {
 		<h2>Where to Find Us</h2>
 		
 		<div>
-		 <h3>Visit Our Bar</h3>
-		 <p>456, Raq Blvd. #404, Los Angeles, CA 90210</p>
+		 <h3>Visit Our Office</h3>
+		 <p>456, Raq Blvd. #404, San Francisco, CA 480101</p>
 		</div>
 		
 		<div>
 		 <h3>Contact Us</h3>
-		 <p>(555) 987-6543</p>
+		 <p>(+234) 906-7376-592</p>
 		 <p>malikitimi@gmail.com</p>
-		</div>
-		
-		<div>
-		 <h3>Open Every Day</h3>
-		 {openingHours.map((time) => (
-			<p key={time.day}>
-			 {time.day} : {time.time}
-			</p>
-		 ))}
 		</div>
 		
 		<div>
