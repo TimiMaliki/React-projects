@@ -1,19 +1,24 @@
 const navLinks = [
     {
        id: "book",
-       title: "Booking",
+       title: "Book now",
+       dropdown: [
+        { id: "hotel", title: "Book Hotel"  , href : "/hotel"},
+        { id: "flight", title: "Book Flight",  href : "/" },
+        { id: "tour", title: "Book Tour",  href : "/" },
+      ],
     },
     {
        id: "about",
        title: "About Us",
     },
     {
-       id: "work",
-       title: "Freedom",
-    },
+      id: "contact",
+      title: "Contact",
+   },
     {
-       id: "contact",
-       title: "Contact",
+       id: "work",
+       title: "Login",
     },
    ];
    

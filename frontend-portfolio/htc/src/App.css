@@ -70,7 +70,7 @@ body {
         @apply fixed z-50 w-full bg-black text-white;
     
       div {
-          @apply flex flex-row items-center gap-5 py-5 px-5 container mx-auto;
+          @apply flex flex-row items-center gap-5 py-2 px-5 container mx-auto;
         }
     
         p {
