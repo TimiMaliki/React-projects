@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from './Header'
 
 const Hotel = () => {
   return (
-    <div className=''>Hotel</div>
+    <div className='py-44'>
+        <Header/>
+    </div>
   )
 }
 

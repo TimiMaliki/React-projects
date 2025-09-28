@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import Layout from "./layout/Layout";
-import Hotel from "./pages/Hotel";
+import Hotel from "./HotelPages/Hotel";
 import HomePage from "./component/HomePage";
 
 function App() {
