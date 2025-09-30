@@ -1,56 +1,32 @@
-// api.js
-const RAPID_API_KEY = "5616351c70mshbc0f356c603975ap15b532jsn5a639c258924";
-const RAPID_API_HOST = "google-map-places-new-v2.p.rapidapi.com";
 
-export async function searchPlaces(query) {
-  const url = `https://${RAPID_API_HOST}/v1/places:searchText`;
+const BASE_URL =
+  "https://travel-advisor.p.rapidapi.com/restaurants/list-in-boundary";
 
-  const options = {
-    method: "POST",
-    headers: {
-      "x-rapidapi-key": RAPID_API_KEY,
-      "x-rapidapi-host": RAPID_API_HOST,
-      "Content-Type": "application/json",
-      "X-Goog-FieldMask": "*",
-    },
-    body: JSON.stringify({
-      textQuery: query,
-      maxResultCount: 5,
-    }),
-  };
+const options = {
+  method: "GET",
+  headers: {
+    "x-rapidapi-key": "5616351c70mshbc0f356c603975ap15b532jsn5a639c258924",
+    "x-rapidapi-host": "travel-advisor.p.rapidapi.com",
+  },
+};
 
-  const response = await fetch(url, options);
-  const data = await response.json();
-  return data.places || [];
-}
 
-export async function getPlaceDetails(placeId) {
-  const url = `https://${RAPID_API_HOST}/v1/places/${placeId}`;
+export const fetchPlaces = async (sw, ne) => {
+  if (!sw || !ne) return [];
+  const url =
+  `${BASE_URL}?bl_latitude=${sw.lat}&tr_latitude=${ne.lat}&bl_longitude=${sw.lng}&tr_longitude=${ne.lng}&restaurant_tagcategory_standalone=10591&restaurant_tagcategory=10591&limit=30&currency=USD&open_now=false&lunit=km&lang=en_US`;
 
-  const options = {
-    method: "GET",
-    headers: {
-      "x-rapidapi-key": RAPID_API_KEY,
-      "x-rapidapi-host": RAPID_API_HOST,
-      "X-Goog-FieldMask": "*",
-    },
-  };
+  try {
+    const response = await fetch(url, options);
+    const result = await response.json();
+    return result?.data || []; 
+  } catch (error) {
+    console.error("Error fetching restaurants:", error);
+    return [];
+  }
+};
 
-  const response = await fetch(url, options);
-  return response.json();
-}
+      
 
-export async function getPlacePhoto(placeId, photoName) {
-  const url = `https://${RAPID_API_HOST}/v1/places/${placeId}/photos/${photoName}/media?maxWidthPx=400&maxHeightPx=400&skipHttpRedirect=true`;
 
-  const options = {
-    method: "GET",
-    headers: {
-      "x-rapidapi-key": RAPID_API_KEY,
-      "x-rapidapi-host": RAPID_API_HOST,
-    },
-  };
 
-  const response = await fetch(url, options);
-  return response.json(); // contains `photoUri`
-}
