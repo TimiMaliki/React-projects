@@ -39,6 +39,7 @@ const Hotel = () => {
         setBounds={setBounds}
         setLocation={setLocation}
         location={location}
+        places={places}
       />
     </div>
   </div>
