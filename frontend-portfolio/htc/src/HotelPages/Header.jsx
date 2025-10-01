@@ -2,7 +2,7 @@ import { Search } from "lucide-react";
 
 const Header = () => {
   return (
-    <nav className="relative w-full">
+    <nav className="relative w-full bg-red-700 z-[1000] overflow-hidden">
     <div className="flex items-center justify-between px-4 py-4 max-w-7xl mx-auto">
       <div className="flex items-center space-x-4">
         <h2 className="hidden sm:block text-lg text-white">

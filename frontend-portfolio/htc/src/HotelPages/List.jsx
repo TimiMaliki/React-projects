@@ -4,7 +4,7 @@ import Card from "./Card";
 const List = ({places}) => {
  
   return (
-    <div className="container mx-auto p-6">
+    <div className="container  mx-auto p-6">
       <h2 className="text-2xl font-semibold mb-4">Find What Attracts You</h2>
       <div className="mb-4">
         <label htmlFor="type" className="block text-black mb-1">
@@ -37,13 +37,14 @@ const List = ({places}) => {
       </div>
 
       {/* Places list */}
-      <div className="grid grid-cols-1 gap-6 h-[75vh] overflow-y-scroll">
-        {places?.map((place, index) => (
-          <div key={index} className="col-span-1 p-14">
-            <Card place={place}/>
-          </div>
-        ))}
-      </div>
+      <div className="grid grid-cols-1 gap-6 max-h-[75vh] overflow-y-auto">
+  {places?.map((place, index) => (
+    <div key={index} className="col-span-1 p-4">
+      <Card place={place}/>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 };

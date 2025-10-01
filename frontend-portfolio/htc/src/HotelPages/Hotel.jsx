@@ -30,9 +30,7 @@ const Hotel = () => {
 
   return (
     <div className="py-28 p-10">
-  
     <Header />
-  
     <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-4">
       <div className="w-full h-full">
         <List places={places} />
