@@ -37,13 +37,14 @@ const List = ({places}) => {
       </div>
 
       {/* Places list */}
-      <div className="grid grid-cols-1 gap-6 max-h-[75vh] overflow-y-auto">
+      <div className="grid grid-cols-1 gap-6 max-h-[75vh] overflow-y-auto custom-scrollbar">
   {places?.map((place, index) => (
     <div key={index} className="col-span-1 p-4">
       <Card place={place}/>
     </div>
   ))}
 </div>
+
 
     </div>
   );

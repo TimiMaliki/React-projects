@@ -1,0 +1,25 @@
+/* For Chrome, Edge, Safari */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px; /* scrollbar width */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f5f5f5; /* light background */
+    border-radius: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: red; /* 🔴 red scrollbar */
+    border-radius: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #cc0000; /* darker red on hover */
+  }
+  
+  /* For Firefox */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: red #f5f5f5;
+  }
+  

@@ -67,7 +67,7 @@ const Map = ({ setLocation, location, setBounds, places }) => {
                   }" style="width: 100%; height: 100%; object-fit: cover;" />
                 </div>
               `,
-              iconSize: [50, 50],
+              iconSize: [100, 100],
               iconAnchor: [25, 25],
               popupAnchor: [0, -20],
             });
