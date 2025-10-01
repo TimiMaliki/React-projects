@@ -54,9 +54,9 @@ const Map = ({ setLocation, location, setBounds, places }) => {
               className: "custom-marker",
               html: `
                 <div style="
-                  width: 50px;
-                  height: 50px;
-                  border-radius: 12px;
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 9px;
                   overflow: hidden;
                   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
                 ">
