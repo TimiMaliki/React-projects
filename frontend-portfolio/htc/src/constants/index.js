@@ -1,25 +1,26 @@
 const navLinks = [
     {
-       id: "book",
-       title: "Book now",
-       dropdown: [
-        { id: "hotel", title: "Book Hotel"  , href : "/hotel"},
-        { id: "flight", title: "Book Flight",  href : "/" },
-        { id: "tour", title: "Book Tour",  href : "/" },
-      ],
+       id: "Home",
+       title: "Home",
+       href : "/"
     },
     {
-       id: "about",
-       title: "About Us",
-    },
-    {
-      id: "contact",
-      title: "Contact",
+      id: "Sign In",
+      title: "Sign In",
    },
     {
-       id: "work",
-       title: "Login",
+       id: "Register",
+       title: "Register",
     },
+    {
+      id: "book",
+      title: "Book now",
+      dropdown: [
+       { id: "hotel", title: "Book Place"  , href : "/hotel"},
+       { id: "flight", title: "Book Flight",  href : "/flight" },
+       { id: "tour", title: "Book Car",  href : "/car" },
+     ],
+   },
    ];
    
   // Most Popular Services

@@ -7,12 +7,12 @@ const options = {
 };
 
 const endpoints = {
-  restaurants: (sw, ne) =>
-    `https://travel-advisor.p.rapidapi.com/restaurants/list-in-boundary?bl_latitude=${sw.lat}&tr_latitude=${ne.lat}&bl_longitude=${sw.lng}&tr_longitude=${ne.lng}&limit=30&currency=USD&open_now=false&lunit=km&lang=en_US`,
-  hotels: (sw, ne) =>
-    `https://travel-advisor.p.rapidapi.com/hotels/list-in-boundary?bl_latitude=${sw.lat}&tr_latitude=${ne.lat}&bl_longitude=${sw.lng}&tr_longitude=${ne.lng}&limit=30&currency=USD&subcategory=hotel%2Cbb%2Cspecialty&adults=1`,
-  attractions: (sw, ne) =>
-    `https://travel-advisor.p.rapidapi.com/attractions/list-in-boundary?bl_latitude=${sw.lat}&tr_latitude=${ne.lat}&bl_longitude=${sw.lng}&tr_longitude=${ne.lng}&currency=USD&lunit=km&lang=en_US`,
+  // restaurants: (sw, ne) =>
+  //   `https://travel-advisor.p.rapidapi.com/restaurants/list-in-boundary?bl_latitude=${sw.lat}&tr_latitude=${ne.lat}&bl_longitude=${sw.lng}&tr_longitude=${ne.lng}&limit=30&currency=USD&open_now=false&lunit=km&lang=en_US`,
+  // hotels: (sw, ne) =>
+  //   `https://travel-advisor.p.rapidapi.com/hotels/list-in-boundary?bl_latitude=${sw.lat}&tr_latitude=${ne.lat}&bl_longitude=${sw.lng}&tr_longitude=${ne.lng}&limit=30&currency=USD&subcategory=hotel%2Cbb%2Cspecialty&adults=1`,
+  // attractions: (sw, ne) =>
+  //   `https://travel-advisor.p.rapidapi.com/attractions/list-in-boundary?bl_latitude=${sw.lat}&tr_latitude=${ne.lat}&bl_longitude=${sw.lng}&tr_longitude=${ne.lng}&currency=USD&lunit=km&lang=en_US`,
 };
 
 export const fetchPlaces = async (type, sw, ne, rating = "") => {
