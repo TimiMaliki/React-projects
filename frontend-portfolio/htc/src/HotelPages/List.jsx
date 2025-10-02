@@ -38,7 +38,7 @@ const List = ({ places, onChildClick, isLoading, type, setType, rating, setRatin
               id="type"
               value={type}
               onChange={(e) => setType(e.target.value)}
-              className="w-full border border-white/50 bg-black text-white cursor-pointer rounded-md px-3 py-2 focus:ring focus:ring-red-500 focus:border-red-700"
+              className="w-full border border-red-700 bg-black text-white cursor-pointer rounded-md px-3 py-2 focus:ring focus:ring-red-500 focus:border-red-700"
             >
               <option value="restaurants">Restaurants</option>
               <option value="hotels">Hotels</option>
@@ -55,7 +55,7 @@ const List = ({ places, onChildClick, isLoading, type, setType, rating, setRatin
               id="rating"
               value={rating}
               onChange={(e) => setRating(e.target.value)}
-              className="w-full border border-white/50 bg-black text-white cursor-pointer rounded-md px-3 py-2 focus:ring focus:ring-red-500 focus:border-red-700"
+              className="w-full border border-red-700 bg-black text-white cursor-pointer rounded-md px-3 py-2 focus:ring focus:ring-red-500 focus:border-red-700"
             >
               <option value="">All</option>
               <option value="3">Above 3.0</option>
@@ -77,7 +77,7 @@ const List = ({ places, onChildClick, isLoading, type, setType, rating, setRatin
                 </div>
               ))
             ) : (
-              <p className="text-center text-white">No places found</p>
+              <p className="text-center text-white-500">No places found</p>
             )}
           </div>
         </>

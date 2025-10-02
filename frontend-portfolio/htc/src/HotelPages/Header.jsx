@@ -2,14 +2,14 @@ import { Search } from "lucide-react";
 
 const Header = () => {
   return (
-    <nav className="relative w-full bg-red-700 z-[1000] overflow-hidden">
+    <nav className="relative w-full bg-black z-[1000] overflow-x-hidden">
     <div className="flex items-center justify-between px-4 py-4 max-w-7xl mx-auto">
       <div className="flex items-center space-x-4">
         <h2 className="hidden sm:block text-lg text-white">
           Explore new places
         </h2>
 
-        <div className="relative rounded-md bg-white/20 hover:bg-white/30 transition w-full sm:w-auto sm:ml-4">
+        <div className="relative rounded-md bg-red-500  hover:bg-white/30 transition w-full sm:w-auto sm:ml-4">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             <Search className="text-white" size={20} />
           </div>

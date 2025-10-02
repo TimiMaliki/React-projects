@@ -1,7 +1,7 @@
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { MapContainer, Marker, Popup, TileLayer, useMapEvents } from "react-leaflet";
-import { Star } from "lucide-react";
+
 
 const MapEvents = ({ setBounds, setLocation }) => {
   const map = useMapEvents({
@@ -26,7 +26,7 @@ const Map = ({ setLocation, location, setBounds, places, setOnChildclicked }) =>
   ];
 
   return (
-    <div className="h-[500px] rounded-3xl overflow-hidden">
+    <div className="h-[500px] rounded-3xl overflow-hidden mt-0 md:mt-12">
       <MapContainer
         center={[location?.lat || 12.2, location?.lng || 109.12]}
         zoom={13}
