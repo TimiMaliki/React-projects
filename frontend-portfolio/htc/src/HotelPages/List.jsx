@@ -1,10 +1,9 @@
 import React, { useEffect, useState, createRef } from "react";
 import Card from "./Card";
 
-const List = ({ places, onChildClick, isLoading }) => {
+const List = ({ places, onChildClick, isLoading, type, setType, rating, setRating }) => {
   const [scrollRefs, setScrollRefs] = useState([]);
 
-  // Create refs for each place
   useEffect(() => {
     setScrollRefs((refs) =>
       Array(places.length)
@@ -13,7 +12,6 @@ const List = ({ places, onChildClick, isLoading }) => {
     );
   }, [places]);
 
-  // Scroll into view when a child (marker) is clicked
   useEffect(() => {
     if (onChildClick !== null && scrollRefs[onChildClick]) {
       scrollRefs[onChildClick].current?.scrollIntoView({
@@ -28,7 +26,7 @@ const List = ({ places, onChildClick, isLoading }) => {
       <h2 className="text-2xl font-semibold mb-4">Find What Attracts You</h2>
 
       {isLoading ? (
-        <div className="loading">Loading...</div>
+        <div className="loading text-center">Loading...</div>
       ) : (
         <>
           {/* Type filter */}
@@ -38,6 +36,8 @@ const List = ({ places, onChildClick, isLoading }) => {
             </label>
             <select
               id="type"
+              value={type}
+              onChange={(e) => setType(e.target.value)}
               className="w-full border border-white/50 bg-black text-white cursor-pointer rounded-md px-3 py-2 focus:ring focus:ring-red-500 focus:border-red-700"
             >
               <option value="restaurants">Restaurants</option>
@@ -53,6 +53,8 @@ const List = ({ places, onChildClick, isLoading }) => {
             </label>
             <select
               id="rating"
+              value={rating}
+              onChange={(e) => setRating(e.target.value)}
               className="w-full border border-white/50 bg-black text-white cursor-pointer rounded-md px-3 py-2 focus:ring focus:ring-red-500 focus:border-red-700"
             >
               <option value="">All</option>
@@ -64,15 +66,19 @@ const List = ({ places, onChildClick, isLoading }) => {
 
           {/* Places list */}
           <div className="grid grid-cols-1 gap-6 max-h-[75vh] overflow-y-auto custom-scrollbar">
-            {places?.map((place, i) => (
-              <div
-                key={i}
-                ref={scrollRefs[i]} // 👈 attach ref
-                className="col-span-1 p-4"
-              >
-                <Card place={place} selected={Number(onChildClick) === i} />
-              </div>
-            ))}
+            {places?.length > 0 ? (
+              places.map((place, i) => (
+                <div
+                  key={i}
+                  ref={scrollRefs[i]}
+                  className="col-span-1 p-4"
+                >
+                  <Card place={place} selected={Number(onChildClick) === i} />
+                </div>
+              ))
+            ) : (
+              <p className="text-center text-white">No places found</p>
+            )}
           </div>
         </>
       )}

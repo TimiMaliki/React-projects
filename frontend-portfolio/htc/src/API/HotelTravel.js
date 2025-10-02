@@ -1,32 +1,40 @@
-
-const BASE_URL =
-  "https://travel-advisor.p.rapidapi.com/restaurants/list-in-boundary";
-
 const options = {
   method: "GET",
   headers: {
-    "x-rapidapi-key": "5616351c70mshbc0f356c603975ap15b532jsn5a639c258924",
+    "x-rapidapi-key": "c9a99d2fabmsh574685e4a0a990ap17847cjsnbf3c0f519e36",
     "x-rapidapi-host": "travel-advisor.p.rapidapi.com",
   },
 };
 
+const endpoints = {
+  restaurants: (sw, ne) =>
+    `https://travel-advisor.p.rapidapi.com/restaurants/list-in-boundary?bl_latitude=${sw.lat}&tr_latitude=${ne.lat}&bl_longitude=${sw.lng}&tr_longitude=${ne.lng}&limit=30&currency=USD&open_now=false&lunit=km&lang=en_US`,
+  hotels: (sw, ne) =>
+    `https://travel-advisor.p.rapidapi.com/hotels/list-in-boundary?bl_latitude=${sw.lat}&tr_latitude=${ne.lat}&bl_longitude=${sw.lng}&tr_longitude=${ne.lng}&limit=30&currency=USD&subcategory=hotel%2Cbb%2Cspecialty&adults=1`,
+  attractions: (sw, ne) =>
+    `https://travel-advisor.p.rapidapi.com/attractions/list-in-boundary?bl_latitude=${sw.lat}&tr_latitude=${ne.lat}&bl_longitude=${sw.lng}&tr_longitude=${ne.lng}&currency=USD&lunit=km&lang=en_US`,
+};
 
-export const fetchPlaces = async (sw, ne) => {
+export const fetchPlaces = async (type, sw, ne, rating = "") => {
   if (!sw || !ne) return [];
-  const url =
-  `${BASE_URL}?bl_latitude=${sw.lat}&tr_latitude=${ne.lat}&bl_longitude=${sw.lng}&tr_longitude=${ne.lng}&restaurant_tagcategory_standalone=10591&restaurant_tagcategory=10591&limit=30&currency=USD&open_now=false&lunit=km&lang=en_US`;
+
+  const endpoint = endpoints[type] ? endpoints[type](sw, ne) : endpoints.restaurants(sw, ne);
 
   try {
-    const response = await fetch(url, options);
+    const response = await fetch(endpoint, options);
     const result = await response.json();
-    return result?.data || []; 
+
+    let data = result?.data || [];
+    console.log(`(${type}) result:`, data);
+
+    if (rating) {
+      const ratingNum = parseFloat(rating);
+      data = data.filter((place) => parseFloat(place.rating) >= ratingNum);
+    }
+
+    return data;
   } catch (error) {
-    console.error("Error fetching restaurants:", error);
+    console.error("Error fetching places:", error);
     return [];
   }
 };
-
-      
-
-
-
