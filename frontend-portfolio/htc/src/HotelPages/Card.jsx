@@ -1,7 +1,8 @@
 import React from 'react'
 import { Star, MapPin, Phone } from "lucide-react";
 
-const Card = ({ place }) => {
+const Card = ({ place , selected ,refProp}) => {
+  if (selected) refProp?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   return (
     <div className="bg-white shadow-lg rounded-xl overflow-hidden border border-gray-200 w-full max-w-md mx-auto">
       {/* Image */}

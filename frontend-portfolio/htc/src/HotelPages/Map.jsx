@@ -19,7 +19,7 @@ const MapEvents = ({ setBounds, setLocation }) => {
   return null;
 };
 
-const Map = ({ setLocation, location, setBounds, places }) => {
+const Map = ({ setLocation, location, setBounds, places, setOnChildclicked }) => {
   const defaultBounds = [
     [11.847676, 109.095887],
     [12.838442, 109.149359],
@@ -38,7 +38,7 @@ const Map = ({ setLocation, location, setBounds, places }) => {
           url="https://api.maptiler.com/maps/basic-v2/256/{z}/{x}/{y}.png?key=mTPRPGuCqA0KSyBpMWUA"
         />
 
-        {/* Show user location marker only */}
+        {/* Show user location marker */}
         {location?.lat && location?.lng && (
           <Marker position={[location.lat, location.lng]}>
             <Popup>
@@ -47,7 +47,7 @@ const Map = ({ setLocation, location, setBounds, places }) => {
           </Marker>
         )}
 
-        {/* Places with image markers only */}
+        {/* Places */}
         {places?.length > 0 &&
           places.map((place, i) => {
             const icon = L.divIcon({
@@ -61,9 +61,8 @@ const Map = ({ setLocation, location, setBounds, places }) => {
                   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
                 ">
                   <img src="${
-                    place.photo
-                      ? place.photo.images.large.url
-                      : "https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg"
+                    place?.photo?.images?.large?.url ??
+                    "https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg"
                   }" style="width: 100%; height: 100%; object-fit: cover;" />
                 </div>
               `,
@@ -77,14 +76,16 @@ const Map = ({ setLocation, location, setBounds, places }) => {
                 key={i}
                 position={[Number(place.latitude), Number(place.longitude)]}
                 icon={icon}
+                eventHandlers={{
+                  click: () => setOnChildclicked(i), // ✅ proper marker click
+                }}
               >
                 <Popup>
                   <div className="w-48 bg-white rounded-lg shadow-md overflow-hidden">
                     <img
                       src={
-                        place.photo
-                          ? place.photo.images.large.url
-                          : "https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg"
+                        place?.photo?.images?.large?.url ??
+                        "https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg"
                       }
                       alt={place.name}
                       className="w-full h-24 object-cover"
@@ -93,19 +94,6 @@ const Map = ({ setLocation, location, setBounds, places }) => {
                       <h3 className="text-sm font-semibold text-gray-800 truncate">
                         {place.name}
                       </h3>
-                      <div className="flex items-center mt-1">
-                        {Array.from({ length: 5 }, (_, idx) => (
-                          <Star
-                            key={idx}
-                            size={14}
-                            className={
-                              idx < Number(place.rating)
-                                ? "fill-yellow-400 text-yellow-400"
-                                : "fill-gray-300 text-gray-300"
-                            }
-                          />
-                        ))}
-                      </div>
                     </div>
                   </div>
                 </Popup>
@@ -113,7 +101,6 @@ const Map = ({ setLocation, location, setBounds, places }) => {
             );
           })}
 
-        {/* Track map bounds + location */}
         <MapEvents setBounds={setBounds} setLocation={setLocation} />
       </MapContainer>
     </div>
