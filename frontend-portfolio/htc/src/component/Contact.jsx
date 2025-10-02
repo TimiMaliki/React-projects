@@ -37,11 +37,11 @@ const Contact = () => {
 	 <img src="../src/images/footer-left-leaf.png" alt="leaf-left" id="f-left-leaf" />
 	 
 	 <div className="content">
-		<h2>Where to Find Us</h2>
+		<h2>Contact Us</h2>
 		
 		<div>
 		 <h3>Visit Our Office</h3>
-		 <p>456, Raq Blvd. #404, San Francisco, CA 480101</p>
+		 <p>N0 4 Odi Nwankwo Strret , Abakaliki Ebonyi State , Nigeria</p>
 		</div>
 		
 		<div>

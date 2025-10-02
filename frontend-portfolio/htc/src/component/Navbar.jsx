@@ -22,7 +22,7 @@ const Home = () => {
       <div className="max-w-7xl mx-auto flex items-center px-5 py-4">
         {/* Logo */}
         <a href="/" className="flex items-center gap-2">
-          <p className="text-3xl font-modern-negra font-extrabold">HTC</p>
+          <p className="text-3xl font-modern-negra font-extrabold text-red-600">HTC</p>
         </a>
 
         {/* Desktop links */}

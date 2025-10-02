@@ -178,7 +178,7 @@ body {
                     @apply flex justify-between items-start;
 
                     h3 {
-                        @apply font-modern-negra 2xl:text-3xl text-xl text-yellow;
+                        @apply font-modern-negra 2xl:text-3xl text-xl text-red-600;
                     }
 
                     p {
@@ -213,14 +213,14 @@ body {
                     @apply flex flex-col justify-between md:gap-2 gap-5;
 
                     span {
-                        @apply text-yellow font-bold text-5xl;
+                        @apply text-red-600 font-bold text-5xl;
                     }
                 }
             }
         }
 
         .badge {
-            @apply inline-block rounded-full bg-white text-black px-4 py-2 text-sm font-medium mb-8;
+            @apply inline-block rounded-full bg-red-700 text-white px-4 py-2 text-sm font-medium mb-8;
         }
 
         .top-grid {
