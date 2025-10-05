@@ -59,7 +59,6 @@ const Home = () => {
                             className="block px-4 py-2 hover:bg-gray-800 cursor-pointer"
                           >
                                <a href={item.href}>{item.title}</a>
-                         
                           </a>
                         </li>
                       ))}

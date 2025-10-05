@@ -28,7 +28,7 @@ const Header = ({ onSearchSelect }) => {
   };
 
   return (
-    <nav className="relative w-full bg-black z-[1000] mt-24">
+    <nav className="relative w-full bg-black z-[1000] mt-44">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center gap-4">
         <h2 className="hidden sm:block text-lg text-white">Explore new places</h2>
 

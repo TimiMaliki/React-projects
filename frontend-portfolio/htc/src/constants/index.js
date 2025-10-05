@@ -18,7 +18,7 @@ const navLinks = [
       dropdown: [
        { id: "hotel", title: "Book Place"  , href : "/hotel"},
        { id: "flight", title: "Book Flight",  href : "/flight" },
-       { id: "tour", title: "Book Car",  href : "/car" },
+       { id: "", title: "Book Car",  href : "/car" },
      ],
    },
    ];

@@ -3,6 +3,7 @@ import "./App.css";
 import Layout from "./layout/Layout";
 import Hotel from "./HotelPages/Hotel";
 import HomePage from "./component/HomePage";
+import CarHomePage from "./CarPages/CarHomePage";
 
 function App() {
   const routes = createBrowserRouter([
@@ -10,7 +11,8 @@ function App() {
       element : <Layout/>,
       children : [
         {path : "/" , element : <HomePage/>},
-         {path : "/hotel", element :<Hotel/>}
+         {path : "/hotel", element :<Hotel/>},
+         {path : "/car", element :<CarHomePage/>}
       ]
     }
   ])
