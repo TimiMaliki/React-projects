@@ -1,3 +1,8 @@
+
+🚀 Live Demo 
+
+https://htc-booking.vercel.app
+
 🧳 HTC Booking – Travel Smarter, Explore Further
 🌍 Overview
 
@@ -21,9 +26,6 @@ HTC Booking combines modern UI design, live travel data, and seamless routing to
 
 
 
-🚀 Live Demo 
-
-https://https://htc-booking.vercel.app
 
 
 🛠️ Tech Stack  
