@@ -4,6 +4,7 @@ import Layout from "./layout/Layout";
 import Hotel from "./HotelPages/Hotel";
 import HomePage from "./component/HomePage";
 import CarHomePage from "./CarPages/CarHomePage";
+import FlightBooking from "./flightPages/FlightBooking";
 
 function App() {
   const routes = createBrowserRouter([
@@ -12,7 +13,8 @@ function App() {
       children : [
         {path : "/" , element : <HomePage/>},
          {path : "/hotel", element :<Hotel/>},
-         {path : "/car", element :<CarHomePage/>}
+         {path : "/car", element :<CarHomePage/>},
+         {path : "/flight", element :<FlightBooking/>}
       ]
     }
   ])

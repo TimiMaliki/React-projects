@@ -55,7 +55,7 @@ const Home = () => {
                       {link.dropdown.map((item) => (
                         <li key={item.id}>
                           <a
-                            href={`#${item.id}`}
+                            href={`${item.href}`}
                             className="block px-4 py-2 hover:bg-gray-800 cursor-pointer"
                           >
                                <a href={item.href}>{item.title}</a>
@@ -118,7 +118,7 @@ const Home = () => {
                       {link.dropdown.map((item) => (
                         <li key={item.id}>
                           <a
-                            href={`#${item.id}`}
+                            href={`${item.href}`}
                             className="block px-4 py-2 hover:bg-gray-800 cursor-pointer"
                           >
                                <a href={item.href}>{item.title}</a>

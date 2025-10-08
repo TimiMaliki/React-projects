@@ -1,5 +1,5 @@
-// src/api/carApi.js
-const BASE_URL = "https://booking-com15.p.rapidapi.com/api/v1/cars";
+
+// const BASE_URL = "https://booking-com15.p.rapidapi.com/api/v1/cars";
 const HEADERS = {
   "x-rapidapi-key": "5616351c70mshbc0f356c603975ap15b532jsn5a639c258924",
   "x-rapidapi-host": "booking-com15.p.rapidapi.com",
