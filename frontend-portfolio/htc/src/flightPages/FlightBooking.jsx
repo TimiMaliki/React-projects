@@ -47,7 +47,7 @@ const Flight = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-32 px-6">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-48 px-6">
       <div className="max-w-5xl mx-auto bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-10 shadow-2xl">
         <h1 className="text-lg md:text-4xl font-extrabold text-center mb-10 tracking-tight">
           ✈️ HTC Flight We Trust

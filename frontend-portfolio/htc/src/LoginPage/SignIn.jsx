@@ -32,7 +32,7 @@ const SignIn = () => {
           <h1 className="text-4xl md:text-5xl p-2 font-extrabold mb-6 text-white mt-10  md:-mt-28 tracking-tight">
             Welcome to HTC Booking
           </h1>
-          <p className="text-xl text-white text-center font-semibold mb-8 leading-relaxed">
+          <p className="text-xl text-white  font-semibold mb-8 leading-relaxed">
           Plan, book, and experience the world with ease.  
           </p>
 
