@@ -29,3 +29,6 @@
 .signInImage{
   background-image: url(../src/images/signin.jpg);
 }
+.register{
+  background-image: url(../src/images/register.jpg);
+}

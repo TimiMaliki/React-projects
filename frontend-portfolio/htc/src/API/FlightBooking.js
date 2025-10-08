@@ -14,7 +14,7 @@ const API_KEYS = [
   // Rotate key after every successful request (round robin)
   const rotateKey = () => {
     currentKeyIndex = (currentKeyIndex + 1) % API_KEYS.length;
-    console.info(`🔁 Switched to API key ${currentKeyIndex + 1}`);
+    console.info(`Switched to API key ${currentKeyIndex + 1}`);
   };
   
   // Enhanced failover + rotation logic
@@ -34,17 +34,17 @@ const API_KEYS = [
   
         const data = await res.json();
   
-        // ✅ Rotate to next key *after* a successful call
+        //  Rotate to next key *after* a successful call
         rotateKey();
   
         return data;
       } catch (err) {
-        console.error(`❌ Error with key ${currentKeyIndex + 1}:`, err.message);
+        console.error(`Error with key ${currentKeyIndex + 1}:`, err.message);
         currentKeyIndex = (currentKeyIndex + 1) % API_KEYS.length;
       }
     }
   
-    throw new Error("🚫 All API keys failed — please check limits or add more keys.");
+    throw new Error(" All API keys failed — please check limits or add more keys.");
   };
   
   // === Search Airports ===
@@ -54,7 +54,7 @@ const API_KEYS = [
       const data = await fetchWithFailover(url);
       return data?.data || [];
     } catch (err) {
-      console.error("❌ Error fetching airport search results:", err);
+      console.error(" Error fetching airport search results:", err);
       return [];
     }
   };
@@ -66,7 +66,7 @@ const API_KEYS = [
       const data = await fetchWithFailover(url);
       return data?.data || {};
     } catch (err) {
-      console.error("❌ Error fetching flight filters:", err);
+      console.error(" Error fetching flight filters:", err);
       return {};
     }
   };
@@ -78,7 +78,7 @@ const API_KEYS = [
       const data = await fetchWithFailover(url);
       return data?.data?.flights || [];
     } catch (err) {
-      console.error("❌ Error fetching flights:", err);
+      console.error(" Error fetching flights:", err);
       return [];
     }
   };
