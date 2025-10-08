@@ -27,7 +27,7 @@ const SignIn = () => {
     <div className="flex flex-col md:flex-row min-h-screen text-white">
       {/* === Left Hero Section === */}
       <div className="flex-1 flex flex-col justify-center px-10 py-16 signInImage bg-cover bg-center relative">
-        <div className="absolute inset-0 bg-black/10 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" />
         <div className="relative z-10 max-w-xl">
           <h1 className="text-4xl md:text-5xl p-2 font-extrabold mb-6 text-white mt-10  md:-mt-28 tracking-tight">
             Welcome to HTC Booking
