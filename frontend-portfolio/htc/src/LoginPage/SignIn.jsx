@@ -27,21 +27,21 @@ const SignIn = () => {
     <div className="flex flex-col md:flex-row min-h-screen text-white">
       {/* === Left Hero Section === */}
       <div className="flex-1 flex flex-col justify-center px-10 py-16 signInImage bg-cover bg-center relative">
-        <div className="absolute inset-0 " />
+        <div className="absolute inset-0 bg-black/10 backdrop-blur-sm" />
         <div className="relative z-10 max-w-xl">
-          <h1 className="text-5xl font-extrabold mb-6 text-white  -mt-28 tracking-tight">
+          <h1 className="text-4xl md:text-5xl p-2 font-extrabold mb-6 text-white mt-10  md:-mt-28 tracking-tight">
             Welcome to HTC Booking
           </h1>
-          <p className="text-2xl text-white text-center font-semibold mb-8 leading-relaxed">
-            Book Your Next Place.
+          <p className="text-xl text-white text-center font-semibold mb-8 leading-relaxed">
+          Plan, book, and experience the world with ease.  
           </p>
 
-          {/* <ul className="space-y-3 text-gray-300">
+          <ul className="space-y-3 text-gray-300">
             <li className="text-2xl">✈️ Book Flights Worldwide</li>
             <li className="text-2xl">🏨 Reserve Hotels Instantly</li>
             <li className="text-2xl">🚗 Rent Cars Anytime, Anywhere</li>
             <li className="text-2xl">🎡 Find Local Attractions You’ll Love</li>
-          </ul> */}
+          </ul>
         </div>
       </div>
 
