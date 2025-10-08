@@ -1,4 +1,3 @@
-// src/pages/Flight.jsx
 import React, { useState } from "react";
 import { searchDestinations, searchFlights } from "../API/FlightBooking";
 

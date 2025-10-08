@@ -1,5 +1,3 @@
-// src/api/flightApi.js
-
 const API_KEYS = [
     "5616351c70mshbc0f356c603975ap15b532jsn5a639c258924",
     "c9a99d2fabmsh574685e4a0a990ap17847cjsnbf3c0f519e36",

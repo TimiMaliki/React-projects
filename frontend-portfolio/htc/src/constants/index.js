@@ -7,17 +7,19 @@ const navLinks = [
     {
       id: "Sign In",
       title: "Sign In",
+      href : "/signin"
    },
     {
        id: "Register",
        title: "Register",
+       href : "/register"
     },
     {
       id: "book",
       title: "Book now",
       dropdown: [
-       { id: "hotel", title: "Book Place"  , href : "/hotel"},
-       { id: "flight", title: "Book Flight",  href : "/flight" },
+       { id: "", title: "Book Place"  , href : "/hotel"},
+       { id: "", title: "Book Flight",  href : "/flight" },
        { id: "", title: "Book Car",  href : "/car" },
      ],
    },
