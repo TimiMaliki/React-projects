@@ -54,12 +54,9 @@ const CollarJobs = () => {
             <div className="flex justify-center text-center items-center">
               <Spinners loading={loading} />
                <div className="text-center text-xl text-black">
-              <h2 className="text-lg  text-black font-bolder mb-4">Sorry , Failed To fetch</h2>
+              <h2 className="text-lg  text-black font-bolder mb-4">Failed To fetch</h2>
                 <h2 className="text-md font-bold">
-                  Error:
-                  <br />
-                  📄 JSON / Mock API – To simulate job data and backend
-                  integration
+                 Sorry No Jobs available
                 </h2>
                 {<Spinners loading={loading} /> ? (
                   <Spinners loading={loading} />
@@ -83,12 +80,9 @@ const CollarJobs = () => {
           ) : (
             <div className="text-center items-center grid">
               <div className="text-center text-xl text-black">
-                <h2 className="text-lg  text-black font-bolder mb-4">sorry , Failed To fetch</h2>
+                <h2 className="text-lg  text-black font-bolder mb-4">Failed To fetch</h2>
                 <h2 className="text-md font-bold">
-                  Error:
-                  <br />
-                  📄 JSON / Mock API – To simulate job data and backend
-                  integration
+                Sorry No Jobs available
                 </h2>
                 {<Spinners mobileloading={mobileloading} /> ? (
                   <Spinners mobileloading={mobileloading} />

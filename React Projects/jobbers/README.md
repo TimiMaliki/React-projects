@@ -1,84 +1,168 @@
-Collar Jobs Finder
+🧠 Jobber — Job Search & Listing App
 
-A sleek React-based job listing platform that categorizes jobs into different collar types (White-Collar, Blue-Collar, Pink-Collar, Gold-Collar, and Brown-Collar).
-The app allows users to explore job opportunities, view details, and apply directly.
+Jobber is a React-based web application that allows users to **search for live job listings** using the [Adzuna Jobs API](https://developer.adzuna.com/) and also view or manage **local job listings** stored in a static JSON file.  
+It’s designed as a simple job board demo that can be extended into a full-fledged job platform.
 
-🚀 Features
+---
 
-Modern UI built with React + TailwindCSS
+🚀 Live Demo 
+https://jobbers-red.vercel.app/
 
-Categorized job listings by collar type with color coding
+## 🚀 Features
 
-Responsive design for all screen sizes
+- 🔍 **Search live jobs** via the Adzuna API  
+- 🗂️ **Display static job listings** from a local `jobs.json` file  
+- 📄 **Job details page** for each listing  
+- ⚡ **Fast, modern UI** built with React + Tailwind CSS  
+- 💡 Clean component structure and reusable utilities  
 
-Dynamic job details and company information
+---
 
-Smooth hover effects and transitions for a sleek user experience
+## 🧩 Tech Stack
 
-📦 Getting Started
-1. Clone the repository
-git clone https://github.com/TimiMaliki/collar-jobs.git
-cd jobbers
+| Category | Tools / Libraries Used |
+|-----------|------------------------|
+| **Frontend** | React (Vite) |
+| **Styling** | Tailwind CSS |
+| **API Integration** | Adzuna API |
+| **Local Data** | `jobs.json` (static file under `/public`) |
+| **Routing** | React Router DOM |
+| **State Management** | React Hooks (`useState`, `useEffect`) |
 
-2. Install dependencies
+---
+
+## 🏗️ Project Structure
+
+Jobber/
+├── public/
+│ ├── jobs.json # Static local job data
+│ └── index.html
+├── src/
+│ ├── API/
+│ │ └── adzuna.js # Helper function to build Adzuna API URLs
+│ ├── components/
+│ │ ├── JobList.jsx # Displays all jobs
+│ │ ├── JobPage.jsx # Displays job details
+│ │ └── SearchBar.jsx # Job search input
+│ ├── pages/
+│ │ └── Home.jsx
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── index.css
+├── .env # Contains Adzuna API credentials
+├── package.json
+└── README.md
+
+yaml
+Copy code
+
+---
+
+## 🔧 Environment Variables
+
+Create a `.env` file in the root directory and add your Adzuna API credentials:
+
+VITE_ADZUNA_APP_ID=your_app_id_here
+VITE_ADZUNA_APP_KEY=your_app_key_here
+
+yaml
+Copy code
+
+> ⚠️ **Important:** Never commit `.env` files with keys to public repos.
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/yourusername/jobber.git
+cd jobber
+2️⃣ Install dependencies
+bash
+Copy code
 npm install
+3️⃣ Add your environment variables
+Make sure your .env file contains the correct VITE_ADZUNA_APP_ID and VITE_ADZUNA_APP_KEY.
 
-3. Start the development server
-npm start
+4️⃣ Start the development server
+bash
+Copy code
+npm run dev
+The app should be running at http://localhost:5173.
 
+🌐 Example API Helper (adzuna.js)
+javascript
+Copy code
+const BASE = "https://api.adzuna.com/v1/api/jobs";
 
-Runs the app in development mode.
-Open http://localhost:3000
- to view it in your browser.
+export function buildAdzunaUrl({
+  country = "gb",
+  page = 1,
+  what = "",
+  where = "",
+  results_per_page = 20,
+}) {
+  const params = new URLSearchParams({
+    app_id: import.meta.env.VITE_ADZUNA_APP_ID,
+    app_key: import.meta.env.VITE_ADZUNA_APP_KEY,
+    results_per_page: String(results_per_page),
+    what,
+    where,
+  });
 
-4. Build for production
-npm run build
+  return `${BASE}/${country}/search/${page}?${params.toString()}`;
+}
+📄 Example Local JSON (/public/jobs.json)
+json
+Copy code
+[
+  {
+    "id": 1,
+    "title": "Frontend Developer",
+    "company": "Tech Corp",
+    "location": "London"
+  },
+  {
+    "id": 2,
+    "title": "Backend Engineer",
+    "company": "Data Ltd",
+    "location": "Manchester"
+  }
+]
 
+🧠 How It Works
+The app fetches live jobs from Adzuna using your credentials.
 
-Builds the app for production to the build folder, optimized for performance.
+It also loads local jobs from jobs.json.
 
-📂 Project Structure
-src/
- ├── components/      # Reusable UI components
- ├── data/            # Jobs JSON (different collar categories)
- ├── pages/           # Pages like Home, 404, Job Details
- ├── App.js           # Main app entry
- └── index.js         # React DOM render
+Both sets of jobs are rendered in the UI (can be displayed separately or merged).
 
-🔧 Available Scripts
+Clicking a job redirects to /job/:id to view full details.
 
-npm start – Runs the dev server
+📦 Future Improvements
+🔐 Add backend to post new jobs (Node.js or Firebase)
 
-npm run build – Builds the app for production
+📱 Improve responsive design
 
-npm test – Runs tests (if configured)
+💾 Add favorites/bookmarks feature
 
-📖 Tech Stack
+🔍 Add filters (salary, category, location)
 
-React – Frontend framework
+🌍 Support multiple countries (US, UK, CA, etc.)
 
-TailwindCSS – Styling
+👨‍💻 Author
+Berry Gold
+Frontend & Web Developer
 
-React Router – Navigation
+💼 GitHub Profile - Timi Maliki
 
-Lucide Icons – Modern icons
+🪪 License
+This project is licensed under the MIT License.
 
-🌍 Deployment
+yaml
+Copy code
 
-You can deploy this project on:
+---
 
-Vercel
-
-Netlify
-
-GitHub Pages
-
-✨ Future Improvements
-
-Job posting form (admin/employer side)
-
-Search & filter by location, salary, and category
-
-Integration with external job APIs
-
-⚡ Built with passion to connect people with opportunities across all job types!
+Would you like me to make this `README.md` include your **GitHub repo link and portfolio UR
