@@ -55,7 +55,7 @@ const SearchJobs = () => {
     fetchJobs();
   };
   return (
-    <section className="p-8 max-w-6xl mx-auto mt-32">
+    <section className="p-14 max-w-6xl mx-auto mt-32">
   {/* Title */}
   <h1 className="text-4xl font-extrabold text-gray-900 mb-8 text-center">
     Search Jobs <span className="text-green-600">(Jobber)</span>
