@@ -6,7 +6,7 @@ It’s designed as a simple job board demo that can be extended into a full-fled
 ---
 
 🚀 Live Demo 
-https://jobbers-red.vercel.app/
+ https://jobbers-orpin.vercel.app/collars
 
 ## 🚀 Features
 

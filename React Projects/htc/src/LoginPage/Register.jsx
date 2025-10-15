@@ -35,7 +35,7 @@ const Register = () => {
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-gradient-to-br from-[#0d0f23] via-[#10142e] to-[#0b0d1d] text-white">
       {/* === Left Info Section === */}
-      <div className="flex-1 flex flex-col justify-center px-10 py-16 register bg-cover bg-center relative">
+      <div className="flex-1 flex flex-col justify-center px-10 py-24 register bg-cover bg-center relative">
         <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
         <div className="relative z-10 max-w-xl">
           <h1 className="text-5xl font-bold mb-6 text-blue-400 tracking-tight">

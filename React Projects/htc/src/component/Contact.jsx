@@ -1,11 +1,36 @@
 import React from 'react'
-import {  socials } from '../constants/index.js'
+import footerrightleaf from "../images/footer-right-leaf.png"
+import footerleftleaf from "../images/footer-left-leaf.png"
+
+
+import insta from "../images/insta.png"
+import x from "../images/x.png"
+import fb from "../images/fb.png"
+
 import { useGSAP } from '@gsap/react'
 import { SplitText} from 'gsap/all';
 import gsap from 'gsap';
 
 
 const Contact = () => {
+	const socials = [
+		{
+		   name: "Instagram",
+		   icon: insta,
+		   url: "#",
+		},
+		{
+		   name: "X (Twitter)",
+		   icon: x,
+		   url: "#",
+		},
+		{
+		   name: "Facebook",
+		   icon: fb,
+		   url: "#",
+		},
+	   ];
+	   
     useGSAP(() => {
 		const titleSplit = SplitText.create('#contact h2', { type: 'words' });
 		
@@ -33,8 +58,8 @@ const Contact = () => {
  
   return (
 <footer id="contact">
-	 <img src="../src/images/footer-right-leaf.png" alt="leaf-right" id="f-right-leaf" />
-	 <img src="../src/images/footer-left-leaf.png" alt="leaf-left" id="f-left-leaf" />
+	 <img src={footerrightleaf} id="f-right-leaf" />
+	 <img src={footerleftleaf} alt="leaf-left" id="f-left-leaf" />
 	 
 	 <div className="content">
 		<h2>Contact Us</h2>

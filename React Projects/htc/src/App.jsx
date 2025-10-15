@@ -1,36 +1,47 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
-import Layout from "./layout/Layout";
-import Hotel from "./HotelPages/Hotel";
-import HomePage from "./component/HomePage";
-import CarHomePage from "./CarPages/CarHomePage";
-import FlightBooking from "./flightPages/FlightBooking";
-import Auth from "./AuthLayout/Auth";
-import SignIn from "./LoginPage/SignIn";
-import Register from "./LoginPage/Register";
+import { Suspense, lazy } from "react";
+
+const Layout = lazy(() => import("./layout/Layout"));
+const Hotel = lazy(() => import("./HotelPages/Hotel"));
+const HomePage = lazy(() => import("./component/HomePage"));
+const CarHomePage = lazy(() => import("./CarPages/CarHomePage"));
+const FlightBooking = lazy(() => import("./flightPages/FlightBooking"));
+const Auth = lazy(() => import("./AuthLayout/Auth"));
+const SignIn = lazy(() => import("./LoginPage/SignIn"));
+const Register = lazy(() => import("./LoginPage/Register"));
 
 function App() {
   const routes = createBrowserRouter([
     {
-      element : <Layout/>,
-      children : [
-        {path : "/" , element : <HomePage/>},
-         {path : "/hotel", element :<Hotel/>},
-         {path : "/car", element :<CarHomePage/>},
-         {path : "/flight", element :<FlightBooking/>}
-      ]
-    },{
-      element : <Auth/>,
-      children : [
-        {path : "signin" , element : <SignIn/>},
-        {path : "register", element : <Register/>}
-      ]
-    }
-  ])
+      element: <Layout />,
+      children: [
+        { path: "/", element: <HomePage /> },
+        { path: "/hotel", element: <Hotel /> },
+        { path: "/car", element: <CarHomePage /> },
+        { path: "/flight", element: <FlightBooking /> },
+      ],
+    },
+    {
+      element: <Auth />,
+      children: [
+        { path: "/signin", element: <SignIn /> },
+        { path: "/register", element: <Register /> },
+      ],
+    },
+  ]);
+
   return (
-    <>
-      <RouterProvider router ={routes} />
-    </>
+    <Suspense
+      fallback={
+        <div className="flex items-center justify-center h-screen text-lg text-white">
+          <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mr-3"></div>
+        
+        </div>
+      }
+    >
+      <RouterProvider router={routes} />
+    </Suspense>
   );
 }
 

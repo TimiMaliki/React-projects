@@ -89,8 +89,8 @@ const Home = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden bg-black text-white px-5 pb-4">
-          <ul className="flex flex-col items-end space-y-3">
+        <div className="md:hidden bg-black text-white px-5 pb-10">
+          <ul className="flex  items-end space-y-3">
           {navLinks.map((link) => (
               <li
                 key={link.id}
@@ -130,7 +130,7 @@ const Home = () => {
                   </>
                 ) : (
                   <a
-                    href={`#${link.id}`}
+                    href={`${link.href}`}
                     className="text-sm md:text-base hover:text-white/50 transition"
                   >
                     {link.title}

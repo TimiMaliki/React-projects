@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { featureLists, goodLists } from "../constants/index";
 import spiderManSmall from "../images/superhero-7524471_1280.png";
 import spiderManLarger from "../images/superhero-7524471.png";
+import check from "../images/check.png"
 const Movies = () => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
@@ -42,7 +43,7 @@ const Movies = () => {
           <ul className="space-y-4 will-fade">
             {goodLists.map((feature, index) => (
               <li key={index} className="flex items-center gap-2">
-                <img src="../src/images/check.png" alt="check" />
+                <img src={check} alt="check" />
                 <p>{feature}</p>
               </li>
             ))}
@@ -59,7 +60,7 @@ const Movies = () => {
           <ul className="space-y-4 will-fade">
             {featureLists.map((feature, index) => (
               <li key={index} className="flex items-center justify-start gap-2">
-                <img src="../src/images/check.png" alt="check" />
+                <img src={check} alt="check" />
                 <p className="md:w-fit w-60">{feature}</p>
               </li>
             ))}

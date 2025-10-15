@@ -1,12 +1,55 @@
 import React from 'react'
-import {  plans } from '../constants/index'
 import { useRef, useState } from 'react'
 import { useGSAP } from '@gsap/react'
+import slideleftleaf from "../images/slider-left-leaf.png"
+import sliderightleaf from "../images/slider-right-leaf.png"
+import rightarrow from "../images/right-arrow.png"
+import leftarrow from "../images/left-arrow.png"
 import gsap from 'gsap';
+import plane from "../images/aeroplane-147495_640.png"
+import hotel from "../images/apartment-48821_640.png"
+import resturant from "../images/taxi-47204_640.png"
+import lake from "../images/waterfall-310140_640.png"
 
 const BookingServices = () => {
     const contentRef = useRef();
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    const plans = [
+      {
+        id: 1,
+        name: "Available Flight Tickets",
+        image: plane,
+        title: "Seamless Flights to Your Destination",
+        description:
+          "Book affordable and reliable flight tickets to your dream destinations. Travel stress-free with flexible options and smooth connections.",
+      },
+      {
+        id: 2,
+        name: "An Affordable Luxurious Hotel",
+        image: hotel,
+        title: "Stay in Comfort & Luxury",
+        description:
+          "Discover hotels that combine affordability with elegance. Enjoy modern amenities, comfort, and world-class service wherever you go.",
+      },
+      {
+        id: 3,
+        name: "Your Destination Driver",
+        image: resturant,
+        title: "Ride with Ease Anywhere",
+        description:
+          "Book trusted local drivers to take you around safely and on time. Whether it’s sightseeing, airport pickups, or daily commutes—we’ve got you covered.",
+      },
+      {
+        id: 4,
+        name: "Breath Taking Water Fall",
+        image: lake,
+        title: "Unforgettable Natural Wonders",
+        description:
+          "Explore breathtaking waterfalls and stunning landscapes. Create memories surrounded by nature’s most beautiful and awe-inspiring views.",
+      },
+    ];
+    
     
     useGSAP(() => {
        gsap.fromTo('#title', { opacity: 0 }, { opacity: 1, duration: 1 });
@@ -38,8 +81,8 @@ const BookingServices = () => {
     const nextCocktail = getCocktailAt(1);
   return (
     <section id="menu" aria-labelledby="menu-heading">
-    <img src="../src/images/slider-left-leaf.png" alt="left-leaf" id="m-left-leaf" />
-    <img src="../src/images/slider-right-leaf.png" alt="right-leaf" id="m-right-leaf" />
+    <img src={slideleftleaf} alt="left-leaf" id="m-left-leaf" />
+    <img src={sliderightleaf} alt="right-leaf" id="m-right-leaf" />
     
     <h2 id="menu-heading" className="sr-only">
        Cocktail Menu
@@ -66,12 +109,12 @@ const BookingServices = () => {
        <div className="arrows">
         <button className="text-left" onClick={() => goToSlide(currentIndex - 1)}>
            <span>{prevCocktail.name}</span>
-           <img src="../src/images/right-arrow.png" alt="right-arrow" aria-hidden="true" />
+           <img src={rightarrow} alt="right-arrow" aria-hidden="true" />
         </button>
         
         <button className="text-left" onClick={() => goToSlide(currentIndex + 1)}>
            <span>{nextCocktail.name}</span>
-           <img src="../src/images/left-arrow.png" alt="left-arrow" aria-hidden="true" />
+           <img src={leftarrow} alt="left-arrow" aria-hidden="true" />
         </button>
        </div>
        
