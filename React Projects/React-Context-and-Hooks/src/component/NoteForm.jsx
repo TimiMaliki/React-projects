@@ -12,7 +12,7 @@ const NoteForm = ({addSong}) => {
   return (
   <form onSubmit={handleSubmit}>
     <label>Note Title</label>
-    <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+    <input type="text" value={title}  required onChange={(e) => setTitle(e.target.value)} />
     <input type="submit" value="Add Note" />
   </form>
   )
