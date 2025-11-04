@@ -20,7 +20,7 @@ const NotesList = () => {
     <div className="book-list">
     <ul style={{ color: themeToggle.hex, background: themeToggle.bg }}>
      {book.map(book => (
-      <li style={{ background: themeToggle.ui }} key ={book.id}>{book.title}</li>
+      <li  style={{ background: themeToggle.ui }} key ={book.id}>{book.title}</li>
      ))}
     </ul>
 
