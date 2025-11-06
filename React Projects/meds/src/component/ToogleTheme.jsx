@@ -9,7 +9,7 @@ const ToggleTheme = () => {
   return (
     <button
       onClick={toggleLight}
-      className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 hover:scale-105 transition"
+      className="p-2 rounded-full border border-slate-200 shadow-amber-200 hover:scale-105 transition"
       aria-label="Toggle Dark Mode"
       style={{
         background: themeStyle.bg,
@@ -17,9 +17,9 @@ const ToggleTheme = () => {
       }}
     >
       {isLight ? (
-        <SunIcon className="w-6 h-6 text-yellow-500" />
+        <SunIcon size={20} className='cursor-pointer' />
       ) : (
-        <MoonStar className="w-6 h-6 text-gray-300" />
+        <MoonStar size={20} className='cursor-pointer' />
       )}
     </button>
   );

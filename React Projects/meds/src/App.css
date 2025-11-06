@@ -1,18 +1,17 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
-
-body {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
 .dropdown-menu-transition {
   transition: all 0.5s ease-in-out;
 }
 
-/* .g-anton-fonts{
-  font-family: "Anton", sans-serif;
-  font-weight: 800;
+
+body{
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
   font-style: normal;
-} */
+  font-variation-settings: "wdth" 200;
+}
+
+
+

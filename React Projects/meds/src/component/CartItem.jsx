@@ -1,10 +1,17 @@
 import { ShoppingCart } from 'lucide-react'
+import { useContext } from "react"
+import { ToggleThemeContext } from "../context/ToggleThemeContext"
 
 
 const CartItem = () => {
+   const { isLight, light, dark } = useContext(ToggleThemeContext)
+     const themeStyle = isLight ? light : dark;
   return (
-    <div>
-        <ShoppingCart size={26} className='text-white'/>
+    <div className='cursor-pointer'>
+        <ShoppingCart size={26} className='text-white cursor-pointer' style={{
+        background: themeStyle.bg,
+        color: themeStyle.hex,
+      }}/>
     </div>
   )
 }
