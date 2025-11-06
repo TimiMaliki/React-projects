@@ -9,7 +9,6 @@ const CartItem = () => {
   return (
     <div className='cursor-pointer'>
         <ShoppingCart size={26} className='text-white cursor-pointer' style={{
-        background: themeStyle.bg,
         color: themeStyle.hex,
       }}/>
     </div>

@@ -9,10 +9,9 @@ export const Navbar = () => {
    const { isLight, light, dark } = useContext(ToggleThemeContext)
      const themeStyle = isLight ? light : dark;
   return (
-    <nav className="navbar  fixed top-0 left-0 w-full z-50"  style={{
-        background: themeStyle.bg,
+    <nav className="navbar  fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-white/70 shadow-md transition-all duration-300"  style={{
+         background: themeStyle.bg,
         color: themeStyle.hex,}}>
-          
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Left section: Menu icon */}
         <Hamburger />
@@ -26,7 +25,7 @@ export const Navbar = () => {
         </a>
 
         {/* Right button */}
-      <div className="flex justify-center items-center gap-4">
+      <div className="flex justify-center items-center gap-6">
           <CartItem/>
         <ToggleTheme/>
       </div>

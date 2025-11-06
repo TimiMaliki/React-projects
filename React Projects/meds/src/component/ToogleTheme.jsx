@@ -12,7 +12,6 @@ const ToggleTheme = () => {
       className="p-2 rounded-full border border-slate-200 shadow-amber-200 hover:scale-105 transition"
       aria-label="Toggle Dark Mode"
       style={{
-        background: themeStyle.bg,
         color: themeStyle.hex,
       }}
     >

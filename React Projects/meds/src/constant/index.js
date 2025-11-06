@@ -28,24 +28,9 @@ const downLinks = [
     href: "/products",
   },
   {
-    id: "Cartridges",
-    title: "Cartridges",
-    href: "/cartridges",
-  },
-  {
-    id: "Disposables",
-    title: "Disposables",
-    href: "/disposables",
-  },
-  {
     id: "Find Us",
     title: "Find Us",
     href: "/find",
-  },
-  {
-    id: "Deals",
-    title: "Deals",
-    href: "/deals",
   },
   {
     id: "Contact Us",

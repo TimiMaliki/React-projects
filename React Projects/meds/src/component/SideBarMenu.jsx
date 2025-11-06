@@ -9,7 +9,7 @@ const SideBarMenu = () => {
   const themeStyle = isLight ? light : dark;
   return (
     <div
-      className={`absolute top-full left-0 w-full transform transition-transform duration-700 shadow-md rounded-b-2xl  text ${
+      className={`absolute top-full left-0 w-full transform backdrop-blur-lg bg-white/70 transition-all duration-700 shadow-md  text ${
         menuOpen
           ? "translate-x-0  dropdown-menu-transition"
           : "-translate-x-full"

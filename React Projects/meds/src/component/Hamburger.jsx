@@ -19,7 +19,6 @@ const Hamburger = () => {
             size={26}
             className="text-white cursor-pointer"
             style={{
-              background: themeStyle.bg,
               color: themeStyle.hex,
             }}
           />
@@ -28,7 +27,6 @@ const Hamburger = () => {
             size={26}
             className="text-white cursor-pointer"
             style={{
-              background: themeStyle.bg,
               color: themeStyle.hex,
             }}
           />
