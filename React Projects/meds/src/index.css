@@ -9,9 +9,10 @@ body{
   font-style: normal;
   font-variation-settings: "wdth" 200;
 }
-.hero-img{
-    background-image: url("../src//Images/puzzle-creative-Tg3GFhqXpUo-unsplash.jpg");
+.intro-img{
+   background-image: url("../src//Images/intro-bg.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    
 }
