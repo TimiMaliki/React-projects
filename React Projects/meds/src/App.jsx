@@ -1,17 +1,20 @@
-import './App.css'
-import { Navbar } from './component/Navbar'
-import HamburgerContextProvider from './context/HamburgerContext'
+import "./App.css";
+import { Navbar } from "./component/Navbar";
+import Testing from "./component/Testing";
+import HamburgerContextProvider from "./context/HamburgerContext";
+import ToggleThemeContextProvider from "./context/ToggleThemeContext";
 
 function App() {
-
   return (
     <>
-    <HamburgerContextProvider>
+      <ToggleThemeContextProvider>
+        <HamburgerContextProvider>
         <Navbar/>
-    </HamburgerContextProvider>
-  
+        <Testing/>
+        </HamburgerContextProvider>
+      </ToggleThemeContextProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

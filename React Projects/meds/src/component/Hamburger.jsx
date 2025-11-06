@@ -13,12 +13,12 @@ const Hamburger = () => {
         aria-label="Toggle menu"
       >
         {menuOpen ? (
-          <X size={26} className="text-white" />
+          <X size={26} className="text-white cursor-pointer" />
         ) : (
-          <Menu size={26} className="text-white" />
+          <Menu size={26} className="text-white cursor-pointer" />
         )}
       </button>
-      <span className="uppercase tracking-wide">Menu</span>
+      <span className="uppercase tracking-wide cursor-pointer" style={{fontWeight:"800"}}>Menu</span>
     </div>
   );
 };

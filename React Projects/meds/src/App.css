@@ -1,19 +1,18 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap");
 
-
-
-.dropdown-menu-transition{
-    transition: all 0.5s ease-in-out;
-}
-.g-bebas-fonts {
+body {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-.g-anton-fonts{
+
+.dropdown-menu-transition {
+  transition: all 0.5s ease-in-out;
+}
+
+/* .g-anton-fonts{
   font-family: "Anton", sans-serif;
   font-weight: 800;
   font-style: normal;
-}
-
+} */

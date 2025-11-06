@@ -1,13 +1,18 @@
-import React, { useContext } from "react";
 import Hamburger from "../component/Hamburger";
-import { HamburgerContext } from "../context/HamburgerContext";
-import DropdownMenu from "./SideBarMenu";
+import CartItem from "./CartItem";
+import ToggleTheme from "../component/ToogleTheme";
+import SideBarMenu from "./SideBarMenu";
+import { useContext } from "react"
+import { ToggleThemeContext } from "../context/ToggleThemeContext"
 
 export const Navbar = () => {
-  const { menuOpen } = useContext(HamburgerContext);
-
+   const { isLight, light, dark } = useContext(ToggleThemeContext)
+     const themeStyle = isLight ? light : dark;
   return (
-    <nav className="navbar bg-black text-white fixed top-0 left-0 w-full z-50">
+    <nav className="navbar  fixed top-0 left-0 w-full z-50"  style={{
+        background: themeStyle.bg,
+        color: themeStyle.hex,}}>
+          
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Left section: Menu icon */}
         <Hamburger />
@@ -21,18 +26,14 @@ export const Navbar = () => {
         </a>
 
         {/* Right button */}
-        <div>
-          <a
-            href="/verify"
-            className="bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-400 transition g-anton-fonts"
-          >
-            VERIFICATION
-          </a>
-        </div>
+      <div className="flex justify-center items-center gap-4">
+          <CartItem/>
+        <ToggleTheme/>
+      </div>
       </div>
 
-      {/* Dropdown Menu */}
-      <DropdownMenu/>
+      {/* sidebar Menu */}
+      <SideBarMenu/>
     </nav>
   );
 };
