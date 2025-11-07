@@ -13,6 +13,7 @@ import darkSliceMode from "../Images/darkmode1.jpeg";
 import darkSliceModeTwo from "../Images/darkmode2.jpeg";
 import darkSliceModeThree from "../Images/darkmode3.jpeg";
 
+
 const IntroSlice = () => {
   const { isLight, dark, light } = useContext(ToggleThemeContext);
   const themeStyle = isLight ? light : dark;
@@ -90,6 +91,7 @@ const IntroSlice = () => {
           </div>
         ))}
       </div>
+    
     </section>
   );
 };

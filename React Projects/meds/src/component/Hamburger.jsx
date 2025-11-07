@@ -33,7 +33,7 @@ const Hamburger = () => {
         )}
       </button>
       <span
-        className="uppercase tracking-wide cursor-pointer text-xl"
+        className="uppercase tracking-wide cursor-pointer text-xl hidden md:block"
         style={{ fontWeight: 900 }}
       >
         Menu

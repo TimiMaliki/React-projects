@@ -1,13 +1,12 @@
-import { useContext , useState  } from "react";
+import { useContext, useState, useEffect } from "react";
 import { ToggleThemeContext } from "../context/ToggleThemeContext";
 
 const Subscribe = () => {
-
-    const { isLight, dark, light } = useContext(ToggleThemeContext);
-          const themeStyle = isLight ? light : dark;
+  const { isLight, dark, light } = useContext(ToggleThemeContext);
+  const themeStyle = isLight ? light : dark;
 
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState(""); 
+  const [status, setStatus] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,15 +19,23 @@ const Subscribe = () => {
     setEmail("");
   };
 
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => setStatus(""), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
+
   return (
-    <section className="w-full  py-16 flex items-center justify-center" style={{
+    <section
+      className="w-full  py-16 flex items-center justify-center"
+      style={{
         background: themeStyle.bg,
         color: themeStyle.hex,
-      }}>
+      }}
+    >
       <div className="max-w-xl text-center px-6">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 ">
-          STAY CONNECTED
-        </h1>
+        <h1 className="text-3xl md:text-4xl font-bold mb-4 ">STAY CONNECTED</h1>
         <p className="mb-8">
           Subscribe to be the first to know about new product releases and
           exclusive events.
@@ -56,15 +63,15 @@ const Subscribe = () => {
           </button>
         </form>
 
-        {/* Success / Error Messages */}
         {status === "success" && (
           <div className="mt-4 text-green-600 text-lg">
-             Thank you! Your submission has been received!
+            Thank you! Your submission has been received!
           </div>
         )}
+
         {status === "error" && (
           <div className="mt-4 text-red-500 text-lg">
-             Oops! Please enter a valid email address.
+            Oops! Please enter a valid email address.
           </div>
         )}
       </div>
