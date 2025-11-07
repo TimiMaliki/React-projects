@@ -8,6 +8,7 @@ import Intro from "./Pages/Intro";
 import IntroSlice from "./Pages/IntroSlice";
 import Memebers from "./Pages/Memebers";
 import Subscribe from "./Pages/Subscribe";
+import MerchSection from "./Pages/MerchSelection";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <IntroSlice/>
         <Memebers/>
         <Subscribe/>
+        <MerchSection/>
         </HamburgerContextProvider>
       </ToggleThemeContextProvider>
     </>

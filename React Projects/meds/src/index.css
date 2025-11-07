@@ -9,10 +9,18 @@ body{
   font-style: normal;
   font-variation-settings: "wdth" 200;
 }
-.intro-img{
-   background-image: url("../src//Images/intro-bg.svg");
+
+.muhameds-img{
+   background-image: url("../src/Images/muhaMedMerch.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    
+}
+.muhaherb-img{
+   background-image: url("../src/Images/muhaMeds.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
