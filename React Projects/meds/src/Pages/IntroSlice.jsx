@@ -49,7 +49,7 @@ const IntroSlice = () => {
 
   return (
     <section
-      className="relative w-full min-h-screen py-20 flex flex-col items-center justify-center overflow-hidden transition-all duration-500"
+      className="relative w-full h-full py-10 flex flex-col items-center justify-center overflow-hidden transition-all duration-500"
       style={{
         background: themeStyle.bg,
         color: themeStyle.hex,

@@ -21,7 +21,7 @@ const Intro = () => {
 
 
   return (
-    <section className="relative w-full min-h-screen grid md:flex items-center md:justify-center bg-white overflow-hidden" style={{
+    <section className="relative  w-full h-full py-10 grid md:flex items-center md:justify-center bg-white overflow-hidden" style={{
         background: themeStyle.bg,
         color: themeStyle.hex,
       }}>

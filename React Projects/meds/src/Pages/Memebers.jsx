@@ -6,7 +6,7 @@ const Memebers = () => {
       const themeStyle = isLight ? light : dark;
   return (
     <>
-    <section className="w-full min-h-screen flex flex-col items-center justify-center py-20 px-6" style={{
+    <section className="w-full h-full flex flex-col items-center justify-center py-10 px-6" style={{
         background: themeStyle.bg,
         color: themeStyle.hex,
       }}>
