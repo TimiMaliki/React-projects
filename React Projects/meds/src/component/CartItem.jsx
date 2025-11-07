@@ -8,7 +8,7 @@ const CartItem = () => {
      const themeStyle = isLight ? light : dark;
   return (
     <div className='cursor-pointer'>
-        <ShoppingCart size={26} className='text-white cursor-pointer' style={{
+        <ShoppingCart size={29} className='text-white cursor-pointer' style={{
         color: themeStyle.hex,
       }}/>
     </div>
