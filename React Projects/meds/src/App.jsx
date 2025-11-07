@@ -6,6 +6,7 @@ import ToggleThemeContextProvider from "./context/ToggleThemeContext";
 import Hero from "./Pages/Hero";
 import Intro from "./Pages/Intro";
 import IntroSlice from "./Pages/IntroSlice";
+import Memebers from "./Pages/Memebers";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Hero/>
         <Intro/>
         <IntroSlice/>
+        <Memebers/>
         </HamburgerContextProvider>
       </ToggleThemeContextProvider>
     </>
