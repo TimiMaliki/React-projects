@@ -19,7 +19,7 @@ const MerchSection = () => {
           aria-label="MUHA MEDS MERCH SHOP NOW - open in a new tab"
           className="relative group w-full md:w-1/2 h-80 flex items-center justify-center overflow-hidden cursor-pointer transition-all duration-500"
         >
-          <div className={`absolute inset-0 muhameds-img bg-cover bg-center opacity-80 group-hover:opacity-50 transition-all duration-500`}></div>
+          <div className={`absolute inset-0 muhameds-img bg-cover bg-center opacity-90 group-hover:opacity-50 transition-all duration-500`}></div>
 
           <div className="relative z-10 text-center">
             <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wide">
@@ -41,7 +41,7 @@ const MerchSection = () => {
           aria-label="MUHA HEMP SHOP NOW - open in a new tab"
           className="relative group w-full md:w-1/2 h-80 flex items-center justify-center overflow-hidden cursor-pointer transition-all duration-500"
         >
-          <div className={`absolute inset-0 muhaherb-img bg-cover bg-center opacity-30 group-hover:opacity-50 transition-all duration-500`}></div>
+          <div className={`absolute inset-0 muhaherb-img bg-cover bg-center opacity-90 group-hover:opacity-50 transition-all duration-500`}></div>
 
           <div className="relative z-10 text-center">
             <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wide">
