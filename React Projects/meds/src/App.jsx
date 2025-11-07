@@ -7,6 +7,7 @@ import Hero from "./Pages/Hero";
 import Intro from "./Pages/Intro";
 import IntroSlice from "./Pages/IntroSlice";
 import Memebers from "./Pages/Memebers";
+import Subscribe from "./Pages/Subscribe";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Intro/>
         <IntroSlice/>
         <Memebers/>
+        <Subscribe/>
         </HamburgerContextProvider>
       </ToggleThemeContextProvider>
     </>

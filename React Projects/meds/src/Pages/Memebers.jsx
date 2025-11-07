@@ -1,7 +1,6 @@
-
 import { useContext } from "react";
-
 import { ToggleThemeContext } from "../context/ToggleThemeContext";
+
 const Memebers = () => {
       const { isLight, dark, light } = useContext(ToggleThemeContext);
       const themeStyle = isLight ? light : dark;
