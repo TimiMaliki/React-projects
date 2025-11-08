@@ -1,8 +1,10 @@
-import React from 'react'
+import AboutImages from './AboutImages'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+        <AboutImages/>
+    </div>
   )
 }
 

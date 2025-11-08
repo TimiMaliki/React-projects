@@ -2,6 +2,7 @@ import { HamburgerContext } from "../context/HamburgerContext";
 import { useContext } from "react";
 import { downLinks } from "../constant/index";
 import { ToggleThemeContext } from "../context/ToggleThemeContext";
+import { Link } from "react-router-dom";
 
 const SideBarMenu = () => {
   const { menuOpen } = useContext(HamburgerContext);
@@ -20,12 +21,12 @@ const SideBarMenu = () => {
       }}
     >
       {downLinks.map((link) => (
+        <Link to={link.href}  key={link.id}>
         <div
-          key={link.id}
           className="flex flex-col items-center py-3 px-6 text-xl"
         >
-          <a
-            href={link.href}
+          
+          <div
             className={`hover:text-yellow-400 cursor-pointer }`}
             style={{
               color: themeStyle.hex,
@@ -33,8 +34,9 @@ const SideBarMenu = () => {
             }}
           >
             {link.title}
-          </a>
+          </div>
         </div>
+        </Link>
       ))}
     </div>
   );
