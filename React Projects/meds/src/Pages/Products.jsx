@@ -1,57 +1,7 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-const categories = [
-  {
-    name: "All-In-One",
-    description:
-      "Unmatched quality meets ultimate ease in Muha Meds’ Gen3 disposable line.",
-    image:
-      "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff44336a88b58ceeb71bb_Group-dospo-v3.webp",
-    link: "/all-in-one",
-  },
-  {
-    name: "Cartridges",
-    description:
-      "Muha Meds cartridges deliver premium potency and flavor with full-spectrum Melted Diamonds or terpene-rich Distillate.",
-    image:
-      "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff1bfb70c9142d74fecb2_carts-v3-group2.webp",
-    link: "/cartridges",
-  },
-  {
-    name: "Flower",
-    description:
-      "Experience high-potency indoor flower, meticulously grown for density and quality.",
-    image:
-      "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff52e069179621fedf2e9_flower-v3-group.webp",
-    link: "/flower",
-  },
-  {
-    name: "CONCENTRATES",
-      description:
-      "Potent, pure concentrates created through advanced extraction methods to deliver maximum strength and clarity.",
-    image:
-      "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff5622227a30a872a4503_conc-v3-group.webp",
-    link: "/concentrates",
-  },
-  {
-    name: "GUMMIES",
-    description:
-      "Deliciously infused gummies with precise dosing for a balanced, consistent, and enjoyable experience anytime.",
-    image:
-      "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff5b1f1d4ebb37b6a7c6c_gummies-v3-group.webp",
-    link: "/gummies",
-  },
-  {
-    name: "PRE-ROLLS",
-    description:
-      "Expertly rolled pre-rolls made from hand-selected flower, offering a smooth, even burn and full-bodied aroma.",
-    image:
-      "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff61556186c9e7df03842_infused-v3-group.webp",
-    link: "/infused",
-  },
-];
+import { categories } from "../constant";
 
 const Products = () => {
   const [activeTab, setActiveTab] = useState("All-In-One");
@@ -64,7 +14,7 @@ const Products = () => {
 
   return (
     <div className="relative text-white py-10">
-      {/* Background video */}
+    
       <video
         className="absolute top-0 left-0 w-full h-full object-cover opacity-90"
         autoPlay
@@ -82,13 +32,13 @@ const Products = () => {
           OUR PRODUCTS
         </h1>
 
-        {/* Tabs */}
+       
         <div className="flex flex-wrap justify-center gap-3 mb-10 ">
           {categories.map((cat) => (
             <button
               key={cat.name}
               onClick={() => setActiveTab(cat.name)}
-              className={`px-6 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
+              className={`px-6 py-2 rounded-full text-lg font-semibold transition-all cursor-pointer ${
                 activeTab === cat.name
                   ? "bg-white text-black"
                   : "bg-transparent border border-white hover:bg-white hover:text-black"
@@ -112,7 +62,7 @@ const Products = () => {
             />
             <div className="md:w-1/2 text-left">
               <h2 className="text-2xl font-bold mb-4">{activeCategory.name}</h2>
-              <p className="mb-6 text-gray-200">{activeCategory.description}</p>
+              <p className="mb-6  text-lg">{activeCategory.description}</p>
               <a
                 href={activeCategory.link}
                 className="inline-block px-6 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-200"
