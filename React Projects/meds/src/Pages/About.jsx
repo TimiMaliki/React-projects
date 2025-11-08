@@ -1,10 +1,12 @@
 import AboutImages from './AboutImages'
+import AboutSectionText from './AboutSectionText'
 
 const About = () => {
   return (
-    <div>
+    <>
         <AboutImages/>
-    </div>
+        <AboutSectionText/>
+    </>
   )
 }
 
