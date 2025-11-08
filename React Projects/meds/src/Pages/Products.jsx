@@ -28,22 +28,29 @@ const categories = [
     link: "/flower",
   },
   {
-   name: "CONCENTRATES",
+    name: "CONCENTRATES",
+      description:
+      "Potent, pure concentrates created through advanced extraction methods to deliver maximum strength and clarity.",
     image:
       "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff5622227a30a872a4503_conc-v3-group.webp",
-       link: "/concentrates",
+    link: "/concentrates",
   },
   {
-   name: "GUMMIES",
+    name: "GUMMIES",
+    description:
+      "Deliciously infused gummies with precise dosing for a balanced, consistent, and enjoyable experience anytime.",
     image:
       "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff5b1f1d4ebb37b6a7c6c_gummies-v3-group.webp",
-       link: "/gummies",
-  },{
-   name: "PRE-ROLLS",
+    link: "/gummies",
+  },
+  {
+    name: "PRE-ROLLS",
+    description:
+      "Expertly rolled pre-rolls made from hand-selected flower, offering a smooth, even burn and full-bodied aroma.",
     image:
       "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff61556186c9e7df03842_infused-v3-group.webp",
-        link: "/infused",
-  }
+    link: "/infused",
+  },
 ];
 
 const Products = () => {
@@ -104,12 +111,8 @@ const Products = () => {
               className="w-full md:w-1/2 rounded-2xl shadow-lg"
             />
             <div className="md:w-1/2 text-left">
-              <h2 className="text-2xl font-bold mb-4">
-                {activeCategory.name}
-              </h2>
-              <p className="mb-6 text-gray-200">
-                {activeCategory.description}
-              </p>
+              <h2 className="text-2xl font-bold mb-4">{activeCategory.name}</h2>
+              <p className="mb-6 text-gray-200">{activeCategory.description}</p>
               <a
                 href={activeCategory.link}
                 className="inline-block px-6 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-200"
