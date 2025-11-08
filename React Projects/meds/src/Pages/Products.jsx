@@ -56,7 +56,7 @@ const Products = () => {
   const activeCategory = categories.find((cat) => cat.name === activeTab);
 
   return (
-    <div className="relative text-white">
+    <div className="relative text-white py-10">
       {/* Background video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover opacity-90"
@@ -76,12 +76,12 @@ const Products = () => {
         </h1>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-3 mb-10">
+        <div className="flex flex-wrap justify-center gap-3 mb-10 ">
           {categories.map((cat) => (
             <button
               key={cat.name}
               onClick={() => setActiveTab(cat.name)}
-              className={`px-6 py-2 rounded-full text-sm font-semibold transition-all ${
+              className={`px-6 py-2 rounded-full text-sm font-semibold transition-all cursor-pointer ${
                 activeTab === cat.name
                   ? "bg-white text-black"
                   : "bg-transparent border border-white hover:bg-white hover:text-black"
