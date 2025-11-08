@@ -9,6 +9,7 @@ import IntroSlice from "./Pages/IntroSlice";
 import Memebers from "./Pages/Memebers";
 import Subscribe from "./Pages/Subscribe";
 import MerchSection from "./Pages/MerchSelection";
+import Footer from "./component/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Memebers/>
         <Subscribe/>
         <MerchSection/>
+        <Footer/>
         </HamburgerContextProvider>
       </ToggleThemeContextProvider>
     </>
