@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import  { useState } from "react";
+import { footerLinks , Explore} from "../constant";
+import { useContext } from "react";
+import { ToggleThemeContext } from "../context/ToggleThemeContext";
 
 const Footer = () => {
   const [status, setStatus] = useState("");
@@ -8,18 +11,21 @@ const Footer = () => {
     setStatus("success");
     setTimeout(() => setStatus(""), 3000);
   };
-
+ const { isLight, dark, light } = useContext(ToggleThemeContext);
+          const themeStyle = isLight ? light : dark;
   return (
-    <footer className="bg-black text-white py-16 px-6 md:px-16">
+    <footer className="py-16 px-6 md:px-16"style={{
+        background: themeStyle.bg,
+        color: themeStyle.hex,
+      }}>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
 
-        {/* Explore Section */}
         <div>
           <h2 className="text-lg font-semibold mb-4">EXPLORE</h2>
-          <ul className="space-y-2 text-gray-300">
-            {["ALL-IN-ONE", "CARTRIDGES", "PRE-ROLLS", "FLOWER", "GUMMIES", "CONCENTRATES", "BLOG / PRESS"].map((item, i) => (
+          <ul className="space-y-2 ">
+            {Explore.map((item, i) => (
               <li key={i}>
-                <a href={`/${item.toLowerCase().replace(/ /g, "-")}`} className="hover:text-white transition">
+                <a href={`/${item.toLowerCase().replace(/ /g, "-")}`} className="transition">
                   {item}
                 </a>
               </li>
@@ -27,21 +33,13 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Learn More Section */}
+    
         <div>
           <h2 className="text-lg font-semibold mb-4">LEARN MORE</h2>
-          <ul className="space-y-2 text-gray-300">
-            {[
-              { name: "ABOUT US", href: "/about" },
-              { name: "CONTACT US", href: "/contact" },
-              { name: "VERIFICATION", href: "/muha-members" },
-              { name: "INFLUENCERS", href: "/influencers" },
-              { name: "REWARDS", href: "/rewards" },
-              { name: "TERMS OF SERVICE", href: "#" },
-              { name: "PRIVACY POLICY", href: "/privacy-policy" },
-            ].map((link, i) => (
+          <ul className="space-y-2">
+            {footerLinks.map((link, i) => (
               <li key={i}>
-                <a href={link.href} className="hover:text-white transition">
+                <a href={link.href} className="transition">
                   {link.name}
                 </a>
               </li>
@@ -49,10 +47,9 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact & Socials */}
         <div>
           <h2 className="text-lg font-semibold mb-4">GET IN TOUCH</h2>
-          <a href="mailto:support@muhameds.com" className="block text-gray-300 mb-6 hover:text-white transition">
+          <a href="mailto:support@muhameds.com" className="block  mb-6 transition">
             support@muhameds.com
           </a>
 
@@ -94,10 +91,10 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Signup */}
+     
         <div className="">
           <h2 className="text-lg font-semibold mb-4">SIGN UP</h2>
-          <p className="text-gray-300 mb-4">
+          <p className=" mb-4">
             Stay up to date with the latest Muha Meds products
           </p>
           <form
@@ -108,17 +105,17 @@ const Footer = () => {
               type="email"
               placeholder="Enter Email"
               required
-              className="w-full sm:flex-1 px-4 py-2 rounded-full text-black focus:outline-none bg-white"
+              className="w-full sm:flex-1 px-4 py-2 rounded-full border border-black text-black focus:outline-none bg-white"
             />
             <button
               type="submit"
-              className="px-6 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition"
+              className="px-6 py-2 rounded-full cursor-pointer  ttransition"
             >
               Sign Up
             </button>
           </form>
 
-          {/* Success Message */}
+         
           {status === "success" && (
             <div className="text-green-500 mt-3 text-sm">
               Thank you! Your submission has been received!
@@ -127,8 +124,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Text */}
-      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
+      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-md ">
         © {new Date().getFullYear()} Muha Meds. All rights reserved.
       </div>
     </footer>

@@ -39,5 +39,16 @@ const downLinks = [
   },
 ];
 
+const footerLinks = [
+  { name: "ABOUT US", href: "/about" },
+  { name: "CONTACT US", href: "/contact" },
+  { name: "VERIFICATION", href: "/muha-members" },
+  { name: "INFLUENCERS", href: "/influencers" },
+  { name: "REWARDS", href: "/rewards" },
+  { name: "TERMS OF SERVICE", href: "#" },
+  { name: "PRIVACY POLICY", href: "/privacy-policy" },
+];
 
-export { links, downLinks };
+const Explore = ["ALL-IN-ONE", "CARTRIDGES", "PRE-ROLLS", "FLOWER", "GUMMIES", "CONCENTRATES", "BLOG / PRESS"]
+
+export { links, downLinks, footerLinks , Explore};
