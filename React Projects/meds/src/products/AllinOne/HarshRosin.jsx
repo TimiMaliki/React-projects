@@ -59,7 +59,7 @@ const HashRosinSection = () => {
             <SwiperSlide key={i}>
               <a
                 href={item.link}
-                className="block bg-white/10 rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 backdrop-blur-sm"
+                className="block bg-white/10 rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 backdrop-blur-sm border border-slate-400"
               >
                 <img
                   src={item.image}
@@ -69,7 +69,7 @@ const HashRosinSection = () => {
                 />
                 <div className="p-4 text-center ">
                   <h3 className="text-lg font-semibold">{item.name}</h3>
-                  <p className="text-sm text-yellow-400">{item.type}</p>
+                  <p className="text-md text-yellow-800">{item.type}</p>
                 </div>
               </a>
             </SwiperSlide>

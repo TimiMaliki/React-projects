@@ -65,7 +65,7 @@ const MeltedDiamonds = () => {
             <SwiperSlide key={index}>
               <a
                 href={item.link}
-                className="group relative block overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition duration-300 border border-white/20"
+                className="group relative block overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition duration-300 border border-slate-400 "
               >
                 <img
                   src={item.image}
@@ -76,7 +76,7 @@ const MeltedDiamonds = () => {
                   <h3 className="text-lg font-semibold mb-1">
                     {item.name}
                   </h3>
-                  <p className="text-amber-400 font-medium">{item.type}</p>
+                  <p className="text-yellow-800 font-medium">{item.type}</p>
                 </div>
               </a>
             </SwiperSlide>
