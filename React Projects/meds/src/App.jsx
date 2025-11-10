@@ -5,6 +5,7 @@ import { createBrowserRouter , RouterProvider } from "react-router-dom";
 import About from "./Pages/About";
 import HomePage from "./Pages/HomePage";
 import Products from "./Pages/Products";
+import All from "./products/AllinOne/All";
 
 function App() {
   const router = createBrowserRouter([
@@ -13,7 +14,8 @@ function App() {
       children : [
         { element : <HomePage/>, path : "/"},
         { element : <About/>, path : "/about"},
-         { element : <Products/>, path : "/products"}
+         { element : <Products/>, path : "/products"},
+            { element : <All/>, path : "/all"}
       ]
     }
   ]);

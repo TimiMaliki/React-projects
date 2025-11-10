@@ -58,7 +58,7 @@ const categories = [
       "Unmatched quality meets ultimate ease in Muha Meds’ Gen3 disposable line.",
     image:
       "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff44336a88b58ceeb71bb_Group-dospo-v3.webp",
-    link: "/all-in-one",
+    link: "/all",
   },
   {
     name: "Cartridges",
@@ -101,5 +101,43 @@ const categories = [
     link: "/infused",
   },
 ];
+  const flavors = [
+    {
+      name: "Orange Tangie",
+      type: "Hybrid",
+      image:
+        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33c57cdca16a714d4ccfd_CA-AIO-MD-ORANGETANGIE-2.webp",
+      link: "/ca-all-in-one-melted-diamonds/orange-tangie",
+    },
+    {
+      name: "Mango Madness",
+      type: "Hybrid",
+      image:
+        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33c5fbac9120c0c7ea560_CA-AIO-MD-MANGOMADNESS-2.webp",
+      link: "/ca-all-in-one-melted-diamonds/mango-madness",
+    },
+    {
+      name: "Lemon Cherry Gelato",
+      type: "Sativa",
+      image:
+        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33c67b4ba30cf3174d02a_CA-AIO-MD-LEMONCHERRYGELATO-2.webp",
+      link: "/ca-all-in-one-melted-diamonds/lemon-cherry-gelato",
+    },
+    {
+      name: "Grape Gas",
+      type: "Indica",
+      image:
+        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33c6e239e5efb747f4d7a_CA-AIO-MD-GRAPEGAS-2.webp",
+      link: "/ca-all-in-one-melted-diamonds/grape-gas",
+    },
+    {
+      name: "Durban Delight",
+      type: "Sativa",
+      image:
+        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33c761ab2108b60b5b9fa_CA-AIO-MD-DURBANDELIGHT-2.webp",
+      link: "/ca-all-in-one-melted-diamonds/durban-delight",
+    },
+  ];
 
-export { links, downLinks, footerLinks , Explore , categories};
+
+export { links, downLinks, footerLinks , Explore , categories , flavors};
