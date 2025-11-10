@@ -1,49 +1,24 @@
-import React from "react";
+import { useContext } from "react";
+import { ToggleThemeContext } from "../../context/ToggleThemeContext";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import {liveflavors} from "../../constant/index";
 
 const LiveResinSection = () => {
-  const flavors = [
-    {
-      name: "OG Kush",
-      type: "Indica",
-      image:
-        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3371e446f6d6e98780fc4_CA-AIO-LR-OGKush-2.webp",
-      link: "/ca-aio-live-resin/og-kush",
-    },
-    {
-      name: "Lemon Kush Mintz",
-      type: "Indica",
-      image:
-        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e337289caeb5a75144864a_CA-AIO-LR-LemonKushMintz-2.webp",
-      link: "/ca-aio-live-resin/lemon-kush-mintz",
-    },
-    {
-      name: "Juice Man",
-      type: "Sativa",
-      image:
-        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3372fe35ba8004848473d_CA-AIO-LR-JuiceMan-2.webp",
-      link: "/ca-aio-live-resin/juice-man",
-    },
-    {
-      name: "Grape Dosi",
-      type: "Hybrid",
-      image:
-        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33738eef8f07f0bddf087_CA-AIO-LR-DosiGrape-2.webp",
-      link: "/ca-aio-live-resin/grape-dosi",
-    },
-    {
-      name: "Golden Papaya",
-      type: "Hybrid",
-      image:
-        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e337416249a02ebde9458c_CA-AIO-LR-GoldenPapaya-2.webp",
-      link: "/ca-aio-live-resin/golden-papaya",
-    },
-  ];
+  const { isLight,  videoTheme, videoUi , videoBg } = useContext(ToggleThemeContext);
+ 
+ 
+   const videoStyle = isLight ? videoBg : videoUi
+ 
+ 
+   const videoSrc = isLight ? videoTheme.sourceOne : videoTheme.sourceTwo;
 
   return (
-    <section className="relative py-16 overflow-hidden">
-      {/* Background Video */}
+    <section className="relative py-16 overflow-hidden" style={{
+        background: videoStyle.bg,
+        color: videoStyle.ui,
+      }}>
+     {/* Background Video */}
       <div className="absolute inset-0 -z-10">
         <video
           autoPlay
@@ -53,15 +28,16 @@ const LiveResinSection = () => {
           className="w-full h-full object-cover"
           poster="https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee%2F68faa9aab9379400d4e0b9ea_WebsiteBG_MP4-poster-00001.jpg"
         >
-          <source src="https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee%2F68faa9aab9379400d4e0b9ea_WebsiteBG_MP4-transcode.mp4" />
-          <source src="https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee%2F68faa9aab9379400d4e0b9ea_WebsiteBG_MP4-transcode.webm" />
+          <source src={videoSrc} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
       {/* Title */}
-      <div className="text-center mb-12 relative z-10">
-        <h1 className="text-4xl md:text-6xl font-bold text-white tracking-widest drop-shadow-lg">
+      <div className="text-center mb-12 relative z-10" style={{
+        color: videoStyle.ui,
+      }}>
+        <h1 className="text-4xl md:text-6xl font-bold  tracking-widest drop-shadow-lg" >
           LIVE RESIN
         </h1>
         <div className="mt-2 h-1 w-24 mx-auto bg-yellow-400 rounded-full"></div>
@@ -79,7 +55,7 @@ const LiveResinSection = () => {
           }}
           className="pb-8"
         >
-          {flavors.map((item, i) => (
+          {liveflavors.map((item, i) => (
             <SwiperSlide key={i}>
               <a
                 href={item.link}
@@ -91,7 +67,7 @@ const LiveResinSection = () => {
                   loading="lazy"
                   className="w-full h-56 object-cover"
                 />
-                <div className="p-4 text-center text-white">
+                <div className="p-4 text-center">
                   <h3 className="text-lg font-semibold">{item.name}</h3>
                   <p className="text-sm text-yellow-400">{item.type}</p>
                 </div>

@@ -1,11 +1,27 @@
+import { useContext } from "react";
+import { ToggleThemeContext } from "../../context/ToggleThemeContext";
 import { flavors } from "../../constant";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 const MeltedDiamonds = () => {
+  const { isLight,  videoTheme, videoUi , videoBg } = useContext(ToggleThemeContext);
+
+
+  const videoStyle = isLight ? videoBg : videoUi
+
+
+  const videoSrc = isLight ? videoTheme.sourceOne : videoTheme.sourceTwo;
 
   return (
-    <section className="relative py-16 overflow-hidden text-center">
+    <section
+      className="relative py-16 overflow-hidden text-center transition-colors duration-500"
+      style={{
+        background: videoStyle.bg,
+        color: videoStyle.ui,
+      }}
+    >
+
       {/* Background Video */}
       <div className="absolute inset-0 -z-10">
         <video
@@ -16,22 +32,25 @@ const MeltedDiamonds = () => {
           className="w-full h-full object-cover"
           poster="https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee%2F68faa9aab9379400d4e0b9ea_WebsiteBG_MP4-poster-00001.jpg"
         >
-          <source src="https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee%2F68faa9aab9379400d4e0b9ea_WebsiteBG_MP4-transcode.mp4" type="video/mp4" />
-          <source src="https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee%2F68faa9aab9379400d4e0b9ea_WebsiteBG_MP4-transcode.webm" type="video/webm" />
+          <source src={videoSrc} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
       {/* Section Title */}
-      <div className="relative z-10 mb-12">
-        <h1 className="text-4xl md:text-6xl font-bold text-white uppercase tracking-widest drop-shadow-lg">
+      <div className="relative z-10 mb-12"  style={{
+        color: videoStyle.ui,
+      }}>
+        <h1 className="text-4xl md:text-6xl font-bold uppercase tracking-widest drop-shadow-lg">
           Melted Diamonds
         </h1>
         <div className="w-24 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
       </div>
 
       {/* Swiper Slider */}
-      <div className="relative z-10 max-w-6xl mx-auto px-4">
+      <div className="relative z-10 max-w-6xl mx-auto px-4"  style={{
+        color: videoStyle.ui,
+      }}>
         <Swiper
           spaceBetween={20}
           slidesPerView={1.3}
@@ -39,8 +58,8 @@ const MeltedDiamonds = () => {
             640: { slidesPerView: 2.2 },
             1024: { slidesPerView: 3.5 },
           }}
-          grabCursor={true}
-          freeMode={true}
+          grabCursor
+          freeMode
         >
           {flavors.map((item, index) => (
             <SwiperSlide key={index}>
@@ -54,7 +73,7 @@ const MeltedDiamonds = () => {
                   className="w-full h-64 object-cover rounded-t-2xl transform group-hover:scale-105 transition duration-500"
                 />
                 <div className="p-4 text-center">
-                  <h3 className="text-lg font-semibold text-white mb-1">
+                  <h3 className="text-lg font-semibold mb-1">
                     {item.name}
                   </h3>
                   <p className="text-amber-400 font-medium">{item.type}</p>
