@@ -55,7 +55,7 @@ const FlowerSection = () => {
                   alt={flavor.name}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="p-4 bg-black/60 absolute bottom-0 w-full">
+                <div className="absolute bottom-0 p-4 w-full">
                   <h5 className="font-semibold">{flavor.name}</h5>
                   <h6 className="text-yellow-400">{flavor.type}</h6>
                 </div>
