@@ -1,57 +1,8 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { Flowerflavors } from "../../constant";
+import flower from "../../Images/flower.jpeg";
 
-const flavors = [
-  {
-    name: "Strawberry Mimosa",
-    type: "Sativa",
-    link: "/ca-flower/strawberry-mimosa",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3269cbb5ae9bb2467ce3d_CA-FLOWER-STRAWBERRYMIMOSA.webp",
-  },
-  {
-    name: "Muha Mints",
-    type: "Indica",
-    link: "/ca-flower/muha-mints",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326a35b42befd11b15d92_CA-FLOWER-MUHAMINTS.webp",
-  },
-  {
-    name: "Morning Glory",
-    type: "Sativa",
-    link: "/ca-flower/morning-glory",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326ab3eeadc2e7a67406d_CA-FLOWER-MORNINGGLORY.webp",
-  },
-  {
-    name: "Frosted Cherries",
-    type: "Hybrid",
-    link: "/ca-flower/frosted-cherries",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326b67782e21e4db00726_CA-FLOWER-FROSTEDCHERRIES.webp",
-  },
-  {
-    name: "Adios MF",
-    type: "Indica",
-    link: "/ca-flower/adios-mf",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326bd78675ff962540fa3_CA-FLOWER-ADIOSMF.webp",
-  },
-  {
-    name: "Black Truffle",
-    type: "Hybrid",
-    link: "/ca-flower/black-truffle",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326c7326bab35805480e4_CA-FLOWER-BLACKTRUFFLE.webp",
-  },
-  {
-    name: "Bacio Gelato",
-    type: "Hybrid",
-    link: "/ca-flower/bacio-gelato",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326ce8a243929a9a0b270_CA-FLOWER-BACIOGELATO.webp",
-  },
-  {
-    name: "Brain Freeze",
-    type: "Indica",
-    link: "/ca-flower/brain-freeze",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32691cdca16a714d21717_CA-FLOWER-BRAINFREEZE.webp",
-  },
-];
 
 const FlowerSection = () => {
   return (
@@ -76,7 +27,7 @@ const FlowerSection = () => {
       </video>
 
       {/* Overlay Content */}
-      <div className="relative z-10 container mx-auto py-24">
+      <div className="relative z-10 container mx-auto py-32">
         <h1 className="text-6xl font-bold text-white mb-6">FLOWER</h1>
 
         {/* Swiper Slider */}
@@ -85,7 +36,7 @@ const FlowerSection = () => {
           slidesPerView={"auto"}
           freeMode={true}
         >
-          {flavors.map((flavor, index) => (
+          {Flowerflavors.map((flavor, index) => (
             <SwiperSlide
               key={index}
               style={{ width: "400px" , height:"400px" }}
@@ -105,6 +56,36 @@ const FlowerSection = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+         {/* Device Specs Section */}
+        <div className="grid md:grid-cols-3 gap-8 mt-16 text-left text-white">
+          <div className="device-spec-info">
+            <h5 className="text-xl font-bold mb-2">
+              Unparalleled Indoor Quality:
+            </h5>
+            <p className="text-sm">
+              Experience the finest cannabis, grown in carefully controlled
+              environments to ensure optimal conditions for vibrant appearance,
+              dense structure, and exceptional quality in every bud.
+            </p>
+          </div>
+           <div className="flex items-center justify-center">
+                    <img
+                      src={flower}
+                      alt="Cart Illustration"
+                      className="w-64 h-64 object-contain"
+                    />
+                  </div>
+          <div className="device-spec-info">
+            <h5 className="text-xl font-bold mb-2">
+              Crafted for the Connoisseur:
+            </h5>
+            <p className="text-sm">
+              Whether you seek deep relaxation, sharp focus, or a burst of
+              creative energy, our premium flower offers a smooth, flavorful
+              experience tailored to any desired effect.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
