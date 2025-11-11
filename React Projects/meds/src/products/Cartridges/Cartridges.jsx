@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { ToggleThemeContext } from "../../context/ToggleThemeContext";
 import { cartridgeData } from "../../constant";
 import pen from "../../Images/pen.jpeg";
+import penLight from "../../Images/pen-removebg-preview.png";
 
 
 const FlavorSlider = ({ flavors }) => (
@@ -110,7 +111,7 @@ const CartridgeSection = () => {
         </div>
         <div className="flex items-center justify-center">
           <img
-            src={pen}
+            src={isLight ?pen : penLight}
             alt="Cart Illustration"
             className="w-64 h-64 object-contain"
           />
