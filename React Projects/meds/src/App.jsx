@@ -7,6 +7,7 @@ import HomePage from "./Pages/HomePage";
 import Products from "./Pages/Products";
 import All from "./products/AllinOne/All";
 import Cartridges from "./products/Cartridges/Cartridges";
+import FlowerSection from "./products/Flowers/Flower";
 
 function App() {
   const router = createBrowserRouter([
@@ -17,7 +18,8 @@ function App() {
         { element : <About/>, path : "/about"},
          { element : <Products/>, path : "/products"},
          { element : <All/>, path : "/all"},
-          { element : <Cartridges/>, path : "/cartridges"}
+          { element : <Cartridges/>, path : "/cartridges"},
+            { element : <FlowerSection/>, path : "/flower"}
       ]
     }
   ]);
