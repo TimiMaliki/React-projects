@@ -7,22 +7,17 @@ import Memebers from "../Pages/Memebers";
 import Subscribe from "../Pages/Subscribe";
 import MerchSection from "../Pages/MerchSelection";
 
-
 const HomePage = () => {
   return (
     <>
- <ToggleThemeContextProvider>
-        <HamburgerContextProvider>
-        <Hero/>
-        <Intro/>
-        <IntroSlice/>
-        <Memebers/>
-        <Subscribe/>
-        <MerchSection/>
-        </HamburgerContextProvider>
-      </ToggleThemeContextProvider>
+          <Hero />
+          <Intro />
+          <IntroSlice />
+          <Memebers />
+          <Subscribe />
+          <MerchSection />
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

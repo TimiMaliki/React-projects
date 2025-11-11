@@ -489,6 +489,178 @@ const Flowerflavors = [
   },
 ];
 
+const concentrateData = [
+  // HASH ROSIN
+  {
+    name: "Alien OG",
+    type: "Indica",
+    image:
+      "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e347735f5241a3d35c16ea_CA-CONC-HR-ALIENOG-2.webp",
+    link: "/ca-hash-rosin-concentrate/alien-og",
+  },
+  {
+    name: "Super Boof",
+    type: "Sativa",
+    image:
+      "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3477b728be1dc5234f799_CA-CONC-HR-SUPERBOOF-2.webp",
+    link: "/ca-hash-rosin-concentrate/super-boof",
+  },
+  {
+    name: "Pink Lemonade",
+    type: "Sativa",
+    image:
+      "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e347882a3959987f7042ad_CA-CONC-HR-PINKLEMONADE-2.webp",
+    link: "/ca-hash-rosin-concentrate/pink-lemonade",
+  },
+  {
+    name: "Chilled Cherries",
+    type: "Indica",
+    image:
+      "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e347905adb444683bb82fa_CA-CONC-HR-CHILLEDCHERRIES-2.webp",
+    link: "/ca-hash-rosin-concentrate/chilled-cherries",
+  },
+  {
+    name: "Macaron Peaches",
+    type: "Hybrid",
+    image:
+      "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3479e3545f0f0d61e49b5_CA-CONC-HR-MACARONPEACHES-2.webp",
+    link: "/ca-hash-rosin-concentrate/macaron-peaches",
+  },
+  {
+    name: "Honey Banana",
+    type: "Hybrid",
+    image:
+      "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e347a8e1011afe97854224_CA-CONC-HR-HONEYBANANA-2.webp",
+    link: "/ca-hash-rosin-concentrate/honey-banana",
+  },
+  {
+    name: "Mad Fruit",
+    type: "Sativa",
+    image:
+      "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e347af1ab2108b60b7002e_CA-CONC-HR-MADFRUIT-2.webp",
+    link: "/ca-hash-rosin-concentrate/mad-fruit",
+  },
+  {
+    name: "Guava Biscotti",
+    type: "Hybrid",
+    image:
+      "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e347b6627b68238edd8e1d_CA-CONC-HR-GUAVABISCOTTI-2.webp",
+    link: "/ca-hash-rosin-concentrate/guava-biscotti",
+  },
+
+  // PIATELLA
+  {
+    name: "Tropical Funk",
+    type: "Hybrid",
+    image:
+      "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33e1f2a90de8c2055f926_CA-CONC-PIATELLA-TROPICALFUNK-2.webp",
+    link: "/ca-piatella-extract/tropical-funk",
+  },
+  {
+    name: "Raunchy Runtz",
+    type: "Indica",
+    image:
+      "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33e2959e2d1789c1e2e5d_CA-CONC-PIATELLA-RAUNCHYRUNTZ-2.webp",
+    link: "/ca-piatella-extract/raunchy-runtz",
+  },
+  {
+    name: "Cherry Papaya",
+    type: "Hybrid",
+    image:
+      "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33e2eaf18c6093124900a_CA-CONC-PIATELLA-CHERRYPAPAYA-2.webp",
+    link: "/ca-piatella-extract/cherry-papaya",
+  },
+  {
+    name: "Lemon Heads",
+    type: "Indica",
+    image:
+      "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33e377ce335565e524150_CA-CONC-PIATELLA-LEMONHEADS-2.webp",
+    link: "/ca-piatella-extract/lemon-heads",
+  },
+  {
+    name: "Alpine Guava",
+    type: "Sativa",
+    image:
+      "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33e3fba4c88443b973849_CA-CONC-PIATELLA-ALPINEGUAVA-2.webp",
+    link: "/ca-piatella-extract/alpine-guava",
+  },
+];
+
+
+const gummiesData =  [
+    {
+      name: "Mango Madness",
+      type: "Hybrid",
+      image:
+        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e34986e5dc788e9f5f54b8_CA-GUMMIES-HR-MANGOMADNESS-2.webp",
+      link: "/ca-hash-rosin-gummies/mango-madness",
+    },
+    {
+      name: "Green Apple",
+      type: "Indica",
+      image:
+        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3499500f4bf8c1a0eef87_CA-GUMMIES-HR-GREENAPPLE-2.webp",
+      link: "/ca-hash-rosin-gummies/green-apple",
+    },
+    {
+      name: "Raspberry Pineapple",
+      type: "Hybrid",
+      image:
+        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3329f2d00613d4f8cc904_CA-GUMMIES-HR-RASPBERRYPINEAPPLE.webp",
+      link: "/ca-hash-rosin-gummies/raspberry-pineapple",
+    },
+    {
+      name: "Strawberry",
+      type: "Sativa",
+      image:
+        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e349a5a1e9b28688896a72_CA-GUMMIES-HR-STRAWBERRY-2.webp",
+      link: "/ca-hash-rosin-gummies/strawberry",
+    },
+    {
+      name: "Mango Chamoy",
+      type: "Indica",
+      image:
+        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e349ac8f54c138d9f3b31c_CA-GUMMIES-HR-MANGOCHAMOY-2.webp",
+      link: "/ca-hash-rosin-gummies/mango-chamoy",
+    },
+
+    {
+      name: "Sour Apple",
+      type: "Sativa",
+      image:
+        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d1cfc7b8aa86372d06be10_CA-GUMMIES-INF-SOURAPPLE.webp",
+      link: "/ca-infused-gummies/sour-apple",
+    },
+    {
+      name: "Watermelon",
+      type: "Indica",
+      image:
+        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d1cfaea34bf1d70746cba7_CA-GUMMIES-INF-WATERMELON.webp",
+      link: "/ca-infused-gummies/watermelon",
+    },
+    {
+      name: "Strawberry Lemon",
+      type: "Sativa",
+      image:
+        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d1ced3dc20fb61b043f41b_CA-GUMMIES-INF-STRAWBERRYLEMON.webp",
+      link: "/ca-infused-gummies/strawberry-lemon",
+    },
+    {
+      name: "Very Berry",
+      type: "Indica",
+      image:
+        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/690afa2e45076f65339ff2c1_CA-GUMMIES-INF-VERYBERRY.webp",
+      link: "/ca-infused-gummies/very-berry",
+    },
+    {
+      name: "Mango Madness",
+      type: "Hybrid",
+      image:
+        "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d1ce4ded7505f3e85f3e2b_CA-GUMMIES-INF-MANGOMADNESS.webp",
+      link: "/ca-infused-gummies/mango-madness",
+    },
+  ]
+
 
 export {
   links,
@@ -503,5 +675,7 @@ export {
   Harshflavors,
   liveflavors,
   cartridgeData,
-  Flowerflavors
+  Flowerflavors,
+  concentrateData,
+  gummiesData
 };

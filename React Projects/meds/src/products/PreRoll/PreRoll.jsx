@@ -68,6 +68,12 @@ const prerollFlavors = [
 const PreRollsSection = () => {
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
+          <div className="relative z-10 py-32 text-center">
+        <h1
+          className="text-4xl md:text-5xl font-bold tracking-wide text-white uppercase drop-shadow-lg">
+          OUR INFUSED LINEUP
+        </h1>
+      </div>
       {/* Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover z-0"
