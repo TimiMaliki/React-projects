@@ -7,17 +7,16 @@ import LiveResin from './LiveRisin'
 import DeviceSpecs from './DeviceSpecs'
 
 const All = () => {
-      const { isLight,  videoTheme, videoUi , videoBg } = useContext(ToggleThemeContext);
-       
-       
-         const videoStyle = isLight ? videoBg : videoUi
-       
-       
-         const videoSrc = isLight ? videoTheme.sourceOne : videoTheme.sourceTwo;
+       const { isLight, videoTheme, videoUi, videoBg } =
+    useContext(ToggleThemeContext);
+
+  const videoStyle = isLight ? videoBg : videoUi;
+
+  const videoSrc = isLight ? videoTheme.sourceOne : videoTheme.sourceTwo;
     
   return (
 <>
-          <section className="relative w-full flex flex-col items-center justify-center overflow-hidden" style={{
+          <section className="relative w-full flex flex-col items-center justify-center overflow-hidden"  style={{
         background: videoStyle.bg,
         color: videoStyle.ui,
       }}>
@@ -44,6 +43,7 @@ const All = () => {
         </video>
         <div className="absolute inset-0 bg-black/60"></div>
       </div>
+      
     </section>
 <MeltedDiamonds/>
 <DistillateSection/>

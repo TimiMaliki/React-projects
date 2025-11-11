@@ -65,7 +65,7 @@ const HashRosinSection = () => {
                   src={item.image}
                   alt={item.name}
                   loading="lazy"
-                  className="w-full h-56 object-cover"
+                  className="w-full h-full object-cover rounded-t-2xl transform group-hover:scale-105 transition duration-500"
                 />
                 <div className="p-4 text-center ">
                   <h3 className="text-lg font-semibold">{item.name}</h3>

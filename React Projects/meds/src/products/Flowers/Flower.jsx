@@ -1,31 +1,38 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { useContext } from "react";
+import { ToggleThemeContext } from "../../context/ToggleThemeContext";
 import { Flowerflavors } from "../../constant";
 import flower from "../../Images/flower.jpeg";
+import flowerLight from "../../Images/flower-removebg-preview.png";
 
 
 const FlowerSection = () => {
+   const { isLight, videoTheme, videoUi, videoBg } =
+      useContext(ToggleThemeContext);
+  
+    const videoStyle = isLight ? videoBg : videoUi;
+  
+    const videoSrc = isLight ? videoTheme.sourceOne : videoTheme.sourceTwo;
   return (
-    <section className="relative w-full h-screen">
+    <section className="relative w-full h-screen" style={{
+        background: videoStyle.bg,
+        color: videoStyle.ui,
+      }}>
       {/* Background Video */}
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster="https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68faa9aab9379400d4e0b9ea_WebsiteBG_MP4-poster-00001.jpg"
-      >
-        <source
-          src="https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68faa9aab9379400d4e0b9ea_WebsiteBG_MP4-transcode.mp4"
-          type="video/mp4"
-        />
-        <source
-          src="https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68faa9aab9379400d4e0b9ea_WebsiteBG_MP4-transcode.webm"
-          type="video/webm"
-        />
-      </video>
-
+      <div className="absolute inset-0 -z-10">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+          poster="https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee%2F68faa9aab9379400d4e0b9ea_WebsiteBG_MP4-poster-00001.jpg"
+        >
+          <source src={videoSrc} type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
       {/* Overlay Content */}
       <div className="relative z-10 container mx-auto py-32">
         <h1 className="text-6xl font-bold text-white mb-6">FLOWER</h1>
@@ -42,14 +49,14 @@ const FlowerSection = () => {
               style={{ width: "400px" , height:"400px" }}
               className="bg-white/10 rounded-lg overflow-hidden"
             >
-              <a href={flavor.link} className="block relative group">
+              <a href={flavor.link} className="block relative group border border-slate-400 rounded-lg overflow-hidden">
                 <img
                   src={flavor.img}
                   alt={flavor.name}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="p-4 bg-black/40 absolute bottom-0 w-full">
-                  <h5 className="text-white font-semibold">{flavor.name}</h5>
+                <div className="p-4 bg-black/60 absolute bottom-0 w-full">
+                  <h5 className="font-semibold">{flavor.name}</h5>
                   <h6 className="text-yellow-400">{flavor.type}</h6>
                 </div>
               </a>
@@ -70,7 +77,7 @@ const FlowerSection = () => {
           </div>
            <div className="flex items-center justify-center">
                     <img
-                      src={flower}
+                      src={isLight ? flower : flowerLight}
                       alt="Cart Illustration"
                       className="w-64 h-64 object-contain"
                     />

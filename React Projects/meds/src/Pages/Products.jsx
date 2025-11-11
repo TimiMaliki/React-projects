@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { categories } from "../constant";
+import { useContext } from "react";
+import { ToggleThemeContext } from "../context/ToggleThemeContext";
 
 const Products = () => {
   const [activeTab, setActiveTab] = useState("All-In-One");
@@ -12,18 +14,33 @@ const Products = () => {
 
   const activeCategory = categories.find((cat) => cat.name === activeTab);
 
-  return (
-    <div className="relative text-white py-10">
-    
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover opacity-90"
-        autoPlay
-        muted
-        loop
-        playsInline
-        src="https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68faa9aab9379400d4e0b9ea_WebsiteBG_MP4-transcode.mp4"
-      ></video>
+  const { isLight, videoTheme, videoUi, videoBg } =
+      useContext(ToggleThemeContext);
+  
+    const videoStyle = isLight ? videoBg : videoUi;
+  
+    const videoSrc = isLight ? videoTheme.sourceOne : videoTheme.sourceTwo;
 
+  return (
+    <div className="relative text-white py-10"  style={{
+        background: videoStyle.bg,
+        color: videoStyle.ui,
+      }}>
+    
+     {/* Background Video */}
+      <div className="absolute inset-0 -z-10">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+          poster="https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee%2F68faa9aab9379400d4e0b9ea_WebsiteBG_MP4-poster-00001.jpg"
+        >
+          <source src={videoSrc} type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
       <div className="relative z-10 px-6 py-20 text-center">
         <h1
           className="text-4xl md:text-6xl font-bold mb-10"
@@ -38,10 +55,10 @@ const Products = () => {
             <button
               key={cat.name}
               onClick={() => setActiveTab(cat.name)}
-              className={`px-6 py-2 rounded-full text-lg font-semibold transition-all cursor-pointer ${
+              className={`px-6 py-2 rounded-full text-lg font-semibold transition-all cursor-pointer  ${
                 activeTab === cat.name
-                  ? "bg-white text-black"
-                  : "bg-transparent border border-white hover:bg-white hover:text-black"
+                  ? "bg-white text-black border border-yellow-700"
+                  : "bg-transparent border border-slate-300 hover:bg-white hover:text-black"
               }`}
             >
               {cat.name}
@@ -60,12 +77,12 @@ const Products = () => {
               alt={activeCategory.name}
               className="w-full md:w-1/2 rounded-2xl shadow-lg"
             />
-            <div className="md:w-1/2 text-left">
+            <div className="md:w-1/2 text-left p-5 md:p-28">
               <h2 className="text-2xl font-bold mb-4">{activeCategory.name}</h2>
-              <p className="mb-6  text-lg">{activeCategory.description}</p>
+              <p className="mb-6  text-lg p-3">{activeCategory.description}</p>
               <a
                 href={activeCategory.link}
-                className="inline-block px-6 py-3 bg-white text-black font-medium rounded-full hover:bg-gray-200"
+                className="inline-block px-6 py-3 bg-white text-black font-medium rounded-full border border-slate-400 hover:bg-gray-200"
               >
                 EXPLORE
               </a>

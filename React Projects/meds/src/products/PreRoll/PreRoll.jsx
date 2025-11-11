@@ -69,7 +69,7 @@ const PreRollsSection = () => {
                   alt={flavor.name}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute bottom-0 bg-black/60 p-3 w-full">
+                <div className="absolute bottom-0 bg-black/0 p-0 w-full">
                   <h5 className="text-lg font-semibold">{flavor.name}</h5>
                   <h6 className="text-amber-400">{flavor.type}</h6>
                 </div>

@@ -29,7 +29,7 @@ const FlavorSlider = ({ flavors }) => (
             alt={item.name}
             className="w-full h-full object-cover rounded-t-2xl transform group-hover:scale-105 transition duration-500"
           />
-          <div className="p-4 text-center">
+          <div className="absolute bottom-0 p-4 w-full">
             <h3 className="text-lg font-semibold mb-1">{item.name}</h3>
             <p className="text-yellow-800 font-medium">{item.type}</p>
           </div>

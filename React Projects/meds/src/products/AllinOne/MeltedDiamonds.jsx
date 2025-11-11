@@ -70,7 +70,7 @@ const MeltedDiamonds = () => {
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-64 object-cover rounded-t-2xl transform group-hover:scale-105 transition duration-500"
+                  className="w-full h-full object-cover rounded-t-2xl transform group-hover:scale-105 transition duration-500"
                 />
                 <div className="p-4 text-center">
                   <h3 className="text-lg font-semibold mb-1">

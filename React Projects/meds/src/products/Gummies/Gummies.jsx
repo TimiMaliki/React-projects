@@ -3,7 +3,8 @@ import "swiper/css";
 import { useContext } from "react";
 import { ToggleThemeContext } from "../../context/ToggleThemeContext";
 import { gummiesData } from "../../constant"; 
-import gummiesImg from "../../Images/gummies.jpeg"; // Replace with a relevant gummies image
+import gummiesImg from "../../Images/gummies.jpeg"; 
+import gummiesImgLight from "../../Images/gummies-removebg-preview.png"; 
 
 const FlavorSlider = ({ flavors }) => (
   <Swiper
@@ -111,7 +112,7 @@ const GummiesSection = () => {
 
         <div className="flex items-center justify-center">
           <img
-            src={gummiesImg}
+            src={isLight ?gummiesImg : gummiesImgLight}
             alt="Gummies Jar"
             className="w-64 h-64 object-contain"
           />
