@@ -3,9 +3,8 @@ import "swiper/css";
 import { useContext } from "react";
 import { ToggleThemeContext } from "../../context/ToggleThemeContext";
 import { cartridgeData } from "../../constant";
-import pen from "../../Images/pen.jpeg";
-import penLight from "../../Images/pen-removebg-preview.png";
-
+import { Link } from "react-router-dom";
+import CartridgesInfoSection from "./CartridgesInfoSection";
 
 const FlavorSlider = ({ flavors }) => (
   <Swiper
@@ -18,24 +17,25 @@ const FlavorSlider = ({ flavors }) => (
     grabCursor
     freeMode
   >
-    {flavors.map((item, index) => (
-      <SwiperSlide key={index}>
-        <a
-          href={item.link}
-          className="group relative block overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition duration-300 border border-slate-400"
-        >
-          <img
-            src={item.image}
-            alt={item.name}
-            className="w-full h-full object-cover rounded-t-2xl transform group-hover:scale-105 transition duration-500"
-          />
-          <div className="absolute bottom-0 p-4 w-full">
-            <h3 className="text-lg font-semibold mb-1">{item.name}</h3>
-            <p className="text-yellow-800 font-medium">{item.type}</p>
-          </div>
-        </a>
-      </SwiperSlide>
-    ))}
+    {flavors &&
+      flavors.map((item) => (
+        <SwiperSlide key={item.id}>
+          <Link
+            to={`/cartridgesID/${item.id}`}
+            className="group relative block overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition duration-300 border border-slate-400"
+          >
+            <img
+              src={item.image}
+              alt={item.name}
+              className="w-full h-full object-cover rounded-t-2xl transform group-hover:scale-105 transition duration-500"
+            />
+            <div className="absolute bottom-0 p-4 w-full">
+              <h3 className="text-lg font-semibold mb-1">{item.name}</h3>
+              <p className="text-yellow-800 font-medium">{item.type}</p>
+            </div>
+          </Link>
+        </SwiperSlide>
+      ))}
   </Swiper>
 );
 
@@ -44,8 +44,8 @@ const CartridgeSection = () => {
     useContext(ToggleThemeContext);
 
   const videoStyle = isLight ? videoBg : videoUi;
-
   const videoSrc = isLight ? videoTheme.sourceOne : videoTheme.sourceTwo;
+  
   return (
     <section
       className="relative py-32 overflow-hidden"
@@ -85,7 +85,7 @@ const CartridgeSection = () => {
         <h2 className="text-3xl font-bold mb-6">MELTED DIAMONDS</h2>
         <FlavorSlider flavors={cartridgeData.meltedDiamonds} />
       </div>
-
+     
       {/* Distillate Slider */}
       <div className="max-w-6xl mx-auto px-4 mb-16">
         <h2 className="text-3xl font-bold mb-6">DISTILLATE</h2>
@@ -93,47 +93,7 @@ const CartridgeSection = () => {
       </div>
 
       {/* Device Info Section */}
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4 text-left">
-        <div>
-          <h5 className="font-bold mb-2">True-to-Strain Flavor & Purity:</h5>
-          <p className="text-sm mb-4">
-            Extracted in-house from flash-frozen cannabis, our Melted Diamonds
-            preserve the full, authentic terpene profile of the fresh flower.
-            Expect smooth, rich flavor that’s exactly what nature intended.
-          </p>
-
-          <h5 className="font-bold mb-2">Unbeatable Vaping Experience:</h5>
-          <p className="text-sm">
-            Designed for a consistently smooth and clean draw every time, our
-            melted diamond oil provides a highly flavorful, controlled, and
-            deeply satisfying session from start to finish.
-          </p>
-        </div>
-        <div className="flex items-center justify-center">
-          <img
-            src={isLight ?pen : penLight}
-            alt="Cart Illustration"
-            className="w-64 h-64 object-contain"
-          />
-        </div>
-        <div>
-          <h5 className="font-bold mb-2">Full-Spectrum Cannabinoid Power:</h5>
-          <p className="text-sm mb-4">
-            Utilizing advanced, state-of-the-art techniques, we ensure the full
-            spectrum of cannabinoids is preserved, delivering a potent and
-            enjoyable entourage effect that you can feel.
-          </p>
-
-          <h5 className="font-bold mb-2">
-            Universal 510-Thread Compatibility:
-          </h5>
-          <p className="text-sm">
-            Ready to use right out of the box with your favorite gear. Our
-            cartridges are built to seamlessly connect with any standard
-            510-thread battery.
-          </p>
-        </div>
-      </div>
+     <CartridgesInfoSection/>
     </section>
   );
 };

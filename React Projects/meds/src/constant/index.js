@@ -61,14 +61,16 @@ const Explore = [
 
 const categories = [
   {
+    id: 1,
     name: "All-In-One",
     description:
-      "Unmatched quality meets ultimate ease in Muha Meds’ Gen3 disposable line.",
+      "Unmatched quality meets ultimate ease in Muha Meds' Gen3 disposable line.",
     image:
       "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff44336a88b58ceeb71bb_Group-dospo-v3.webp",
     link: "/all",
   },
   {
+    id: 2,
     name: "Cartridges",
     description:
       "Muha Meds cartridges deliver premium potency and flavor with full-spectrum Melted Diamonds or terpene-rich Distillate.",
@@ -77,6 +79,7 @@ const categories = [
     link: "/cartridges",
   },
   {
+    id: 3,
     name: "Flower",
     description:
       "Experience high-potency indoor flower, meticulously grown for density and quality.",
@@ -85,6 +88,7 @@ const categories = [
     link: "/flower",
   },
   {
+    id: 4,
     name: "CONCENTRATES",
     description:
       "Potent, pure concentrates created through advanced extraction methods to deliver maximum strength and clarity.",
@@ -93,6 +97,7 @@ const categories = [
     link: "/concentrates",
   },
   {
+    id: 5,
     name: "GUMMIES",
     description:
       "Deliciously infused gummies with precise dosing for a balanced, consistent, and enjoyable experience anytime.",
@@ -101,6 +106,7 @@ const categories = [
     link: "/gummies",
   },
   {
+    id: 6,
     name: "PRE-ROLLS",
     description:
       "Expertly rolled pre-rolls made from hand-selected flower, offering a smooth, even burn and full-bodied aroma.",
@@ -111,6 +117,7 @@ const categories = [
 ];
 const flavors = [
   {
+    id: 1,
     name: "Orange Tangie",
     type: "Hybrid",
     image:
@@ -118,6 +125,7 @@ const flavors = [
     link: "/ca-all-in-one-melted-diamonds/orange-tangie",
   },
   {
+    id: 2,
     name: "Mango Madness",
     type: "Hybrid",
     image:
@@ -125,6 +133,7 @@ const flavors = [
     link: "/ca-all-in-one-melted-diamonds/mango-madness",
   },
   {
+    id: 3,
     name: "Lemon Cherry Gelato",
     type: "Sativa",
     image:
@@ -132,6 +141,7 @@ const flavors = [
     link: "/ca-all-in-one-melted-diamonds/lemon-cherry-gelato",
   },
   {
+    id: 4,
     name: "Grape Gas",
     type: "Indica",
     image:
@@ -139,6 +149,7 @@ const flavors = [
     link: "/ca-all-in-one-melted-diamonds/grape-gas",
   },
   {
+    id: 5,
     name: "Durban Delight",
     type: "Sativa",
     image:
@@ -148,15 +159,18 @@ const flavors = [
 ];
 const leftSpecs = [
   {
+    id: 1,
     title: "Pure Flavor",
     description: "Postless design preserves every drop with zero compromise.",
   },
   {
+    id: 2,
     title: "Custom Ceramics",
     description:
       "Formulated for Muha concentrates, delivering big clouds and bold taste.",
   },
   {
+    id: 3,
     title: "Sleek & Durable",
     description: "Single-body design built for style and longevity.",
   },
@@ -164,15 +178,18 @@ const leftSpecs = [
 
 const rightSpecs = [
   {
+    id: 4,
     title: "Smart Control",
     description:
       "Internal chipset sets the perfect temp for smooth hits every time.",
   },
   {
+    id: 5,
     title: "LED Display",
     description: "Minimalist interface designed for ease without distractions.",
   },
   {
+    id: 6,
     title: "Recharge Anywhere",
     description: "USB-C charging keeps you ready on the go.",
   },
@@ -180,6 +197,7 @@ const rightSpecs = [
 
 const Distileflavors = [
   {
+    id: 1,
     name: "Strawberry Runts",
     type: "Hybrid",
     image:
@@ -187,6 +205,7 @@ const Distileflavors = [
     link: "/ca-all-in-one-distillate/strawberry-runts",
   },
   {
+    id: 2,
     name: "Tahoe OG",
     type: "Indica",
     image:
@@ -194,6 +213,7 @@ const Distileflavors = [
     link: "/ca-all-in-one-distillate/tahoe-og",
   },
   {
+    id: 3,
     name: "Magic Melon OG",
     type: "Hybrid",
     image:
@@ -201,6 +221,7 @@ const Distileflavors = [
     link: "/ca-all-in-one-distillate/magic-melon-og",
   },
   {
+    id: 4,
     name: "Sour Watermelon Squirt",
     type: "Sativa",
     image:
@@ -208,6 +229,7 @@ const Distileflavors = [
     link: "/ca-all-in-one-distillate/sour-watermelon-squirt",
   },
   {
+    id: 5,
     name: "Pineapple Express",
     type: "Sativa",
     image:
@@ -215,6 +237,7 @@ const Distileflavors = [
     link: "/ca-all-in-one-distillate/pineapple-express",
   },
   {
+    id: 6,
     name: "Galactic Diesel",
     type: "Indica",
     image:
@@ -222,6 +245,7 @@ const Distileflavors = [
     link: "/ca-all-in-one-distillate/galactic-diesel",
   },
   {
+    id: 7,
     name: "Frozen Pomegranate",
     type: "Sativa",
     image:
@@ -229,6 +253,7 @@ const Distileflavors = [
     link: "/ca-all-in-one-distillate/frozen-pomegranate",
   },
   {
+    id: 8,
     name: "Bubblegum Burst",
     type: "Indica",
     image:
@@ -236,6 +261,7 @@ const Distileflavors = [
     link: "/ca-all-in-one-distillate/bubblegum-burst",
   },
   {
+    id: 9,
     name: "Blueberry Cookies",
     type: "Indica",
     image:
@@ -243,6 +269,7 @@ const Distileflavors = [
     link: "/ca-all-in-one-distillate/blueberry-cookies",
   },
   {
+    id: 10,
     name: "Blue Slushie",
     type: "Hybrid",
     image:
@@ -252,6 +279,7 @@ const Distileflavors = [
 ];
 const Harshflavors = [
   {
+    id: 1,
     name: "Tropicana Cherry",
     type: "Sativa",
     image:
@@ -259,6 +287,7 @@ const Harshflavors = [
     link: "/ca-aio-hash-rosin/tropicana-cherry",
   },
   {
+    id: 2,
     name: "Mimosa",
     type: "Sativa",
     image:
@@ -266,6 +295,7 @@ const Harshflavors = [
     link: "/ca-aio-hash-rosin/mimosa",
   },
   {
+    id: 3,
     name: "Fatso",
     type: "Indica",
     image:
@@ -273,6 +303,7 @@ const Harshflavors = [
     link: "/ca-aio-hash-rosin/fatso",
   },
   {
+    id: 4,
     name: "Garlic Jelly",
     type: "Indica",
     image:
@@ -280,6 +311,7 @@ const Harshflavors = [
     link: "/ca-aio-hash-rosin/garlic-jelly",
   },
   {
+    id: 5,
     name: "Donnie Burger",
     type: "Hybrid",
     image:
@@ -290,6 +322,7 @@ const Harshflavors = [
 
 const liveflavors = [
   {
+    id: 1,
     name: "OG Kush",
     type: "Indica",
     image:
@@ -297,6 +330,7 @@ const liveflavors = [
     link: "/ca-aio-live-resin/og-kush",
   },
   {
+    id: 2,
     name: "Lemon Kush Mintz",
     type: "Indica",
     image:
@@ -304,6 +338,7 @@ const liveflavors = [
     link: "/ca-aio-live-resin/lemon-kush-mintz",
   },
   {
+    id: 3,
     name: "Juice Man",
     type: "Sativa",
     image:
@@ -311,6 +346,7 @@ const liveflavors = [
     link: "/ca-aio-live-resin/juice-man",
   },
   {
+    id: 4,
     name: "Grape Dosi",
     type: "Hybrid",
     image:
@@ -318,6 +354,7 @@ const liveflavors = [
     link: "/ca-aio-live-resin/grape-dosi",
   },
   {
+    id: 5,
     name: "Golden Papaya",
     type: "Hybrid",
     image:
@@ -329,6 +366,7 @@ const liveflavors = [
 const cartridgeData = {
   meltedDiamonds: [
     {
+      id: 1,
       name: "White Raspberry",
       type: "Hybrid",
       image:
@@ -336,6 +374,7 @@ const cartridgeData = {
       link: "/ca-cartridges-melted-diamonds/white-raspberry",
     },
     {
+      id: 2,
       name: "Purple Breath",
       type: "Indica",
       image:
@@ -343,6 +382,7 @@ const cartridgeData = {
       link: "/ca-cartridges-melted-diamonds/purple-breath",
     },
     {
+      id: 3,
       name: "Toro Milk Runtz",
       type: "Indica",
       image:
@@ -350,6 +390,7 @@ const cartridgeData = {
       link: "/ca-cartridges-melted-diamonds/toro-milk-runtz",
     },
     {
+      id: 4,
       name: "Moroccan Peach Rings",
       type: "Hybrid",
       image:
@@ -357,6 +398,7 @@ const cartridgeData = {
       link: "/ca-cartridges-melted-diamonds/moroccan-peach-rings",
     },
     {
+      id: 5,
       name: "Lemonade Rose",
       type: "Sativa",
       image:
@@ -366,6 +408,7 @@ const cartridgeData = {
   ],
   distillate: [
     {
+      id: 1,
       name: "Strawberry Kiwi Krush",
       type: "Hybrid",
       image:
@@ -373,6 +416,7 @@ const cartridgeData = {
       link: "/ca-cartridges-distillate/strawberry-kiwi-krush",
     },
     {
+      id: 2,
       name: "Purple Passion Punch",
       type: "Indica",
       image:
@@ -380,6 +424,7 @@ const cartridgeData = {
       link: "/ca-cartridges-distillate/purple-passion-punch",
     },
     {
+      id: 3,
       name: "Pineapple Paradise",
       type: "Hybrid",
       image:
@@ -387,6 +432,7 @@ const cartridgeData = {
       link: "/ca-cartridges-distillate/pineapple-paradise",
     },
     {
+      id: 4,
       name: "Green Crack",
       type: "Sativa",
       image:
@@ -394,6 +440,7 @@ const cartridgeData = {
       link: "/ca-cartridges-distillate/green-crack",
     },
     {
+      id: 5,
       name: "God Father OG",
       type: "Sativa",
       image:
@@ -401,6 +448,7 @@ const cartridgeData = {
       link: "/ca-cartridges-distillate/god-father-og",
     },
     {
+      id: 6,
       name: "Cherry Grapefruit",
       type: "Sativa",
       image:
@@ -408,6 +456,7 @@ const cartridgeData = {
       link: "/ca-cartridges-distillate/cherry-grapefruit",
     },
     {
+      id: 7,
       name: "Bubblegum Burst",
       type: "Indica",
       image:
@@ -415,6 +464,7 @@ const cartridgeData = {
       link: "/ca-cartridges-distillate/bubblegum-burst",
     },
     {
+      id: 8,
       name: "Blue Slushie",
       type: "Hybrid",
       image:
@@ -422,6 +472,7 @@ const cartridgeData = {
       link: "/ca-cartridges-distillate/blue-slushie",
     },
     {
+      id: 9,
       name: "Banana Cream Cake",
       type: "Indica",
       image:
@@ -429,6 +480,7 @@ const cartridgeData = {
       link: "/ca-cartridges-distillate/banana-cream-cake",
     },
     {
+      id: 10,
       name: "Bahama Berry",
       type: "Sativa",
       image:
@@ -440,48 +492,56 @@ const cartridgeData = {
 
 const Flowerflavors = [
   {
+    id: 1,
     name: "Strawberry Mimosa",
     type: "Sativa",
     link: "/ca-flower/strawberry-mimosa",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3269cbb5ae9bb2467ce3d_CA-FLOWER-STRAWBERRYMIMOSA.webp",
   },
   {
+    id: 2,
     name: "Muha Mints",
     type: "Indica",
     link: "/ca-flower/muha-mints",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326a35b42befd11b15d92_CA-FLOWER-MUHAMINTS.webp",
   },
   {
+    id: 3,
     name: "Morning Glory",
     type: "Sativa",
     link: "/ca-flower/morning-glory",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326ab3eeadc2e7a67406d_CA-FLOWER-MORNINGGLORY.webp",
   },
   {
+    id: 4,
     name: "Frosted Cherries",
     type: "Hybrid",
     link: "/ca-flower/frosted-cherries",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326b67782e21e4db00726_CA-FLOWER-FROSTEDCHERRIES.webp",
   },
   {
+    id: 5,
     name: "Adios MF",
     type: "Indica",
     link: "/ca-flower/adios-mf",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326bd78675ff962540fa3_CA-FLOWER-ADIOSMF.webp",
   },
   {
+    id: 6,
     name: "Black Truffle",
     type: "Hybrid",
     link: "/ca-flower/black-truffle",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326c7326bab35805480e4_CA-FLOWER-BLACKTRUFFLE.webp",
   },
   {
+    id: 7,
     name: "Bacio Gelato",
     type: "Hybrid",
     link: "/ca-flower/bacio-gelato",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326ce8a243929a9a0b270_CA-FLOWER-BACIOGELATO.webp",
   },
   {
+    id: 8,
     name: "Brain Freeze",
     type: "Indica",
     link: "/ca-flower/brain-freeze",
@@ -492,6 +552,7 @@ const Flowerflavors = [
 const concentrateData = [
   // HASH ROSIN
   {
+    id: 1,
     name: "Alien OG",
     type: "Indica",
     image:
@@ -499,6 +560,7 @@ const concentrateData = [
     link: "/ca-hash-rosin-concentrate/alien-og",
   },
   {
+    id: 2,
     name: "Super Boof",
     type: "Sativa",
     image:
@@ -506,6 +568,7 @@ const concentrateData = [
     link: "/ca-hash-rosin-concentrate/super-boof",
   },
   {
+    id: 3,
     name: "Pink Lemonade",
     type: "Sativa",
     image:
@@ -513,6 +576,7 @@ const concentrateData = [
     link: "/ca-hash-rosin-concentrate/pink-lemonade",
   },
   {
+    id: 4,
     name: "Chilled Cherries",
     type: "Indica",
     image:
@@ -520,6 +584,7 @@ const concentrateData = [
     link: "/ca-hash-rosin-concentrate/chilled-cherries",
   },
   {
+    id: 5,
     name: "Macaron Peaches",
     type: "Hybrid",
     image:
@@ -527,6 +592,7 @@ const concentrateData = [
     link: "/ca-hash-rosin-concentrate/macaron-peaches",
   },
   {
+    id: 6,
     name: "Honey Banana",
     type: "Hybrid",
     image:
@@ -534,6 +600,7 @@ const concentrateData = [
     link: "/ca-hash-rosin-concentrate/honey-banana",
   },
   {
+    id: 7,
     name: "Mad Fruit",
     type: "Sativa",
     image:
@@ -541,6 +608,7 @@ const concentrateData = [
     link: "/ca-hash-rosin-concentrate/mad-fruit",
   },
   {
+    id: 8,
     name: "Guava Biscotti",
     type: "Hybrid",
     image:
@@ -550,6 +618,7 @@ const concentrateData = [
 
   // PIATELLA
   {
+    id: 9,
     name: "Tropical Funk",
     type: "Hybrid",
     image:
@@ -557,6 +626,7 @@ const concentrateData = [
     link: "/ca-piatella-extract/tropical-funk",
   },
   {
+    id: 10,
     name: "Raunchy Runtz",
     type: "Indica",
     image:
@@ -564,6 +634,7 @@ const concentrateData = [
     link: "/ca-piatella-extract/raunchy-runtz",
   },
   {
+    id: 11,
     name: "Cherry Papaya",
     type: "Hybrid",
     image:
@@ -571,6 +642,7 @@ const concentrateData = [
     link: "/ca-piatella-extract/cherry-papaya",
   },
   {
+    id: 12,
     name: "Lemon Heads",
     type: "Indica",
     image:
@@ -578,6 +650,7 @@ const concentrateData = [
     link: "/ca-piatella-extract/lemon-heads",
   },
   {
+    id: 13,
     name: "Alpine Guava",
     type: "Sativa",
     image:
@@ -589,6 +662,7 @@ const concentrateData = [
 
 const gummiesData =  [
     {
+      id: 1,
       name: "Mango Madness",
       type: "Hybrid",
       image:
@@ -596,6 +670,7 @@ const gummiesData =  [
       link: "/ca-hash-rosin-gummies/mango-madness",
     },
     {
+      id: 2,
       name: "Green Apple",
       type: "Indica",
       image:
@@ -603,6 +678,7 @@ const gummiesData =  [
       link: "/ca-hash-rosin-gummies/green-apple",
     },
     {
+      id: 3,
       name: "Raspberry Pineapple",
       type: "Hybrid",
       image:
@@ -610,6 +686,7 @@ const gummiesData =  [
       link: "/ca-hash-rosin-gummies/raspberry-pineapple",
     },
     {
+      id: 4,
       name: "Strawberry",
       type: "Sativa",
       image:
@@ -617,6 +694,7 @@ const gummiesData =  [
       link: "/ca-hash-rosin-gummies/strawberry",
     },
     {
+      id: 5,
       name: "Mango Chamoy",
       type: "Indica",
       image:
@@ -625,6 +703,7 @@ const gummiesData =  [
     },
 
     {
+      id: 6,
       name: "Sour Apple",
       type: "Sativa",
       image:
@@ -632,6 +711,7 @@ const gummiesData =  [
       link: "/ca-infused-gummies/sour-apple",
     },
     {
+      id: 7,
       name: "Watermelon",
       type: "Indica",
       image:
@@ -639,6 +719,7 @@ const gummiesData =  [
       link: "/ca-infused-gummies/watermelon",
     },
     {
+      id: 8,
       name: "Strawberry Lemon",
       type: "Sativa",
       image:
@@ -646,6 +727,7 @@ const gummiesData =  [
       link: "/ca-infused-gummies/strawberry-lemon",
     },
     {
+      id: 9,
       name: "Very Berry",
       type: "Indica",
       image:
@@ -653,6 +735,7 @@ const gummiesData =  [
       link: "/ca-infused-gummies/very-berry",
     },
     {
+      id: 10,
       name: "Mango Madness",
       type: "Hybrid",
       image:
@@ -663,68 +746,76 @@ const gummiesData =  [
 
   const prerollFlavors = [
   {
+    id: 1,
     name: "WATERMELON",
     type: "Hybrid",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32c2a7effe33246db9eed_CA-PR-INFUSED-WATERMELON.webp",
     link: "/ca-pre-rolls-infused/watermelon",
   },
   {
+    id: 2,
     name: "VANILLA COOKIES",
     type: "Indica",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32c1d9bd4e56879522940_CA-PR-INFUSED-VANILLACOOKIES.webp",
     link: "/ca-pre-rolls-infused/vanilla-cookies",
   },
   {
+    id: 3,
     name: "THIN MINTS",
     type: "Indica",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32bfea84a7e56f51c2cf9_CA-PR-INFUSED-THINMINTSOG.webp",
     link: "/ca-pre-rolls-infused/thin-mints",
   },
   {
+    id: 4,
     name: "STRAWBERRY DREAM",
     type: "Indica",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32ca0ef07c53d2e75b656_CA-PR-INFUSED-STRAWBERRYDREAM.webp",
     link: "/ca-pre-rolls-infused/strawbery-dream",
   },
   {
+    id: 5,
     name: "PINA COLADA",
     type: "Hybrid",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32bb1aca239f0eb75a806_CA-PR-INFUSED-PINACOLADA.webp",
     link: "/ca-pre-rolls-infused/pina-colada",
   },
   {
+    id: 6,
     name: "ORANGE CAKE",
     type: "Hybrid",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32ba8ba4ee29c2eecc0c1_CA-PR-INFUSED-ORANGECAKE.webp",
     link: "/ca-pre-rolls-infused/orange-cake",
   },
   {
+    id: 7,
     name: "PURPLE PUNCH",
     type: "Sativa",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32b9f3f046c2fef51c668_CA-PR-INFUSED-PUERPLEPUNCH.webp",
     link: "/ca-pre-rolls-infused/purple-punch-2",
   },
   {
+    id: 8,
     name: "MANGO PEACH RINGS",
     type: "Hybrid",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32b97c795495cbae7e776_CA-PR-INFUSED-MANGOPEACHRINGS.webp",
     link: "/ca-pre-rolls-infused/mango-peach-rings",
   },
   {
+    id: 9,
     name: "BLUEBERRY ZAZA",
     type: "Sativa",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32b8f1471bde84a481356_CA-PR-INFUSED-BLUEBERRYZAZA.webp",
     link: "/ca-pre-rolls-infused/blueberry-zaza",
   },
   {
+    id: 10,
     name: "APPLE TART",
     type: "Hybrid",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32b87cf184b318ba53425_CA-PR-INFUSED-APPLETART.webp",
     link: "/ca-pre-rolls-infused/apple-tart",
   },
 ];
-
-
 
 export {
   links,
