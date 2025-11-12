@@ -27,7 +27,6 @@ function App() {
         { element: <PreRollsSection />, path: "/infused" },
         { element: <ConcentrateSection />, path: "/concentrates" },
         { element: <GummiesSection />, path: "/gummies" },
-        {element: <CartridgesID/> , path:"cartridgesID/:id"}
       ],
     },
   ]);

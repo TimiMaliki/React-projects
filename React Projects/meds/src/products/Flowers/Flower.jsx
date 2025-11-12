@@ -5,19 +5,66 @@ import { ToggleThemeContext } from "../../context/ToggleThemeContext";
 import { Flowerflavors } from "../../constant";
 import FlowerInfoSection from "./FlowerInfoSection";
 
+const FlavorSlider = ({ flavors }) => (
+  <Swiper
+    spaceBetween={16}
+    slidesPerView={1.3}
+    breakpoints={{
+      640: { slidesPerView: 2.2 },
+      1024: { slidesPerView: 3.5 },
+    }}
+    grabCursor
+    freeMode
+  >
+    {flavors &&
+      flavors.map((item) => (
+        <SwiperSlide key={item.id}>
+          <a
+            href={item.link}
+            className="group relative block overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition duration-300 border border-slate-400"
+          >
+            <img
+              src={item.img}
+              alt={item.name}
+              className="w-full h-full object-cover rounded-t-2xl transform group-hover:scale-105 transition duration-500"
+            />
+            <div className="absolute bottom-0 p-4 w-full">
+              <h3 className="text-lg font-semibold mb-1">{item.name}</h3>
+              <p className="text-yellow-800 font-medium">{item.type}</p>
+            </div>
+          </a>
+        </SwiperSlide>
+      ))}
+  </Swiper>
+);
 
 const FlowerSection = () => {
-   const { isLight, videoTheme, videoUi, videoBg } =
-      useContext(ToggleThemeContext);
-  
-    const videoStyle = isLight ? videoBg : videoUi;
-  
-    const videoSrc = isLight ? videoTheme.sourceOne : videoTheme.sourceTwo;
+  const { isLight, videoTheme, videoUi, videoBg } =
+    useContext(ToggleThemeContext);
+
+  const videoStyle = isLight ? videoBg : videoUi;
+  const videoSrc = isLight ? videoTheme.sourceOne : videoTheme.sourceTwo;
+
   return (
-    <section className="relative w-full h-screen" style={{
+    <section
+      className="relative py-32 overflow-hidden"
+      style={{
         background: videoStyle.bg,
         color: videoStyle.ui,
-      }}>
+      }}
+    >
+      {/* Title */}
+      <div className="relative z-10 py-14 text-center">
+        <h1
+          className="text-4xl md:text-5xl font-bold tracking-wide text-white uppercase drop-shadow-lg"
+          style={{
+            color: videoStyle.ui,
+          }}
+        >
+          FLOWER
+        </h1>
+      </div>
+
       {/* Background Video */}
       <div className="absolute inset-0 -z-10">
         <video
@@ -32,39 +79,15 @@ const FlowerSection = () => {
         </video>
         <div className="absolute inset-0 bg-black/60"></div>
       </div>
-      {/* Overlay Content */}
-      <div className="relative z-10 container mx-auto py-32">
-        <h1 className="text-6xl font-bold text-white mb-6">FLOWER</h1>
 
-        {/* Swiper Slider */}
-        <Swiper
-          spaceBetween={16}
-          slidesPerView={"auto"}
-          freeMode={true}
-        >
-          {Flowerflavors.map((flavor, index) => (
-            <SwiperSlide
-              key={index}
-              style={{ width: "400px" , height:"400px" }}
-              className="bg-white/10 rounded-lg overflow-hidden"
-            >
-              <a href={flavor.link} className="block relative group border border-slate-400 rounded-lg overflow-hidden">
-                <img
-                  src={flavor.img}
-                  alt={flavor.name}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute bottom-0 p-4 w-full">
-                  <h5 className="font-semibold">{flavor.name}</h5>
-                  <h6 className="text-yellow-400">{flavor.type}</h6>
-                </div>
-              </a>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-         {/* Device Specs Section */}
-      <FlowerInfoSection/>
+      {/* Flower Slider */}
+      <div className="max-w-6xl mx-auto px-4 mb-16">
+        <h2 className="text-3xl font-bold mb-6">PREMIUM FLOWER</h2>
+        <FlavorSlider flavors={Flowerflavors} />
       </div>
+
+      {/* Info Section */}
+      <FlowerInfoSection/>
     </section>
   );
 };

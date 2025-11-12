@@ -20,8 +20,7 @@ const FlavorSlider = ({ flavors }) => (
     {flavors &&
       flavors.map((item) => (
         <SwiperSlide key={item.id}>
-          <Link
-            to={`/cartridgesID/${item.id}`}
+          <a
             className="group relative block overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition duration-300 border border-slate-400"
           >
             <img
@@ -33,7 +32,7 @@ const FlavorSlider = ({ flavors }) => (
               <h3 className="text-lg font-semibold mb-1">{item.name}</h3>
               <p className="text-yellow-800 font-medium">{item.type}</p>
             </div>
-          </Link>
+          </a>
         </SwiperSlide>
       ))}
   </Swiper>

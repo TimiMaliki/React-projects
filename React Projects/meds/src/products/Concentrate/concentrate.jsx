@@ -16,24 +16,25 @@ const FlavorSlider = ({ flavors }) => (
     grabCursor
     freeMode
   >
-    {flavors.map((item, index) => (
-      <SwiperSlide key={index}>
-        <a
-          href={item.link}
-          className="group relative block overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition duration-300 border border-slate-400"
-        >
-          <img
-            src={item.image}
-            alt={item.name}
-            className="w-full h-full object-cover rounded-t-2xl transform group-hover:scale-105 transition duration-500"
-          />
-          <div className="p-4 text-center">
-            <h3 className="text-lg font-semibold mb-1">{item.name}</h3>
-            <p className="text-yellow-800 font-medium">{item.type}</p>
-          </div>
-        </a>
-      </SwiperSlide>
-    ))}
+    {flavors &&
+      flavors.map((item) => (
+        <SwiperSlide key={item.id}>
+          <a
+            href={item.link}
+            className="group relative block overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition duration-300 border border-slate-400"
+          >
+            <img
+              src={item.image}
+              alt={item.name}
+              className="w-full h-full object-cover rounded-t-2xl transform group-hover:scale-105 transition duration-500"
+            />
+            <div className="absolute bottom-0 p-4 w-full">
+              <h3 className="text-lg font-semibold mb-1">{item.name}</h3>
+              <p className="text-yellow-800 font-medium">{item.type}</p>
+            </div>
+          </a>
+        </SwiperSlide>
+      ))}
   </Swiper>
 );
 
@@ -43,6 +44,10 @@ const ConcentrateSection = () => {
 
   const videoStyle = isLight ? videoBg : videoUi;
   const videoSrc = isLight ? videoTheme.sourceOne : videoTheme.sourceTwo;
+
+  // Filter concentrates by type
+  const hashRosinFlavors = concentrateData.filter(item => item.id <= 8);
+  const piatellaFlavors = concentrateData.filter(item => item.id >= 9);
 
   return (
     <section
@@ -82,17 +87,17 @@ const ConcentrateSection = () => {
       {/* Hash Rosin Slider */}
       <div className="max-w-6xl mx-auto px-4 mb-16">
         <h2 className="text-3xl font-bold mb-6">HASH ROSIN</h2>
-        <FlavorSlider flavors={concentrateData} />
+        <FlavorSlider flavors={hashRosinFlavors} />
       </div>
 
       {/* Piatella Slider */}
       <div className="max-w-6xl mx-auto px-4 mb-16">
         <h2 className="text-3xl font-bold mb-6">PIATELLA</h2>
-        <FlavorSlider flavors={concentrateData} />
+        <FlavorSlider flavors={piatellaFlavors} />
       </div>
 
       {/* Info Section */}
-     <ConcentrateInfoSection/>
+      <ConcentrateInfoSection/>
     </section>
   );
 };
