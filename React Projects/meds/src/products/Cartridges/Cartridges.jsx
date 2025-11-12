@@ -3,7 +3,6 @@ import "swiper/css";
 import { useContext } from "react";
 import { ToggleThemeContext } from "../../context/ToggleThemeContext";
 import { cartridgeData } from "../../constant";
-import { Link } from "react-router-dom";
 import CartridgesInfoSection from "./CartridgesInfoSection";
 
 const FlavorSlider = ({ flavors }) => (
