@@ -2,41 +2,54 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { useContext } from "react";
 import { ToggleThemeContext } from "../../context/ToggleThemeContext";
+import { CartContext } from "../../context/CartContext";
 import { Flowerflavors } from "../../constant";
 import FlowerInfoSection from "./FlowerInfoSection";
 
-const FlavorSlider = ({ flavors }) => (
-  <Swiper
-    spaceBetween={16}
-    slidesPerView={1.3}
-    breakpoints={{
-      640: { slidesPerView: 2.2 },
-      1024: { slidesPerView: 3.5 },
-    }}
-    grabCursor
-    freeMode
-  >
-    {flavors &&
-      flavors.map((item) => (
-        <SwiperSlide key={item.id}>
-          <a
-            href={item.link}
-            className="group relative block overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition duration-300 border border-slate-400"
-          >
-            <img
-              src={item.img}
-              alt={item.name}
-              className="w-full h-full object-cover rounded-t-2xl transform group-hover:scale-105 transition duration-500"
-            />
-            <div className="absolute bottom-0 p-4 w-full">
-              <h3 className="text-lg font-semibold mb-1">{item.name}</h3>
-              <p className="text-yellow-800 font-medium">{item.type}</p>
+const FlavorSlider = ({ flavors }) => {
+  const { addOneToCart } = useContext(CartContext);
+
+  return (
+    <Swiper
+      spaceBetween={16}
+      slidesPerView={1.3}
+      breakpoints={{
+        640: { slidesPerView: 2.2 },
+        1024: { slidesPerView: 3.5 },
+      }}
+      grabCursor
+      freeMode
+    >
+      {flavors &&
+        flavors.map((item) => (
+          <SwiperSlide key={item.id}>
+            <div className="group relative block overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition duration-300 border border-slate-400">
+              <img
+                src={item.img}
+                alt={item.name}
+                className="w-full h-full object-cover rounded-t-2xl transform group-hover:scale-105 transition duration-500"
+              />
+              <div className="absolute bottom-0 p-4 w-full">
+                <h3 className="text-lg font-semibold mb-1 text-white">{item.name}</h3>
+                <p className="text-yellow-400 font-medium mb-2">{item.type}</p>
+                {item.price && (
+                  <p className="text-green-400 font-bold text-lg mb-2">
+                    {item.price}
+                  </p>
+                )}
+                <button 
+                  onClick={() => addOneToCart(item)} 
+                  className="w-full bg-yellow-600 text-white text-sm px-4 py-2 rounded-md hover:bg-yellow-700 transition duration-300 cursor-pointer"
+                >
+                  Add to Cart
+                </button>
+              </div>
             </div>
-          </a>
-        </SwiperSlide>
-      ))}
-  </Swiper>
-);
+          </SwiperSlide>
+        ))}
+    </Swiper>
+  );
+};
 
 const FlowerSection = () => {
   const { isLight, videoTheme, videoUi, videoBg } =
@@ -82,12 +95,12 @@ const FlowerSection = () => {
 
       {/* Flower Slider */}
       <div className="max-w-6xl mx-auto px-4 mb-16">
-        <h2 className="text-3xl font-bold mb-6">PREMIUM FLOWER</h2>
+        <h2 className="text-3xl font-bold mb-6 text-white">PREMIUM FLOWER</h2>
         <FlavorSlider flavors={Flowerflavors} />
       </div>
 
       {/* Info Section */}
-      <FlowerInfoSection/>
+      <FlowerInfoSection />
     </section>
   );
 };

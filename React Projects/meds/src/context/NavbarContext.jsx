@@ -1,4 +1,4 @@
-import React , {createContext, useState} from "react"
+import {createContext, useState} from "react"
 import {links} from "../constant/index"
 
 export const NavbarContext = createContext()
