@@ -10,7 +10,7 @@ const FlowerInfoSection = () => {
         const videoStyle = isLight ? videoBg : videoUi;
       
   return (
-      <div className="grid md:grid-cols-3 gap-8 mt-16 text-left text-white"style={{
+      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4 text-left"style={{
         background: videoStyle.bg,
         color: videoStyle.ui,
       }}>

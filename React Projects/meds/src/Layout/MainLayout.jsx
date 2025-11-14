@@ -7,16 +7,16 @@ import CartContextProvider from "../context/CartContext";
 const MainLayout = () => {
   return (
     <>
+       <CartContextProvider>
      <ToggleThemeContextProvider>
         <HamburgerContextProvider>
-        <CartContextProvider>
       <Navbar />
       <Outlet />
       <ScrollRestoration />
       <Footer />
-      </CartContextProvider>
       </HamburgerContextProvider>
       </ToggleThemeContextProvider>
+        </CartContextProvider>
     </>
   );
 };

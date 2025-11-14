@@ -2,10 +2,11 @@ import { ShoppingCart } from 'lucide-react'
 import { useContext } from "react"
 import { ToggleThemeContext } from "../context/ToggleThemeContext"
 import { CartContext } from "../context/CartContext"
+import { Link } from 'react-router-dom'
 
 const CartItem = () => {
   const { isLight, light, dark } = useContext(ToggleThemeContext)
-  const { items, getTotalCost } = useContext(CartContext)
+  const { items } = useContext(CartContext)
   
   const themeStyle = isLight ? light : dark;
   
@@ -14,6 +15,7 @@ const CartItem = () => {
 
   return (
     <div className='cursor-pointer relative'>
+      <Link to={"/cartpage"}>
       <ShoppingCart size={29} className='text-white cursor-pointer' style={{
         color: themeStyle.hex,
       }}/>
@@ -24,6 +26,7 @@ const CartItem = () => {
           {totalItems}
         </div>
       )}
+      </Link>
     </div>
   )
 }

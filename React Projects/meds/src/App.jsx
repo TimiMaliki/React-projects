@@ -12,6 +12,7 @@ import PreRollsSection from "./products/PreRoll/PreRoll";
 import ConcentrateSection from "./products/Concentrate/concentrate";
 import GummiesSection from "./products/Gummies/Gummies";
 import CartridgesID from "./ProductID/CatridgesID";
+import CartPage from "./CartPage/CartPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -27,6 +28,8 @@ function App() {
         { element: <PreRollsSection />, path: "/infused" },
         { element: <ConcentrateSection />, path: "/concentrates" },
         { element: <GummiesSection />, path: "/gummies" },
+         { element: <CartPage/>, path: "/cartpage" },
+      
       ],
     },
   ]);

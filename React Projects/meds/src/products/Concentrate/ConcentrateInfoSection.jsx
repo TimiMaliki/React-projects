@@ -1,4 +1,5 @@
 import conc from "../../Images/conc.jpeg";
+import concLight from "../../Images/conc.png";
 import { useContext } from "react";
 import { ToggleThemeContext } from "../../context/ToggleThemeContext";
 
@@ -30,7 +31,7 @@ const ConcentrateInfoSection = () => {
 
         <div className="flex items-center justify-center">
           <img
-            src={conc}
+            src={isLight ? conc : concLight}
             alt="Concentrate Jar"
             className="w-64 h-64 object-contain"
           />
