@@ -28,7 +28,7 @@ const CartPage = () => {
 
   return (
     <div
-      className="min-h-screen py-24 px-4 transition-colors duration-300"
+      className="min-h-screen py-32 px-4 transition-colors duration-300"
       style={{ background: themeStyle.bg, color: themeStyle.ui }}
     >
       <div className="max-w-7xl mx-auto">
@@ -37,35 +37,25 @@ const CartPage = () => {
           <div className="flex items-center space-x-4">
             <Link 
               to="/products" 
-              className="flex items-center space-x-2 text-white/80 hover:text-white transition-colors"
+              className="flex items-center space-x-2 text-white hover:transition-colors"
             >
               <ArrowLeft size={20} />
               <span>Continue Shopping</span>
             </Link>
           </div>
-          
-          <div className="flex items-center space-x-3">
-            <ShoppingCart size={32} className="text-yellow-500" />
-            <div>
-              <h1 className="text-4xl font-bold">Your Cart</h1>
-              <p className="text-white/70 text-sm">
-                {totalItemsCount} {totalItemsCount === 1 ? 'item' : 'items'}
-              </p>
-            </div>
-          </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8" >
           {/* ================= LEFT SIDE: CART ITEMS ================= */}
           <div className="lg:col-span-2">
             {items.length === 0 ? (
               <div className="bg-white/10 backdrop-blur-md border border-gray-300/30 rounded-2xl p-12 text-center">
-                <ShoppingCart size={64} className="mx-auto mb-4 text-white/50" />
+                <ShoppingCart size={64} className="mx-auto mb-4" />
                 <h2 className="text-2xl font-semibold mb-4">Your cart is empty</h2>
-                <p className="text-white/70 mb-6">Start adding some amazing products to your cart!</p>
+                <p className=" mb-6">Start adding some amazing products to your cart!</p>
                 <Link 
                   to="/products"
-                  className="inline-flex items-center space-x-2 bg-yellow-600 text-white px-6 py-3 rounded-lg hover:bg-yellow-700 transition-colors"
+                  className="inline-flex items-center space-x-2 bg-yellow-600  px-6 py-3 rounded-lg hover:bg-yellow-700 transition-colors"
                 >
                   <span>Start Shopping</span>
                 </Link>
@@ -92,20 +82,20 @@ const CartPage = () => {
                           className="w-24 h-24 object-cover rounded-xl flex-shrink-0"
                         />
                         <div className="min-w-0 flex-1">
-                          <h3 className="font-semibold text-xl mb-1 truncate">
+                          <h3 className="font-semibold  mb-1 truncate text-red-400 text-xl">
                             {product?.name || `Product ${item.id}`}
                           </h3>
-                          <p className="text-yellow-400 font-medium mb-2 text-sm">
+                          <p className="text-yellow-500 font-medium mb-2 text-md">
                             {product?.type || "Product"}
                           </p>
-                          <p className="text-green-400 font-bold text-lg">
+                          <p className="text-green-900 font-bold text-lg">
                             ${productPrice.toFixed(2)}
                           </p>
                         </div>
                       </div>
 
                       {/* Quantity Controls and Total */}
-                      <div className="flex items-center space-x-6 w-full sm:w-auto justify-between sm:justify-end">
+                      <div className="flex items-center space-x-6 w-full sm:w-auto justify-between sm:justify-end"style={{color: themeStyle.ui }}>
                         {/* Quantity Controls */}
                         <div className="flex items-center space-x-3 bg-black/20 rounded-lg p-1">
                           <button
@@ -122,7 +112,7 @@ const CartPage = () => {
                           
                           <button
                             onClick={() => addOneToCart(product)}
-                            className="p-1 rounded-full hover:bg-white/10 transition-colors"
+                            className="p-1 rounded-full hover:bg-white/10 transition-colors cursor-pointer"
                           >
                             <Plus size={16} />
                           </button>
@@ -133,7 +123,7 @@ const CartPage = () => {
                           <p className="text-blue-400 font-bold text-lg">
                             ${itemTotal}
                           </p>
-                          <p className="text-white/60 text-sm">
+                          <p className="text-md " style={{color: themeStyle.ui }}>
                             ${productPrice.toFixed(2)} × {item.quantity}
                           </p>
                         </div>
@@ -141,7 +131,7 @@ const CartPage = () => {
                         {/* Remove Button */}
                         <button
                           onClick={() => deleteFromCart(item.id)}
-                          className="p-2 bg-red-500/20 text-red-400 rounded-xl hover:bg-red-500/30 transition-colors flex items-center justify-center"
+                          className="p-2 bg-red-900/20 text-red-600 rounded-xl hover:bg-red-500/30 transition-colors flex items-center justify-center cursor-pointer"
                           title="Remove item"
                         >
                           <Trash2 size={18} />
@@ -156,7 +146,7 @@ const CartPage = () => {
 
           {/* ================= RIGHT SIDE: SUMMARY / CHECKOUT ================= */}
           {items.length > 0 && (
-            <div className="sticky top-8 bg-white/10 backdrop-blur-md border border-gray-300/30 rounded-2xl shadow-xl p-6 h-fit">
+            <div className="sticky top-20 bg-white/10 backdrop-blur-md border border-gray-300/30 rounded-2xl shadow-xl p-6 h-fit">
               <h2 className="text-2xl font-semibold mb-6 border-b border-white/20 pb-4">
                 Order Summary
               </h2>
