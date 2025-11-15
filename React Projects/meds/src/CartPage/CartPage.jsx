@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import { ToggleThemeContext } from "../context/ToggleThemeContext";
 import { Trash2, ShoppingCart, CreditCard, Wallet, Plus, Minus, ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const CartPage = () => {
   const {
@@ -25,7 +25,6 @@ const CartPage = () => {
 
   // Calculate total items count
   const totalItemsCount = items.reduce((total, item) => total + item.quantity, 0);
-
   return (
     <div
       className="min-h-screen py-32 px-4 transition-colors duration-300"
