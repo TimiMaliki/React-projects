@@ -42,7 +42,7 @@ const FlavorSlider = ({ flavors }) => {
           'https://via.placeholder.com/300x300/1a1a1a/ffffff?text=Product+Image';
       }}
     />
-    <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+    <div className="absolute inset-0 bg-linear-to-t from-black/90 to-transparent"></div>
   </div>
 
   {/* Text + Button */}
@@ -69,6 +69,7 @@ const FlavorSlider = ({ flavors }) => {
         bg-yellow-500 font-bold text-black
         hover:bg-yellow-600 
         transition duration-300 shadow-md
+        cursor-pointer
       "
     >
       Add to Cart

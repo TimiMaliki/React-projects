@@ -23,27 +23,55 @@ const FlavorSlider = ({ flavors }) => {
       {flavors &&
         flavors.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="group relative block overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition duration-300 border border-slate-400">
-              <img
-                src={item.img}
-                alt={item.name}
-                className="w-full h-full object-cover rounded-t-2xl transform group-hover:scale-105 transition duration-500"
-                onError={(e) => {
-                  // Fallback if image fails to load
-                  e.target.src = "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=Product+Image";
-                }}
-              />
-              <div className="absolute bottom-0 p-4 w-full">
-                <h3 className="text-lg font-semibold mb-1 text-white">{item.name}</h3>
-                <p className="text-yellow-400 font-medium mb-2">{item.type}</p>
+            <div
+              className="
+    group relative overflow-hidden rounded-2xl 
+    bg-black/40 backdrop-blur-xl 
+    border border-white/20 shadow-xl
+    hover:shadow-2xl hover:bg-black/50 
+    transition duration-300
+  "
+            >
+              {/* Image */}
+              <div className="relative w-full h-full">
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="w-full h-full object-cover rounded-t-2xl 
+      transform group-hover:scale-105 transition duration-500"
+                  onError={(e) => {
+                    e.target.src =
+                      "https://via.placeholder.com/300x300/1a1a1a/ffffff?text=Product+Image";
+                  }}
+                />
+
+                {/* Gradient overlay for text visibility */}
+                <div className="absolute inset-0 bg-linear-to-t from-black/90 to-transparent"></div>
+              </div>
+
+              {/* Text + Button */}
+              <div className="p-4 space-y-1 absolute bottom-0 w-full">
+                <h3 className="text-xl font-bold text-white drop-shadow">
+                  {item.name}
+                </h3>
+
+                <p className="text-yellow-300 font-semibold">{item.type}</p>
+
                 {item.price && (
-                  <p className="text-green-400 font-bold text-lg mb-2">
+                  <p className="text-green-300 font-extrabold text-lg drop-shadow">
                     {item.price}
                   </p>
                 )}
-                <button 
+
+                <button
                   onClick={() => addOneToCart(item)}
-                  className="w-full bg-yellow-600 text-white text-sm px-4 py-2 rounded-md hover:bg-yellow-700 transition duration-300 cursor-pointer"
+                  className="
+        w-full py-2 mt-2 rounded-lg 
+        bg-yellow-500 font-bold text-black
+        hover:bg-yellow-600 
+        transition duration-300 shadow-md
+        cursor-pointer
+      "
                 >
                   Add to Cart
                 </button>
@@ -99,12 +127,14 @@ const PreRollsSection = () => {
 
       {/* Pre-Rolls Slider */}
       <div className="max-w-6xl mx-auto px-4 mb-16">
-        <h2 className="text-3xl font-bold mb-6 text-white">INFUSED PRE-ROLLS</h2>
+        <h2 className="text-3xl font-bold mb-6 text-white">
+          INFUSED PRE-ROLLS
+        </h2>
         <FlavorSlider flavors={prerollFlavors} />
       </div>
 
       {/* Info Section */}
-      <PreRollInfoSection/>
+      <PreRollInfoSection />
     </section>
   );
 };
