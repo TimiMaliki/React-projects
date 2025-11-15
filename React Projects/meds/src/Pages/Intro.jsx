@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import introLeft from "../Images/left-intro.webp";
 import introRight from "../Images/right-intro.png";
+import { Link } from "react-router-dom";
 
 
 const Intro = () => {
@@ -33,7 +34,7 @@ const Intro = () => {
         <img
           src={introLeft}
           alt="Intro Decoration Left"
-          className="w-[80px] sm:w-[200px] lg:w-[250px] object-contain rotate-[-20deg] drop-shadow-2xl"
+          className="w-20 sm:w-[200px] lg:w-[250px] object-contain rotate-[-20deg] drop-shadow-2xl"
         />
       </div>
 
@@ -61,12 +62,13 @@ const Intro = () => {
         </p>
 
         <div className="mt-8" data-aos="zoom-in" data-aos-delay="700">
-          <a
-            href=""
+           <Link to={"/products"}>
+          <div
             className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold text-base sm:text-lg px-8 py-3 rounded-full shadow-lg transition-all duration-300"
           >
             SHOP NOW
-          </a>
+          </div>
+          </Link>
         </div>
       </div>
 
@@ -78,7 +80,7 @@ const Intro = () => {
         <img
           src={introRight}
           alt="Intro Decoration Right"
-          className="w-[80px] sm:w-[200px] lg:w-[250px] object-contain rotate-[25deg] drop-shadow-2xl"
+          className="w-20 sm:w-[200px] lg:w-[250px] object-contain rotate-25 drop-shadow-2xl"
         />
       </div>
     </section>

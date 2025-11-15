@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom";
 import heroImg from "../Images/hero-Img.webp";
-
 
 const Hero = () => {
   return (
@@ -14,7 +14,7 @@ const Hero = () => {
         className="absolute inset-0 w-full h-full object-cover object-center"
       />
 
-      {/* Overlay for readability */}
+    
       <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Hero Content */}
@@ -24,13 +24,13 @@ const Hero = () => {
             NEW ALL-IN-ONE <br />
             <span className="text-red-600">GEN 3</span> DEVICE
           </h1>
-
-          <a
-            href="https://wa.me/qr/RJYG6ACYJUUGB1"
-            className="bg-red-600 hover:bg-red-700 transition-all duration-300 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg shadow-md inline-block"
-          >
-            SHOP NOW
-          </a>
+          <Link to={"/products"}>
+            <div
+              className="bg-red-600 hover:bg-red-700 transition-all duration-300 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg shadow-md inline-block"
+            >
+              SHOP NOW
+            </div>
+          </Link>
         </div>
       </div>
     </section>

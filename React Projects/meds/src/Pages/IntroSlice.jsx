@@ -85,7 +85,7 @@ const IntroSlice = () => {
             <h3 className="mt-6 text-xl sm:text-2xl font-semibold">
               {slice.title}
             </h3>
-            <p className="mt-3 text-sm sm:text-base max-w-xs mx-auto opacity-80">
+            <p className="mt-3 text-md sm:text-md max-w-xs mx-auto opacity-80">
               {slice.desc}
             </p>
           </div>

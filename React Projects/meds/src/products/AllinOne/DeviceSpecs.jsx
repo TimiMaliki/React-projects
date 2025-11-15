@@ -24,7 +24,7 @@ const DeviceSpecs = () => {
                 {spec.title}
               </h5>
               <div className="w-16 h-1 bg-amber-500 mx-auto lg:mx-0 mb-3 rounded-full"></div>
-              <p className="text-sm leading-relaxed">
+              <p className="text-md leading-relaxed">
                 {spec.description}
               </p>
             </div>
@@ -48,7 +48,7 @@ const DeviceSpecs = () => {
                 {spec.title}
               </h5>
               <div className="w-16 h-1 bg-amber-500 mx-auto lg:mx-0 mb-3 rounded-full"></div>
-              <p className="text-sm leading-relaxed">
+              <p className="text-md leading-relaxed">
                 {spec.description}
               </p>
             </div>

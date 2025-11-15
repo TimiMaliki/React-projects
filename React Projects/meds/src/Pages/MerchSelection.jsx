@@ -13,7 +13,7 @@ const MerchSection = () => {
       <div className="flex flex-wrap">
         {/* MUHA MEDS MERCH */}
         <a
-          href="https://www.muhamedsmerch.com/"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
           aria-label="MUHA MEDS MERCH SHOP NOW - open in a new tab"
@@ -35,7 +35,7 @@ const MerchSection = () => {
 
         {/* MUHA HEMP */}
         <a
-          href="https://www.muhacbd.com/"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
           aria-label="MUHA HEMP SHOP NOW - open in a new tab"
