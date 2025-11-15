@@ -62,13 +62,13 @@ const Explore = [
 ];
 
 const categories = [
-  {
-    id: uuidv4(),
-    name: "All-In-One",
-    description: "Unmatched quality meets ultimate ease in Muha Meds' Gen3 disposable line.",
-    image: "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff44336a88b58ceeb71bb_Group-dospo-v3.webp",
-    link: "/all",
-  },
+  // {
+  //   id: uuidv4(),
+  //   name: "All-In-One",
+  //   description: "Unmatched quality meets ultimate ease in Muha Meds' Gen3 disposable line.",
+  //   image: "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff44336a88b58ceeb71bb_Group-dospo-v3.webp",
+  //   link: "/all",
+  // },
   {
     id: uuidv4(),
     name: "Cartridges",

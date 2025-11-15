@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { ToggleThemeContext } from "../context/ToggleThemeContext";
 
 const Products = () => {
-  const [activeTab, setActiveTab] = useState("All-In-One");
+  const [activeTab, setActiveTab] = useState("Cartridges");
 
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
