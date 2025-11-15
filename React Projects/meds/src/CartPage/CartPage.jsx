@@ -29,7 +29,7 @@ const CartPage = () => {
   return (
     <div
       className="min-h-screen py-32 px-4 transition-colors duration-300"
-      style={{ background: themeStyle.bg, color: themeStyle.ui }}
+      style={{ background: themeStyle.bg, color: themeStyle.hex }}
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
@@ -82,25 +82,25 @@ const CartPage = () => {
                           className="w-24 h-24 object-cover rounded-xl shrink-0"
                         />
                         <div className="min-w-0 flex-1">
-                          <h3 className="font-semibold  mb-1 truncate text-red-400 text-xl">
+                          <h3 className="font-semibold  mb-1 truncate  text-xl">
                             {product?.name || `Product ${item.id}`}
                           </h3>
-                          <p className="text-yellow-500 font-medium mb-2 text-md">
+                          <p className=" font-medium mb-2 text-md">
                             {product?.type || "Product"}
                           </p>
-                          <p className="text-green-900 font-bold text-lg">
+                          <p className=" font-bold text-lg">
                             ${productPrice.toFixed(2)}
                           </p>
                         </div>
                       </div>
 
                       {/* Quantity Controls and Total */}
-                      <div className="flex items-center space-x-6 w-full sm:w-auto justify-between sm:justify-end"style={{color: themeStyle.ui }}>
+                      <div className="flex items-center space-x-6 w-full sm:w-auto justify-between sm:justify-end"style={{color: themeStyle.hex }}>
                         {/* Quantity Controls */}
                         <div className="flex items-center space-x-3 bg-black/20 rounded-lg p-1">
                           <button
                             onClick={() => removeOneFromCart(item.id)}
-                            className="p-1 rounded-full hover:bg-white/10 transition-colors"
+                            className="p-1 rounded-full transition-colors"
                             disabled={item.quantity <= 1}
                           >
                             <Minus size={16} />
@@ -112,7 +112,7 @@ const CartPage = () => {
                           
                           <button
                             onClick={() => addOneToCart(product)}
-                            className="p-1 rounded-full hover:bg-white/10 transition-colors cursor-pointer"
+                            className="p-1 rounded-full transition-colors cursor-pointer"
                           >
                             <Plus size={16} />
                           </button>
@@ -123,7 +123,7 @@ const CartPage = () => {
                           <p className="text-blue-400 font-bold text-lg">
                             ${itemTotal}
                           </p>
-                          <p className="text-md " style={{color: themeStyle.ui }}>
+                          <p className="text-md " style={{color: themeStyle.hex }}>
                             ${productPrice.toFixed(2)} × {item.quantity}
                           </p>
                         </div>
@@ -146,7 +146,7 @@ const CartPage = () => {
 
           {/* ================= RIGHT SIDE: SUMMARY / CHECKOUT ================= */}
           {items.length > 0 && (
-            <div className="sticky top-20 bg-white/10 backdrop-blur-md border border-gray-300/30 rounded-2xl shadow-xl p-6 h-fit">
+            <div className="sticky top-20 bg-white/10 backdrop-blur-md border border-gray-300/30 rounded-2xl shadow-xl p-6 h-fit" style={{color: themeStyle.hex }}>
               <h2 className="text-2xl font-semibold mb-6 border-b border-white/20 pb-4">
                 Order Summary
               </h2>
@@ -154,17 +154,17 @@ const CartPage = () => {
               {/* Order Details */}
               <div className="space-y-4 mb-6">
                 <div className="flex justify-between items-center">
-                  <span className="text-white/80">Items ({totalItemsCount})</span>
+                  <span className="">Items ({totalItemsCount})</span>
                   <span className="font-semibold">${totalCost.toFixed(2)}</span>
                 </div>
                 
                 <div className="flex justify-between items-center">
-                  <span className="text-white/80">Shipping</span>
+                  <span className="">Shipping</span>
                   <span className="text-green-400 font-semibold">FREE</span>
                 </div>
                 
                 <div className="flex justify-between items-center">
-                  <span className="text-white/80">Tax (10%)</span>
+                  <span className="">Tax (10%)</span>
                   <span>${tax.toFixed(2)}</span>
                 </div>
               </div>
@@ -180,7 +180,7 @@ const CartPage = () => {
               {/* Checkout Buttons */}
               <div className="space-y-3">
                 <button
-                  className="w-full py-4 flex items-center justify-center space-x-3 rounded-xl bg-linear-to-r from-yellow-500 to-yellow-600 text-white font-semibold hover:from-yellow-600 hover:to-yellow-700 transition-all shadow-lg hover:shadow-xl"
+                  className="w-full py-4 flex items-center justify-center space-x-3 rounded-xl bg-linear-to-r from-yellow-500 to-yellow-600 cursor-pointer font-semibold hover:from-yellow-600 hover:to-yellow-700 transition-all shadow-lg hover:shadow-xl"
                   onClick={() => alert("Proceed to Stripe Checkout")}
                 >
                   <CreditCard size={20} />
@@ -188,7 +188,7 @@ const CartPage = () => {
                 </button>
 
                 <button
-                  className="w-full py-4 flex items-center justify-center space-x-3 rounded-xl bg-[#003087] text-white font-semibold hover:bg-[#001f5c] transition-all shadow-lg hover:shadow-xl"
+                  className="w-full py-4 flex items-center justify-center space-x-3 rounded-xl bg-[#003087] cursor-pointer font-semibold hover:bg-[#001f5c] transition-all shadow-lg hover:shadow-xl"
                   onClick={() => alert("Proceed to PayPal Checkout")}
                 >
                   <Wallet size={20} />
@@ -200,7 +200,7 @@ const CartPage = () => {
                     if (window.confirm("Are you sure you want to clear your entire cart?"))
                       clearCart();
                   }}
-                  className="w-full py-3 bg-red-500/20 text-red-400 rounded-xl hover:bg-red-500/30 font-medium transition-colors border border-red-500/30"
+                  className="w-full py-3 bg-red-500/20 text-red-700 rounded-xl hover:bg-red-500/30 cursor-pointer font-medium transition-colors border border-red-500/30"
                 >
                   Clear Entire Cart
                 </button>
