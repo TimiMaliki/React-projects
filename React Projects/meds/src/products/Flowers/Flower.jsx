@@ -45,7 +45,7 @@ const FlavorSlider = ({ flavors }) => {
     <div className="absolute inset-0 bg-linear-to-t from-black/90 to-transparent"></div>
   </div>
 
-  {/* Text + Button */}
+  {/* Text Button */}
   <div className="p-4 space-y-1 absolute bottom-0 w-full">
 
     <h3 className="text-xl font-bold text-white drop-shadow">

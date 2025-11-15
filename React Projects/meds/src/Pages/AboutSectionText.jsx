@@ -20,7 +20,7 @@ const AboutSectionText = () => {
 
 
       <div className="max-w-4xl mx-auto text-center">
-        <p className="leading-relaxed text-base md:text-lg">
+        <p className="leading-relaxed text-md md:text-lg">
           Founded in 2018, in the heart of Los Angeles, Muha Meds is the
           pinnacle of what cannabis vaping is meant to be. Offering a superb,
           ethically operated, and transparent line of cannabis products, we
@@ -29,7 +29,7 @@ const AboutSectionText = () => {
           with the most premium quality cannabis oil, flavor, and portability.
         </p>
 
-        <p className="leading-relaxed text-base md:text-lg mt-6">
+        <p className="leading-relaxed text-md md:text-lg mt-6">
           Muha Meds is a spiritual wellness movement focused on providing those
           in need with alternative MEDs and enhancing quality of life. Our five
           pillars at Muha Meds are:{" "}
