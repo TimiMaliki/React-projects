@@ -91,15 +91,9 @@ const ConcentrateSection = () => {
   const videoStyle = isLight ? videoBg : videoUi;
   const videoSrc = isLight ? videoTheme.sourceOne : videoTheme.sourceTwo;
 
-  // Filter concentrates by type - FIXED for UUIDs
-  // Since we can't use numeric IDs anymore, we need to filter by array position
-  // Or add a category field to your data
-  const hashRosinFlavors = concentrateData.slice(0, 8); // First 8 items are Hash Rosin
-  const piatellaFlavors = concentrateData.slice(8); // Remaining items are Piatella
+  const hashRosinFlavors = concentrateData.slice(0, 8); 
+  const piatellaFlavors = concentrateData.slice(8); 
 
-  // ALTERNATIVE: If you want to be more explicit, you could add a category field to your data
-  // const hashRosinFlavors = concentrateData.filter(item => item.category === "hash-rosin");
-  // const piatellaFlavors = concentrateData.filter(item => item.category === "piatella");
 
   return (
     <section

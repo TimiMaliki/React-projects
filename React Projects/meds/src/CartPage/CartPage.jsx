@@ -79,7 +79,7 @@ const CartPage = () => {
                         <img
                           src={product?.image || product?.img || "/placeholder.jpg"}
                           alt={product?.name || "Product"}
-                          className="w-24 h-24 object-cover rounded-xl flex-shrink-0"
+                          className="w-24 h-24 object-cover rounded-xl shrink-0"
                         />
                         <div className="min-w-0 flex-1">
                           <h3 className="font-semibold  mb-1 truncate text-red-400 text-xl">
@@ -180,7 +180,7 @@ const CartPage = () => {
               {/* Checkout Buttons */}
               <div className="space-y-3">
                 <button
-                  className="w-full py-4 flex items-center justify-center space-x-3 rounded-xl bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold hover:from-yellow-600 hover:to-yellow-700 transition-all shadow-lg hover:shadow-xl"
+                  className="w-full py-4 flex items-center justify-center space-x-3 rounded-xl bg-linear-to-r from-yellow-500 to-yellow-600 text-white font-semibold hover:from-yellow-600 hover:to-yellow-700 transition-all shadow-lg hover:shadow-xl"
                   onClick={() => alert("Proceed to Stripe Checkout")}
                 >
                   <CreditCard size={20} />

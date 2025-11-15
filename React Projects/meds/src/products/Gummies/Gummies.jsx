@@ -90,9 +90,9 @@ const GummiesSection = () => {
   const videoStyle = isLight ? videoBg : videoUi;
   const videoSrc = isLight ? videoTheme.sourceOne : videoTheme.sourceTwo;
 
-  // Filter gummies by type - FIXED for UUIDs
-  const hashRosinGummies = gummiesData.slice(0, 5); // First 5 items are Hash Rosin Gummies
-  const infusedGummies = gummiesData.slice(5); // Remaining items are Infused Gummies
+  
+  const hashRosinGummies = gummiesData.slice(0, 5); 
+  const infusedGummies = gummiesData.slice(5); 
 
   return (
     <section
