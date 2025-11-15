@@ -60,7 +60,6 @@ const DistillateSection = () => {
           {Distileflavors.map((item, i) => (
             <SwiperSlide key={i}>
               <a
-                href={item.link}
                 className="block bg-white/10 rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 backdrop-blur-sm border border-slate-400"
               >
                 <img

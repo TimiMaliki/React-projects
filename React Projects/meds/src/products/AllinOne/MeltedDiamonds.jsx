@@ -64,7 +64,6 @@ const MeltedDiamonds = () => {
           {flavors.map((item, index) => (
             <SwiperSlide key={index}>
               <a
-                href={item.link}
                 className="group relative block overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition duration-300 border border-slate-400 "
               >
                 <img
