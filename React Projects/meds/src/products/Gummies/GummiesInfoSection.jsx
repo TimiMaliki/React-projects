@@ -15,15 +15,15 @@ const GummiesInfoSection = () => {
         color: videoStyle.ui,
       }}>
         <div>
-          <h5 className="font-bold mb-2">Discreet Potency, On-the-Go:</h5>
-          <p className="text-sm mb-4">
+          <h5 className="font-bold text-lg mb-2">Discreet Potency, On-the-Go:</h5>
+          <p className="text-md mb-4">
             Enjoy getting stoned on the low—our convenient formula means you can
             forget about the smell and get perfectly "faded on the go," anytime,
             anywhere.
           </p>
 
-          <h5 className="font-bold mb-2">Impeccable Flavor & Digestion:</h5>
-          <p className="text-sm">
+          <h5 className="font-bold text-lg mb-2">Impeccable Flavor & Digestion:</h5>
+          <p className="text-md">
             Hand-crafted using natural ingredients, our gummies deliver
             impeccable flavor that is easy on the palate and formulated for
             efficient, comfortable digestion.
@@ -39,15 +39,15 @@ const GummiesInfoSection = () => {
         </div>
 
         <div>
-          <h5 className="font-bold mb-2">Custom-Engineered High:</h5>
-          <p className="text-sm mb-4">
+          <h5 className="font-bold text-lg mb-2">Custom-Engineered High:</h5>
+          <p className="text-md mb-4">
             Infused with a proprietary flavorless THC, these gummies are
             custom-made to get you baked without the unwanted cannabis taste,
             ensuring an enjoyable experience from start to finish.
           </p>
 
-          <h5 className="font-bold mb-2">Find Your Perfect Dose:</h5>
-          <p className="text-sm">
+          <h5 className="font-bold text-lg mb-2">Find Your Perfect Dose:</h5>
+          <p className="text-md">
             Whether you need half a serving to get your mind right, a full one
             to mellow you out, or two or more to truly put you on your ass, we
             offer custom potency you can count on.

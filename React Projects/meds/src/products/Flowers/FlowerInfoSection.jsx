@@ -15,10 +15,10 @@ const FlowerInfoSection = () => {
         color: videoStyle.ui,
       }}>
           <div className="device-spec-info">
-            <h5 className="text-xl font-bold mb-2">
+            <h5 className="text-lg font-bold mb-2">
               Unparalleled Indoor Quality:
             </h5>
-            <p className="text-sm">
+            <p className="text-md">
               Experience the finest cannabis, grown in carefully controlled
               environments to ensure optimal conditions for vibrant appearance,
               dense structure, and exceptional quality in every bud.
@@ -32,10 +32,10 @@ const FlowerInfoSection = () => {
                     />
                   </div>
           <div className="device-spec-info">
-            <h5 className="text-xl font-bold mb-2">
+            <h5 className="text-lg font-bold mb-2">
               Crafted for the Connoisseur:
             </h5>
-            <p className="text-sm">
+            <p className="text-md">
               Whether you seek deep relaxation, sharp focus, or a burst of
               creative energy, our premium flower offers a smooth, flavorful
               experience tailored to any desired effect.

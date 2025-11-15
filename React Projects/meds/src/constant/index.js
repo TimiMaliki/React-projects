@@ -30,11 +30,6 @@ const downLinks = [
     href: "/products",
   },
   {
-    id: "Find Us",
-    title: "Find Us",
-    href: "/find",
-  },
-  {
     id: "Contact Us",
     title: "Contact Us",
     href: "/contact",
