@@ -45,10 +45,7 @@ const PressGrid = () => {
 
           {/* Content */}
           <div className="p-6">
-            <div className="flex justify-between items-center mb-3" style={{
-          background: themeStyle.bg,
-          color: themeStyle.hex,
-        }}>
+            <div className="flex justify-between items-center mb-3">
               <span className="text-lg font-semibold text-yellow-400 tracking-wide">
                 {item.author}
               </span>
