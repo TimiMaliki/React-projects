@@ -40,20 +40,16 @@ const footerLinks = [
   { name: "ABOUT US", href: "/about" },
   { name: "CONTACT US", href: "/contact" },
   { name: "VERIFICATION", href: "/muha-members" },
-  { name: "INFLUENCERS", href: "/influencers" },
-  { name: "REWARDS", href: "/rewards" },
-  { name: "TERMS OF SERVICE", href: "#" },
+  { name: "BLOG / PRESS", href: "/blog" },
   { name: "PRIVACY POLICY", href: "/privacy-policy" },
 ];
 
 const Explore = [
-  "ALL-IN-ONE",
   "CARTRIDGES",
-  "PRE-ROLLS",
+  "INFUSED",
   "FLOWER",
   "GUMMIES",
   "CONCENTRATES",
-  "BLOG / PRESS",
 ];
 
 const states = [

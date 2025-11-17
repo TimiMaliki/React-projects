@@ -15,6 +15,7 @@ import CartridgesID from "./ProductID/CatridgesID";
 import CartPage from "./CartPage/CartPage";
 import ContactPage from "./Pages/Contact";
 import PrivacyPolicy from "./Pages/Policy";
+import PressGrid from "./Blog/page/Blog";
 
 function App() {
   const router = createBrowserRouter([
@@ -33,6 +34,7 @@ function App() {
          { element: <CartPage/>, path: "/cartpage" },
           { element: <ContactPage/>, path: "/contact" },
            { element: <PrivacyPolicy/>, path: "/privacy-policy" },
+            { element: <PressGrid/>, path: "/blog" },
       
       ],
     },
