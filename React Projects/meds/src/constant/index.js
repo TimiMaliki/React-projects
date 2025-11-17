@@ -29,6 +29,16 @@ const downLinks = [
     title: " Products",
     href: "/products",
   },
+    {
+    id: " Blog",
+    title: "Blog",
+    href: "/blog",
+  },
+    {
+    id: "Verification",
+    title: "Verification",
+    href: "/verification",
+  },
   {
     id: "Contact Us",
     title: "Contact Us",

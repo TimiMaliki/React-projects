@@ -49,10 +49,10 @@ const PressGrid = () => {
           background: themeStyle.bg,
           color: themeStyle.hex,
         }}>
-              <span className="text-sm font-semibold text-yellow-400 tracking-wide">
+              <span className="text-lg font-semibold text-yellow-400 tracking-wide">
                 {item.author}
               </span>
-              <span className="text-xs">{item.date}</span>
+              <span className="text-md">{item.date}</span>
             </div>
 
             <h3
