@@ -63,9 +63,6 @@ const ProductVerification = () => {
             onClick={handleVerify}
             disabled={loading}
             className="px-6 bg-black text-white font-semibold flex items-center justify-center  cursor-pointer transition disabled:opacity-50"
-            style={{
-          color: themeStyle.hex,
-        }}
           >
             {loading ? (
               <div className="flex gap-1">
@@ -107,7 +104,7 @@ const ProductVerification = () => {
                 src="https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/64ac82af9311957ab6e602e4_check-283.png"
                 className="w-10 mb-2"
               />
-              Product Verified! 🎉
+              Product Verified! 
             </div>
           )}
         </div>
