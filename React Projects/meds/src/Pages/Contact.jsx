@@ -16,7 +16,7 @@ export default function ContactPage() {
         <h1 className="text-4xl md:text-5xl font-bold tracking-wide">
           CONNECT WITH US
         </h1>
-        <p className="mt-4 text-lg">
+        <p className="mt-4 text-xl">
           Contact us if you have any questions
         </p>
       </div>
