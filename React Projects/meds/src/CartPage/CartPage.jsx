@@ -184,9 +184,9 @@ const CartPage = () => {
                 >
                
                   <MailCheck size={20} />
-                  <a href="mailto:malikitimi@gmail.com"> <span>Send us an email</span></a>
+                  <a href="mailto:malikitimi@gmail.com"> <span>Send us a email</span></a>
                 </button>
-                <button
+                {/* <button
                   className="w-full py-4 flex items-center justify-center space-x-3 rounded-xl bg-linear-to-r from-yellow-500 to-yellow-600 cursor-pointer font-semibold hover:from-yellow-600 hover:to-yellow-700 transition-all shadow-lg hover:shadow-xl"
                   onClick={() => alert("Proceed to Stripe Checkout")}
                 >
@@ -201,7 +201,7 @@ const CartPage = () => {
                
                   <Wallet size={20} />
                  <span>Payment method with PayPal</span>
-                </button>
+                </button> */}
                 <button
                   onClick={() => {
                     if (window.confirm("Are you sure you want to clear your entire cart?"))
