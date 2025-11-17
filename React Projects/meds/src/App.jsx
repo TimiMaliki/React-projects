@@ -13,6 +13,7 @@ import ConcentrateSection from "./products/Concentrate/concentrate";
 import GummiesSection from "./products/Gummies/Gummies";
 import CartridgesID from "./ProductID/CatridgesID";
 import CartPage from "./CartPage/CartPage";
+import ContactPage from "./Pages/Contact";
 
 function App() {
   const router = createBrowserRouter([
@@ -29,6 +30,7 @@ function App() {
         { element: <ConcentrateSection />, path: "/concentrates" },
         { element: <GummiesSection />, path: "/gummies" },
          { element: <CartPage/>, path: "/cartpage" },
+          { element: <ContactPage/>, path: "/contact" },
       
       ],
     },
