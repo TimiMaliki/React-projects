@@ -124,7 +124,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-md ">
+      <div className="border-t border-black mt-10 pt-6 text-center text-md ">
         © {new Date().getFullYear()} Muha Meds. All rights reserved.
       </div>
     </footer>

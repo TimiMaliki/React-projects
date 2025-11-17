@@ -14,6 +14,7 @@ import GummiesSection from "./products/Gummies/Gummies";
 import CartridgesID from "./ProductID/CatridgesID";
 import CartPage from "./CartPage/CartPage";
 import ContactPage from "./Pages/Contact";
+import PrivacyPolicy from "./Pages/Policy";
 
 function App() {
   const router = createBrowserRouter([
@@ -31,6 +32,7 @@ function App() {
         { element: <GummiesSection />, path: "/gummies" },
          { element: <CartPage/>, path: "/cartpage" },
           { element: <ContactPage/>, path: "/contact" },
+           { element: <PrivacyPolicy/>, path: "/privacy-policy" },
       
       ],
     },
