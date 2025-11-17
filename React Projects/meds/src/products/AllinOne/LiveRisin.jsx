@@ -44,30 +44,30 @@ const LiveResinSection = () => {
       </div>
 
       {/* Swiper Slider */}
-      <div className="relative z-10 max-w-6xl mx-auto">
+      <div className="relative z-10 max-w-6xl mx-auto px-4">
         <Swiper
-          spaceBetween={20}
-          slidesPerView={2}
-          freeMode={true}
+           spaceBetween={20}
+          slidesPerView={1.3}
           breakpoints={{
-            640: { slidesPerView: 3 },
-            1024: { slidesPerView: 4 },
+            640: { slidesPerView: 2.2 },
+            1024: { slidesPerView: 3.5 },
           }}
-          className="pb-8"
+          grabCursor
+          freeMode
         >
           {liveflavors.map((item, i) => (
             <SwiperSlide key={i}>
               <a
-                className="block bg-white/10 rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 backdrop-blur-sm border border-slate-400"
+               className="group relative block overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition duration-300 border border-slate-400 "
               >
                 <img
                   src={item.image}
                   alt={item.name}
                   loading="lazy"
-                  className="w-full h-full object-cover rounded-t-2xl transform group-hover:scale-105 transition duration-500"
+                 className="w-full h-full object-cover rounded-t-2xl transform group-hover:scale-105 transition duration-500"
                 />
                 <div className="p-4 text-center">
-                  <h3 className="text-lg font-semibold">{item.name}</h3>
+                  <h3 className="text-lg font-semibold mt-1">{item.name}</h3>
                   <p className="text-md text-yellow-800">{item.type}</p>
                 </div>
               </a>
