@@ -16,6 +16,7 @@ import CartPage from "./CartPage/CartPage";
 import ContactPage from "./Pages/Contact";
 import PrivacyPolicy from "./Pages/Policy";
 import PressGrid from "./Blog/page/Blog";
+import ProductVerification from "./Pages/Verification";
 
 function App() {
   const router = createBrowserRouter([
@@ -31,11 +32,11 @@ function App() {
         { element: <PreRollsSection />, path: "/infused" },
         { element: <ConcentrateSection />, path: "/concentrates" },
         { element: <GummiesSection />, path: "/gummies" },
-         { element: <CartPage/>, path: "/cartpage" },
-          { element: <ContactPage/>, path: "/contact" },
-           { element: <PrivacyPolicy/>, path: "/privacy-policy" },
-            { element: <PressGrid/>, path: "/blog" },
-      
+        { element: <CartPage />, path: "/cartpage" },
+        { element: <ContactPage />, path: "/contact" },
+        { element: <PrivacyPolicy />, path: "/privacy-policy" },
+        { element: <PressGrid />, path: "/blog" },
+        { element: <ProductVerification />, path: "/verification" },
       ],
     },
   ]);

@@ -39,7 +39,7 @@ const downLinks = [
 const footerLinks = [
   { name: "ABOUT US", href: "/about" },
   { name: "CONTACT US", href: "/contact" },
-  { name: "VERIFICATION", href: "/muha-members" },
+  { name: "VERIFICATION", href: "/verification" },
   { name: "BLOG / PRESS", href: "/blog" },
   { name: "PRIVACY POLICY", href: "/privacy-policy" },
 ];
