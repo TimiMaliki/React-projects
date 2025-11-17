@@ -17,6 +17,8 @@ import ContactPage from "./Pages/Contact";
 import PrivacyPolicy from "./Pages/Policy";
 import PressGrid from "./Blog/page/Blog";
 import ProductVerification from "./Pages/Verification";
+import MerchSection from "./Pages/MerchSelection";
+import ComingSoon from "./Pages/ComingSoon";
 
 function App() {
   const router = createBrowserRouter([
@@ -37,6 +39,7 @@ function App() {
         { element: <PrivacyPolicy />, path: "/privacy-policy" },
         { element: <PressGrid />, path: "/blog" },
         { element: <ProductVerification />, path: "/verification" },
+        { element: <ComingSoon />, path: "/coming-soon" },
       ],
     },
   ]);

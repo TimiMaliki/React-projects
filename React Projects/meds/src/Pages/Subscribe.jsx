@@ -46,12 +46,12 @@ const Subscribe = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <input
-            type="email"
+           nge={(e) => setEmail(e.target.value)}
+            required type="email"
             name="email"
             id="email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
+            onCha
             placeholder="Enter Email"
             className="w-full sm:w-auto flex-1 px-4 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-black transition"
           />
