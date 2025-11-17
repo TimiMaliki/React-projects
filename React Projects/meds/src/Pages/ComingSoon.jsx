@@ -85,7 +85,7 @@ const ComingSoon = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7, duration: 0.8 }}
-        className="mt-10 w-full max-w-lg bg-white/10 border border-white/20 rounded-full backdrop-blur-xl flex p-2"
+        className="mt-10 w-full max-w-lg bg-white/10 border border-black rounded-full backdrop-blur-xl flex p-2"
       >
         <input
           type="email"
