@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import { ToggleThemeContext } from "../context/ToggleThemeContext";
-import { Trash2, ShoppingCart, CreditCard, Wallet, Plus, Minus, ArrowLeft } from "lucide-react";
+import { Trash2, ShoppingCart, CreditCard, Wallet, Plus, Minus, ArrowLeft, MailCheck } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
 const CartPage = () => {
@@ -159,7 +159,7 @@ const CartPage = () => {
                 
                 <div className="flex justify-between items-center">
                   <span className="">Shipping</span>
-                  <span className="text-green-400 font-semibold">FREE</span>
+                  <span className="text-green-400 font-semibold">$20</span>
                 </div>
                 
                 <div className="flex justify-between items-center">
@@ -178,22 +178,30 @@ const CartPage = () => {
 
               {/* Checkout Buttons */}
               <div className="space-y-3">
+                  <button
+                  className="w-full py-4 flex items-center justify-center space-x-3 rounded-xl bg-[#008707] cursor-pointer font-semibold hover:bg-[#005c1c] transition-all shadow-lg hover:shadow-xl"
+                  onClick={() => alert("Proceed to PayPal Checkout")}
+                >
+               
+                  <MailCheck size={20} />
+                  <a href="mailto:malikitimi@gmail.com"> <span>Send us an email</span></a>
+                </button>
                 <button
                   className="w-full py-4 flex items-center justify-center space-x-3 rounded-xl bg-linear-to-r from-yellow-500 to-yellow-600 cursor-pointer font-semibold hover:from-yellow-600 hover:to-yellow-700 transition-all shadow-lg hover:shadow-xl"
                   onClick={() => alert("Proceed to Stripe Checkout")}
                 >
                   <CreditCard size={20} />
-                  <span>Pay with Stripe</span>
+                  <span>Payment method with Stripe</span>
                 </button>
-
+               
                 <button
                   className="w-full py-4 flex items-center justify-center space-x-3 rounded-xl bg-[#003087] cursor-pointer font-semibold hover:bg-[#001f5c] transition-all shadow-lg hover:shadow-xl"
                   onClick={() => alert("Proceed to PayPal Checkout")}
                 >
+               
                   <Wallet size={20} />
-                  <span>Pay with PayPal</span>
+                 <span>Payment method with PayPal</span>
                 </button>
-
                 <button
                   onClick={() => {
                     if (window.confirm("Are you sure you want to clear your entire cart?"))
