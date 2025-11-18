@@ -55,7 +55,7 @@ const FlavorSlider = ({ flavors }) => {
                   {item.name}
                 </h3>
 
-                <div className="flex  justify-between items-center">
+                <div className="flex flex-col justify-between items-center">
                   <p className="text-yellow-300 font-semibold">{item.type}</p>
 
                   <p className="text-yellow-300 font-semibold">{item.strain}</p>

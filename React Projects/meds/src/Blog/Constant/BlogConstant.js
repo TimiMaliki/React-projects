@@ -5,7 +5,7 @@
       image: "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/668c4572cc0180205028ddb9_Blog-july-3.png",
       alt: "MG MAGAZINE",
       author: "MG MAGAZINE",
-      date: "May 17, 2024",
+      date: "May 17, 2025",
       title: "Cannabis Industry Reacts to Rescheduling Proposal"
     },
     {
@@ -14,7 +14,7 @@
       image: "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/668c43ed79f2fa3a3dd77491_Blog-july-2.png",
       alt: "NUG MAGAZINE",
       author: "NUG MAGAZINE",
-      date: "May 02, 2024",
+      date: "May 02, 2025",
       title: "Cannabis Community, Investors React to DEA Decision To Reschedule"
     },
     {
