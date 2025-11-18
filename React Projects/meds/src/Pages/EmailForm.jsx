@@ -10,8 +10,6 @@ function EmailForm() {
       <h1 className="text-2xl font-bold md:col-span-2">CONTACT US</h1>
 
 
-
-
         <div className="grid grid-cols-2 gap-6 md:col-span-2">
         
           <a href="mailto:support@muhameds.com" className="block  mb-6 transition">
