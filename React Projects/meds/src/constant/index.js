@@ -863,11 +863,75 @@ const liveflavors = [
 const Flowerflavors = [
   {
     id: uuidv4(),
+    name: "Bacio Gelato",
+    type: "Sativa | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Bacio-Gelato-2-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Bacio-Gelato-3-300x300.webp",
+    link: "https://muhacbd.com/product/bacio-gelato-thc-a-4-gram-flower-jar/",
+    categories: ["flower", "sativa", "thc-a", "thca-flower-4g"],
+    price: "$60.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Black Truffle",
+    type: "Hybrid | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Black-Truffle-2-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Black-Truffle-300x300.webp",
+    link: "https://muhacbd.com/product/black-truffle-thc-a-4-gram-flower-jar/",
+    categories: ["flower", "hybrid", "thc-a", "thca-flower-4g"],
+    price: "$60.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Frosted Cherries",
+    type: "Indica | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Frosted-Cherries-2-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Frosted-Cherries-300x300.webp",
+    link: "https://muhacbd.com/product/frosted-cherries-thc-a-4-gram-flower-jar/",
+    categories: ["flower", "indica", "thc-a", "thca-flower-4g"],
+    price: "$60.00",
+  },
+  {
+    id: uuidv4(),
     name: "Strawberry Mimosa",
-    type: "Sativa",
-    link: "/ca-flower/strawberry-mimosa",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3269cbb5ae9bb2467ce3d_CA-FLOWER-STRAWBERRYMIMOSA.webp",
-    price: "$60.00"
+    type: "Sativa | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Strawberry-Mimosa-2-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Strawberry-Mimosa-300x300.png",
+    link: "https://muhacbd.com/product/strawberry-mimosa-thc-a-4-gram-flower-jar/",
+    categories: ["flower", "sativa", "thc-a", "thca-flower-4g"],
+    price: "$60.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Pink Runtz",
+    type: "Hybrid | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Pink-Runtz-2-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Pink-Runtz-300x300.webp",
+    link: "https://muhacbd.com/product/pink-runtz-thc-a-4-gram-flower-jar/",
+    categories: ["flower", "hybrid", "thc-a", "thca-flower-4g"],
+    price: "$60.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Gush Mintz",
+    type: "Indica | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Gush-Mintz-2-300x300.png",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Gush-Mintz-300x300.webp",
+    link: "https://muhacbd.com/product/gush-mintz-thc-a-4-gram-flower-jar/",
+    categories: ["flower", "indica", "thc-a", "thca-flower-4g"],
+    price: "$60.00",
   },
   {
     id: uuidv4(),
@@ -887,34 +951,10 @@ const Flowerflavors = [
   },
   {
     id: uuidv4(),
-    name: "Frosted Cherries",
-    type: "Hybrid",
-    link: "/ca-flower/frosted-cherries",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326b67782e21e4db00726_CA-FLOWER-FROSTEDCHERRIES.webp",
-    price: "$60.00"
-  },
-  {
-    id: uuidv4(),
     name: "Adios MF",
     type: "Indica",
     link: "/ca-flower/adios-mf",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326bd78675ff962540fa3_CA-FLOWER-ADIOSMF.webp",
-    price: "$60.00"
-  },
-  {
-    id: uuidv4(),
-    name: "Black Truffle",
-    type: "Hybrid",
-    link: "/ca-flower/black-truffle",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326c7326bab35805480e4_CA-FLOWER-BLACKTRUFFLE.webp",
-    price: "$60.00"
-  },
-  {
-    id: uuidv4(),
-    name: "Bacio Gelato",
-    type: "Hybrid",
-    link: "/ca-flower/bacio-gelato",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326ce8a243929a9a0b270_CA-FLOWER-BACIOGELATO.webp",
     price: "$60.00"
   },
   {
@@ -924,6 +964,94 @@ const Flowerflavors = [
     link: "/ca-flower/brain-freeze",
     img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32691cdca16a714d21717_CA-FLOWER-BRAINFREEZE.webp",
     price: "$60.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Skittles",
+    type: "Indica | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/667370555478fee80cd9ce89_MM-Hemp-THCA-Flower-Skittles-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/skittles-thc-a-flower/",
+    categories: ["flower", "indica", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Bored Ape Runtz",
+    type: "Indica | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/667379842e83bc46151cacb0_MM-Hemp-THCA-Flower-Runtz-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/bored-ape-runtz-thc-a-flower/",
+    categories: ["flower", "indica", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Banana Cream Cake",
+    type: "Indica | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/66737a78f38f85db7959c4a3_MM-Hemp-THCA-Flower-Banana-Cream-Cake-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/banana-cream-cake-thc-a-flower/",
+    categories: ["flower", "indica", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Lemon Cherry Gelato",
+    type: "Hybrid | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/66737b85c5812ec92c47f29c_MM-Hemp-THCA-Flower-Lemon-Cherry-Gelato-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/lemon-cherry-gelato-thc-a-flower/",
+    categories: ["flower", "hybrid", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Purple Wookies",
+    type: "Hybrid | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/66737c81d2726c15515ea559_MM-Hemp-THCA-Flower-Purple-Wookies-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/purple-wookies-thc-a-flower/",
+    categories: ["flower", "hybrid", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Gummiez",
+    type: "Hybrid | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/6673876f476ff08e9a46cded_MM-Hemp-THCA-Flower-Gummiez2-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/gummiez-thc-a-flower/",
+    categories: ["flower", "hybrid", "new-products", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Lolipop",
+    type: "Sativa | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/6673826fce612276af5c3e9e_MM-Hemp-THCA-Flower-Lolipop-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/lolipop-thc-a-flower/",
+    categories: ["flower", "sativa", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
+  },
+  {
+    id: uuidv4(),
+    name: "White Truffle",
+    type: "Hybrid | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/66737f113cd4ba666c435c9f_MM-Hemp-THCA-Flower-White-Truffle-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/white-truffle-thc-a-flower/",
+    categories: ["flower", "hybrid", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
   },
 ];
 
