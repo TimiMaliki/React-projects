@@ -53,7 +53,7 @@ const Intro = () => {
         </h1>
 
         <p
-          className="mt-6text-base sm:text-lg md:text-xl max-w-2xl mx-auto"
+          className="mt-6 text-lg sm:text-lg md:text-xl max-w-2xl mx-auto"
           data-aos="fade-up"
           data-aos-delay="500"
         >
