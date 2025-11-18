@@ -1,16 +1,21 @@
 import { useContext } from "react";
 import { ToggleThemeContext } from "../context/ToggleThemeContext";
+import { CartContext } from "../context/CartContext";
 
 const AboutCards = () => {
         const { isLight, dark, light } = useContext(ToggleThemeContext);
           const themeStyle = isLight ? light : dark;
+          const { clearCart} = useContext(CartContext);
   return (
+  
     <section className="py-20 px-6 md:px-20 transition-colors duration-500" style={{
         background: themeStyle.bg,
         color: themeStyle.hex,
       }}>
+      
       <div className="max-w-7xl mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-        
+  
+
         {/* CARD 1 */}
         <div className=" rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-2xl transition border-t-4 border-amber-500 dark:border-amber-400">
           <h2 className="text-2xl font-bold   mb-4">
@@ -52,6 +57,8 @@ const AboutCards = () => {
           </p>
         </div>
 
+  
+
         {/* CARD 4 */}
         <div className=" rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-2xl transition border-t-4 border-amber-500 dark:border-amber-400">
           <h2 className="text-2xl font-bold   mb-4">
@@ -82,6 +89,7 @@ const AboutCards = () => {
           </p>
         </div>
 
+
         {/* CARD 6 — 4Ocean */}
         <div className=" rounded-2xl shadow-lg p-8 flex flex-col items-center text-center hover:shadow-2xl transition border-t-4 border-amber-500 dark:border-amber-400">
           <img
@@ -96,6 +104,8 @@ const AboutCards = () => {
           </p>
         </div>
       </div>
+
+      
     </section>
   );
 };

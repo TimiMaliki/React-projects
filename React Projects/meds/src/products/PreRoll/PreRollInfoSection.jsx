@@ -8,7 +8,7 @@ const PreRollInfoSection = () => {
        useContext(ToggleThemeContext);
       const videoStyle = isLight ? videoBg : videoUi;
   return (
-   <div className="grid md:grid-cols-3 gap-10 mt-20 text-left max-w-5xl mx-auto" style={{
+   <div className="grid md:grid-cols-3 gap-10 mt-20 text-left max-w-5xl mx-auto px-4 text-left" style={{
         background: videoStyle.bg,
         color: videoStyle.ui,
       }}>

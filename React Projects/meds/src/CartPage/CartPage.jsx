@@ -214,8 +214,8 @@ const CartPage = () => {
               </div>
 
               {/* Security Badge */}
-              <div className="mt-6 pt-4 border-t border-white/20 text-center">
-                <p className="text-white/60 text-sm flex items-center justify-center space-x-2">
+              <div className="mt-6 pt-4 border-t  text-center" style={{color: themeStyle.hex }}>
+                <p className="text-sm flex items-center justify-center space-x-2">
                   <span>🔒</span>
                   <span>Secure checkout · Encrypted payment</span>
                 </p>

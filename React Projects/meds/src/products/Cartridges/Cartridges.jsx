@@ -3,7 +3,7 @@ import "swiper/css";
 import { useContext } from "react";
 import { ToggleThemeContext } from "../../context/ToggleThemeContext";
 import { CartContext } from "../../context/CartContext";
-import { cartridgeData } from "../../constant";
+import { cartridgeData } from "../../constant/index";
 import CartridgesInfoSection from "./CartridgesInfoSection";
 
 const FlavorSlider = ({ flavors }) => {
@@ -51,10 +51,15 @@ const FlavorSlider = ({ flavors }) => {
     <h3 className="text-xl font-bold text-white drop-shadow">
       {item.name}
     </h3>
-
-    <p className="text-yellow-300 font-semibold">
+   <div className="flex  justify-between items-center">
+     <p className="text-yellow-300 font-semibold">
       {item.type}
     </p>
+
+ <p className="text-yellow-300 font-semibold">
+      {item.strain}
+    </p>
+   </div>
 
     {item.price && (
       <p className="text-green-300 font-extrabold text-lg drop-shadow">
