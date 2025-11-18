@@ -59,6 +59,10 @@ const FlavorSlider = ({ flavors }) => {
  <p className="text-yellow-300 font-semibold">
       {item.strain}
     </p>
+
+     <p className="text-yellow-300 font-semibold">
+      {item.size}
+    </p>
    </div>
 
     {item.price && (

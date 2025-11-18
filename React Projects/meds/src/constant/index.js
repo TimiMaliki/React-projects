@@ -1121,86 +1121,233 @@ const gummiesData = [
 ];
 
 const prerollFlavors = [
-  {
+ {
     id: uuidv4(),
-    name: "WATERMELON",
-    type: "Hybrid",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32c2a7effe33246db9eed_CA-PR-INFUSED-WATERMELON.webp",
-    link: "/ca-pre-rolls-infused/watermelon",
-    price: "$15.00"
+    name: "Mango Peach Rings",
+    type: "Hybrid | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-MangoPeachRings-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-MangoPeachRings-2-300x300.webp",
+    link: "https://muhacbd.com/product/mango-peach-rings-thc-a-mates-pre-rolls/",
+    categories: ["hybrid", "pre-rolls", "thc-a", "thca-pre-rolls-3g"],
+    price: "$30.00",
   },
   {
     id: uuidv4(),
-    name: "VANILLA COOKIES",
-    type: "Indica",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32c1d9bd4e56879522940_CA-PR-INFUSED-VANILLACOOKIES.webp",
-    link: "/ca-pre-rolls-infused/vanilla-cookies",
-    price: "$15.00"
+    name: "Purple Punch",
+    type: "Sativa | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-PurplePunch-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-PurplePunch-2-300x300.webp",
+    link: "https://muhacbd.com/product/purple-punch-thc-a-mates-pre-rolls/",
+    categories: [
+      "new-products",
+      "pre-rolls",
+      "sativa",
+      "thc-a",
+      "thca-pre-rolls-3g",
+    ],
+    price: "$30.00",
   },
   {
     id: uuidv4(),
-    name: "THIN MINTS",
-    type: "Indica",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32bfea84a7e56f51c2cf9_CA-PR-INFUSED-THINMINTSOG.webp",
-    link: "/ca-pre-rolls-infused/thin-mints",
-    price: "$15.00"
+    name: "Thin Mints OG",
+    type: "Indica | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-ThinMintsOG-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-ThinMintsOG-2-300x300.webp",
+    link: "https://muhacbd.com/product/thin-mints-og-thc-a-mates-pre-rolls/",
+    categories: ["indica", "pre-rolls", "thc-a", "thca-pre-rolls-3g"],
+    price: "$30.00",
   },
   {
     id: uuidv4(),
-    name: "STRAWBERRY DREAM",
-    type: "Indica",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32ca0ef07c53d2e75b656_CA-PR-INFUSED-STRAWBERRYDREAM.webp",
-    link: "/ca-pre-rolls-infused/strawbery-dream",
-    price: "$15.00"
+    name: "Blueberry Zaza",
+    type: "Sativa | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-BlueberryZaza-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-BlueberryZaza-2-300x300.webp",
+    link: "https://muhacbd.com/product/blueberry-zaza-thc-a-mates-pre-rolls/",
+    categories: ["pre-rolls", "sativa", "thc-a", "thca-pre-rolls-3g"],
+    price: "$30.00",
   },
   {
     id: uuidv4(),
-    name: "PINA COLADA",
-    type: "Hybrid",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32bb1aca239f0eb75a806_CA-PR-INFUSED-PINACOLADA.webp",
-    link: "/ca-pre-rolls-infused/pina-colada",
-    price: "$15.00"
+    name: "Orange Cake",
+    type: "Hybrid | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-OrangeCake-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-OrangeCake-2-300x300.webp",
+    link: "https://muhacbd.com/product/orange-cake-thc-a-mates-pre-rolls/",
+    categories: ["hybrid", "pre-rolls", "thc-a", "thca-pre-rolls-3g"],
+    price: "$30.00",
   },
   {
     id: uuidv4(),
-    name: "ORANGE CAKE",
-    type: "Hybrid",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32ba8ba4ee29c2eecc0c1_CA-PR-INFUSED-ORANGECAKE.webp",
-    link: "/ca-pre-rolls-infused/orange-cake",
-    price: "$15.00"
+    name: "Strawberry Dream",
+    type: "Indica | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-StrawberryDream-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-StrawberryDream-2-300x300.webp",
+    link: "https://muhacbd.com/product/strawberry-dream-thc-a-mates-pre-rolls/",
+    categories: ["indica", "pre-rolls", "thc-a", "thca-pre-rolls-3g"],
+    price: "$30.00",
   },
   {
     id: uuidv4(),
-    name: "PURPLE PUNCH",
-    type: "Sativa",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32b9f3f046c2fef51c668_CA-PR-INFUSED-PUERPLEPUNCH.webp",
-    link: "/ca-pre-rolls-infused/purple-punch-2",
-    price: "$15.00"
+    name: "Blue Razz",
+    type: "Hybrid | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc786771ee2f2a1966c1_657be333b691743f47977281_Hemp_PreRolls_D8_Front_BlueRazz_V1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc786771ee2f2a1966c8_657cfc4074351fdd7e7b74a2_Hemp_PreRolls_D8_45_BlueRazz_V1-300x300.webp",
+    link: "https://muhacbd.com/product/blue-razz-delta-8-pre-rolls/",
+    categories: ["delta-8", "hybrid", "pre-rolls"],
+    price: "$20.00",
   },
   {
     id: uuidv4(),
-    name: "MANGO PEACH RINGS",
-    type: "Hybrid",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32b97c795495cbae7e776_CA-PR-INFUSED-MANGOPEACHRINGS.webp",
-    link: "/ca-pre-rolls-infused/mango-peach-rings",
-    price: "$15.00"
+    name: "Pumpkin Spice Latte",
+    type: "Indica | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc78bc74a141641fad90_657be761d607df7181adfd24_Hemp_PreRolls_D8_Front_PumpkinSpiceLatte_V1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc78bc74a141641fad95_657be787f54bc18beca777ea_Hemp_PreRolls_D8_45_PumpkinSpiceLatte_V1-300x300.webp",
+    link: "https://muhacbd.com/product/pumpkin-spice-latte-delta-8-pre-rolls/",
+    categories: ["delta-8", "indica", "pre-rolls"],
+    price: "$20.00",
   },
   {
     id: uuidv4(),
-    name: "BLUEBERRY ZAZA",
-    type: "Sativa",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32b8f1471bde84a481356_CA-PR-INFUSED-BLUEBERRYZAZA.webp",
-    link: "/ca-pre-rolls-infused/blueberry-zaza",
-    price: "$15.00"
+    name: "Muha OG",
+    type: "Indica | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc7846482d06852fa935_657be68fdaccda78d8416266_Hemp_PreRolls_D8_Front_MuhaOG_V1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc7846482d06852fa93a_657be6b5ab70e52dc89fb595_Hemp_PreRolls_D8_45_MuhaOG_V1-300x300.webp",
+    link: "https://muhacbd.com/product/muha-og-delta-8-pre-rolls/",
+    categories: ["delta-8", "indica", "pre-rolls"],
+    price: "$20.00",
   },
   {
     id: uuidv4(),
-    name: "APPLE TART",
-    type: "Hybrid",
-    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32b87cf184b318ba53425_CA-PR-INFUSED-APPLETART.webp",
-    link: "/ca-pre-rolls-infused/apple-tart",
-    price: "$15.00"
+    name: "Presidential OG",
+    type: "Hybrid | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc78a2737dfe70ec929e_657be716a9a9393d78c6f683_Hemp_PreRolls_D8_Front_PresidentialOG_V1-1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc78a2737dfe70ec9296_657be73f854c5f663de065fb_Hemp_PreRolls_D8_45_PresidentialOG_V1-1-300x300.webp",
+    link: "https://muhacbd.com/product/presidential-og-delta-8-pre-rolls/",
+    categories: ["delta-8", "hybrid", "pre-rolls"],
+    price: "$20.00",
   },
+  {
+    id: uuidv4(),
+    name: "Orange Burst",
+    type: "Hybrid | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc7804a5b7fd2023f597_657be6cb8fb664912ad67742_Hemp_PreRolls_D8_Front_OrangeBurst_V1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc7804a5b7fd2023f590_657be6fa021f733dd561b8b1_Hemp_PreRolls_D8_45_OrangeBurst_V1-300x300.webp",
+    link: "https://muhacbd.com/product/orange-burst-delta-8-pre-rolls/",
+    categories: ["delta-8", "hybrid", "pre-rolls"],
+    price: "$20.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Honey Jack",
+    type: "Sativa | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc789f0ba90baf796157_657be64c6b11104f10a66ce0_Hemp_PreRolls_D8_Front_HoneyJack_V1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc789f0ba90baf79613f_657be679f54bc18beca6e293_Hemp_PreRolls_D8_45_HoneyJack_V1-300x300.webp",
+    link: "https://muhacbd.com/product/honey-jack-delta-8-pre-rolls/",
+    categories: ["delta-8", "pre-rolls", "sativa"],
+    price: "$20.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Green Apple Runtz",
+    type: "Indica | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc781e1e1d5bf3261833_657be5a9d13dd32edc2af778_Hemp_PreRolls_D8_Front_GreenAppleRuntz_V1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc781e1e1d5bf3261830_657be5faab70e52dc89f3980_Hemp_PreRolls_D8_45_GreenAppleRuntz_V1-300x300.webp",
+    link: "https://muhacbd.com/product/green-apple-runtz-delta-8-pre-rolls/",
+    categories: ["delta-8", "indica", "pre-rolls"],
+    price: "$20.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Strawberry ShortCake",
+    type: "Indica | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc7891a9e3f9f05da74e_657be7bb6a943cd35808b15b_Hemp_PreRolls_D8_Front_StrawberryShortCake_V1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc7891a9e3f9f05da747_657be7d96a943cd35808c123_Hemp_PreRolls_D8_45_StrawberryShortCake_V1-300x300.webp",
+    link: "https://muhacbd.com/product/strawberry-shortcake-delta-8-pre-rolls/",
+    categories: ["delta-8", "indica", "pre-rolls"],
+    price: "$20.00",
+  },
+  {
+    id: uuidv4(),
+    name: "White Widow",
+    type: "Hybrid | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-WhiteWidow-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-WhiteWidow-2-300x300.webp",
+    link: "https://muhacbd.com/product/white-widow-thc-a-king-pre-roll/",
+    categories: ["hybrid", "pre-rolls", "thc-a", "thca-pre-rolls-1-5g"],
+    price: "$16.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Chilled Cherries",
+    type: "Indica | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-ChilledCherries-300x300.png",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-ChilledCherries-2-300x300.webp",
+    link: "https://muhacbd.com/product/chilled-cherries-thc-a-king-pre-roll/",
+    categories: ["indica", "pre-rolls", "thc-a", "thca-pre-rolls-1-5g"],
+    price: "$16.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Mimosa",
+    type: "Sativa | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-Mimosa-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-Mimosa-2-300x300.webp",
+    link: "https://muhacbd.com/product/mimosa-thc-a-king-pre-roll/",
+    categories: ["pre-rolls", "sativa", "thc-a", "thca-pre-rolls-1-5g"],
+    price: "$16.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Blackberry Kush",
+    type: "Hybrid | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-BlackberryKush-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-BlackberryKush-2-300x300.webp",
+    link: "https://muhacbd.com/product/blackberry-kush-thc-a-king-pre-roll/",
+    categories: ["hybrid", "pre-rolls", "thc-a", "thca-pre-rolls-1-5g"],
+    price: "$16.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Northern Lights",
+    type: "Indica | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-NorthernLights-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-NorthernLights-2-300x300.webp",
+    link: "https://muhacbd.com/product/northern-lights-thc-a-king-pre-roll/",
+    categories: ["indica", "pre-rolls", "thc-a", "thca-pre-rolls-1-5g"],
+    price: "$16.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Alpine Guava",
+    type: "Sativa | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-AlpineGuava-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-AlpineGuava-2-300x300.webp",
+    link: "https://muhacbd.com/product/alpine-guava-thc-a-king-pre-roll/",
+    categories: ["pre-rolls", "sativa", "thc-a", "thca-pre-rolls-1-5g"],
+    price: "$16.00",
+  }
+  
 ];
 
 export {
