@@ -33,7 +33,7 @@
       alt: "NEWS CONCERNS",
       author: "NEWS CONCERNS",
       date: "April 20, 2024",
-      title: "Clebs Who Belong on Marijuana's Mount Rushmore"
+      title: "Celebs Who Belong on Marijuana's Mount Rushmore"
     },
     {
       id: 5,
@@ -121,14 +121,3 @@
 
  
     
-//  price: "$18.00",
-//  price: "$18.00",
-//  price: "$18.00",
-//  price: "$18.00",
-//  price: "$18.00",
-//  price: "$18.00",
-//  price: "$18.00",
-//  price: "$18.00",
-//  price: "$18.00",
-//  price: "$18.00",
-//  price: "$18.00",

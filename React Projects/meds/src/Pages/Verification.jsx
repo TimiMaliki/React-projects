@@ -42,8 +42,8 @@ const ProductVerification = () => {
         Scratch off the verification label on the back of the product and enter the code below.
       </p>
 
-      {/* Input + Button */}
-      <div className="flex flex-col gap-6" style={{
+      {/* Input  Button */}
+      <div className="flex flex-col gap-6 p-3 md:p-0" style={{
           color: themeStyle.hex,
         }}>
         <div className="flex  rounded-xl shadow-md overflow-hidden border border-gray-200">
