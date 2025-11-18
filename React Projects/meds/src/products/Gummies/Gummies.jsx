@@ -90,9 +90,8 @@ const GummiesSection = () => {
   const videoStyle = isLight ? videoBg : videoUi;
   const videoSrc = isLight ? videoTheme.sourceOne : videoTheme.sourceTwo;
 
-  
-  const hashRosinGummies = gummiesData.slice(0, 5); 
-  const infusedGummies = gummiesData.slice(5); 
+  const hashRosinGummies = gummiesData.slice(0, 5);
+  const infusedGummies = gummiesData.slice(5);
 
   return (
     <section

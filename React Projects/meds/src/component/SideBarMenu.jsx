@@ -5,7 +5,7 @@ import { ToggleThemeContext } from "../context/ToggleThemeContext";
 import { Link } from "react-router-dom";
 
 const SideBarMenu = () => {
-  const { menuOpen } = useContext(HamburgerContext);
+  const { menuOpen , setMenuOpen } = useContext(HamburgerContext);
   const { isLight, dark, light } = useContext(ToggleThemeContext);
   const themeStyle = isLight ? light : dark;
   return (
@@ -21,7 +21,7 @@ const SideBarMenu = () => {
       }}
     >
       {downLinks.map((link) => (
-        <Link to={link.href}  key={link.id}>
+        <Link to={link.href}  key={link.id}  onClick={() => setMenuOpen(false)} >
         <div
           className="flex flex-col items-center py-3 px-6 text-xl"
         >
