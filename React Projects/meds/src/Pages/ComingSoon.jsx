@@ -94,9 +94,9 @@ const ComingSoon = () => {
             onChange={(e) => setEmail(e.target.value)}
             required
           placeholder="Enter your email"
-          className="flex-1 bg-transparent px-4 rounded-full outline-none"
+          className="flex-1 bg-transparent px-4 rounded-full outline-none w-full"
         />
-        <button onClick={handleSubmit} className="bg-yellow-500 hover:bg-yellow-600 transition text-black font-semibold px-6 py-2 rounded-full flex items-center gap-2 cursor-pointer">
+        <button onClick={handleSubmit} className="bg-yellow-500 hover:bg-yellow-600 transition text-black font-semibold px-3 py-2 md:px-6 md:py-2 rounded-full flex items-center gap-2 cursor-pointer">
           <Mail size={18} />
           Notify Me
         </button>
