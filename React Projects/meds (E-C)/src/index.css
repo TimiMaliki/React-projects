@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+.dropdown-menu-transition {
+  transition: all 0.5s ease-in-out;
+}
+body{
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 200;
+}
+
+.muhameds-img{
+   background-image: url("../src/Images/muhaMedMerch.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.muhaherb-img{
+   background-image: url("../src/Images/muhaMeds.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}

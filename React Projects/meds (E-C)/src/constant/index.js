@@ -1,0 +1,1499 @@
+import { v4 as uuidv4 } from "uuid";
+// import {cartridgeData} from "./Cartridges";
+
+const links = [
+  {
+    id: "Home",
+    title: "Home",
+    href: "/",
+  },
+  {
+    id: "Muah Meds",
+    title: "Muah Meds",
+    href: "/signin",
+  },
+];
+
+const downLinks = [
+  {
+    id: "Home",
+    title: "Home",
+    href: "/",
+  },
+  {
+    id: "About Us",
+    title: "About Us",
+    href: "/about",
+  },
+  {
+    id: " Products",
+    title: " Products",
+    href: "/products",
+  },
+    {
+    id: " Blog",
+    title: "Blog",
+    href: "/blog",
+  },
+    {
+    id: "Verification",
+    title: "Verification",
+    href: "/verification",
+  },
+  {
+    id: "Contact Us",
+    title: "Contact Us",
+    href: "/contact",
+  },
+];
+
+const footerLinks = [
+  { name: "ABOUT US", href: "/about" },
+  { name: "CONTACT US", href: "/contact" },
+  { name: "VERIFICATION", href: "/verification" },
+  { name: "BLOG / PRESS", href: "/blog" },
+  { name: "PRIVACY POLICY", href: "/privacy-policy" },
+];
+
+const Explore = [
+  "CARTRIDGES",
+  "INFUSED",
+  "FLOWER",
+  "GUMMIES",
+  "CONCENTRATES",
+];
+
+const states = [
+  "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware",
+  "Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky",
+  "Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi",
+  "Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico",
+  "New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania",
+  "Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont",
+  "Virginia","Washington","West Virginia","Wisconsin","Wyoming"
+];
+
+
+const categories = [
+  // {
+  //   id: uuidv4(),
+  //   name: "All-In-One",
+  //   description: "Unmatched quality meets ultimate ease in Muha Meds' Gen3 disposable line.",
+  //   image: "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff44336a88b58ceeb71bb_Group-dospo-v3.webp",
+  //   link: "/all",
+  // },
+  {
+    id: uuidv4(),
+    name: "Cartridges",
+    description: "Muha Meds cartridges deliver premium potency and flavor with full-spectrum Melted Diamonds or terpene-rich Distillate.",
+    image: "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff1bfb70c9142d74fecb2_carts-v3-group2.webp",
+    link: "/cartridges",
+  },
+  {
+    id: uuidv4(),
+    name: "Flower",
+    description: "Experience high-potency indoor flower, meticulously grown for density and quality.",
+    image: "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff52e069179621fedf2e9_flower-v3-group.webp",
+    link: "/flower",
+  },
+  {
+    id: uuidv4(),
+    name: "CONCENTRATES",
+    description: "Potent, pure concentrates created through advanced extraction methods to deliver maximum strength and clarity.",
+    image: "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff5622227a30a872a4503_conc-v3-group.webp",
+    link: "/concentrates",
+  },
+  {
+    id: uuidv4(),
+    name: "GUMMIES",
+    description: "Deliciously infused gummies with precise dosing for a balanced, consistent, and enjoyable experience anytime.",
+    image: "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff5b1f1d4ebb37b6a7c6c_gummies-v3-group.webp",
+    link: "/gummies",
+  },
+  {
+    id: uuidv4(),
+    name: "PRE-ROLLS",
+    description: "Expertly rolled pre-rolls made from hand-selected flower, offering a smooth, even burn and full-bodied aroma.",
+    image: "https://cdn.prod.website-files.com/62282607739bd61f2cabc5ee/68fff61556186c9e7df03842_infused-v3-group.webp",
+    link: "/infused",
+  },
+];
+
+
+
+const cartridgeData = {
+  meltedDiamonds: [
+    {
+      id: uuidv4(),
+      name: "White Raspberry",
+      type: "Hybrid",
+      image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33ff52795000a45214d72_CA-CARTS-MD-WHITERASPBERRY-2.webp",
+      link: "/ca-cartridges-melted-diamonds/white-raspberry",
+      price: "$40.00"
+    },
+    {
+      id: uuidv4(),
+      name: "Purple Breath",
+      type: "Indica",
+      image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e34000b725b2d289164994_CA-CARTS-MD-PURPLEBREATH-2.webp",
+      link: "/ca-cartridges-melted-diamonds/purple-breath",
+      price: "$40.00"
+    },
+    {
+      id: uuidv4(),
+      name: "Toro Milk Runtz",
+      type: "Indica",
+      image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3400894f0ac3ba2749796_CA-CARTS-MD-TOROMILKRUNTS-2.webp",
+      link: "/ca-cartridges-melted-diamonds/toro-milk-runtz",
+      price: "$40.00"
+    },
+    {
+      id: uuidv4(),
+      name: "Moroccan Peach Rings",
+      type: "Hybrid",
+      image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e34011d06b59c9912a80d3_CA-CARTS-MD-MOROCCANPEACHRINGS-2.webp",
+      link: "/ca-cartridges-melted-diamonds/moroccan-peach-rings",
+      price: "$40.00"
+    },
+    {
+      id: uuidv4(),
+      name: "Lemonade Rose",
+      type: "Sativa",
+      image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3401b06d641fb7c07c7de_CA-CARTS-MD-LEMONROSE-2.webp",
+      link: "/ca-cartridges-melted-diamonds/lemonade-rose",
+      price: "$40.00"
+    },
+      {
+          id: uuidv4(),
+          name: "Gelato",
+          category: "cartridge",
+          type: "HHC",
+          strain: "indica",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/65851df5a824e13cb9cf086d_6570f85dd74d3220bab38ca4_HHCCART-GELATO-300x300.webp",
+          link: "https://muhacbd.com/product/gelato-hhc-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          "name": "God's Gift",
+          category: "cartridge",
+          type: "HHC",
+          strain: "indica",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/65851df536946e20a936babe_6570f90fb1022ddbf84736dc_HHCCART-GODS-GIFT-300x300.webp",
+          link: "https://muhacbd.com/product/gods-gift-hhc-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          "name": "King Louis XII",
+          category: "cartridge",
+          type: "HHC",
+          strain: "indica",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/65851df5229f5a06840735e4_6570f9233f10a2bb103001ee_HHCCART-KING-LOUIS-300x300.webp",
+          link: "https://muhacbd.com/product/king-louis-xii-hhc-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Cherry Berry",
+          category: "cartridge",
+          type: "HHC",
+          strain: "hybrid",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/65851df5f6019c3104ba8fca_6570f85232d869bf786dd028_HHCCART-CHERRY-BERRY-300x300.webp",
+          link: "https://muhacbd.com/product/cherry-berry-hhc-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Agent Orange",
+          category: "cartridge",
+          type: "HHC",
+          strain: "sativa",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/65851df554fadec6c4668fdd_6570f848c79e4ffa91684c81_HHCCART-AGENT-ORANGE-300x300.webp",
+          link: "https://muhacbd.com/product/agent-orange-hhc-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Green Crack",
+          category: "cartridge",
+          type: "HHC",
+          strain: "sativa",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/65851df58e7bc8192ad3c081_6570f9195144c6dc8d2d0ce1_HHCCART-GREEN-CRACK-300x300.webp",
+          link: "https://muhacbd.com/product/green-crack-hhc-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Maui Waui",
+          category: "cartridge",
+          type: "HHC",
+          strain: "sativa",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/65851df6229f5a0684073631_6570f92d664c403b484c82a3_HHCCART-MAUI-WAUII-300x300.webp",
+          link: "https://muhacbd.com/product/maui-waui-hhc-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Pineapple Express",
+          category: "cartridge",
+          type: "HHC",
+          strain: "hybrid",
+          size: "1000MG Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/65851df6f4acae46f506b8e8_6570f940692c0615fd6214ae_HHCCART-PINEAPPLE-EXPRESS-300x300.webp",
+          link: "https://muhacbd.com/product/pineapple-express-hhc-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Northern Lights",
+          category: "cartridge",
+          type: "HHC",
+          strain: "hybrid",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/65851df6b9bbaa96a16eefc1_6570f9380711f2f55ada085d_HHCCART-NORTHERN-LIGHTS-300x300.webp",
+          link: "https://muhacbd.com/product/northern-lights-hhc-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Trainwreck",
+          category: "cartridge",
+          type: "HHC",
+          strain: "sativa",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/65851df645bf93a3678067f5_6570f948f2a1d793893a5740_HHCCART-TRAINWRECK-300x300.webp",
+          link: "https://muhacbd.com/product/trainwreck-hhc-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Watermelon Gelato",
+          category: "cartridge",
+          type: "THC-A",
+          strain: "indica",
+          size: "2 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/MM-CBD-THC-A-WatermelonGelato-300x300.webp",
+          link: "https://muhacbd.com/product/watermelon-gelato/",
+          inStock: true,
+          price: "$25.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Strawberry Shortcake",
+          category: "cartridge",
+          type: "THC-A",
+          strain: "indica",
+          size: "2 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/MM-CBD-THC-A-StrawberryShortcake-300x300.webp",
+          link: "https://muhacbd.com/product/strawberry-shortcake/",
+          inStock: true,
+          price: "$25.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Purple Punch",
+          category: "cartridge",
+          type: "THC-A",
+          strain: "sativa",
+          size: "2 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/MM-CBD-THC-A-PurplePunch-300x300.webp",
+          link: "https://muhacbd.com/product/purple-punch/",
+          inStock: true,
+          price: "$25.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Pineapple Runtz",
+          category: "cartridge",
+          type: "THC-A",
+          strain: "sativa",
+          size: "2 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/MM-CBD-THC-A-PineappleRuntz-300x300.webp",
+          link: "https://muhacbd.com/product/pineapple-runtz/",
+          inStock: true,
+          price: "$25.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Paradise Punch",
+          category: "cartridge",
+          type: "THC-A",
+          strain: "indica",
+          size: "2 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/MM-CBD-THC-A-ParadisePunch-300x300.webp",
+          link: "https://muhacbd.com/product/paradise-punch/",
+          inStock: true,
+          price: "$25.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Candy Apple",
+          category: "cartridge",
+          type: "THC-A",
+          strain: "hybrid",
+          size: "2 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/MM-CBD-THC-A-CandyApple-300x300.webp",
+          link: "https://muhacbd.com/product/candy-apple/",
+          inStock: true,
+          price: "$25.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Mango Madness",
+          category: "cartridge",
+          type: "THC-A",
+          strain: "hybrid",
+          size: "2 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2025/03/MM-CBD-THC-A-MangoMadness-1-300x300.webp",
+          link: "https://muhacbd.com/product/mango-madness-thc-a-cartridge/",
+          inStock: true,
+          price: "$25.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Bubble Gum Burst",
+          category: "cartridge",
+          type: "THC-A",
+          strain: "indica",
+          size: "2 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2025/03/MM-CBD-THC-A-BubbleGum-1-300x300.webp",
+          link: "https://muhacbd.com/product/bubble-gum-burst-thc-a-cartridge/",
+          inStock: true,
+          price: "$25.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Lemon Cherry Gelato",
+          category: "cartridge",
+          type: "THC-A",
+          strain: "sativa",
+          size: "2 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2025/03/MM-CBD-THC-A-LemonCherry-1-300x300.webp",
+          link: "https://muhacbd.com/product/lemon-cherry-gelato-thc-a-cartridge/",
+          inStock: true,
+          price: "$25.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Blue Slushie",
+          category: "cartridge",
+          type: "THC-A",
+          strain: "hybrid",
+          size: "2 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2024/12/MM-CBD-THC-A-BlueSlushie-V1-300x300.webp",
+          link: "https://muhacbd.com/product/gelato-thca-cartridge/",
+          inStock: true,
+          price: "$25.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Green Crack",
+          category: "cartridge",
+          type: "Delta 10",
+          strain: "sativa",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2025/03/MM-D10-Cart-GreenCrack-300x300.webp",
+          link: "https://muhacbd.com/product/green-crack-d10-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "God's Gift",
+          category: "cartridge",
+          type: "Delta 10",
+          strain: "indica",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2025/03/MM-D10-Cart-GodsGift-s-300x300.webp",
+          link: "https://muhacbd.com/product/gods-gift-d10-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Gelato",
+          category: "cartridge",
+          type: "Delta 10",
+          strain: "indica",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2025/03/MM-D10-Cart-Gelato-300x300.webp",
+          link: "https://muhacbd.com/product/gelato-d10-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Cherry Berry",
+          category: "cartridge",
+          type: "Delta 10",
+          strain: "hybrid",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2025/03/MM-D10-Cart-CherryBerry-300x300.webp",
+          link: "https://muhacbd.com/product/cherry-berry-d10-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Trainwreck",
+          category: "cartridge",
+          type: "Delta 10",
+          strain: "sativa",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2025/03/MM-D10-Cart-Trainwreck-300x300.webp",
+          link: "https://muhacbd.com/product/trainwreck-d10-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Pineapple Express",
+          category: "cartridge",
+          type: "Delta 10",
+          strain: "hybrid",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2025/03/MM-D10-Cart-PineappleExpress-300x300.png",
+          link: "https://muhacbd.com/product/pineapple-express-d10-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Northern Lights",
+          category: "cartridge",
+          type: "Delta 10",
+          strain: "hybrid",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2025/03/MM-D10-Cart-NorthernLights-300x300.png",
+          link: "https://muhacbd.com/product/northern-lights-d10-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Maui Wauii",
+          category: "cartridge",
+          type: "Delta 10",
+          strain: "indica",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2025/03/MM-D10-Cart-MauiWauii-300x300.png",
+          link: "https://muhacbd.com/product/maui-wauii-d10-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "King Louis XII",
+          category: "cartridge",
+          type: "Delta 10",
+          strain: "indica",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2025/03/MM-D10-Cart-KingLouis-300x300.webp",
+          link: "https://muhacbd.com/product/king-louis-xii-d10-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        },
+        {
+          id: uuidv4(),
+          name: "Agent Orange",
+          category: "cartridge",
+          type: "Delta 10",
+          strain: "sativa",
+          size: "1 Gram Cartridge",
+          image: "https://muhacbd.com/wp-content/uploads/2025/03/MM-D10-Cart-AgentOrange-300x300.webp",
+          link: "https://muhacbd.com/product/agent-orange-d10-cartridge/",
+          inStock: true,
+          price: "$18.00"
+        }
+  ],
+  distillate: [
+    {
+      id: uuidv4(),
+      name: "Strawberry Kiwi Krush",
+      type: "Hybrid",
+      image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e344deb502aab360ba83d0_CA-CARTS-DIST-STRAWBERRYKIWIKUSH-2.webp",
+      link: "/ca-cartridges-distillate/strawberry-kiwi-krush",
+      price: "$30.00"
+    },
+    {
+      id: uuidv4(),
+      name: "Purple Passion Punch",
+      type: "Indica",
+      image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e344e6cae5fd79c5249201_CA-CARTS-DIST-PURPLEPASSIONPUNCH-2.webp",
+      link: "/ca-cartridges-distillate/purple-passion-punch",
+      price: "$30.00"
+    },
+    {
+      id: uuidv4(),
+      name: "Pineapple Paradise",
+      type: "Hybrid",
+      image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e344efad4b483249954676_CA-CARTS-DIST-PINEAPPLEPARADISE-2.webp",
+      link: "/ca-cartridges-distillate/pineapple-paradise",
+      price: "$30.00"
+    },
+    {
+      id: uuidv4(),
+      name: "Green Crack",
+      type: "Sativa",
+      image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e344f8a63c2df9d77ca313_CA-CARTS-DIST-GREENCRACK-2.webp",
+      link: "/ca-cartridges-distillate/green-crack",
+      price: "$30.00"
+    },
+    {
+      id: uuidv4(),
+      name: "God Father OG",
+      type: "Sativa",
+      image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e345019767e85c288f0fa1_CA-CARTS-DIST-GODFATHER-2.webp",
+      link: "/ca-cartridges-distillate/god-father-og",
+      price: "$30.00"
+    },
+    {
+      id: uuidv4(),
+      name: "Cherry Grapefruit",
+      type: "Sativa",
+      image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e34509b558e557494be011_CA-CARTS-DIST-GRAPEFRUIT-2.webp",
+      link: "/ca-cartridges-distillate/cherry-grapefruit",
+      price: "$30.00"
+    },
+    {
+      id: uuidv4(),
+      name: "Bubblegum Burst",
+      type: "Indica",
+      image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e34511b43b7ba54142bbcf_CA-CARTS-DIST-BUBBLEGUMBURST-2.webp",
+      link: "/ca-cartridges-distillate/bubblegum-burst",
+      price: "$30.00"
+    },
+    {
+      id: uuidv4(),
+      name: "Blue Slushie",
+      type: "Hybrid",
+      image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e34519a0248cabd8f56668_CA-CARTS-DIST-BLUESLUSHIE-2.webp",
+      link: "/ca-cartridges-distillate/blue-slushie",
+      price: "$30.00"
+    },
+    {
+      id: uuidv4(),
+      name: "Banana Cream Cake",
+      type: "Indica",
+      image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e34521bb0a9c959c9329a6_CA-CARTS-DIST-BANANACREAMCAKE-2.webp",
+      link: "/ca-cartridges-distillate/banana-cream-cake",
+      price: "$30.00"
+    },
+    {
+      id: uuidv4(),
+      name: "Bahama Berry",
+      type: "Sativa",
+      image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e345298972c00821d503d4_CA-CARTS-DIST-BAHAMABERRY-2.webp",
+      link: "/ca-cartridges-distillate/bahama-berry",
+      price: "$30.00"
+    },
+  ],
+};
+
+
+
+
+const flavors = [
+  {
+    id: uuidv4(),
+    name: "Orange Tangie",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33c57cdca16a714d4ccfd_CA-AIO-MD-ORANGETANGIE-2.webp",
+    link: "/ca-all-in-one-melted-diamonds/orange-tangie",
+    price: "$45.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Mango Madness",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33c5fbac9120c0c7ea560_CA-AIO-MD-MANGOMADNESS-2.webp",
+    link: "/ca-all-in-one-melted-diamonds/mango-madness",
+    price: "$45.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Lemon Cherry Gelato",
+    type: "Sativa",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33c67b4ba30cf3174d02a_CA-AIO-MD-LEMONCHERRYGELATO-2.webp",
+    link: "/ca-all-in-one-melted-diamonds/lemon-cherry-gelato",
+    price: "$45.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Grape Gas",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33c6e239e5efb747f4d7a_CA-AIO-MD-GRAPEGAS-2.webp",
+    link: "/ca-all-in-one-melted-diamonds/grape-gas",
+    price: "$45.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Durban Delight",
+    type: "Sativa",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33c761ab2108b60b5b9fa_CA-AIO-MD-DURBANDELIGHT-2.webp",
+    link: "/ca-all-in-one-melted-diamonds/durban-delight",
+    price: "$45.00"
+  },
+];
+
+const leftSpecs = [
+  {
+    id: uuidv4(),
+    title: "Pure Flavor",
+    description: "Postless design preserves every drop with zero compromise.",
+  },
+  {
+    id: uuidv4(),
+    title: "Custom Ceramics",
+    description: "Formulated for Muha concentrates, delivering big clouds and bold taste.",
+  },
+  {
+    id: uuidv4(),
+    title: "Sleek & Durable",
+    description: "Single-body design built for style and longevity.",
+  },
+];
+
+const rightSpecs = [
+  {
+    id: uuidv4(),
+    title: "Smart Control",
+    description: "Internal chipset sets the perfect temp for smooth hits every time.",
+  },
+  {
+    id: uuidv4(),
+    title: "LED Display",
+    description: "Minimalist interface designed for ease without distractions.",
+  },
+  {
+    id: uuidv4(),
+    title: "Recharge Anywhere",
+    description: "USB-C charging keeps you ready on the go.",
+  },
+];
+
+const Distileflavors = [
+  {
+    id: uuidv4(),
+    name: "Strawberry Runts",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d621325eae3ce4cfdc5908_CA-AIO-DIST-STRAWBERRYRUNTZ-2.webp",
+    link: "/ca-all-in-one-distillate/strawberry-runts",
+    price: "$35.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Tahoe OG",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d62124b560c680ec5ef733_CA-AIO-DIST-TAHOEOG-2.webp",
+    link: "/ca-all-in-one-distillate/tahoe-og",
+    price: "$35.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Magic Melon OG",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d62164b51b7c54bf6b0160_CA-AIO-DIST-MAGICMELONOG-2.webp",
+    link: "/ca-all-in-one-distillate/magic-melon-og",
+    price: "$35.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Sour Watermelon Squirt",
+    type: "Sativa",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d621070e764c60137efcd6_CA-AIO-DIST-WATERMELONSQUIRT-2.webp",
+    link: "/ca-all-in-one-distillate/sour-watermelon-squirt",
+    price: "$35.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Pineapple Express",
+    type: "Sativa",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d620fb54784cc536a1cf92_CA-AIO-DIST-PINEAPPLEEXPRESS-2.webp",
+    link: "/ca-all-in-one-distillate/pineapple-express",
+    price: "$35.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Galactic Diesel",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d620e4a13168375b7a2536_CA-AIO-DIST-GALACTICDIESEL-2.webp",
+    link: "/ca-all-in-one-distillate/galactic-diesel",
+    price: "$35.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Frozen Pomegranate",
+    type: "Sativa",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d620da5c66e46bccfea3f2_CA-AIO-DIST-FROZENPOMEGRANATE-2.webp",
+    link: "/ca-all-in-one-distillate/frozen-pomegranate",
+    price: "$35.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Bubblegum Burst",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d620cddbe42077eea15f79_CA-AIO-DIST-BUBBLEGUMBURST-2.webp",
+    link: "/ca-all-in-one-distillate/bubblegum-burst",
+    price: "$35.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Blueberry Cookies",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d620bfc8d1748a98c15696_CA-AIO-DIST-BLUEBERRYCOOKIES-2.webp",
+    link: "/ca-all-in-one-distillate/blueberry-cookies",
+    price: "$35.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Blue Slushie",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d620b18e62c1c20faee51c_CA-AIO-DIST-BLUESLUSHIE-2.webp",
+    link: "/ca-all-in-one-distillate/blue-slushie",
+    price: "$35.00"
+  },
+];
+
+const Harshflavors = [
+  {
+    id: uuidv4(),
+    name: "Tropicana Cherry",
+    type: "Sativa",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e341ae9c5173d754434703_CA-AIO-HR-TropicanaCherry-2.webp",
+    link: "/ca-aio-hash-rosin/tropicana-cherry",
+    price: "$55.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Mimosa",
+    type: "Sativa",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e341b9831e570c035dec7a_CA-AIO-HR-Mimosa-2.webp",
+    link: "/ca-aio-hash-rosin/mimosa",
+    price: "$55.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Fatso",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e341c352dda65945d8bba6_CA-AIO-HR-Fatso-2.webp",
+    link: "/ca-aio-hash-rosin/fatso",
+    price: "$55.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Garlic Jelly",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e341dba48d7441ae09e25a_CA-AIO-HR-GarlicJelly-2.webp",
+    link: "/ca-aio-hash-rosin/garlic-jelly",
+    price: "$55.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Donnie Burger",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e341ea5da29047d6d523de_CA-AIO-HR-DonnieBurger-2.webp",
+    link: "/ca-aio-hash-rosin/donnie-burger",
+    price: "$55.00"
+  },
+];
+
+const liveflavors = [
+  {
+    id: uuidv4(),
+    name: "OG Kush",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3371e446f6d6e98780fc4_CA-AIO-LR-OGKush-2.webp",
+    link: "/ca-aio-live-resin/og-kush",
+    price: "$50.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Lemon Kush Mintz",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e337289caeb5a75144864a_CA-AIO-LR-LemonKushMintz-2.webp",
+    link: "/ca-aio-live-resin/lemon-kush-mintz",
+    price: "$50.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Juice Man",
+    type: "Sativa",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3372fe35ba8004848473d_CA-AIO-LR-JuiceMan-2.webp",
+    link: "/ca-aio-live-resin/juice-man",
+    price: "$50.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Grape Dosi",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33738eef8f07f0bddf087_CA-AIO-LR-DosiGrape-2.webp",
+    link: "/ca-aio-live-resin/grape-dosi",
+    price: "$50.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Golden Papaya",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e337416249a02ebde9458c_CA-AIO-LR-GoldenPapaya-2.webp",
+    link: "/ca-aio-live-resin/golden-papaya",
+    price: "$50.00"
+  },
+];
+
+
+const Flowerflavors = [
+  {
+    id: uuidv4(),
+    name: "Bacio Gelato",
+    type: "Sativa | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Bacio-Gelato-2-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Bacio-Gelato-3-300x300.webp",
+    link: "https://muhacbd.com/product/bacio-gelato-thc-a-4-gram-flower-jar/",
+    categories: ["flower", "sativa", "thc-a", "thca-flower-4g"],
+    price: "$60.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Black Truffle",
+    type: "Hybrid | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Black-Truffle-2-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Black-Truffle-300x300.webp",
+    link: "https://muhacbd.com/product/black-truffle-thc-a-4-gram-flower-jar/",
+    categories: ["flower", "hybrid", "thc-a", "thca-flower-4g"],
+    price: "$60.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Frosted Cherries",
+    type: "Indica | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Frosted-Cherries-2-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Frosted-Cherries-300x300.webp",
+    link: "https://muhacbd.com/product/frosted-cherries-thc-a-4-gram-flower-jar/",
+    categories: ["flower", "indica", "thc-a", "thca-flower-4g"],
+    price: "$60.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Strawberry Mimosa",
+    type: "Sativa | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Strawberry-Mimosa-2-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Strawberry-Mimosa-300x300.png",
+    link: "https://muhacbd.com/product/strawberry-mimosa-thc-a-4-gram-flower-jar/",
+    categories: ["flower", "sativa", "thc-a", "thca-flower-4g"],
+    price: "$60.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Pink Runtz",
+    type: "Hybrid | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Pink-Runtz-2-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Pink-Runtz-300x300.webp",
+    link: "https://muhacbd.com/product/pink-runtz-thc-a-4-gram-flower-jar/",
+    categories: ["flower", "hybrid", "thc-a", "thca-flower-4g"],
+    price: "$60.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Gush Mintz",
+    type: "Indica | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Gush-Mintz-2-300x300.png",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-4G-Gush-Mintz-300x300.webp",
+    link: "https://muhacbd.com/product/gush-mintz-thc-a-4-gram-flower-jar/",
+    categories: ["flower", "indica", "thc-a", "thca-flower-4g"],
+    price: "$60.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Muha Mints",
+    type: "Indica",
+    link: "/ca-flower/muha-mints",
+    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326a35b42befd11b15d92_CA-FLOWER-MUHAMINTS.webp",
+    price: "$60.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Morning Glory",
+    type: "Sativa",
+    link: "/ca-flower/morning-glory",
+    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326ab3eeadc2e7a67406d_CA-FLOWER-MORNINGGLORY.webp",
+    price: "$60.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Adios MF",
+    type: "Indica",
+    link: "/ca-flower/adios-mf",
+    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e326bd78675ff962540fa3_CA-FLOWER-ADIOSMF.webp",
+    price: "$60.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Brain Freeze",
+    type: "Indica",
+    link: "/ca-flower/brain-freeze",
+    img: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e32691cdca16a714d21717_CA-FLOWER-BRAINFREEZE.webp",
+    price: "$60.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Skittles",
+    type: "Indica | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/667370555478fee80cd9ce89_MM-Hemp-THCA-Flower-Skittles-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/skittles-thc-a-flower/",
+    categories: ["flower", "indica", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Bored Ape Runtz",
+    type: "Indica | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/667379842e83bc46151cacb0_MM-Hemp-THCA-Flower-Runtz-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/bored-ape-runtz-thc-a-flower/",
+    categories: ["flower", "indica", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Banana Cream Cake",
+    type: "Indica | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/66737a78f38f85db7959c4a3_MM-Hemp-THCA-Flower-Banana-Cream-Cake-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/banana-cream-cake-thc-a-flower/",
+    categories: ["flower", "indica", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Lemon Cherry Gelato",
+    type: "Hybrid | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/66737b85c5812ec92c47f29c_MM-Hemp-THCA-Flower-Lemon-Cherry-Gelato-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/lemon-cherry-gelato-thc-a-flower/",
+    categories: ["flower", "hybrid", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Purple Wookies",
+    type: "Hybrid | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/66737c81d2726c15515ea559_MM-Hemp-THCA-Flower-Purple-Wookies-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/purple-wookies-thc-a-flower/",
+    categories: ["flower", "hybrid", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Gummiez",
+    type: "Hybrid | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/6673876f476ff08e9a46cded_MM-Hemp-THCA-Flower-Gummiez2-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/gummiez-thc-a-flower/",
+    categories: ["flower", "hybrid", "new-products", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Lolipop",
+    type: "Sativa | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/6673826fce612276af5c3e9e_MM-Hemp-THCA-Flower-Lolipop-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/lolipop-thc-a-flower/",
+    categories: ["flower", "sativa", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
+  },
+  {
+    id: uuidv4(),
+    name: "White Truffle",
+    type: "Hybrid | THC-A",
+   img:
+      "https://muhacbd.com/wp-content/uploads/2024/12/66737f113cd4ba666c435c9f_MM-Hemp-THCA-Flower-White-Truffle-300x300.webp",
+    hoverImage: "",
+    link: "https://muhacbd.com/product/white-truffle-thc-a-flower/",
+    categories: ["flower", "hybrid", "thc-a", "thca-flower-4g"],
+    price: "$45.00",
+  },
+];
+
+const concentrateData = [
+  // HASH ROSIN
+  {
+    id: uuidv4(),
+    name: "Alien OG",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e347735f5241a3d35c16ea_CA-CONC-HR-ALIENOG-2.webp",
+    link: "/ca-hash-rosin-concentrate/alien-og",
+    price: "$65.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Super Boof",
+    type: "Sativa",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3477b728be1dc5234f799_CA-CONC-HR-SUPERBOOF-2.webp",
+    link: "/ca-hash-rosin-concentrate/super-boof",
+    price: "$65.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Pink Lemonade",
+    type: "Sativa",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e347882a3959987f7042ad_CA-CONC-HR-PINKLEMONADE-2.webp",
+    link: "/ca-hash-rosin-concentrate/pink-lemonade",
+    price: "$65.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Chilled Cherries",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e347905adb444683bb82fa_CA-CONC-HR-CHILLEDCHERRIES-2.webp",
+    link: "/ca-hash-rosin-concentrate/chilled-cherries",
+    price: "$65.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Macaron Peaches",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3479e3545f0f0d61e49b5_CA-CONC-HR-MACARONPEACHES-2.webp",
+    link: "/ca-hash-rosin-concentrate/macaron-peaches",
+    price: "$65.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Honey Banana",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e347a8e1011afe97854224_CA-CONC-HR-HONEYBANANA-2.webp",
+    link: "/ca-hash-rosin-concentrate/honey-banana",
+    price: "$65.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Mad Fruit",
+    type: "Sativa",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e347af1ab2108b60b7002e_CA-CONC-HR-MADFRUIT-2.webp",
+    link: "/ca-hash-rosin-concentrate/mad-fruit",
+    price: "$65.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Guava Biscotti",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e347b6627b68238edd8e1d_CA-CONC-HR-GUAVABISCOTTI-2.webp",
+    link: "/ca-hash-rosin-concentrate/guava-biscotti",
+    price: "$65.00"
+  },
+
+  // PIATELLA
+  {
+    id: uuidv4(),
+    name: "Tropical Funk",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33e1f2a90de8c2055f926_CA-CONC-PIATELLA-TROPICALFUNK-2.webp",
+    link: "/ca-piatella-extract/tropical-funk",
+    price: "$70.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Raunchy Runtz",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33e2959e2d1789c1e2e5d_CA-CONC-PIATELLA-RAUNCHYRUNTZ-2.webp",
+    link: "/ca-piatella-extract/raunchy-runtz",
+    price: "$70.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Cherry Papaya",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33e2eaf18c6093124900a_CA-CONC-PIATELLA-CHERRYPAPAYA-2.webp",
+    link: "/ca-piatella-extract/cherry-papaya",
+    price: "$70.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Lemon Heads",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33e377ce335565e524150_CA-CONC-PIATELLA-LEMONHEADS-2.webp",
+    link: "/ca-piatella-extract/lemon-heads",
+    price: "$70.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Alpine Guava",
+    type: "Sativa",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e33e3fba4c88443b973849_CA-CONC-PIATELLA-ALPINEGUAVA-2.webp",
+    link: "/ca-piatella-extract/alpine-guava",
+    price: "$70.00"
+  },
+];
+
+const gummiesData = [
+  {
+    id: uuidv4(),
+    name: "Mango Madness",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e34986e5dc788e9f5f54b8_CA-GUMMIES-HR-MANGOMADNESS-2.webp",
+    link: "/ca-hash-rosin-gummies/mango-madness",
+    price: "$25.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Green Apple",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3499500f4bf8c1a0eef87_CA-GUMMIES-HR-GREENAPPLE-2.webp",
+    link: "/ca-hash-rosin-gummies/green-apple",
+    price: "$25.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Raspberry Pineapple",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e3329f2d00613d4f8cc904_CA-GUMMIES-HR-RASPBERRYPINEAPPLE.webp",
+    link: "/ca-hash-rosin-gummies/raspberry-pineapple",
+    price: "$25.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Strawberry",
+    type: "Sativa",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e349a5a1e9b28688896a72_CA-GUMMIES-HR-STRAWBERRY-2.webp",
+    link: "/ca-hash-rosin-gummies/strawberry",
+    price: "$25.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Mango Chamoy",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68e349ac8f54c138d9f3b31c_CA-GUMMIES-HR-MANGOCHAMOY-2.webp",
+    link: "/ca-hash-rosin-gummies/mango-chamoy",
+    price: "$25.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Sour Apple",
+    type: "Sativa",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d1cfc7b8aa86372d06be10_CA-GUMMIES-INF-SOURAPPLE.webp",
+    link: "/ca-infused-gummies/sour-apple",
+    price: "$20.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Watermelon",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d1cfaea34bf1d70746cba7_CA-GUMMIES-INF-WATERMELON.webp",
+    link: "/ca-infused-gummies/watermelon",
+    price: "$20.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Strawberry Lemon",
+    type: "Sativa",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d1ced3dc20fb61b043f41b_CA-GUMMIES-INF-STRAWBERRYLEMON.webp",
+    link: "/ca-infused-gummies/strawberry-lemon",
+    price: "$20.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Very Berry",
+    type: "Indica",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/690afa2e45076f65339ff2c1_CA-GUMMIES-INF-VERYBERRY.webp",
+    link: "/ca-infused-gummies/very-berry",
+    price: "$20.00"
+  },
+  {
+    id: uuidv4(),
+    name: "Mango Madness",
+    type: "Hybrid",
+    image: "https://cdn.prod.website-files.com/63d576049309ce6fad1c6d9b/68d1ce4ded7505f3e85f3e2b_CA-GUMMIES-INF-MANGOMADNESS.webp",
+    link: "/ca-infused-gummies/mango-madness",
+    price: "$20.00"
+  },
+];
+
+const prerollFlavors = [
+ {
+    id: uuidv4(),
+    name: "Mango Peach Rings",
+    type: "Hybrid | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-MangoPeachRings-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-MangoPeachRings-2-300x300.webp",
+    link: "https://muhacbd.com/product/mango-peach-rings-thc-a-mates-pre-rolls/",
+    categories: ["hybrid", "pre-rolls", "thc-a", "thca-pre-rolls-3g"],
+    price: "$30.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Purple Punch",
+    type: "Sativa | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-PurplePunch-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-PurplePunch-2-300x300.webp",
+    link: "https://muhacbd.com/product/purple-punch-thc-a-mates-pre-rolls/",
+    categories: [
+      "new-products",
+      "pre-rolls",
+      "sativa",
+      "thc-a",
+      "thca-pre-rolls-3g",
+    ],
+    price: "$30.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Thin Mints OG",
+    type: "Indica | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-ThinMintsOG-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-ThinMintsOG-2-300x300.webp",
+    link: "https://muhacbd.com/product/thin-mints-og-thc-a-mates-pre-rolls/",
+    categories: ["indica", "pre-rolls", "thc-a", "thca-pre-rolls-3g"],
+    price: "$30.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Blueberry Zaza",
+    type: "Sativa | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-BlueberryZaza-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-BlueberryZaza-2-300x300.webp",
+    link: "https://muhacbd.com/product/blueberry-zaza-thc-a-mates-pre-rolls/",
+    categories: ["pre-rolls", "sativa", "thc-a", "thca-pre-rolls-3g"],
+    price: "$30.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Orange Cake",
+    type: "Hybrid | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-OrangeCake-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-OrangeCake-2-300x300.webp",
+    link: "https://muhacbd.com/product/orange-cake-thc-a-mates-pre-rolls/",
+    categories: ["hybrid", "pre-rolls", "thc-a", "thca-pre-rolls-3g"],
+    price: "$30.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Strawberry Dream",
+    type: "Indica | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-StrawberryDream-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-Mates-StrawberryDream-2-300x300.webp",
+    link: "https://muhacbd.com/product/strawberry-dream-thc-a-mates-pre-rolls/",
+    categories: ["indica", "pre-rolls", "thc-a", "thca-pre-rolls-3g"],
+    price: "$30.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Blue Razz",
+    type: "Hybrid | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc786771ee2f2a1966c1_657be333b691743f47977281_Hemp_PreRolls_D8_Front_BlueRazz_V1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc786771ee2f2a1966c8_657cfc4074351fdd7e7b74a2_Hemp_PreRolls_D8_45_BlueRazz_V1-300x300.webp",
+    link: "https://muhacbd.com/product/blue-razz-delta-8-pre-rolls/",
+    categories: ["delta-8", "hybrid", "pre-rolls"],
+    price: "$20.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Pumpkin Spice Latte",
+    type: "Indica | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc78bc74a141641fad90_657be761d607df7181adfd24_Hemp_PreRolls_D8_Front_PumpkinSpiceLatte_V1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc78bc74a141641fad95_657be787f54bc18beca777ea_Hemp_PreRolls_D8_45_PumpkinSpiceLatte_V1-300x300.webp",
+    link: "https://muhacbd.com/product/pumpkin-spice-latte-delta-8-pre-rolls/",
+    categories: ["delta-8", "indica", "pre-rolls"],
+    price: "$20.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Muha OG",
+    type: "Indica | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc7846482d06852fa935_657be68fdaccda78d8416266_Hemp_PreRolls_D8_Front_MuhaOG_V1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc7846482d06852fa93a_657be6b5ab70e52dc89fb595_Hemp_PreRolls_D8_45_MuhaOG_V1-300x300.webp",
+    link: "https://muhacbd.com/product/muha-og-delta-8-pre-rolls/",
+    categories: ["delta-8", "indica", "pre-rolls"],
+    price: "$20.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Presidential OG",
+    type: "Hybrid | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc78a2737dfe70ec929e_657be716a9a9393d78c6f683_Hemp_PreRolls_D8_Front_PresidentialOG_V1-1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc78a2737dfe70ec9296_657be73f854c5f663de065fb_Hemp_PreRolls_D8_45_PresidentialOG_V1-1-300x300.webp",
+    link: "https://muhacbd.com/product/presidential-og-delta-8-pre-rolls/",
+    categories: ["delta-8", "hybrid", "pre-rolls"],
+    price: "$20.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Orange Burst",
+    type: "Hybrid | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc7804a5b7fd2023f597_657be6cb8fb664912ad67742_Hemp_PreRolls_D8_Front_OrangeBurst_V1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc7804a5b7fd2023f590_657be6fa021f733dd561b8b1_Hemp_PreRolls_D8_45_OrangeBurst_V1-300x300.webp",
+    link: "https://muhacbd.com/product/orange-burst-delta-8-pre-rolls/",
+    categories: ["delta-8", "hybrid", "pre-rolls"],
+    price: "$20.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Honey Jack",
+    type: "Sativa | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc789f0ba90baf796157_657be64c6b11104f10a66ce0_Hemp_PreRolls_D8_Front_HoneyJack_V1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc789f0ba90baf79613f_657be679f54bc18beca6e293_Hemp_PreRolls_D8_45_HoneyJack_V1-300x300.webp",
+    link: "https://muhacbd.com/product/honey-jack-delta-8-pre-rolls/",
+    categories: ["delta-8", "pre-rolls", "sativa"],
+    price: "$20.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Green Apple Runtz",
+    type: "Indica | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc781e1e1d5bf3261833_657be5a9d13dd32edc2af778_Hemp_PreRolls_D8_Front_GreenAppleRuntz_V1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc781e1e1d5bf3261830_657be5faab70e52dc89f3980_Hemp_PreRolls_D8_45_GreenAppleRuntz_V1-300x300.webp",
+    link: "https://muhacbd.com/product/green-apple-runtz-delta-8-pre-rolls/",
+    categories: ["delta-8", "indica", "pre-rolls"],
+    price: "$20.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Strawberry ShortCake",
+    type: "Indica | Delta 8",
+    img: "https://muhacbd.com/wp-content/uploads/2024/12/658bbc7891a9e3f9f05da74e_657be7bb6a943cd35808b15b_Hemp_PreRolls_D8_Front_StrawberryShortCake_V1-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2024/12/658bbc7891a9e3f9f05da747_657be7d96a943cd35808c123_Hemp_PreRolls_D8_45_StrawberryShortCake_V1-300x300.webp",
+    link: "https://muhacbd.com/product/strawberry-shortcake-delta-8-pre-rolls/",
+    categories: ["delta-8", "indica", "pre-rolls"],
+    price: "$20.00",
+  },
+  {
+    id: uuidv4(),
+    name: "White Widow",
+    type: "Hybrid | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-WhiteWidow-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-WhiteWidow-2-300x300.webp",
+    link: "https://muhacbd.com/product/white-widow-thc-a-king-pre-roll/",
+    categories: ["hybrid", "pre-rolls", "thc-a", "thca-pre-rolls-1-5g"],
+    price: "$16.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Chilled Cherries",
+    type: "Indica | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-ChilledCherries-300x300.png",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-ChilledCherries-2-300x300.webp",
+    link: "https://muhacbd.com/product/chilled-cherries-thc-a-king-pre-roll/",
+    categories: ["indica", "pre-rolls", "thc-a", "thca-pre-rolls-1-5g"],
+    price: "$16.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Mimosa",
+    type: "Sativa | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-Mimosa-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-Mimosa-2-300x300.webp",
+    link: "https://muhacbd.com/product/mimosa-thc-a-king-pre-roll/",
+    categories: ["pre-rolls", "sativa", "thc-a", "thca-pre-rolls-1-5g"],
+    price: "$16.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Blackberry Kush",
+    type: "Hybrid | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-BlackberryKush-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-BlackberryKush-2-300x300.webp",
+    link: "https://muhacbd.com/product/blackberry-kush-thc-a-king-pre-roll/",
+    categories: ["hybrid", "pre-rolls", "thc-a", "thca-pre-rolls-1-5g"],
+    price: "$16.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Northern Lights",
+    type: "Indica | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-NorthernLights-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-NorthernLights-2-300x300.webp",
+    link: "https://muhacbd.com/product/northern-lights-thc-a-king-pre-roll/",
+    categories: ["indica", "pre-rolls", "thc-a", "thca-pre-rolls-1-5g"],
+    price: "$16.00",
+  },
+  {
+    id: uuidv4(),
+    name: "Alpine Guava",
+    type: "Sativa | THC-A",
+    img: "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-AlpineGuava-300x300.webp",
+    hoverImage:
+      "https://muhacbd.com/wp-content/uploads/2025/03/MM-THCA-King-AlpineGuava-2-300x300.webp",
+    link: "https://muhacbd.com/product/alpine-guava-thc-a-king-pre-roll/",
+    categories: ["pre-rolls", "sativa", "thc-a", "thca-pre-rolls-1-5g"],
+    price: "$16.00",
+  }
+  
+];
+
+export {
+  links,
+  downLinks,
+  footerLinks,
+  states,
+  Explore,
+  categories,
+  flavors,
+  leftSpecs,
+  rightSpecs,
+  Distileflavors,
+  Harshflavors,
+  liveflavors,
+  cartridgeData,
+  Flowerflavors,
+  concentrateData,
+  gummiesData,
+  prerollFlavors
+};
