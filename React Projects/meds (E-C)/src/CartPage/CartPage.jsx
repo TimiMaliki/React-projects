@@ -36,7 +36,8 @@ const CartPage = () => {
           <div className="flex items-center space-x-4">
             <Link 
               to="/products" 
-              className="flex items-center space-x-2 text-white hover:transition-colors"
+              className="flex items-center space-x-2  hover:transition-colors"
+              style={{color: themeStyle.hex }}
             >
               <ArrowLeft size={20} />
               <span>Continue Shopping</span>
@@ -184,7 +185,7 @@ const CartPage = () => {
                 >
                
                   <MailCheck size={20} />
-                  <a href="mailto:muhamedslab@gmail.com"> <span>Send us a email with a  <br />screenshot of your items</span></a>
+                  <a href="mailto:muhamedslab@gmail.com"> <span>Send us a email  <br /> with a screenshot of your items</span></a>
                 </button>
                 {/* <button
                   className="w-full py-4 flex items-center justify-center space-x-3 rounded-xl bg-linear-to-r from-yellow-500 to-yellow-600 cursor-pointer font-semibold hover:from-yellow-600 hover:to-yellow-700 transition-all shadow-lg hover:shadow-xl"
