@@ -180,7 +180,7 @@ const CartPage = () => {
               {/* Checkout Buttons */}
               <div className="space-y-3">
                   <button
-                  className="w-full py-4 flex items-center justify-center space-x-3 rounded-xl bg-[#008707] cursor-pointer font-semibold hover:bg-[#005c1c] transition-all shadow-lg hover:shadow-xl"
+                  className="w-full py-4 p-10 md:p-0 flex items-center justify-center space-x-3 rounded-xl bg-[#008707] cursor-pointer font-semibold hover:bg-[#005c1c] transition-all shadow-lg hover:shadow-xl"
                   onClick={() => alert("Proceed to PayPal Checkout")}
                 >
                
