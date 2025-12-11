@@ -49,14 +49,14 @@ const Footer = () => {
 
         <div>
           <h2 className="text-lg font-semibold mb-4">GET IN TOUCH</h2>
-          <a href="mailto:support@muhameds.com" className="block  mb-6 transition">
-            support@muhameds.com
+          <a href="mailto:muhamedslab@gmail.com" className="block  mb-6 transition">
+            support@muhamedslab@gmail.com
           </a>
 
           <h2 className="text-lg font-semibold mb-4">FOLLOW</h2>
           <div className="flex space-x-4">
             <a
-              href="https://www.instagram.com/muhameds/"
+              // href="https://www.instagram.com/muhameds/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -67,7 +67,7 @@ const Footer = () => {
               />
             </a>
             <a
-              href="https://x.com/muhamedsglobal"
+              // href="https://x.com/muhamedsglobal"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -78,7 +78,7 @@ const Footer = () => {
               />
             </a>
             <a
-              href="https://weedmaps.com/brands/muha-meds/products?isNearby=true"
+              // href="https://weedmaps.com/brands/muha-meds/products?isNearby=true"
               target="_blank"
               rel="noopener noreferrer"
             >
