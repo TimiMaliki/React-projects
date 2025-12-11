@@ -185,7 +185,7 @@ const CartPage = () => {
                 >
                
                   <MailCheck size={20} />
-                  <a href="mailto:muhamedslab@gmail.com"> <span>Send us an email  <br /> with a screenshot of your items</span></a>
+                  <a href="mailto:muhamedslab@gmail.com" className="text-md md:text-lg"> <span className="">Send us an email  <br /> with a screenshot of your items</span></a>
                 </button>
                 {/* <button
                   className="w-full py-4 flex items-center justify-center space-x-3 rounded-xl bg-linear-to-r from-yellow-500 to-yellow-600 cursor-pointer font-semibold hover:from-yellow-600 hover:to-yellow-700 transition-all shadow-lg hover:shadow-xl"
